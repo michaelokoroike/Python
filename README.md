@@ -1,2 +1,4 @@
 # Python-Variables
-My first repository on Github!
+
+Variables are containers for storing data values.
+
