@@ -1,5 +1,5 @@
 # Machine Learning Portfolio
 
-- Languages
+Languages
  - Python
 
