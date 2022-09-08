@@ -3,3 +3,17 @@
 x = 1
 y = 1
 print(x+y)
+
+
+# Subtraction
+
+x = 1
+y = 1
+print(x-y)
+
+
+# Multiplication
+
+x = 1
+y = 1
+print(x*y)
