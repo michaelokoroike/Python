@@ -1,4 +1,4 @@
-#Information = https://thehelloworldprogram.com/python/python-operators-order-precedence/
+#Information = https://thehelloworldprogram.com/python/python-operators-order-precedence/;  https://www.w3schools.com/python/gloss_python_arithmetic_operators.asp
 
 # Operators
 
