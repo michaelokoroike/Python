@@ -2,12 +2,13 @@
 
 # Operators
 
-+ #(addition)
-- #(subtraction)
-* #(multiplication)
-/ #(division)
-// #(modulus)
-** #(exponentiation)
+# (addition)
+# - (subtraction)
+# * (multiplication)
+# / (division)
+# % (modulus)
+# ** (exponentiation)
+# // (floor division)
 
 
 # Examples
@@ -16,8 +17,9 @@ print(1+1) #addition
 print(1-1) #subtraction
 print(1*1) #multiplication
 print(1/1) #division
-print(5//2) #modulus - will print out the remainder of the equation (example = 3 goes into 2 two times, with 1 as the remainder; 1 would be printed)
+print(5//2) #floor division - will print 2, as five goes into two 2 total times
 print(1**1) #exponentiation
+print(5%2) #modulus - will print one as remainder, as five goes into two 2 times, with 1 as a remainder
 
 
 # Precedence
