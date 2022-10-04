@@ -59,9 +59,13 @@ def outliers(df, column):
   
  # find outliers
 
+count = 0 # count number of outliers
 for index in range(len(df)):
   row = df.iloc[index][column]
   if row < lower_inner_fence or row > upper_inner_fence:
     print('Row number ', index, ' with ', column, ' amounting in ', row, ' is an outlier.')
+    count += 1
+  
+print('Number of outliers = ', count)
     
     
