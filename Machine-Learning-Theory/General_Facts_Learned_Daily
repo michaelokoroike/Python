@@ -1,0 +1,7 @@
+11/21/2022
+- Why do ROC curves remain unchanged between balanced and imbalanced datasets?
+- Why is normalization bad when input variables have outliers? (It will skew the effect of the variable; normalization creates a range for each variable between 0 and 1...in the case of credit fraud if a majority of the fraud loans are done at amounts between 5000 and 10000, but there is a good loan at 1000000, this good loan actually screws up the correlation between price and fraud (as now thouse highly likely values for fraud are small (5000 divided by max of 1000000) and likely are weighted low compared to inputs without outliers) and negates an otherwise strong relationship.)
+- "No skill": (A model that is as good as a random prediction; when imbalanced, can be the minority/(minority+majority))
+- What does a great classifier model do? (Increases true positive rate, decreases false positive rate)
+- How does threshold value in classifiers influence precision and recall? (
+- What is precision and recall?
