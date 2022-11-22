@@ -16,3 +16,4 @@
 - (High precision is good in imbalance because it avoids irrelevant results (good in high imbalance). High recall provides complete results, including irrelevants (good during balance).)
 - F score: Harmonic mean of precision and recall
 - SVC is bad with large datasets because it scales quadratically (need to understand this one)
+- Make_pipeline: Runs functions in order of being listed, as steps
