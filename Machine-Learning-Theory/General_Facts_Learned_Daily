@@ -2,6 +2,7 @@
 
 - Why do ROC curves remain unchanged between balanced and imbalanced datasets? (The ROC Curve can still look good because it takes True Negatives into consideration, the majority class in an imbalanced dataset...because thedataset has a high majority, the ROC Curve can seem to be accurate on the True Negatives, all while struggling on the True Positives.)
 - Why is normalization bad when input variables have outliers? (It will skew the effect of the variable; normalization creates a range for each variable between 0 and 1...in the case of credit fraud if a majority of the fraud loans are done at amounts between 5000 and 10000, but there is a good loan at 1000000, this good loan actually screws up the correlation between price and fraud (as now thouse highly likely values for fraud are small (5000 divided by max of 1000000) and likely are weighted low compared to inputs without outliers) and negates an otherwise strong relationship.)
+- (Normalize when input variables have a Gassian distribution)
 - "No skill": (A model that is as good as a random prediction; when imbalanced, can be the minority/(minority+majority))
 - What does a great classifier model do? (Increases true positive rate, decreases false positive rate)
 - How does threshold value in classifiers influence precision and recall? (Classifies what probabilities can be classified as a positive or negative class --- example is if something had a 60% probability, at a 50% threshold it would be deemed a 1 (positive), while with a 65% threshold it would be deemed a 0 (negative)).
