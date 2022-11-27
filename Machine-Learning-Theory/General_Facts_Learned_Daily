@@ -92,3 +92,7 @@ the case of having a 30% chance of cancer, should be deemed important, which is 
 - Variance = Overfitting
 - Pickling data = the process of converting a Python object into a byte stream to store it in a file/database, maintain program state across sessions, or transport 
   data over the network
+  
+11/26/22
+
+- Variance = Sum of squares/number of data points
