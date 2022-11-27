@@ -1,1 +1,45 @@
+A. STANDARD/ABBREVIATION USED FOR THE ALGORITHM (true)
+-   K-nearest neighbors algorithm, also known as KNN or k-NN
 
+B. INFORMATION PROCESSING STRATEGY OF THE ALGORITHM? (true)
+- 1. Divide the data into training and test data.
+  2. Select a value K (nearest neighbors).
+  3. Determine which distance function is to be used.
+  4. Choose a sample from the test data that needs to be classified and compute the distance to its n training samples.
+  5. Sort the distances obtained and take the k-nearest data samples.
+  6. Assign the test class to the class based on the majority vote of its k neighbors.
+
+C. GOAL OF ALGORITHM? (true)
+- Use proximity to make classifications or predictions about the grouping of an individual data point
+   
+D. METHAPHOR FOR THE ALGORITHM? (true)
+- KNN classifies the new data points based on the similarity measure of the earlier stored data points. For example, if we have a dataset of tomatoes and bananas. 
+  KNN will store similar measures like shape and color. When a new object comes it will check its similarity with the color (red or yellow) and shape.
+
+E. PSEUDOCODE AND/OR FLOWCHART FOR ALGORITHM? (true)
+- 1. Calculate “d(x, xi)” i =1, 2, ….., n; where d denotes the Euclidean distance between the points.
+  2. Arrange the calculated n Euclidean distances in non-decreasing order.
+  3. Let k be a +ve integer, take the first k distances from this sorted list.
+  4. Find those k-points corresponding to these k-distances.
+  5. Let ki denotes the number of points belonging to the ith class among k points i.e. k ≥ 0
+  6. If ki >kj ∀ i ≠ j then put x in class i.
+
+F. RULES OF THUMB FOR USING THE ALGORITHM? (true)
+- Properly labeled data (1s and 0s)
+- Noise free, few-outlier data
+- Small dataset
+- (Nonparametric - There is no assumption for underlying data distribution i.e. the model structure is determined from the dataset)
+- (Lazy learning - Doesn't learn a discriminative function from the training data but memorizes the training dataset instead...makes sense as knowing the data points
+   is most important in this case)
+
+G. WHAT TYPE OF PROBLEM IS THE ALGORITHM BEST FOR? (true)
+- Used for: See directly above; car manufacturing, E-commerce, education (https://serokell.io/blog/knn-algorithm-in-ml#practical-applications)
+
+H. BENCHMARK DATASETS USED TO DESCRIBE THE ALGORITHM? (true)
+- Iris dataset (https://www.tutorialspoint.com/machine_learning_with_python/machine_learning_with_python_knn_algorithm_finding_nearest_neighbors.htm)
+
+I. USEFUL RESOURCES FOR LEARNING MORE ABOUT THE ALGORITHM? (true)
+- https://medium.datadriveninvestor.com/k-nearest-neighbors-knn-algorithm-bd375d14eec7
+- https://dataaspirant.com/k-nearest-neighbor-classifier-intro/#:~:text=Knn%20Algorithm%20Pseudocode%3A,distances%20from%20this%20sorted%20list.
+- https://www.tutorialspoint.com/machine_learning_with_python/machine_learning_with_python_knn_algorithm_finding_nearest_neighbors.htm
+- GOOGLE
