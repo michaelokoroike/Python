@@ -96,3 +96,8 @@ the case of having a 30% chance of cancer, should be deemed important, which is 
 11/26/22
 
 - Variance = Sum of squares/number of data points
+
+
+11/30/22
+
+- GridSearchCV, when it sees a classifier is passed, uses a stratified 5-fold cross validation by default
