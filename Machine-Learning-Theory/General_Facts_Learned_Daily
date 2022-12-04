@@ -101,3 +101,11 @@ the case of having a 30% chance of cancer, should be deemed important, which is 
 11/30/22
 
 - GridSearchCV, when it sees a classifier is passed, uses a stratified 5-fold cross validation by default
+
+12/3/22
+
+- AUC = Ranks order; shows how well a classifier distinguishes between a positive and a negative class (takes random positive examples (1s) and random negative examples
+  (0s) and shows the probability on its testing that positive classes are positioned to the right of the negative classes)
+
+
+
