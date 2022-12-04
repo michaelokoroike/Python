@@ -106,6 +106,7 @@ the case of having a 30% chance of cancer, should be deemed important, which is 
 
 - AUC = Ranks order; shows how well a classifier distinguishes between a positive and a negative class (takes random positive examples (1s) and random negative examples
   (0s) and shows the probability on its testing that positive classes are positioned to the right of the negative classes)
+- Width of variable = number of possible outputs
 
 
 
