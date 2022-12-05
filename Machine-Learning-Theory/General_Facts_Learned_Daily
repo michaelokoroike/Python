@@ -108,5 +108,11 @@ the case of having a 30% chance of cancer, should be deemed important, which is 
   (0s) and shows the probability on its testing that positive classes are positioned to the right of the negative classes)
 - Width of variable = number of possible outputs
 
+12/4/22
 
+- (PCA is essentially a combination of two variables...see https://medium.com/analytics-vidhya/how-does-pca-really-work-e53f640e5323)
+- (All principal components of a dataset make up a mutually orthogonal system)
+- (Eigenvector represents direction)
+- (Eigenvalue represents magnitude/importance)
+- (Sum of squares = distance between projected points on the line of best fit, and the origin (the mean of the different variables being analyzed; the eigenvalue))
 
