@@ -116,3 +116,7 @@ the case of having a 30% chance of cancer, should be deemed important, which is 
 - (Eigenvalue represents magnitude/importance)
 - (Sum of squares = distance between projected points on the line of best fit, and the origin (the mean of the different variables being analyzed; the eigenvalue))
 
+12/5/22
+
+- Covariance is commutative: (a,b) = (b,a)
+
