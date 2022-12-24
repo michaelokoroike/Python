@@ -128,4 +128,20 @@ the case of having a 30% chance of cancer, should be deemed important, which is 
 - Prerequisites for Factor Analysis:
   - Factor loading score = Correlation coefficient for variable/factor (0.7 = sufficient)
   - (Correlation between factors and variable should be at least 0.3, or there is likely a weak relationship between variables)
-  - Squared multiple correlation (SMC) = R squared
+  - Squared multiple correlation (SMC) = R squared (1 - (sum squared regression/total sum of squares)); measures total variance of dependent variable that is 
+    accounted for by predictors (check math folder for calculating R-squared); (SMC close to zero (singularity) or close to 1 (multicollinearity) should be removed)
+  - (Remove outliers)
+  - (Standardize-scale tha data)
+- Assumptions for Factor Analysis:
+  - (No perfect multicollinearity - Factor analysis is interdependency technique)
+  - (Homoscedasticity = Assumption of equal variances; - Since factor analyis is a linear function of measured variables, it does not require homoscedasticity between
+     the variables)
+- Terms for Factor Analysis:
+  - Factor = Latent (hidden/unobserved) variable representing correlated variables with a common variance (variance = sum(square of actual-mean)/number of values; 
+    bias = sum(actual - estimate)/number of estimates...variance is variability from mean, bias is variability from true)
+  - Eigenvalues = Total variance a principal component can explain
+  - Factor loadings = Correlation coefficient for variable and factor; how much the variable contributes to the factor
+  - Communalities = Sum of squared factor loadings foreach variable; indicates amount of variance in each variable
+  - Factor rotations = Helps to better interpret the factors
+- Implementation of Factor Analysis: see (https://medium.com/mlearning-ai/a-deep-dive-into-factor-analysis-d64e550c358f)
+  - Actually see (https://www.datacamp.com/tutorial/introduction-factor-analysis) for a full run through
