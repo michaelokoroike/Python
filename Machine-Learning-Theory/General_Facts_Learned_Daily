@@ -123,3 +123,9 @@ the case of having a 30% chance of cancer, should be deemed important, which is 
 12/23/22
 
 - Factor analysis = Dimensionality reduction
+- (Factor analysis aims at regrouping large numbers of features into fewer variables called factors; these factors share a common variance, and are grouped into
+   meaningful categories)
+- Prerequisites for Factor Analysis:
+  - Factor loading score = Correlation coefficient for variable/factor (0.7 = sufficient)
+  - (Correlation between factors and variable should be at least 0.3, or there is likely a weak relationship between variables)
+  - Squared multiple correlation (SMC) = R squared
