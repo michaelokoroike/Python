@@ -1,0 +1,21 @@
+WEEK 1: WELCOME TO MACHINE LEARNING!
+
+* OVERVIEW OF MACHINE LEARNING
+  ** Machine learning is used in standard web searches, image recognition, recommendation, spam
+  ** Also making its way into big companies and industrial applications (climate change solutions, diagnosis in healthcare, factory work)
+  ** Machine learning = The science of getting computers to learn without being explicitly programmed
+  ** The earlier version of this course actually led to the founding of Coursera, interestingly!
+
+* APPLICATIONS OF MACHINE LEARNING
+  ** We will learn about the important algorithms and the practical tips on making them work well
+  ** Machine learning started as a subfield of artificial intelligence (AI)
+  ** Examples of simple programming = Finding the shortest path from A to B (GPS)
+  ** There was not a way to do interesting things like web search, recognize human speech, diagnose with x-rays, build self-driving cars...
+     the only way it was understood that a machine could do things like this was to have it learn it by itself.
+  ** Applications by A.N. = Speech recognition (Siri), Computer Vision (Google Maps), AI for augmented reality, payment fraud, 
+     self-driving teams, healthcare, agriculture, ecommerce, and other problems.
+  ** A.N. believes most industries will be touched by it in the near future
+  ** Artificial General Intelligence is also expected down the line, but not soon
+  ** AI is expected to add $13 trillion in value annually by 2030
+
+* SUPERVISED VS UNSUPERVISED MACHINE LEARNING
