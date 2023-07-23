@@ -19,3 +19,21 @@ WEEK 1: WELCOME TO MACHINE LEARNING!
   ** AI is expected to add $13 trillion in value annually by 2030
 
 * SUPERVISED VS UNSUPERVISED MACHINE LEARNING
+  What's machine learning?
+  **** *Field of study that gives computers the ability to learn without being explicitly programmed - Arthur Samule (1959)
+       *Arthur Samuel wrote a checkers program (computer played tens of thousands of games against itself)
+       *Two types of machine learning = supervised and unsupervised
+       *Supervised learning used most in real-world applications; also unsupervised learning and recommender systems
+  Supervised Learning Part 1
+  **** *Supervised learning learns x to y (input to output mapping); you give your learning algorithm examples (right answers) to learn from
+       *Examples of supervised learning = The input (x) of an email and the output of spam/not spam (y)...the application is spam filtering.
+       *Another is x being audio and y being text transripts...the application is speech recognition.
+       *Or x being English and y being Spanish...the application is machine translation.
+       *Most lucrative application is in online advertising...x is info about ad/user info, and will you click on the ad or not (y).
+       *Application of self-driving car...x is image, radar info, and y is finding the position of other cars.
+       *Application of visual inspection...x is image of manufactured product (like cell phone), and y is determining if it's defected?
+       *When models learn from these input/outputs, they can be given pairs they've not seen before and try to prodce the right output.
+       *Different approaches to modelling (creating a straight-line model, a curve, or other).
+       *Housing price prediction is an example of regression (predict a number out of an infinite possibility of numbers based on inputs),
+        with house price being the desired output.
+  Supervised Learning Part 2 
