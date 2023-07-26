@@ -37,8 +37,21 @@ WEEK 1: WELCOME TO MACHINE LEARNING!
        *Housing price prediction is an example of regression (predict a number out of an infinite possibility of numbers based on inputs),
         with house price being the desired output.
   Supervised Learning Part 2 
-  **** *Recap = Supervised learning algorithms learn from input to output, orx to y mapping. Regression learns to predict numbers
+  **** *Recap = Supervised learning algorithms learn from input to output, or x to y mapping. Regression learns to predict numbers
         out of an infinite possibility of numbers.
        *Second type of supervised learning algorithm is the classification algorithm.
        *Example: Breast Cancer Detection. Classifcation models can predict if a lump in the breast is malignant (cancerous) or benign
-        (nothing there).
+        (nothing there). Dataset may have tumors of various sizes labelled as either benign or malignant; in that case there would only be
+        two possible outputs (likely encoded as 0 or 1), as opposed to an infinite amount with regression.
+       *You can have more than two outputs for classification. 
+       *Output classes/categories = targets for classification problems.
+       *Classification predicts categories/classes; could be no-numeric (image classifcation; cat or dog). It predicts from finite number of 
+        possible values, as opposed to an infinte number of possible values with regression.
+       *Can use more than one input to predict an output (ex: insead of just tumor size for breast cancer, tumor size and age).
+       *In classification, model/algorithm, instead of a line of best fit, may find a boundary that separates different classes (like
+        benign and malignant tumors).
+       *Often many more than two input values are used/required...in breast cancer, other inputs typically used are thickness of the lump,
+        uniformity of cell size, uniformity of cell shape, etc.
+       *Recap = Supervised learning algorithms learn from input to output, or x to y mapping...learning alorithms learn from the right 
+        answers. Two major types of supervised learning: regression (predict number) and classification (predict categories); 
+        regression has an infintie possible amount of output values, and classification has a finite amount of  output values.
