@@ -37,3 +37,8 @@ WEEK 1: WELCOME TO MACHINE LEARNING!
        *Housing price prediction is an example of regression (predict a number out of an infinite possibility of numbers based on inputs),
         with house price being the desired output.
   Supervised Learning Part 2 
+  **** *Recap = Supervised learning algorithms learn from input to output, orx to y mapping. Regression learns to predict numbers
+        out of an infinite possibility of numbers.
+       *Second type of supervised learning algorithm is the classification algorithm.
+       *Example: Breast Cancer Detection. Classifcation models can predict if a lump in the breast is malignant (cancerous) or benign
+        (nothing there).
