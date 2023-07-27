@@ -73,3 +73,7 @@ WEEK 1: WELCOME TO MACHINE LEARNING!
         financial system.
        *Another type of machine learning is DIMENSIONALITY REDUCTION (compressing a big dataset into a much smaller one while losing as 
         little information as possible).
+  Jupyter Notebooks
+  **** *Recap = Seen supervised learning and unsupervised learning and examples of both.
+       *Most widely used tool in mahine learning is Jupyter Notebook. The tool that highest level practitioners use.
+       *Markdown cells = text. Code cell = code.
