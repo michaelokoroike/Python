@@ -54,4 +54,14 @@ WEEK 1: WELCOME TO MACHINE LEARNING!
         uniformity of cell size, uniformity of cell shape, etc.
        *Recap = Supervised learning algorithms learn from input to output, or x to y mapping...learning alorithms learn from the right 
         answers. Two major types of supervised learning: regression (predict number) and classification (predict categories); 
-        regression has an infintie possible amount of output values, and classification has a finite amount of  output values.
+        regression has an infinite possible amount of output values, and classification has a finite amount of  output values.
+  Unsupervised Learning Part 1
+  **** *Recap = Supervised learning classification; each sample has an output label (breast cancer = benign or malignant).
+       *In unsupervised learning, we're given data that doesn't have output labels; job is simply to find something interesting (pattern,
+        etc)
+       *Called unsupervised b/c we're not trying to supervise the algorithm to give a right answer...just find interesting patterns;
+        this type of unsupervised learning is called CLUSTERING
+       *Clustering can be found in things like Google news...looks at news items and groups related stories together; valuable in the sense
+        it's not feasible to manually do this every moment of every day
+       *Clustering can also be found in things like DNA microarrays; based on DNA sequencing, being able to group individuals
+       *Clustering can also be in grouping ustomers to understand preferences, etc
