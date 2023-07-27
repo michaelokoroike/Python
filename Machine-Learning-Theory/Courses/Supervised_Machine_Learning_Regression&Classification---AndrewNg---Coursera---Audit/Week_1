@@ -65,3 +65,11 @@ WEEK 1: WELCOME TO MACHINE LEARNING!
         it's not feasible to manually do this every moment of every day
        *Clustering can also be found in things like DNA microarrays; based on DNA sequencing, being able to group individuals
        *Clustering can also be in grouping ustomers to understand preferences, etc
+  Unsupervised Learning Part 2
+  **** *Recap = Whereas in supervised learning, data comes with inputs x and outputs y...in unsupervised learning data comes with inputs
+        x but not outputs y. Algorithm's goal is finding structure in the data. CLUSTERING is an example of unsupervised learning which
+        groups similar data points together.
+       *Another type of unsupervised learning is ANOMALY DETECTION (finding unusual data points). Important for fraud detection in the 
+        financial system.
+       *Another type of machine learning is DIMENSIONALITY REDUCTION (compressing a big dataset into a much smaller one while losing as 
+        little information as possible).
