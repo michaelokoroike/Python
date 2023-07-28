@@ -77,3 +77,18 @@ WEEK 1: WELCOME TO MACHINE LEARNING!
   **** *Recap = Seen supervised learning and unsupervised learning and examples of both.
        *Most widely used tool in mahine learning is Jupyter Notebook. The tool that highest level practitioners use.
        *Markdown cells = text. Code cell = code.
+
+* REGRESSION MODEL
+  Linear Regression Model Part 1
+  **** *Will go through the supervised learning process with a basic dataset
+       *Example dataset will be housing dataset (input = size, output = price)...skills transferable to other future algorithms
+       *Model fits a line of best fit through the data
+       *Make estimates based on line of best fit created by model
+       *Supervised learning is "supervised" because you are training a model by giving it all of the right answers (ex: size of house, and
+        price that the model should predict)
+       *Regression models predict numbers (infinite possibilities); linear regression is one example
+       *Recall = The other type of supervised learning predicts categories (finite possibilities)
+       *Also helpful to look at a data table
+       *Standard notations = Training set (dataset used to train the model), x (input variable/feature), y (output/target variable),
+        m (training examples), (x,y) is one specific training example, (x(i), y(i)) is the ith training example with i referring to a
+        specific row in the data table
