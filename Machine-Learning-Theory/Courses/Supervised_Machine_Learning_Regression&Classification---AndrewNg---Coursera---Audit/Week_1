@@ -92,3 +92,14 @@ WEEK 1: WELCOME TO MACHINE LEARNING!
        *Standard notations = Training set (dataset used to train the model), x (input variable/feature), y (output/target variable),
         m (training examples), (x,y) is one specific training example, (x(i), y(i)) is the ith training example with i referring to a
         specific row in the data table
+  Linear Regression Model Part 2
+  **** *Recall = A training set includes input variables/features (size of house) and output targets (price of house)
+       *To train the model, you 1) feed the training set (both input features and output targets) into a learning algorithm; then 2) the 
+        supervised learning algorithm produces some function f (can be called hypothesis).
+       *The job of function f becomes to take a new input x and output an estimate/prediction for y (y-hat)
+       *The function f is called the model
+       *Math representation of f (linear regression with one variable) : f_w,b(x) = wx + b; meas f is a function that takes x as input,
+        and depending on the values of w and b, f will output some value of a prediction y-hat. Can also just write f(x).
+       *Linear vs non-linear (discussed in the future)? But linear is a foundation to get to more complex.
+       *The model in the video is linear regression with one input variable, or univariate linear regression.
+       *To make it work, you ust construct a cost function, which will be discussed in the next video.
