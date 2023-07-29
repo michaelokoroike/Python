@@ -103,3 +103,26 @@ WEEK 1: WELCOME TO MACHINE LEARNING!
        *Linear vs non-linear (discussed in the future)? But linear is a foundation to get to more complex.
        *The model in the video is linear regression with one input variable, or univariate linear regression.
        *To make it work, you ust construct a cost function, which will be discussed in the next video.
+  Cost Function Formulas
+  **** *Recall = A training set includes input variables/features (size of house) and output targets (price of house). Model used to fit
+        the dataset is f_w,b(x) (or f(x)) = wx + b.
+       *Standard notation: w and b are parameters of the model...also referred to as coefficients or weights.
+       *The b parameter is the y-intercept; the w parameter is the slope
+       *With linear regression, choose values for w and b so that the straight line you get from function f fits the data well, as
+        compared to other lines that aren't as close.
+       *Recall = A training example is (x(i), y(i)) with y as the target; for a given input x(i), the function also makes a prediction
+        for y and the value is labeled y-hat(i).
+       *Standard notation: Y-hat(i) = f_w,b(x(i)) (or f(x(i))). Also f_w,b(x(i)) (or f(x(i))) = w(x(i)) + b.
+       *Question = How do you find values for w and b so the prediction y-hat(i) is close to the true target y(i) for all (x(i), y(i))?
+       *How to measure how well a line fits the training data = a COST FUNCTION.
+       *Cost functions take y-hat predictions and compares it to the target y by taking y-hat(i) and subtracting it by y(i)...that 
+        difference is called the ERROR, or how far off the prediction is from the target. Then the square of that error is taken. We sum
+        these squared errors for all of the training examples.
+       *The more training examples a dataset has would mean the higher the squared error calculated, by virtue of more examples...to 
+        combat this, we will take the average squared error instead of the total...and further the convention is to divide by 2m.
+       *Cost function: (1/(2*m)) * (sum of ((y-hat(i) minus y(i)) squared) over all of the training examples). Also called the squared
+        error cost function.  Can also be (1/(2*m)) * (sum of (f_w,b(x(i)) minus y(i)) squared) over all of the training 
+        examples).
+       *Cost function notation = J(w,b).
+  Cost Function Intuition
+       
