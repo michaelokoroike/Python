@@ -141,3 +141,14 @@ WEEK 1: WELCOME TO MACHINE LEARNING!
        *Usually a cost function ends up a parabola shape. In the example above, the parabola's low point would be at 1 where the model f
         exactly fits the data and the corresponding cost (average prediction "error") is 0.
        *Recap is in J(w) or J(w,b), find the values of w or w/b that minimize J (like 1 did in our example, vs 2).
+  Visualizing the Cost Function
+  **** *Recap: There's the model f_w,b(x) (or f(x)) = wx + b, with parameters x and b. There's the cost function
+        J(w,b) = 1/(2*m)) * (sum of (f_w,b(x(i)) minus y(i)) squared) over all of the training examples)...the goal of linear regression
+        is to minimize the cost function J(w,b) over parameters w and b.
+       *This video adds b back to the model parameters.
+       *In this case, the model f_w,b(x) is a function of x and J(w,b) is a function of model parameters w and b.
+       *With two parameters, it's now a three-dimensional parabola/soup bowl.
+       *When w is something and b is something, then the height of the surface above that point is J when w and b equal that.
+       *Instead of 3d surface plots, graph contour plots...it's just a soupbowl stretched out. You are basically slicing the 
+        3d surface plot...imagine sling a bowl.
+       *When on the same line of a contour plot, even if they have different values for w and b, that means they have the same cost.
