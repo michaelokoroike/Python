@@ -125,4 +125,12 @@ WEEK 1: WELCOME TO MACHINE LEARNING!
         examples).
        *Cost function notation = J(w,b).
   Cost Function Intuition
-       
+  **** *Recap: We have model f_w,b(x) (or f(x)) = wx + b, with parameters x and b. Depending on the different values chosen for w and b,
+        you get different straight lines for the model...you want to find values so that the straight line fits the training data well.
+        To measure how well w and b fit the data, you have a cost function J(w,b) = 1/(2*m)) * (sum of (f_w,b(x(i)) minus y(i)) squared) 
+        over all of the training examples) which measures the difference between the model's predictions and the actual true values for
+        y. Linear regression then tries to make J(w,b) as small as possible, with a goal to minimize J(w,b).
+       *Video works with a simplified version to better visualize the cost function...uses f_w(x) = wx.
+       *J(w) = 1/(2*m)) * (sum of (f_w(x(i)) minus y(i)) squared) over all of the training examples). Minimize J(w).
+       *F_w(x) (when parameter w is fixed, this is a function of x, and y depends on the value of input x) vs J(w) (cost function is a
+        function of w, and cost depends on parameter)...
