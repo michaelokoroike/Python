@@ -150,9 +150,30 @@ WEEK 1: WELCOME TO MACHINE LEARNING!
        *With two parameters, it's now a three-dimensional parabola/soup bowl.
        *When w is something and b is something, then the height of the surface above that point is J when w and b equal that.
        *Instead of 3d surface plots, graph contour plots...it's just a soupbowl stretched out. You are basically slicing the 
-        3d surface plot...imagine sling a bowl.
+        3d surface plot...imagine slicing a bowl.
        *When on the same line of a contour plot, even if they have different values for w and b, that means they have the same cost.
   Visualization Examples
   **** *Recap: Paramters of f_w,b(x) are the coordinates of the cost function contour plot 
        *Shows interactive console 
        *GRADIENT DESCENT is the algorithm that automatially finds the values w and b that minimize the cost function J
+
+* TRAIN THE MODEL WITH GRADIENT DESCENT
+  Gradient Descent
+  **** *Recap: We recently looked at different choices of the parameters w and b and see what cost value they get you
+       *Gradient descent is the systematic way to find the values w and b that result in the smallest possible cost value
+       *Used very widely in machine learning, including in deep learning
+       *With gradient descent you have the cost function J(w,b) and you want to minimize it.
+       *Gradient descent is an algorithm that can be used to minimize any function, not just a linear regression cost function...also
+        can be used to minimize a function with more than two parameters.
+       *Gradient descent: 1) starts with a random guess of w and b (usually set to 0); 2) keep changing w and b to try to reduce the cost
+        of J(w,b); 3) J settles at a minimum
+       *It's possible for there to be more than one minimum...not in squared error cost function (which always leads to the bowl-shaped 
+        hammock)...but if you're training a neural network model for example
+       *Example is standing on top of a hill on a hilly golf course...gradient descent looks around and asks where would be the best place
+        to move down the hill as efficiently as possible (referred to mathematically as the DIRECTION OF STEEPEST DESCENT)...a baby step
+        takes you down faster than it would in another direction. With each step you spin around and look for the direction of steepest 
+        descent. And so on until you find yourself at the bottom of the valley, or the "LOCAL MINIMUM".
+       *Because you can choose starting points at the surface by choosing starting values for parameters w and b, depending on where you
+        start, the direction of steepest descent may be diffrent than when you chose other values, which may cause the gradient descent
+        process to complete at a different local minimum than when starting at the other starting points for w and b...the low points
+        discovered in both places are called LOCAL MINIMA.
