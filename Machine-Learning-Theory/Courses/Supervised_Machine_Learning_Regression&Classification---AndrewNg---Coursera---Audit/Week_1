@@ -177,3 +177,5 @@ WEEK 1: WELCOME TO MACHINE LEARNING!
         start, the direction of steepest descent may be diffrent than when you chose other values, which may cause the gradient descent
         process to complete at a different local minimum than when starting at the other starting points for w and b...the low points
         discovered in both places are called LOCAL MINIMA.
+  Implementing Gradient Descent
+  **** *Gradient Descent algorithm: w (update) = w - alpha*([d/dw]J(w,b))
