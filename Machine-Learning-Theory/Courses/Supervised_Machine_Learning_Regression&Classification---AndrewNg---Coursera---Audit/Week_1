@@ -152,3 +152,7 @@ WEEK 1: WELCOME TO MACHINE LEARNING!
        *Instead of 3d surface plots, graph contour plots...it's just a soupbowl stretched out. You are basically slicing the 
         3d surface plot...imagine sling a bowl.
        *When on the same line of a contour plot, even if they have different values for w and b, that means they have the same cost.
+  Visualization Examples
+  **** *Recap: Paramters of f_w,b(x) are the coordinates of the cost function contour plot 
+       *Shows interactive console 
+       *GRADIENT DESCENT is the algorithm that automatially finds the values w and b that minimize the cost function J
