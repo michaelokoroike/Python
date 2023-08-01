@@ -195,4 +195,10 @@ WEEK 1: WELCOME TO MACHINE LEARNING!
   Gradient Descent Intuition
   **** *Recap: Gradient descent algorithm is || repeat until convergence {w - alpha*([d/dw]J(w,b)); b - alpha*([d/db]J(w,b))}. Alpha 
         controls how big of a step you take. The d/dw is a (partial) derivative term.
-       *Use a simpler example 
+       *Use a simpler example of cost function J(w). The gradient descent formula becomes w - alpha*([d/dw]J(w))...like the 
+        two-dimesnional graph we had earlier (see Cost Function Inutiton video).
+       *Say w is at a point on the parabolic cost function...the way to think about the derivative at the point is to draw a 
+        TANGENT LINE, a straight line touching the curve at the point. The SLOPE of that line is the derivative of the function J 
+        at that point.
+       *Learning rate is always a positive number...if the slope at the point is positive, you will decrease w...if negative you will 
+        increase w. [4:10]
