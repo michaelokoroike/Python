@@ -179,3 +179,20 @@ WEEK 1: WELCOME TO MACHINE LEARNING!
         discovered in both places are called LOCAL MINIMA.
   Implementing Gradient Descent
   **** *Gradient Descent algorithm: w (update) = w - alpha*([d/dw]J(w,b))
+       *The above formula basically says update w by adjusting it by a small amount
+       *Unpacking the Gradient Descent algorithm formula: = sign is the assignment operator (== is truth assertion), 
+        alpha is the LEARNING RATE (usually between 0 and 1; controls how big of a step you take downhill),
+        [d/dw]J(w,b) is the DERIVATIVE TERM for cost function J (controls which direction you want to take your step in; also
+        determines with alpha the size of the step)
+       *Derivatives come from calculus, but you don't need to go that deep to understand!
+       *Gradient Descent algorithm: b (update) = b - alpha*([d/db]J(w,b))
+       *For a gradient descent algorithm, you update w and b until they CONVERGE (reach a point at a local minimum where these parameters 
+        no longer change much when taking a step)
+       *In gradient descent, the updates for the parameters occur simultaneously; this is done by calculating the update formula in a temp 
+        variable and then assigning the temp variable values to the parameters...this is so the pre-updated w can go into the update calc
+        for the  b parameter, and/or vice versa. It is incorrect to update w or b before calculating the new value for the other parameter.
+        With that said, it turns out that even if the non-simultaneous way is done, that will probably work anyway.
+  Gradient Descent Intuition
+  **** *Recap: Gradient descent algorithm is || repeat until convergence {w - alpha*([d/dw]J(w,b)); b - alpha*([d/db]J(w,b))}. Alpha 
+        controls how big of a step you take. The d/dw is a (partial) derivative term.
+       *Use a simpler example 
