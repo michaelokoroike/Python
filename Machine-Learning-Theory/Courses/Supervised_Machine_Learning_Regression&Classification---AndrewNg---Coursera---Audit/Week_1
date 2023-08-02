@@ -202,3 +202,14 @@ WEEK 1: WELCOME TO MACHINE LEARNING!
         at that point.
        *Learning rate is always a positive number...if the slope at the point is positive, you will decrease w...if negative you will 
         increase w.
+  Learning Rate
+  **** *Recap: Gradient descent update rule for simplified function is w = w - alpha*([d/dw]J(w))
+       *If alpha (the learning rate) is too small, you multiply the derivative term by some really small number; the gradient descent is
+        a small baby step...you decrease the cost J but incredibly slowly
+       *If alpha is too large, gradient descent may overshoot and never reachthe minimum (actually could get worse with each step taken);
+        it may fail to converge, or even diverge
+       *If you're already at a local minimum, gradient descent will leave w unchanged (the slope at local minima is 0...multiply alpha by 0
+        and it will lead to gradient descent telling w to remain w (w = w - alpha*0, or w = w - 0, or w = w)
+       *Gradient descent can reach a local minimum even with a fixed learning rate, because as we get near a local minimum, the derivative
+        becomes smaller as the slope gets less steep, and the update steps get smaller...so the learning rate doesn't even need to be 
+        changed
