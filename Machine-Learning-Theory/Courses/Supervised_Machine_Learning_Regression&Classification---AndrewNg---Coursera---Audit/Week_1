@@ -213,3 +213,12 @@ WEEK 1: WELCOME TO MACHINE LEARNING!
        *Gradient descent can reach a local minimum even with a fixed learning rate, because as we get near a local minimum, the derivative
         becomes smaller as the slope gets less steep, and the update steps get smaller...so the learning rate doesn't even need to be 
         changed
+  Gradient Descent for Linear Regression (mostly calculus)
+  **** *Recap: We've looked at the linear regression model and the cost function and the gradient descent algorithm. This video will
+        use the squared error cost function for the linear regression model with gradient descent, which allows us to train the linear
+        regression model to fit a straight line. The linear regression model is f_w,b(x) (or f(x)) = wx + b; 
+        the sq. error cost function is J(w,b) = 1/(2*m)) * (sum of (f_w,b(x(i)) minus y(i)) squared) over all of the training examples);
+        the gradient descent algorithm is [repeat until convergence {w - alpha*([d/dw]J(w,b)); b - alpha*([d/db]J(w,b))}].
+       *If you calculate the derivative in the GD algorithm, you would get 
+        1/(m)) * (sum of (f_w,b(x(i)) minus y(i))*x(i)) over all of the training examples) for the w derivative term and 
+        1/(2*m)) * (sum of (f_w,b(x(i)) minus y(i)) over all of the training examples) for the b derivative term [2:47]
