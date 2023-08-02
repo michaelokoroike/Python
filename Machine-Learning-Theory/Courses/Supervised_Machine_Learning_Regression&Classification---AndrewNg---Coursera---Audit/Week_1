@@ -201,4 +201,4 @@ WEEK 1: WELCOME TO MACHINE LEARNING!
         TANGENT LINE, a straight line touching the curve at the point. The SLOPE of that line is the derivative of the function J 
         at that point.
        *Learning rate is always a positive number...if the slope at the point is positive, you will decrease w...if negative you will 
-        increase w. [4:10]
+        increase w.
