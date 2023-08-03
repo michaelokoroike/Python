@@ -221,4 +221,11 @@ WEEK 1: WELCOME TO MACHINE LEARNING!
         the gradient descent algorithm is [repeat until convergence {w - alpha*([d/dw]J(w,b)); b - alpha*([d/db]J(w,b))}].
        *If you calculate the derivative in the GD algorithm, you would get 
         1/(m)) * (sum of (f_w,b(x(i)) minus y(i))*x(i)) over all of the training examples) for the w derivative term and 
-        1/(2*m)) * (sum of (f_w,b(x(i)) minus y(i)) over all of the training examples) for the b derivative term [2:47]
+        1/(2*m)) * (sum of (f_w,b(x(i)) minus y(i)) over all of the training examples) for the b derivative term
+       *[d/dw]J(w,b) = [d/dw]1/(2*m)) * (sum of (f_w,b(x(i)) minus y(i)) squared) over all of the training examples) =
+        [d/dw]1/(2*m)) * (sum of (wx(i)+b-y(i)) squared) over all of the training examples)
+       *1/2m makes the partial derivative neater
+       *Partial derivative takes original cost function and finds the derivative while taking terms from it (in the model f(x) is wx+b;
+        x is part of the derivative of w, and there's nothing for b
+       *Carry those derivative terms out in the gradient descent algorithm until convergence
+       *Squared error cost functions never have multiple local minima... it is a bowl-shaped CONVEX FUNCTION
