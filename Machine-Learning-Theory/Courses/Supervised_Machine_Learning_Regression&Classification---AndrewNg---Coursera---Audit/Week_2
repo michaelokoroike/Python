@@ -1,1 +1,13 @@
+WEEK 2: REGRESSION WITH MULTIPLE INPUT VARIABLES
 
+* MULTIPLE LINEAR REGRESSION
+  Multiple Features
+  **** *Recap: In the original version of linear regression, we had a single input variable x (size of house) which we used to predict y
+        (price of house). The model therefore was f_w,b(x) = wx + b.
+       *Now we will know the number of bedrooms, the number of floors, and the age of the home.
+       *Notation = For multiple input variables: x1, x2...xj (j being the specific input feature (column)); 
+        n will equal the total number of features. x^i represents the ith training example (row/array of all input variables); this is
+        sometimes referred to as a VECTOR including all of the input features of the ith training example, more specifically a ROW VECTOR.
+        (x^i)_j is the value of feature j in the ith training example. Sometimes an arrow is drawn over x^i to show it is a vector.
+        *Now the model is not f_w,b(x) = wx + b, but f_w,b(x) = w1x1 + w2x2 + w3x3 + w4x4 + b.
+        *Example = 0.1x1 (size of house) + 4x2 (bedrooms) + 10x3 (number of floors) - 2x4 (age of house) + 80  (base price)
