@@ -10,4 +10,11 @@ WEEK 2: REGRESSION WITH MULTIPLE INPUT VARIABLES
         sometimes referred to as a VECTOR including all of the input features of the ith training example, more specifically a ROW VECTOR.
         (x^i)_j is the value of feature j in the ith training example. Sometimes an arrow is drawn over x^i to show it is a vector.
         *Now the model is not f_w,b(x) = wx + b, but f_w,b(x) = w1x1 + w2x2 + w3x3 + w4x4 + b.
-        *Example = 0.1x1 (size of house) + 4x2 (bedrooms) + 10x3 (number of floors) - 2x4 (age of house) + 80  (base price)
+        *Example = 0.1x1 (size of house) + 4x2 (bedrooms) + 10x3 (number of floors) - 2x4 (age of house) + 80  (base price). A way to
+        interpret is, if assuming the model is trying to predict the price of a house in thousands of dollars, the base price of a house is 
+        80,000 ($1000*80). For every square foot, price will increase by $1000*.01, or $100. For each bedroom, the price increases by $4,000;
+        for each floor, the price increases by $10,000; for each year the house has existed the price decreases by $2,000.
+        *With n features, the model will be f_w,b(x) = w1x1 + w2x2 + ... + wnxn + b.
+        *Notation for the above is f_w[vec],b(x[vec]) = (w[vec] * x[vec]) + b. The dot product of w[vec] * x[vec] is the sum of 
+         w1x1 + w2x2 + ... + wnxn.
+        *This type of linear regression wh multiple input variables is MULTIPLE LINEAR REGRESSION.
