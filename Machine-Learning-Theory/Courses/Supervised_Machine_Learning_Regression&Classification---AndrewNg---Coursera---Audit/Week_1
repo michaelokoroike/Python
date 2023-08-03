@@ -229,3 +229,7 @@ WEEK 1: WELCOME TO MACHINE LEARNING!
         x is part of the derivative of w, and there's nothing for b
        *Carry those derivative terms out in the gradient descent algorithm until convergence
        *Squared error cost functions never have multiple local minima... it is a bowl-shaped CONVEX FUNCTION
+  Running Gradient Descent
+  **** *Runs a model and shows how steps take it along a journey
+       *Batch gradient descent = Every step taken uses all of the training examples
+       *There are other versions of gradient descent, but this is the main one for linear regression
