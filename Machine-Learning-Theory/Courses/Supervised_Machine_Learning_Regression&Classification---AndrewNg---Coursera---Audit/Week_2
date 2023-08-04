@@ -18,3 +18,11 @@ WEEK 2: REGRESSION WITH MULTIPLE INPUT VARIABLES
         *Notation for the above is f_w[vec],b(x[vec]) = (w[vec] * x[vec]) + b. The dot product of w[vec] * x[vec] is the sum of 
          w1x1 + w2x2 + ... + wnxn.
         *This type of linear regression wh multiple input variables is MULTIPLE LINEAR REGRESSION.
+   Vectorization Part 1
+   **** *Vectorization makes your code shorter and makes it run more efficiently. Also allows you to take advantage of numerical linear 
+         algebra libraries, as well as GPU hardware (speeds up computer graphics).
+        *Example of vectorization: w is a vector of [w1, w2, w3] and b is a number ans x is a vector of [x1, x2, x3]. Here n = 3;
+         algebra would index these vectors 1-3, but Python indexes them 0-2.
+        *Without vectorization you go through [w1]*[x1] + [w2]*[x2] + [w3]*[x3] + b...with vectorization, in numpy you can do
+         numpy.dot(w,x) + b.
+        *It's faster than other ways (manual for each pair, for loop) because numpy uses parallel hardware in your computer.
