@@ -37,4 +37,24 @@ WEEK 2: REGRESSION WITH MULTIPLE INPUT VARIABLES
          j at w1), w2 = w2 - 0.1(derivative of j at w2), and so on until the 16 different features are accounted for. With
          vectorization, you can do  w = w - 0.1*d and the computer will do parallel processing on the numpy arrays
         *Overall, vectorization is just quicker
-         
+   Gradient Descent for Multiple Linear Regression
+   **** *This video will put multiple linear regression, gradient descent, and vectorization together.
+        *Recap: Previous notation is parameters (w1...wn, b), model (f_w,b(x) = w1x1 + w2x2 + ... + wnxn + b), 
+         cost function (J(w1...wn, b)). Vectorized notation is parameters w = vec[w1 ... n] (a vector of length n) and b still being
+         a number; model is f_w[vec],b(x[vec]) = (w[vec] * x[vec]) + b, with w[vec] * x[vec] as the dot product; 
+         cost function is J(w[vec], b). Gradient descent without vectorization is 
+         repeat until convergence {w - alpha*([d/dw]J(w1..wn,b)); b - alpha*([d/db]J(w1....wn,b)) and with vectorization is
+         repeat until convergence {w - alpha*([d/dw]J(w[vec],b)); b - alpha*([d/db]J(w[vec],b)).
+        *Gradient descent for one feature is 
+         repeat until convergence {w = w - alpha*(1/(m)) *(sum of (f_w,b(x(i)) minus y(i))*x(i)) over all of the training examples;
+         b = b - alpha*(1/(m)) *(sum of (f_w,b(x(i)) minus y(i))) over all of the training examples}.
+        *Gradient descent for multiple features is 
+         repeat until convergence {w1 = w1 - alpha*(1/(m)) *(sum of (f_w[vec],b(x[vec](i)) minus y(i))*x1(i))
+         .
+         .
+         .
+         wn = wn - alpha*(1/(m)) *(sum of (f_w[vec],b(x[vec](i)) minus y(i))*xn(i)) over all training examples;
+         b = b - alpha*(1/(m)) *(sum of (f_w[vec],b(x[vec](i)) minus y(i))) over all of the training examples}.
+        *An alternative to gradient descent is the NORMAL equation. It works only for linear regression (and really nothing else)
+         for solving for w and b without iteration. Disadvantages are this does not generalize to other learning algorithms and is slow
+         on large datasets. Some machine learning libraries use normal equation on the backend...but gradient descent is recommended.
