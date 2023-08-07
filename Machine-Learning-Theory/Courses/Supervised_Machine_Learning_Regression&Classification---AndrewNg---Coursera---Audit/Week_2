@@ -32,6 +32,9 @@ WEEK 2: REGRESSION WITH MULTIPLE INPUT VARIABLES
         *With vectorization (np.dot(x)) computer multiplies each pair of w and x with each other in parallel in one step, then
          uses specialized hardware to add up the w*x products efficently rather than 1 by 1; matters with large data sets
         *Example of how this helps with multiple linear regression: problem with 16 features/parameters, in addition to parameter b. 
-         You calculate 16 derivative terms for the 16 weights; and you store the value of the wieghts and the derivatives in two numpy 
-         arrays. If you want to compute an update step
+         You calculate 16 derivative terms for the 16 weights; and you store the value of the weights and the derivatives in two numpy 
+         arrays. If you want to compute an update step without vectorization, you'd have to individually do w1 = w1 - 0.1(derivative of
+         j at w1), w2 = w2 - 0.1(derivative of j at w2), and so on until the 16 different features are accounted for. With
+         vectorization, you can do  w = w - 0.1*d and the computer will do parallel processing on the numpy arrays
+        *Overall, vectorization is just quicker
          
