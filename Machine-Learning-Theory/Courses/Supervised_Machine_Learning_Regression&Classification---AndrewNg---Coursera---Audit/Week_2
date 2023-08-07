@@ -58,3 +58,16 @@ WEEK 2: REGRESSION WITH MULTIPLE INPUT VARIABLES
         *An alternative to gradient descent is the NORMAL equation. It works only for linear regression (and really nothing else)
          for solving for w and b without iteration. Disadvantages are this does not generalize to other learning algorithms and is slow
          on large datasets. Some machine learning libraries use normal equation on the backend...but gradient descent is recommended.
+
+* GRADIENT DESCENT IN PRACTICE
+  Feature Scaling Part 1
+  **** *When the possible range of values of a feature is large, a good model typically learns to choose a typically small parameter value
+        and vice versa
+       *This is important and can be seen in plotting points and corresponding cost functions; the variable with the much larger range of 
+        values typically hasa narrow contour because a small change to the parameter of that feature can typically have a large impact on the 
+        cost J/prediction of the model, and vice versa again (because that small contour is multiplied by a very large number)
+       *What happens in this scenario is gradient descent may end up bouncing up and down/back and forth for a long time before finding
+        its global minimum (video shows that it can bounce back and forth in predictions/errors...see 
+        https://medium.com/@yennhi95zz/6-a-beginners-guide-to-gradient-descent-and-feature-scaling-in-machine-learning-bbbeecbb5d51).
+        This is why we SCALE FEATURES.
+       *When we scale, contous look more normal and gradient descent find =s a much more direct path to the global minimum
