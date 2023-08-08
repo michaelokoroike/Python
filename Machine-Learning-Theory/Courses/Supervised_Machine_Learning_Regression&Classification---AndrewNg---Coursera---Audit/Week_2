@@ -78,3 +78,12 @@ WEEK 2: REGRESSION WITH MULTIPLE INPUT VARIABLES
         average (Greek mu) of its range, then divide by standard deviation)
        *Rule of thumb = When scaling, ideal is between -1 and 1 for each feature x...but ranges like -3 to 3, or -0.3 to 0.3, are
         acceptable. 0 and 3 is also ok. But something like -100 to 100, or -0....1 to 0.00001 on the other side, needs to be rescaled.
+  Checking Gradient Descent for Convergence
+  **** *Gradient descent rule is w = w - alpha*([d/dw]J(w[vec],b)); b = b - alpha*([d/db]J(w[vec],b)...one of the important aspects
+        of the equations are alpha. The way to check if it's working properly is to plot the value of cost function J at each iteration
+        of gradient descent. Y would be J(w[vec], b) value, X would be number of iterations. Should look like a hockey stick. The curve
+        is called a LEARNING CURVE.
+        *J should not increase after 1 iteration (means alpha was chosen poorly, or is too large).
+        *You can also tell when convergence occurs. The number of iterations necessary for convergence may differ for different applications.
+        *You can also use an AUTOMATIC CONVERGENCE TEST (if J(w[vec], b) decreases by less than Greek epsilon value, then you declare
+         convergence). But you have to choose epsilon, which is difficult.
