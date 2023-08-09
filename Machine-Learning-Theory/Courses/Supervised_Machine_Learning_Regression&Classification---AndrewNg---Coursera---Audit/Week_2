@@ -87,3 +87,11 @@ WEEK 2: REGRESSION WITH MULTIPLE INPUT VARIABLES
         *You can also tell when convergence occurs. The number of iterations necessary for convergence may differ for different applications.
         *You can also use an AUTOMATIC CONVERGENCE TEST (if J(w[vec], b) decreases by less than Greek epsilon value, then you declare
          convergence). But you have to choose epsilon, which is difficult.
+  Choosing the Learning Rate
+  **** *Recap: It it's too small, it may run slowly...but if it's too large, it may not even converge (may overshoot...cost could actually 
+        go up...imagine a parabola with a ball plinko-ing upwards)
+        *Could also be due to broken code (adding alpha times derivative instead of subtracting)
+        *With a small enough learning rate, cost J(w[vec], b) should decrease on every iteration...if with really small numbers that 
+         doesn't happen, that usually means there's a bug in the code
+        *A really small alpha is a debugging step and is not the most appropriate choice a lot of the time (may take too long)
+        *Try a range (0.001, 0.01, 0.1, 1) for a handful of iterations, find what's just right
