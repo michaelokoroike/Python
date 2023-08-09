@@ -100,3 +100,15 @@ WEEK 2: REGRESSION WITH MULTIPLE INPUT VARIABLES
         feature...becomes w1x1 + w2x2 + w3x3 + b, with x1 and x2 being frontage and depth, and x3 being area. Gives the model 
         another option as to what is the most important predictor of price.
         *It's using intuition and understanding of a problem, and designing new "solutions" (features) to help solve the problem
+  Polynomial Regression
+  **** *Allows you to fit curves (non-linear functions) to the data
+       *Interesting example: A housing dataset that curves a little...tries quadratic, and it looks good, but backs off of it due to
+        knowing quadratic functions are shaped like bowls (parabolas) and knowing that, since the data was currently with an upward
+        trajectory, the curve would have to come down...chose a cubic graph instead
+       *If you do this, you need feature scaling (example of cubic graph...if size of house is 1-10sq ft, the second feature (size
+        squared) would range from 1-100, and the third feature (sized cubed) would range from 1-1000. Feature scale if using gradient
+        descent.
+       *Another way outside of quadratic/cube/power up is power down (example is second feature being sq root of size)...graph is almost
+        like cube root but a little less steep, although it doesn't flatten
+       *You need to be able to implement these algorithms yourself and not just call Scikit-learn at all times...but Scikit Learn is 
+        important as well for efficiency
