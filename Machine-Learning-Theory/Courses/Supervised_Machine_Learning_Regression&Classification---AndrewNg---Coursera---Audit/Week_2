@@ -95,3 +95,8 @@ WEEK 2: REGRESSION WITH MULTIPLE INPUT VARIABLES
          doesn't happen, that usually means there's a bug in the code
         *A really small alpha is a debugging step and is not the most appropriate choice a lot of the time (may take too long)
         *Try a range (0.001, 0.01, 0.1, 1) for a handful of iterations, find what's just right
+  Feature Engineering
+  **** *Example = In housing prices frontage and depth may be two different features, but can be made into one more predictive area 
+        feature...becomes w1x1 + w2x2 + w3x3 + b, with x1 and x2 being frontage and depth, and x3 being area. Gives the model 
+        another option as to what is the most important predictor of price.
+        *It's using intuition and understanding of a problem, and designing new "solutions" (features) to help solve the problem
