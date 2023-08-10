@@ -1,0 +1,13 @@
+WEEK 3: CLASSIFICATION
+
+* CLASSIFICATION WITH LOGISTIC REGRESSION
+  Motivations
+  **** *Examples = Whether an email is spam (categories are Y/N), whether financial transactions are fraudulent (Y/N), is a cancer tumor
+        malignant (Y/N). 
+       *These are examples of BINARY CLASSIFCATION (y can only be one of two classes)...usually Yes/No, True/False, 0/1 
+        (with 0 denoting false and 1 denoting True).
+       *0 class = NEGATIVE CLASS (represents the absence of something); 1 class = POSITIVE CLASS (represents the presence of something). Can
+        be arbitrary depending on the problem
+       *Try to fit a straight line through this problem and it won't work...outlier examples can cause the best fit line to shift, and the
+        threshold (DECISION BOUNDARY) also shifts even if it didn't need to
+       *A way to try is by using a THRESHOLD (if below a value, predict 0; above a value, predict 1)
