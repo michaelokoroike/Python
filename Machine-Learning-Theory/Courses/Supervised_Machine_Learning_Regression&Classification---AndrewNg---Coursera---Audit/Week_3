@@ -11,3 +11,5 @@ WEEK 3: CLASSIFICATION
        *Try to fit a straight line through this problem and it won't work...outlier examples can cause the best fit line to shift, and the
         threshold (DECISION BOUNDARY) also shifts even if it didn't need to
        *A way to try is by using a THRESHOLD (if below a value, predict 0; above a value, predict 1)
+       *Linear Regression may get luckyand work well, but often does not in classification problems
+       *Interesting = Logistic Regression is mainly for problems with two categories only (binary classification).
