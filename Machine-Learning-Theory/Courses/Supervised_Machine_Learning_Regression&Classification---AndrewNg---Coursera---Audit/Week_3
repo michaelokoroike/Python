@@ -13,3 +13,17 @@ WEEK 3: CLASSIFICATION
        *A way to try is by using a THRESHOLD (if below a value, predict 0; above a value, predict 1)
        *Linear Regression may get luckyand work well, but often does not in classification problems
        *Interesting = Logistic Regression is mainly for problems with two categories only (binary classification).
+  Logistic Regression
+  **** *Logistic regression fits an s-shaped curve to the data
+       *Based on threshold, likeliness is decided
+       *SIGMOID FUNCTION is the important mathematical function to know as it relates to the logistic regression algorithm...it has that 
+        s-shaped curve. Also called the LOGISTIC FUNCTION, it outputs between 0 and 1.
+       *Sigmoid function formula: g(z) = 1/(1+e^(-z)). When z is large, g(z) as a sigmoid function will be very close to 1; vice versa 
+        when it is small/negative, it will be closer to 0.
+       *Incorporating sigmoid into the logistic regression algorithm: 1) store w[vec]*x[vec] + b in variable z; 2) next step is to pass
+        z through the g(z) = 1/(1+e^(-z)) sigmoid function. You then have the model f_w[vec],b_(x[vec]) = g(w[vec]*x[vec] + b), or
+        1/(1+e^-(w[vec]*x[vec] + b)).
+       *The way to interpret logistic regression output is to think about it as the probability that the class/label y is 1, given an 
+        input x. The probability of it being 0 and the probability of it being 1 have to add up to 100%.
+       *Notation typically used in research: f_w[vec],b_(x[vec]) = P(y=1|x[vec]; w[vec], b); states tht w and b are parameters that affect
+        the computation of what is the probability that y is equal to 1 given the input feature x
