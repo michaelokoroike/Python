@@ -36,3 +36,14 @@ WEEK 3: CLASSIFICATION
         z = (x^2)_1 + (x^2)_2 - 1 = 0 (at the decision boundary), which equals (x^2)_1 + (x^2)_2 = 1
        *Can get complex depending on the polynomial terms, etc
       
+* COST FUNCTION FOR LOGISTIC REGRESSION
+  Cost Function for Logistic Regression
+  **** *Recall: Cost function gives us a way to measure how well a set of parameters fit training data and gives you a way to try and
+        choose better parameters.
+       *This video shows that squared error cost function is not ideal for logistic regression; shows which cost function is
+       *The example is given of a cancer dataset; what is malignant and what isn't; n is for number of features, i is for number of
+        training examples, and it's binary classification, so the target variable y is 0 or 1; and the logistic regression model is 
+        f_w[vec],b_(x[vec]) = 1/(1+e^-(w[vec]*x[vec] + b)). The question to ask is, given this dataset, how can you choose w[vec] and 
+        b?
+       *Squared error cost function works for linear regression because there is typically one minimum (bowl shaped); for 
+        logistic regression, it's hilly so there's many local minima that the cost function can get trapped at
