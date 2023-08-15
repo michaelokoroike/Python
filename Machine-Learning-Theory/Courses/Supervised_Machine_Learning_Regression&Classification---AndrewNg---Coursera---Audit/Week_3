@@ -27,3 +27,12 @@ WEEK 3: CLASSIFICATION
         input x. The probability of it being 0 and the probability of it being 1 have to add up to 100%.
        *Notation typically used in research: f_w[vec],b_(x[vec]) = P(y=1|x[vec]; w[vec], b); states tht w and b are parameters that affect
         the computation of what is the probability that y is equal to 1 given the input feature x
+  Decision Boundary
+  **** *Common threshold is 0.5 (higher than 0.5 = y-hat is 1; lower than 0.5 = y-hat is 0)
+       *Model predicts 1 whenever w[vec]*x[vec] + b >= 0. Model predicts 0 whenever w[vec]*x[vec] + b < 0.
+       *DECISION BOUNDARY is where w[vec]*x[vec] + b is equal to 0. Example = when z is w1x1 +w2x2 + b and w1 is 1, w2 is 1 and b is -3;
+        this equals z = x1 + x2 - 3 = 0 (at the decision boundary), which equals x1 + x2 = 3...this is the decision boundary.
+       *In a non-linear example, when z is w1(x^2)_1 +w2(x^2)_2 + b and w1 is 1, w2 is 1 and b is -1; this equals 
+        z = (x^2)_1 + (x^2)_2 - 1 = 0 (at the decision boundary), which equals (x^2)_1 + (x^2)_2 = 1
+       *Can get complex depending on the polynomial terms, etc
+      
