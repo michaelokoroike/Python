@@ -47,3 +47,7 @@ WEEK 3: CLASSIFICATION
         b?
        *Squared error cost function works for linear regression because there is typically one minimum (bowl shaped); for 
         logistic regression, it's hilly so there's many local minima that the cost function can get trapped at
+       *Example is squared error cost function which can be rewritten as J(w[vec], b) = (1/(m))*((1/2)*sum of (f_w,b(x(i)) minus y(i)) 
+        squared over all of the examples)...won't work, but there is a different cost function that can make the cost function of a 
+        nonlinear function convex again so convergence to the global minimum can look good
+       *The formula is L(f_w[vec],b_(x[vec](i), y(i)) = 
