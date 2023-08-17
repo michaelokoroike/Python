@@ -50,4 +50,16 @@ WEEK 3: CLASSIFICATION
        *Example is squared error cost function which can be rewritten as J(w[vec], b) = (1/(m))*((1/2)*sum of (f_w,b(x(i)) minus y(i)) 
         squared over all of the examples)...won't work, but there is a different cost function that can make the cost function of a 
         nonlinear function convex again so convergence to the global minimum can look good
-       *The formula is L(f_w[vec],b_(x[vec](i), y(i)) = 
+       *The formula is L(f_w[vec],b_(x[vec](i), y(i)) = {-log(f_w[vec],b_(x[vec](i))) if y(i) = 1
+                                                         -log(1 - f_w[vec],b_(x[vec](i))) if y(i) = 0}
+       *The above formula is the logistic loss function
+       *Recall that cost function is the test for how well you are doing on all training examples
+       *A natural log curve is almost shaped like half of a downward shaped parabola...the negative of that which is employed by the 
+        logistic loss function is like half of an upward facing parabola (soup bowl)
+       *F in -log(F) is always between 0 and 1, and 1 is where a logarithmic curve intersects the horizontal axis (10**0 = 1)...so the 
+        curve (because logistic functions always have outputs between 0 and 1) essentially only matters between where the curve hits the
+        y axis and where it hits the x axis
+`      *Loss is lowest when f_w[vec],b_(x[vec](i)) predicts close to the true label
+       *Actually, the plot of -log(1 - f_w[vec],b_(x[vec](i))) is like the right half of a soup bowl (which makes sense because loss is
+        lowest when f equals 0; when f is 1 it's the left half)
+       *Losses approaching the wrong thing approach infinity
