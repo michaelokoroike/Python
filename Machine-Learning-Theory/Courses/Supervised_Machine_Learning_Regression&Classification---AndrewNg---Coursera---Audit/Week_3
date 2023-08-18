@@ -76,3 +76,21 @@ WEEK 3: CLASSIFICATION
         training examples
        *This cost function is derived from the statistical principle MAXIMUM LIKELIHOOD ESTIMATION, which helps to efficiently find
         parameters for different models
+
+* GRADIENT DESCENT FOR LOGISTIC REGRESSION
+  Gradient Descent Implementation
+  **** *Recall = The cost function for logistic regression is 
+        J(w[vec], b) = -1/m * sum of [y(i)*log(f_w[vec],b_(x[vec](i)))+(1 - y(i))*log(1 - (f_w[vec],b_(x[vec](i))))] over all of the 
+        training examples
+       *Based on the above cost function, the GRADIENT DESCENT ALGORITHM is still the same
+        repeat until convergence {w1 = w1 - alpha*(1/(m)) *(sum of (f_w[vec],b(x[vec](i)) minus y(i))*x1(i))
+         .
+         .
+         .
+         wn = wn - alpha*(1/(m)) *(sum of (f_w[vec],b(x[vec](i)) minus y(i))*xn(i)) over all training examples;
+         b = b - alpha*(1/(m)) *(sum of (f_w[vec],b(x[vec](i)) minus y(i))) over all of the training examples}.
+       *Should also be simulataneous update
+       *Looks same as linear regression but is different because function definition for f of x has changed...
+        in linear regression it's f_w[vec],b(x[vec]) = (w[vec] * x[vec]) + b.
+        in logistic regression it's f_w[vec],b(x[vec]) = 1/(1+e^-(w[vec]*x[vec] + b)).
+       *Same as linear, you can monitor convergence, employ vectorization, feature scaling, 
