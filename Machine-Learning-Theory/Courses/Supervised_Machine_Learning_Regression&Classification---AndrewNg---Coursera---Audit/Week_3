@@ -63,3 +63,5 @@ WEEK 3: CLASSIFICATION
        *Actually, the plot of -log(1 - f_w[vec],b_(x[vec](i))) is like the right half of a soup bowl (which makes sense because loss is
         lowest when f equals 0; when f is 1 it's the left half)
        *Losses approaching the wrong thing approach infinity
+       *The logistic loss function makes it a convex and can create a global minimum
+       *Proving convexity is beyond the scope of the course
