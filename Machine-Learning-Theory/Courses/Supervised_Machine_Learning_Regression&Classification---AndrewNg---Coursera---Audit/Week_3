@@ -65,3 +65,14 @@ WEEK 3: CLASSIFICATION
        *Losses approaching the wrong thing approach infinity
        *The logistic loss function makes it a convex and can create a global minimum
        *Proving convexity is beyond the scope of the course
+  Simplified Cost Function for Logistic Regression
+  **** *Recall = We defined the logistic LOSS function as L(f_w[vec],b_(x[vec](i), y(i)) = {-log(f_w[vec],b_(x[vec](i))) if y(i) = 1
+                                                         -log(1 - f_w[vec],b_(x[vec](i))) if y(i) = 0}
+       *A simpler way to define it is (in a binary classification model, where the output has to be 0 or 1)
+        L(f_w[vec],b_(x[vec](i), y(i)) = -y(i)*log(f_w[vec],b_(x[vec](i)))-(1 - y(i))*log(1 - (f_w[vec],b_(x[vec](i)))); this is because
+        the half of the equation that doesn't correlate would be zeroed out
+       *The simplified COST function is 1/m * sum of (L(f_w[vec],b_(x[vec](i), y(i))) over all of the training examples; this could also 
+        be written as -1/m * sum of [y(i)*log(f_w[vec],b_(x[vec](i)))+(1 - y(i))*log(1 - (f_w[vec],b_(x[vec](i))))] over all of the 
+        training examples
+       *This cost function is derived from the statistical principle MAXIMUM LIKELIHOOD ESTIMATION, which helps to efficiently find
+        parameters for different models
