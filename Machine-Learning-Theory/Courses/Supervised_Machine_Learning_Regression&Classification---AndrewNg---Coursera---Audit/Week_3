@@ -93,4 +93,17 @@ WEEK 3: CLASSIFICATION
        *Looks same as linear regression but is different because function definition for f of x has changed...
         in linear regression it's f_w[vec],b(x[vec]) = (w[vec] * x[vec]) + b.
         in logistic regression it's f_w[vec],b(x[vec]) = 1/(1+e^-(w[vec]*x[vec] + b)).
-       *Same as linear, you can monitor convergence, employ vectorization, feature scaling, 
+       *Same as linear, you can monitor convergence, employ vectorization, feature scaling, etc
+
+* THE PROBLEM OF OVERFITTING
+  The Problem of Overfitting
+  **** *UNDERFITTING = Algorithm doesn't fit training data well; model has high bias (pattern that the algorithm doesn't fit well;
+        model has a strong preconception of what the data should look like which is against what the training data shows)
+       *GENERALIZATION = Algorithm fits training data well and non-training data well
+       *OVERFITTING = Algorithm fits training data extremely well but does not predict non-training data well; model has high variance
+        (the algorithm is trying so hard to fit every training example...if the training set were even a little different, then the 
+        function that the algorithm fit would end up totally different)
+       *Goal of machine learning is to find a model that neither underfits nor overfits (neither high bias or high variance)
+       *Above has been for linear regression
+       *Below is for logistic regression
+       *Same as linear regression except line of importance is decision boundary instead of line of best fit
