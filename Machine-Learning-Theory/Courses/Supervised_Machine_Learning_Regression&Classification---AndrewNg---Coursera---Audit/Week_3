@@ -107,3 +107,7 @@ WEEK 3: CLASSIFICATION
        *Above has been for linear regression
        *Below is for logistic regression
        *Same as linear regression except line of importance is decision boundary instead of line of best fit
+  Addressing Overfitting
+  **** *One way is to collect more training data
+       *Another method is selecting features to exclude
+       *Another method is REGULARIZATION (reduce the size of the parameters; prevents features from having an overly large effect)
