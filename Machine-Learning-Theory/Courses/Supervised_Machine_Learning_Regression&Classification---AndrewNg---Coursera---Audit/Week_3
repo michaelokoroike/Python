@@ -118,3 +118,24 @@ WEEK 3: CLASSIFICATION
         referred to as a regularization parameter (you have to choose lambda); balances goals of ftting data and keeping parameters small
        *B does not require regularization
        *If lambda is 0 it will overfit, if enormous it will underfit
+  Regularized Linear Regression
+  **** *Recall the cost function in the prior video regarding regularized linear regression:
+        J(w[vec], b) = (1/(2m))*(sum of square of (f_w[vec],b(x[vec](i)) minus y(i))) over all of the training examples +
+                       (lambda/2m)*sum of parameter squared over all of the parameters of the algorithm
+       *Want to find values for w and b that minimize the regularized cost function...
+       *Gradient descent becomes
+        repeat until convergence {w1 = w1 - alpha*(1/(m))*((sum of (f_w[vec],b(x[vec](i)) minus y(i))*x1(i)) + ((lambda/m)*w1)
+         .
+         .
+         .
+         wn = wn - alpha*(1/(m))*((sum of (f_w[vec],b(x[vec](i)) minus y(i))*xn(i))+((lambda/m)*wn) over all training examples;
+         b = b - alpha*(1/(m)) *(sum of (f_w[vec],b(x[vec](i)) minus y(i))) over all of the training examples}
+         where a derivatized regularization term is added to the parameters but not b since we don't have to regularize it
+       *Math intuition of wn update: rearrange into
+        wn = 1wn - (alpha*(lambda/m)*wn) - alpha*(1/(m))*((sum of (f_w[vec],b(x[vec](i)) minus y(i))*xn(i))) over all 
+        training examples, which can be rewritten as 
+        wn = wn*(1 - alpha*(lambda/m)) - alpha*(1/(m))*((sum of (f_w[vec],b(x[vec](i)) minus y(i))*xn(i))) over all 
+        training examples...only difference now is in the update wn is not set to itself minus the alpha, but is multiplied by the 
+        (1 - alpha*(lambda/m)) term...alpha and lambda tend to be small numbers and the term ends up being slightly less than 1, which
+        slowly but surely shrinks terms
+        Additionally the derivative term is (1/(m))*((sum of (f_w[vec],b(x[vec](i)) minus y(i))*xn(i))+((lambda/m)*wn)
