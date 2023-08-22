@@ -111,3 +111,10 @@ WEEK 3: CLASSIFICATION
   **** *One way is to collect more training data
        *Another method is selecting features to exclude
        *Another method is REGULARIZATION (reduce the size of the parameters; prevents features from having an overly large effect)
+  Cost Function with Regularization
+  **** *Regularization essentially adds the large parameters to the cost function, where they are penalized and made close to 0
+       *Regularization actually penalizes all of the features of an algorithm
+       *To a cost function add (lambda/2m)*sum of parameter squared over all of the parameters of the algorithm; lambda is also
+        referred to as a regularization parameter (you have to choose lambda); balances goals of ftting data and keeping parameters small
+       *B does not require regularization
+       *If lambda is 0 it will overfit, if enormous it will underfit
