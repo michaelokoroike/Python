@@ -121,7 +121,7 @@ WEEK 3: CLASSIFICATION
   Regularized Linear Regression
   **** *Recall the cost function in the prior video regarding regularized linear regression:
         J(w[vec], b) = (1/(2m))*(sum of square of (f_w[vec],b(x[vec](i)) minus y(i))) over all of the training examples +
-                       (lambda/2m)*sum of parameter squared over all of the parameters of the algorithm
+                       (lambda/2m)*sum of parameter squared over all of the parameters/features of the algorithm
        *Want to find values for w and b that minimize the regularized cost function...
        *Gradient descent becomes
         repeat until convergence {w1 = w1 - alpha*(1/(m))*((sum of (f_w[vec],b(x[vec](i)) minus y(i))*x1(i)) + ((lambda/m)*w1)
@@ -139,3 +139,17 @@ WEEK 3: CLASSIFICATION
         (1 - alpha*(lambda/m)) term...alpha and lambda tend to be small numbers and the term ends up being slightly less than 1, which
         slowly but surely shrinks terms
         Additionally the derivative term is (1/(m))*((sum of (f_w[vec],b(x[vec](i)) minus y(i))*xn(i))+((lambda/m)*wn)
+  Regularized Logistic Regression
+  **** *Recall logistic regression can overfit expecially when you use high order polynomial functions
+       *The regularized cost function for logistic regression is 
+        J(w[vec], b) = -1/m * sum of [y(i)*log(f_w[vec],b_(x[vec](i)))+(1 - y(i))*log(1 - (f_w[vec],b_(x[vec](i))))] +
+                       (lambda/2m)*sum of parameter squared over all of the parameters/features of the algorithm
+       *Literally same as linear;
+        Gradient descent becomes
+        repeat until convergence {w1 = w1 - alpha*(1/(m))*((sum of (f_w[vec],b(x[vec](i)) minus y(i))*x1(i)) + ((lambda/m)*w1)
+         .
+         .
+         .
+         wn = wn - alpha*(1/(m))*((sum of (f_w[vec],b(x[vec](i)) minus y(i))*xn(i))+((lambda/m)*wn) over all training examples;
+         b = b - alpha*(1/(m)) *(sum of (f_w[vec],b(x[vec](i)) minus y(i))) over all of the training examples}
+         where a derivatized regularization term is added to the parameters but not b since we don't have to regularize it
