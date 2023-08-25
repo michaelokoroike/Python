@@ -3,4 +3,26 @@ machine learning.
 
 Week 1 gives us a background of the field and its beginnings, and the future outlook of its impact on the economy, but more importantly delves
 into the basic subtypes of machine learning, which are supervised learning and unsupervised learning. Once we are apprised of the two subtypes
-and given helpful examples of real world applications of each, we then purely focus on supervised learning.
+and given helpful examples of real world applications of each, we then purely focus on supervised learning. We start with looking at a basic
+linear regression problem (housing) and from there, we learn about cost function and its role as measuring the average error of a model 
+based on parameters used by the model. From there, we learn about gradient descent and its role in decreasing the cost of a cost function 
+gradually, and therefore helping to fnd the optimal parameters for a model. Within that, we also learn more about the updating formula for
+gradient descent, which includes the learning rate (typically a very small number, between 0 and 1), and we get experience seeing gradient
+descent run.
+
+In Week 2, it becomes a little more complex in that we are introduced to multiple linear regression (and higher-order polynomial regression)
+as continued exposure to regression. We are shown the implications of such problems and taught how to go about dealing with them, including
+vectorization (essentially parallel computation) and its efficiencies, as well as feature scaling and feature engineering as methods to 
+ensure strong and efficient results from a model. We also see the difference in running gradient descent for more complex data, and are shown
+how to check for improving gradient descent and a good learning rate.
+
+In Week 3, we are finally introduced to the classification aspect of supervised learning and its most basic algorithm, the logistic regression.
+We are educated on the basics of this model and the intuition of how it works, as well as its loss function (error of one estimate), its 
+cost function (average error of all estimates), and its gradient descent (its process of choosing the model parameters that has the lowest 
+cost function value). And we are taught about the problems of overfitting and the ways of combatting that, including regularization, after which
+we are introduced to regularized versions of both linear regression and logistic regression.
+
+Go through the "Week_[1, 2, 3]" files to see more detailed notes; but definitely a great beginner course; personally gave me more intuition
+on the math aspect of it than I'd had in my machine learning journey leading up to it. I will say it's after years of learning about
+machine learning and the osmosis into all of the subjects, and my havng enough knowledge for it to click in the way it did (as I took the 
+same course early on in my journey and had no clue what I was looking at), but from my vantage point, I recommend it.
