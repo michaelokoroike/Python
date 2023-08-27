@@ -26,3 +26,9 @@ WEEK 1: NEURAL NETWORKS
         and weren't scaling; but neural networks performed better in general and the larger the neural network, the better the performance;
         also why GPUs have taken off
         
+  Demand Prediction
+  **** *Uses an example of if a tshirt will be a bestseller or not (yes or no)
+       *Classification problem: x (price) is input, f(x) is 1/(1+e^-(w[vec]*x[vec] + b)) because we use sigmoid function; in neural
+        networks, f(x) becomes termed a for activation (neuroscience term for how much a neuron is sending another neuron)
+       *The logistic regression unit can be thought of as a very simplified neuron in the brain (tkes as input the price x, computes the
+        sigmoid function, and outputs number a (probability of being a top seller in the example)
