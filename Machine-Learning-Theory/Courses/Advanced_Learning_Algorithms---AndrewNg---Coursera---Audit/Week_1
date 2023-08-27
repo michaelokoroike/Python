@@ -1,8 +1,28 @@
 WEEK 1: NEURAL NETWORKS
 
 * NEURAL NETWORKS INTUITION
-  Welcome
+  Welcome!
   **** *This course will teach us about neural networks (deep learning algorithms) and decision trees
        *Also we will learn practical advice on how to build machine learning systems (collecting more data; using a bigger GPU; etc)
        *This week we will learn inference from a neural network; next week is training; third week is the practical advice; final week is 
         decision trees
+
+  Neurons and the Brain
+  **** *Original motivation of creating neural networks was to create an algorithm that mimics how the brain works; we will look at how the
+        brain works
+       *Work on neural networks started in the 1950s and then fell out of favor for a while; but regained in popularity in the 1980s and 
+        1990s; fell out of favor in the late 1990s again, but enjoyed another resurgence in 2005 and on (rebranded with deep learning)
+       *First area neural networks/deep learning had a significant influence on was speech recognition (Geoff Hinton, others)
+       *After speech recognition was computer vision
+       *After computer vision was text/natural language processing
+       *Now used in everything from climate change to online advertising to medical imaging to product recommendation and more
+       *The neural networks of today have nothing to do with how the brain learns; shown structure of neuron (cell body, inputs/dendrites,
+        output/electrical impulses through axon); the neural networks of deep learning (in simplified terms) have a neuron that takes some
+        inputs (which are just numbers) does some computation and outputs another number, which then is likely an input to a second neuron
+       *An aside; Andrew thinks we don't really know how well the brain works (fundamental breakthroughs that occur every few years in
+        neuroscience)...don't take the biological motivation too seriously
+       *Neural networks have grown in popularity because with phones/overall digitization of our society, there's more data; we saw as you
+        fed traditional algorithms like linear regression and logistic regression more data, the performance wasn't continuing to increase
+        and weren't scaling; but neural networks performed better in general and the larger the neural network, the better the performance;
+        also why GPUs have taken off
+        
