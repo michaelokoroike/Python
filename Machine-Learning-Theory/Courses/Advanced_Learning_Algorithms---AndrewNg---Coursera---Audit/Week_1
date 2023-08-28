@@ -45,3 +45,15 @@ WEEK 1: NEURAL NETWORKS
        *Remove the input layer; it's just logistic regression.
        *4 numbers (input layer) to 3 numbers (hidden layer) to 1 number (output layer).
        *Shown multiple hidden layer examples (called MULTILAYER PERCEPTRON)
+
+  Example: Recognizing Images
+  **** *You want a neural network, in the example, to take an image of a person in the picture and output what the identity is of the 
+        person in the picture.
+       *Representation of a 1000x1000 pixel picture in a computer is a 1000x1000 grid (MATRIX) of 1000 rows and 1000 columns
+       *If you unload the values of this list and unload them into a vector, you get a vector of a million pixel intensity values.
+       *You would train a neural network to take that vector of values, input them/extract new features into a 1st hidden layer, then a
+        2nd hidden layer, then a 3rd hidden layer, and finally to the outputnlayer which outputs the probability it is a particular
+        person. How it would work is in the 1st layer, the neurons may be looking for short lines or edges in the image; the 2nd layer
+        may learn to group together little short lines or edges in order to look for parts of faces; the 3rd layer would then
+        aggregate the parts of faces into faces/face shapes, and try to learn and predict faces...the farther down the line of layer,
+        the larger size the region which the neurons look at (activations are higher level features).
