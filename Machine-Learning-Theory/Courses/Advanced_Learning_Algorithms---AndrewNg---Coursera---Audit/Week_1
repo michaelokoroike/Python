@@ -42,4 +42,6 @@ WEEK 1: NEURAL NETWORKS
         irrelevant.
        *Notation = x[vec] (input layer) + a[vec] (activation layer)
        *The activation layer is called the HIDDEN LAYER.
-       *remove the input layer; it's just logistic regression.
+       *Remove the input layer; it's just logistic regression.
+       *4 numbers (input layer) to 3 numbers (hidden layer) to 1 number (output layer).
+       *Shown multiple hidden layer examples (called MULTILAYER PERCEPTRON)
