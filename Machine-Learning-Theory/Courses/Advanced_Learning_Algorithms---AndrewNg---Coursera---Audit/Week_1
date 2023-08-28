@@ -30,5 +30,9 @@ WEEK 1: NEURAL NETWORKS
   **** *Uses an example of if a tshirt will be a bestseller or not (yes or no)
        *Classification problem: x (price) is input, f(x) is 1/(1+e^-(w[vec]*x[vec] + b)) because we use sigmoid function; in neural
         networks, f(x) becomes termed a for activation (neuroscience term for how much a neuron is sending another neuron)
-       *The logistic regression unit can be thought of as a very simplified neuron in the brain (tkes as input the price x, computes the
+       *The logistic regression unit can be thought of as a very simplified neuron in the brain (takes as input the price x, computes the
         sigmoid function, and outputs number a (probability of being a top seller in the example)
+       *Complex version of the example; x is (price, shipping cost, marketing, material); price and shipping cost are both input to one
+        neuron (affordability), marketing the sole input of another neuron (awareness), price and material the inputs of another neuron
+        (perceived quality); those three numbers are then inputted to a single neuron (through a logistic regression unit) and the 
+        predicted probability is outputted. The three neurons (and the single neuron) are grouped into a LAYER.
