@@ -35,4 +35,11 @@ WEEK 1: NEURAL NETWORKS
        *Complex version of the example; x is (price, shipping cost, marketing, material); price and shipping cost are both input to one
         neuron (affordability), marketing the sole input of another neuron (awareness), price and material the inputs of another neuron
         (perceived quality); those three numbers are then inputted to a single neuron (through a logistic regression unit) and the 
-        predicted probability is outputted. The three neurons (and the single neuron) are grouped into a LAYER.
+        predicted probability is outputted. The three neurons (and the single neuron) are grouped into a LAYER. The one neuron layer is
+        called the OUTPUT LAYER. Affordability, awareness, and perceived quality are the ACTIVATIONS (these activations are essentially
+        layer outputs). Price, shipping cost, marketing, material is called the INPUT LAYER.
+       *In large neural networks, each neuron has access to every feature/value from the previous layer; on us to learn to ignore what is
+        irrelevant.
+       *Notation = x[vec] (input layer) + a[vec] (activation layer)
+       *The activation layer is called the HIDDEN LAYER.
+       *remove the input layer; it's just logistic regression.
