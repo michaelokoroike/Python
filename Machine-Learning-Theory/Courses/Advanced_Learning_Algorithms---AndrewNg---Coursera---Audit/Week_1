@@ -57,3 +57,16 @@ WEEK 1: NEURAL NETWORKS
         may learn to group together little short lines or edges in order to look for parts of faces; the 3rd layer would then
         aggregate the parts of faces into faces/face shapes, and try to learn and predict faces...the farther down the line of layer,
         the larger size the region which the neurons look at (activations are higher level features).
+
+* NEURAL NETWORK MODEL
+  Neural Network Layer
+  **** *Layers of neurons are the fundamental building blocks of neural networks
+       *Essentially, each neuron in a layer is a little logistic regression unit, where the activation (output of the neuron to another
+        neuron) can be thought of as, in a logistic regression sense, g(w[vec]*x[vec] + b) where g is a sigmoid function...this is for 
+        each neuron (an aside; number the layers...the notation, for example, of the activation vector of the first layer is a[vec]^[1], and the 
+        parameters for the first and second neuron in the first layer is w[vec]^[1]_1 and w[vec]^[1]_2 (square brackets are layer notation).
+       *In the example used, in the second and final layer (with only 1 neuron), the activation can be thought of as 
+        g(w[vec]^[2]_1*a[vec]^[1] + b^[2]_1), with parameters from neuron 1 in the second layer, multiplied by the activation vector output
+        from the first layer. This is set to a^[2]_1, or is the value of the activation for the first neuron in the second layer.
+       *In the example used, in the final aspect (no more layers), you predict..in this example, is a^[2]_1 greater than or equal to 0.5?
+        If yes, then y-hat (the prediction) is 1, and if no, y-hat is 0. Threshold is changeable.
