@@ -70,3 +70,15 @@ WEEK 1: NEURAL NETWORKS
         from the first layer. This is set to a^[2]_1, or is the value of the activation for the first neuron in the second layer.
        *In the example used, in the final aspect (no more layers), you predict..in this example, is a^[2]_1 greater than or equal to 0.5?
         If yes, then y-hat (the prediction) is 1, and if no, y-hat is 0. Threshold is changeable.
+  
+  More Complex Neural Networks
+  **** *Example of the notation of a neural network with four layers = 
+        x[vec] (input) ---> a[vec]^1 (activation/output of hidden neuron layer 1) ---> 
+        a[vec]^2 (activation/output of hidden neuron layer 2) ---> a[vec]^3 (activation/output of hidden neuron layer 3) --->
+        a[vec]^4 (activation/output of output neuron layer 4)
+       *Recap = Subscripts of w and b in neural network notation denote the neuron within the layer which the figures correspond with, while
+        within the superscript brackets are the current overall layer which the neuron is in (relative to the neural network); say the 
+        superscript value first
+       *General notation : a^[l]_j = g(w[vec]^[l]_j*a[vec]^[l-1] + b^[l]_j). This gives you the activation of layer l, unit (neuron) j.
+        Parameters w and b of layer l, unit j. W is multiplied by output of l - 1 (which is the previous layer). G is the activation
+        function; typically the sigmoid function but can be otherwise. We can also say x[vec] = a[vec]^[0] (input layer).
