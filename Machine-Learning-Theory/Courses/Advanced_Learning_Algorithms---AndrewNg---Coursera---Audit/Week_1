@@ -99,3 +99,18 @@ WEEK 1: NEURAL NETWORKS
        *Then, is a^[3]_1 greater than or equal to 0.5? If yes, guess image as digit 1, but if not, guess image as digit 0.
        *Because the process goes from left to right, the process is called FORWARD PROPAGATION because we are propagating the activations
         of neurons.
+
+* TENSORFLOW IMPLEMENTATION
+  Inference in Code
+  **** *Uses coffee beans as an example
+       *The way to view it is if undercooked (too low of a temperature), not good; if too short of a duration, not good; overcooked 
+        (too long duration or too high a temperature)
+       *The question is with a feature vector x with both temperature and duration, how do we do inference in a neural network to tell us
+        whether or not a temperature and duration setting will result in good coffee or not
+       *#1 - Set x to be an array of two numbers (representing the two variables temperature and duration)
+       *#2 - Create hidden layer 1 as a Dense variable (units=how many neurons in the layer, activation='sigmoid'/etc)...Dense is a layer
+       *#3 - Apply the values of x to the function created in step #2 (the Dense layer is a function); this is a1
+       *#4 - Create hidden layer 2 as a Dense variable (units=how many neurons in the layer, activation='sigmoid'/etc)
+       *#5 - Apply the values of a1 to the function created in step #2 (the Dense layer is a function); this is a2
+       *#6 - Make an inference based on threshold
+       *Brings back the handwritten digit classification function
