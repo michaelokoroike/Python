@@ -82,3 +82,20 @@ WEEK 1: NEURAL NETWORKS
        *General notation : a^[l]_j = g(w[vec]^[l]_j*a[vec]^[l-1] + b^[l]_j). This gives you the activation of layer l, unit (neuron) j.
         Parameters w and b of layer l, unit j. W is multiplied by output of l - 1 (which is the previous layer). G is the activation
         function; typically the sigmoid function but can be otherwise. We can also say x[vec] = a[vec]^[0] (input layer).
+
+  Inference: Making Predictions (Forward Propagation)
+  **** *Example of handwritten digit recognition
+       *Binary classification problem: is the image 0 or is it 1?
+       *Each image is an 8x8 grid, or 64 pixel intensity values ranging from 0 to 255 (255 denotes bright white and 0 denotes a black pixel)
+       *Create a neural network with two hidden layers (first hidden layer has 25 neurons, second hidden layer has 15 neurons, output layer
+        has 1 unit); in the example (see below)...
+       *To get from x[vec] (input layer) to a[vec]^1 (first hidden layer) = {g(w[vec]^[1]_1*x[vec] + b^[1]_1) 
+                                                                             ... 
+                                                                             g(w[vec]^[1]_25*x[vec] + b^[1]_25)}
+       *To get from a[vec]^1 (first hidden layer) to a[vec]^2 (second hidden layer) = {g(w[vec]^[2]_1*a[vec]^1 + b^[2]_1) 
+                                                                                       ... 
+                                                                                       g(w[vec]^[2]_15*a[vec]^1 + b^[2]_15)}
+       *To get from a[vec]^2 (second hidden layer) to a[vec]^3 (output layer) = {g(w[vec]^[3]_1*a[vec]^2 + b^[2]_1)}; only 1 unit
+       *Then, is a^[3]_1 greater than or equal to 0.5? If yes, guess image as digit 1, but if not, guess image as digit 0.
+       *Because the process goes from left to right, the process is called FORWARD PROPAGATION because we are propagating the activations
+        of neurons.
