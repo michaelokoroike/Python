@@ -154,3 +154,10 @@ WEEK 1: NEURAL NETWORKS
         initialize w[vec] and x[vec] and b as np.arrays; then initialize z as np.dot product of w and x, added to b; finally, input this
         value into sigmoid as that is the activation function (do for each neuron)
        *Group all of the a1's into an np.array (activation value for one layer)
+  General Implementation of Forward Propagation
+  **** *Recall: The last video showed us that forward propagation can be done in Numpy, but with all of the hard coding of neurons, now we
+        will see a more general, less time-consuming version of implementing this.
+       *Writes a function to implement a single layer in a neural network...takes as input activation from the previous layer, as well as
+        parameters w and b for the current layer...outputs activation value
+       *Writes a sequential function to create multiple layers...returns a final activation value
+       *Capital letters when referring to a matrix, and lowercase referring to vectors or scalars
