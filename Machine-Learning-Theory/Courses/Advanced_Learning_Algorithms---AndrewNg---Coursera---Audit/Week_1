@@ -161,3 +161,15 @@ WEEK 1: NEURAL NETWORKS
         parameters w and b for the current layer...outputs activation value
        *Writes a sequential function to create multiple layers...returns a final activation value
        *Capital letters when referring to a matrix, and lowercase referring to vectors or scalars
+
+* SPECULATIONS ON ARTIFICIAL GENERAL INTELLIGENCE (AGI)
+  Is There a Path to AGI?
+  **** *May take decades or centuries...not clear
+       *Too much hype; AI includes ANI (artificial narrow intelligence...AI that does specific things (self-driving cars, web search, etc)
+        ...this has made progress; AGI (artificial general intelligence...AI that does anything a human can do...we probably haven't made
+        really any progress here
+       *Not as simple as putting a bunch of neurons together; neural networks are too simple, and we don't know how the brain works
+       *"One learning algorithm" hypothesis; the same piece of brain tissue can do a wide number of tasks...hypothesis is based on this, 
+        that maybe a lot of intelligence could be due to one or a small handful of algorithms
+       *Example = Auditory cortex can learn to see; somatosensory cortex (touch processing) can also learn to see
+       *Seeing with your tongue; human echolocation; third eye frog
