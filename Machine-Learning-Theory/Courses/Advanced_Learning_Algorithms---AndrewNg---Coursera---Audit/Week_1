@@ -6,7 +6,6 @@ WEEK 1: NEURAL NETWORKS
        *Also we will learn practical advice on how to build machine learning systems (collecting more data; using a bigger GPU; etc)
        *This week we will learn inference from a neural network; next week is training; third week is the practical advice; final week is 
         decision trees
-
   Neurons and the Brain
   **** *Original motivation of creating neural networks was to create an algorithm that mimics how the brain works; we will look at how the
         brain works
@@ -24,8 +23,7 @@ WEEK 1: NEURAL NETWORKS
        *Neural networks have grown in popularity because with phones/overall digitization of our society, there's more data; we saw as you
         fed traditional algorithms like linear regression and logistic regression more data, the performance wasn't continuing to increase
         and weren't scaling; but neural networks performed better in general and the larger the neural network, the better the performance;
-        also why GPUs have taken off
-        
+        also why GPUs have taken off   
   Demand Prediction
   **** *Uses an example of if a tshirt will be a bestseller or not (yes or no)
        *Classification problem: x (price) is input, f(x) is 1/(1+e^-(w[vec]*x[vec] + b)) because we use sigmoid function; in neural
@@ -45,7 +43,6 @@ WEEK 1: NEURAL NETWORKS
        *Remove the input layer; it's just logistic regression.
        *4 numbers (input layer) to 3 numbers (hidden layer) to 1 number (output layer).
        *Shown multiple hidden layer examples (called MULTILAYER PERCEPTRON)
-
   Example: Recognizing Images
   **** *You want a neural network, in the example, to take an image of a person in the picture and output what the identity is of the 
         person in the picture.
@@ -70,7 +67,6 @@ WEEK 1: NEURAL NETWORKS
         from the first layer. This is set to a^[2]_1, or is the value of the activation for the first neuron in the second layer.
        *In the example used, in the final aspect (no more layers), you predict..in this example, is a^[2]_1 greater than or equal to 0.5?
         If yes, then y-hat (the prediction) is 1, and if no, y-hat is 0. Threshold is changeable.
-  
   More Complex Neural Networks
   **** *Example of the notation of a neural network with four layers = 
         x[vec] (input) ---> a[vec]^1 (activation/output of hidden neuron layer 1) ---> 
@@ -82,7 +78,6 @@ WEEK 1: NEURAL NETWORKS
        *General notation : a^[l]_j = g(w[vec]^[l]_j*a[vec]^[l-1] + b^[l]_j). This gives you the activation of layer l, unit (neuron) j.
         Parameters w and b of layer l, unit j. W is multiplied by output of l - 1 (which is the previous layer). G is the activation
         function; typically the sigmoid function but can be otherwise. We can also say x[vec] = a[vec]^[0] (input layer).
-
   Inference: Making Predictions (Forward Propagation)
   **** *Example of handwritten digit recognition
        *Binary classification problem: is the image 0 or is it 1?
@@ -114,3 +109,42 @@ WEEK 1: NEURAL NETWORKS
        *#5 - Apply the values of a1 to the function created in step #2 (the Dense layer is a function); this is a2
        *#6 - Make an inference based on threshold
        *Brings back the handwritten digit classification function
+
+  Data in TensorFlow
+  **** *Consistent framework for creating neural networks...inconsistencies with how data is represented in NumPy and in TensorFlow due
+        to discrepancy in the times when both platforms were created...good to be aware of conventions of each (we're starting with
+        TensorFlow)
+       *We are shown the notation of a matrix in numpy (each row is a bracket within, columns are the amount of items in each bracket);
+        example is np.array([[2,3,4],[5,6,7]])...2,3,4 and 5,6,7 are two rows with three columns and a 2x3 matrix...outer square brackets
+        groups them together...matrix just is a 2d array of numbers...notation is number of rows by columns...matrices can have
+        different dimensions
+       *Examples of np.arrays: [[200, 17]] is a 1x2 matrix (row vector); [[200], [17]] is a 2x1 matrix (column vector); [200, 17] is
+        a 1d vector with no rows or columns and is just a list of numbers
+       *With TensorFlow, instead of the 1d vectors we used with NumPy and algorithms in the first course, we use the matrices; this allows
+        TensorFlow to allow very large datasets...handling data in matrices instead of 1d arrays allows TensorFlow to be a little more 
+        computationally efficient
+       *Going back to the activation vector example in "Inference: Making Predictions (Forward Propagation)" section above, 
+        a[vec]^1 is a 1x25 matrix...will print out tf.Tensor (float32 is decimal point using 32 bits of memory; Tensor is a data type
+        used to store and carry out computations on matrices efficiently...more than anything, a way of representing matrices)
+       *The tf.Tensor and np.array are the two different ways to represent a matrix...tensors can be easily converted to numpy arrays by
+        for example, if a1 was a tensor, doing a1.numpy()
+       *This is important because you may be used to uploading and working with data in Numpy, but then when you try to work with 
+        TensorFlow, it converts it to its own internal format...you have the option to onvert back to numpy
+  Building a Neural Network
+  **** *This video shows how to build a neural network in TensorFlow; learn about a different way of building a neural network that will
+        be simpler than we have seen so far
+       *Recall = How to do forward propagation
+       *TensorFlow has a different way of carrying out forward prop as well as learning; instead of the examples #1 through #6 in the 
+        Inference in Code section, you can instead create the Dense layers and string them together with the Sequential function in 
+        TensorFlow...it's the equivalent of manually passing data from layer to layer
+       *ex: model = Sequential([layer_1, layer_2])
+       *To train on a model, you call model.compile() and model.fit(x,y)
+       *To infer, you'd then do model.predict(x_new), with x_new being examples that weren't trained on
+       *To recap example of a neural network in code (1 is create the Dense layers; 2 is create the model and link the layers using
+        Sequential; 3 is initialize the x and the y; 4 is model.compile; 5 is model.fit(x,y); 6 is model.predict(x_new))
+       *Usually the layers are initialized within calling the Sequential (example: model: Sequential([Dense(units=3, activation='Sigmoid'),
+        ...]))
+       *Good to know what code is actually doing; rarely are neural networks done in Python but we will so that we can implement it from 
+        scratch and really understand how it works.
+
+* NEURAL NETWORK IMPLEMENTATION IN PYTHON
