@@ -148,3 +148,9 @@ WEEK 1: NEURAL NETWORKS
         scratch and really understand how it works.
 
 * NEURAL NETWORK IMPLEMENTATION IN PYTHON
+  Forward Prop in a Single Layer
+  **** *Manually get to a1's by initializing arrays, getiing the dot products, and then doing the sigmoid function
+       *Example: Recall back to 'Neural Network Layer' section where the first hidden layer activation (a1) value is g(w[vec]*x[vec] + b);
+        initialize w[vec] and x[vec] and b as np.arrays; then initialize z as np.dot product of w and x, added to b; finally, input this
+        value into sigmoid as that is the activation function (do for each neuron)
+       *Group all of the a1's into an np.array (activation value for one layer)
