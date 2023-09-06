@@ -195,3 +195,6 @@ WEEK 1: NEURAL NETWORKS
          first matrix must equal the number of rows of the second matrix
         *You can know what number goes into a product matrix (ex: row 2 column 3 in video example is row 2 of a transpose times column 3
          of w)
+  Matrix Multiplication Code
+  **** *np.array.T is a transposed version of a matrix in Python
+       *Vectorizes a dense layer = initialize a transpose and w and matmul the two; add b to that; put that into sigmoid function
