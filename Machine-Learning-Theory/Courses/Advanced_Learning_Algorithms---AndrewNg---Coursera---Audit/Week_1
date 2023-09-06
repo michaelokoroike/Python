@@ -186,4 +186,12 @@ WEEK 1: NEURAL NETWORKS
         column vector) and you end up with the same product as original (a[vec] * w[vec] = a[vec]_transposed * w[vec])
        *Vector matrix multiplication = 1x2 matrix multiplied by a 2x2 matrix is a 1x2 product
        *Matrix matrix multiplication = Transpose is first column becomes first row, etc...multiply rows of transpose by each column
-       *think of it all as rows times columns...vector matrix multiplication is row times columns
+       *Think of it all as rows times columns...vector matrix multiplication is row times columns
+  Matrix Multiplication Rules
+  **** *When you transpose a matrix, columns become rows
+        *Dot product of rows times columns (see section above) is one value of new matrix product...
+        *The value of the product matrix is rows of a transpose times columns of w (example: if a transpose is 3x2, and w is 2x4, the
+         product matrix is 3x4)...those two middle numbers must match because they must be the same length; number of columns of the
+         first matrix must equal the number of rows of the second matrix
+        *You can know what number goes into a product matrix (ex: row 2 column 3 in video example is row 2 of a transpose times column 3
+         of w)
