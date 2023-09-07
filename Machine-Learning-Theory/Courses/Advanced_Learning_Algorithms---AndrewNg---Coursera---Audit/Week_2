@@ -1,0 +1,12 @@
+WEEK 2: NEURAL NETWORK TRAINING
+
+* NEURAL NETWORK TRAINING
+  TensorFlow Implementation
+  **** *We are given the code that is used to code a neural network in TensorFlow
+       *Step 1: Import tensorflow (and Sequential and Dense from tensorflow)
+       *Step 2: Create the simple model (Sequential([Dense(units=25, activation='sigmoid')...])
+       *Step 3: Ask tensorflow to compile and choose a loss function (ex: model.compile(loss=BinaryCrossentropy())
+       *Step 4: Call the fit function (ex: model.fit(x, y, epochs=100)); epoch is determining how many steps (in gradient descent terms) you
+        may want to run
+       *Understand how algorithms and things work so that if the training doesn't work correctly initially, you can debug based on your 
+        conceptual understanding of what you are doing
