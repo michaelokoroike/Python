@@ -10,3 +10,22 @@ WEEK 2: NEURAL NETWORK TRAINING
         may want to run
        *Understand how algorithms and things work so that if the training doesn't work correctly initially, you can debug based on your 
         conceptual understanding of what you are doing
+  Training Details
+  **** *Recap = Loss function is error of one training example; cost function is average error over all training examples
+       *The same model training steps done for logistic regression can be done for neural networks (specify how to compute model given input
+        x and parameters w and b by defining the model; then specify loss and cost; then train on data to minimize cost)
+       *Step 1: Create the simple model (model = Sequential([Dense(...), Dense(...), Dense(...)])
+       *Step 2: Use model.compile to define the loss function (model.compile(loss='BinaryCrossentropy'))
+       *Step 3: Call function to minimize the cost as a function of the parameters of the neural network (model.fit(X,y, epochs=100))
+       *Go over Step 1 in detail; this defines the architecture of the neural network.
+       *Go over Step 2 in detail; this specifies the loss function which defines the cost function used for the neural network. Typically
+        same as for logistic regression, which is -y(i)*log(f_w[vec],b_(x[vec](i)))-(1 - y(i))*log(1 - (f_w[vec],b_(x[vec](i)))), where y(i)
+        is the ground truth (target label) for a training example i, and f_w[vec],b_(x[vec](i)) is the neural network output prediction. In
+        TensorFlow, this is referred to as binary crossentropy because the function itself is referred to as crossentropy and binary just
+        reemphasizes that it is a binary classification problem. Example for a regression problem would be if you wanted to minimize a 
+        squared error loss, and choosing model.compile(loss='MeanSquaredError()'). Cost is with respect to all of the parameters in a 
+        neural network.
+       *Go over Step 3 in detail; this runs gradient descent (epochs is number of steps to take). The key part of the computation is the
+        partial derivative term; TensorFlow ses BACKPROPAGATION to compute the derivative terms.
+       *Interesting note; Keras started out as its own project but was merged into TensorFlow. Libraries are mature so good to work
+        with them, but also good to implement from scratch and know how things work under the hood.
