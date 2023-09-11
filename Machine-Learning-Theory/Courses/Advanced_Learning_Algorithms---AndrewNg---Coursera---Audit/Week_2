@@ -57,3 +57,12 @@ WEEK 2: NEURAL NETWORK TRAINING
        *Example code = (model = Sequential([Dense(units=25, activation='relu'), Dense(units=15, activation='relu'), 
                                             Dense(units=1, activation='sigmoid')])
        *Many other activation functions to choose from
+  Why Do We Need Activation Functions?
+  **** *Video goes over both why we need activation functions and why neural networks don't work if you just use linear activation functions
+        in every neuron
+       *Using linear activation functions will render the neural network as nothing more than a linear regression function; this would defeat
+        the purpose of creating a neural network because it would not be able to fit anything more complex (see video); a linear function
+        of a linear function is itself a linear function; if all hidden layers and the output layers are linear then it would be basically
+        a linear regression, but if it were linears for all of the hidden layers and a sigmoid for the activation, then it becomes a logistic
+        regression (and the neural network doesn't do anything that you can't just do with logistic regression)...this is why a common rule
+        of thumb is to not use linear if you don't have to, and to default to ReLU
