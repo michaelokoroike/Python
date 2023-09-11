@@ -29,3 +29,15 @@ WEEK 2: NEURAL NETWORK TRAINING
         partial derivative term; TensorFlow ses BACKPROPAGATION to compute the derivative terms.
        *Interesting note; Keras started out as its own project but was merged into TensorFlow. Libraries are mature so good to work
         with them, but also good to implement from scratch and know how things work under the hood.
+
+* ACTIVATION FUNCTIONS
+  Alternatives to the Sigmoid Function
+  **** *Recap = We've essentially to this point looked at neural networks as algorithms with a bunch of logistic regression equations
+        (sigmoid functions) bunched together; but this does not have to be the case.
+       *Example = In the demand prediction example, we viewed the parameter of awareness as a binary parameter (they are either aware as
+        a customer or they are not), in which case the sigmoid function was used; but there is the possibility it could be the range of
+        nonnegative numbers (an infinite scale)...some are aware and more aware than others, while others may be aware but less so
+       *Common non-sigmoid function is g(z) = max(0, z) which can take on 0 or any nonnegative value; this is called ReLU (stands for
+        Rectified Linear Unit)
+       *Another common one is LINEAR ACTIVATION FUNCTION where g(z) = z
+       *Just to clarify, when using SIGMOID, g(z) = 1/(1 + e^-z)
