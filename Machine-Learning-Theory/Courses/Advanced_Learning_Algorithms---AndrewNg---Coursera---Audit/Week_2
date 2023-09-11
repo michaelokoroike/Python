@@ -41,3 +41,19 @@ WEEK 2: NEURAL NETWORK TRAINING
         Rectified Linear Unit)
        *Another common one is LINEAR ACTIVATION FUNCTION where g(z) = z
        *Just to clarify, when using SIGMOID, g(z) = 1/(1 + e^-z)
+  Choosing Activation Functions
+  **** *Depending on the ground truth/target label y is, there will be a natural choice for the activation function for the output layer
+       *You can choose different activation functions for the hidden layers/different neurons in the neural network
+       *Example: When doing a binary classification problem, use sigmoid as the output layer
+       *Example: If trying to predict whether the stock price will go up or down, the solution can be positive or negative, in which case
+        ReLU wouldn't be great because the prediction would be 0 or higher...but it would be great to use linear activation function which
+        can predict positive and negative numbers
+       *Example: If trying to predict the price of a house, which can never be negative, using ReLU may be the most efficient
+       *ReLU is the most common choice hidden layers; efficient (just requires computing the max of 0 and a computed number), and it only
+        goes flat in one part of the graph (as opposed to sigmoid where it goes flat in multiple) which makes gradient descent faster
+        (when graphs have places where there are a lot of flat areas, gradient descent is slow)
+       *Summary = For output layer (use sigmoid for binary classification; linear for regression that can be positive or negative; ReLU
+        if y can only take on positive/nonnegative values); for the hidden layers use ReLU as the default
+       *Example code = (model = Sequential([Dense(units=25, activation='relu'), Dense(units=15, activation='relu'), 
+                                            Dense(units=1, activation='sigmoid')])
+       *Many other activation functions to choose from
