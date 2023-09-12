@@ -66,3 +66,10 @@ WEEK 2: NEURAL NETWORK TRAINING
         a linear regression, but if it were linears for all of the hidden layers and a sigmoid for the activation, then it becomes a logistic
         regression (and the neural network doesn't do anything that you can't just do with logistic regression)...this is why a common rule
         of thumb is to not use linear if you don't have to, and to default to ReLU
+
+* MULTICLASS CLASSIFICATION
+  Multiclass
+  **** *Multiclass classification = Classification problem where you can have more than two outputs possible (not just 0 or 1)
+       *Example: If you're trying to determine a zip code, there's 10 possible digits to choose from/recognize (but still cannot be 
+        any value)
+       *We will look at softmax for this, which is a generalization of the logistic regression algorithm
