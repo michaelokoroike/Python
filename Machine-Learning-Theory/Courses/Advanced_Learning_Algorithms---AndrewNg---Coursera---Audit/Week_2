@@ -73,3 +73,13 @@ WEEK 2: NEURAL NETWORK TRAINING
        *Example: If you're trying to determine a zip code, there's 10 possible digits to choose from/recognize (but still cannot be 
         any value)
        *We will look at softmax for this, which is a generalization of the logistic regression algorithm
+  Softmax
+  **** *Recall = Logistic regression is used when y can take on two possible output values (z = w[vec]*x[vec] + b; a = g(z) = 1/(1+e^(-z))
+        = P(y = 1|x), or probability that y is 1 given input x
+       *You can essentially with logistic regression have an activation where P(y = 1|x), and also one where P(y = 0|x)...probability that
+        y = 0 is essentially 1 - the probability that y is 1 (based on the fact those are the only two outputs)...softmax just
+        generalizes this
+       *Number of examples of one class/number of examples in total = activation function for a neuron
+       *Equation: a_j = e^z_j/(sum of all e^z's) with j as one of the classes, or P(y = j|x[vec])
+       *Softmax becomes the same as logistic regression when only two outputs possible
+       *Loss function is -log(a_j) if y = j for every instance/class (left half of a bowl)
