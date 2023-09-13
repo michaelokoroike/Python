@@ -1,3 +1,4 @@
+![image](https://github.com/michaelokoroike/Machine-Learning-Portfolio/assets/39680418/e2008604-766b-4488-972e-6c069c2431e6)
 WEEK 2: NEURAL NETWORK TRAINING
 
 * NEURAL NETWORK TRAINING
@@ -100,4 +101,4 @@ WEEK 2: NEURAL NETWORK TRAINING
         less rounding error; be more direct (see below)...helps tensorflow avoid overly small or large numbers and gives more flexibility
         to rearrange
        *Only con is it's harder to read
-        ![image](https://github.com/michaelokoroike/Machine-Learning-Portfolio/assets/39680418/e2008604-766b-4488-972e-6c069c2431e6)
+        
