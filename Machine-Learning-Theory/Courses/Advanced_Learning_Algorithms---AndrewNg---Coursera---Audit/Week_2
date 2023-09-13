@@ -83,3 +83,20 @@ WEEK 2: NEURAL NETWORK TRAINING
        *Equation: a_j = e^z_j/(sum of all e^z's) with j as one of the classes, or P(y = j|x[vec])
        *Softmax becomes the same as logistic regression when only two outputs possible
        *Loss function is -log(a_j) if y = j for every instance/class (left half of a bowl)
+  Neural Network with Softmax Output
+  **** *Video puts the softmax algorithm in the output layer
+       *Instead of the output layer only having one neuron, it has typically more than two neurons
+       *Softmax is a function of all of the z's (neuronal outputs)
+       *Code to implement (see below) = 
+          1) import tensorflow; from tensorflow.keras import Sequential; from tensorflow.keras.layers import Dense;
+             model = Sequential([Dense(units=25, activation='relu'), Dense(units=15, activation='relu'), 
+                                 Dense(units=10, activation='softmax')]) --- (this is specifying the model)
+          2) from tensorflow.keras.losses import SparseCategoricalCrossentropy; model.compile(loss=SparseCategoricalCrossentropy()) ---
+             (this is specifying the loss and cost function of the model)
+          3) model.fit(x,y,epochs=100) (this is training the model on data)
+  Improved Implementation of Softmax
+  **** *Viedeo shows a better way to implement softmax
+       *There can be numerical roundoff errors based on the equation...if x = 3, basically instead of doing 3*x in the code, do 3*3 for
+        less rounding error; be more direct (see below)...helps tensorflow avoid overly small or large numbers and gives more flexibility
+        to rearrange
+       *Only con is it's harder to read
