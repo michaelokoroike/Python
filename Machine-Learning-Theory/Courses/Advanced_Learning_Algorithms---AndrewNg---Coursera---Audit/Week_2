@@ -147,3 +147,12 @@ WEEK 2: NEURAL NETWORK TRAINING
        *Compute derivatives using Sympy
        *Again on notation: If J(w) is a function of one variable w, ([d/dw]J(w)); if it is a function of more than one variable, then
         there is a squiggly j used instead of the regular j like above...for a partial derivative.
+  Computational Graph (Optional)
+  **** *Small neural network example is used
+       *It's literally a step by step graph of the calculation of a cost function (activations); using the forward propagation method...
+        the first example
+       *You use the back propagation method to calculate derivatives; see Chain Rule
+       *Example notation = dJ/da = "The derivative of j with respect to a"
+       *Back prop is important because you want to know how each variable affects each other; derivatives in early steps can help
+        calculate multiple derivatives in the future back prop steps...with n nodes and p parameters, derivatives are computed in 
+        n + p steps, rather than n*p steps
