@@ -115,3 +115,35 @@ WEEK 2: NEURAL NETWORK TRAINING
        *ADAM stands for ADAptive Moment estimation. Uses a different learning rate for every parameter of the model.
        *If you see that gradient descent is moving in the same direction towards the minimum and you wonder why don't we get gradient
         descent to take bigger steps by increasing alpha (do it); make alpha smaller if oscillates back and forth during gradient descent.
+  Additional Layer Types
+  **** *Other types of neuron network layers
+       *Recap: In the Dense layer the activation of a neuron is based off of all of the activations of the previous layer
+       *Another type of layer is CONVOLUTIONAL, where each neuron only looks at part (some) of the activations of the previous layer.
+        You would use this because it speeds up computation, and can need less training data when using a convolutional layer. Popularized
+        by John Macoun.
+       *Example of convolutional layers: Reading EKGs (which is just a list of numbers corresponding to the height of the surface (the 
+        flesh above your heart) at different points in time...could be 100 numbers; this is used to classify whether or not a person has
+        heart problems/conditions. Hidden convolutional layers could have a neuron look at 1-20, another 11-30, and so on and so forth.
+       *Convolutional layers can follow convolutional layers.
+       *Transformer, LSTM, attention models...ppl are trying to create new types of more powerful neural network layers.
+
+* BACK PROPAGATION (OPTIONAL)
+  What is a Derivative (Optional)?
+  **** *Backpropagation algorithm computes cost function with respect to parameters
+       *Example: cost function J(w) = w^2, and w = 3; if we increase w by 0.001, w = 3.001 and J(w) = 9.006001 (or, if w increases by 
+        0.001 then J(w) increases by 6 * 0.001...if w goes up by epsilon, then J(w) goes up by 6 times epsilon. The way you conclude
+        this is the derivative of J(w) with respect to w ([d/dw]J(w)) is equal to 6...this BECOMES MORE VALID WHEN EPSILON IS SMALL, NOT
+        BIG.
+       *The language to use is "If w increasing by e causes J(w) to increase by k * e, then [d/dw]J(w)) is equal to k".
+       *This hearkens us back to gradient descent and w_j (update) = w - alpha*([d/dw_j]J(w[vec],b)); if derivative is small, then 
+        changing w doesn't make a big difference to the value of j (and so not to bother making a big difference to w_j), but if the 
+        derivative of w_j is large, a big change can be made to the cost function by reducing w_j so it is prudent to do so
+       *Example is cost function J(w) = w^2, and w = 2; if we increase w by 0.001, w = 2.001 and J(w) = 4.004001 (or, if w increases by 
+        0.001 then J(w) increases by 4 * 0.001...
+       *Another example is cost function J(w) = w^2, and w = -3; if we increase w by 0.001, w = -2.999 and J(w) = 8.994001 
+       (or, if w increases by 0.001 then J(w) increases by -6 * 0.001).
+       *When drawing the parabola curve of a J cost function, it's the slope of the line where w equals a certain value
+       *Uses examples of if J(w) is w^3, w, or 1/w
+       *Compute derivatives using Sympy
+       *Again on notation: If J(w) is a function of one variable w, ([d/dw]J(w)); if it is a function of more than one variable, then
+        there is a squiggly j used instead of the regular j like above...for a partial derivative.
