@@ -135,7 +135,7 @@ WEEK 2: NEURAL NETWORK TRAINING
         this is the derivative of J(w) with respect to w ([d/dw]J(w)) is equal to 6...this BECOMES MORE VALID WHEN EPSILON IS SMALL, NOT
         BIG.
        *The language to use is "If w increasing by e causes J(w) to increase by k * e, then [d/dw]J(w)) is equal to k".
-       *This hearkens us back to gradient descent and w_j (update) = w - alpha*([d/dw_j]J(w[vec],b)); if derivative is small, then 
+       *This hearkens us back to gradient descent and w_j (update) = w_j - alpha*([d/dw_j]J(w[vec],b)); if derivative is small, then 
         changing w doesn't make a big difference to the value of j (and so not to bother making a big difference to w_j), but if the 
         derivative of w_j is large, a big change can be made to the cost function by reducing w_j so it is prudent to do so
        *Example is cost function J(w) = w^2, and w = 2; if we increase w by 0.001, w = 2.001 and J(w) = 4.004001 (or, if w increases by 
@@ -156,3 +156,5 @@ WEEK 2: NEURAL NETWORK TRAINING
        *Back prop is important because you want to know how each variable affects each other; derivatives in early steps can help
         calculate multiple derivatives in the future back prop steps...with n nodes and p parameters, derivatives are computed in 
         n + p steps, rather than n*p steps
+  Larger Neural Network Example (Optional)
+  **** *The derivatives you feed intothe gradient descent algorithm/ADAM oprtimaization to train the parameters of neural network
