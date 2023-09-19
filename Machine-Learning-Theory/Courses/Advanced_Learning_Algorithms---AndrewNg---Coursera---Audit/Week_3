@@ -1,0 +1,15 @@
+WEEK 3: ADVICE FOR APPLYING MACHINE LEARNING
+
+* OVERVIEW OF MACHINE LEARNING
+  Deciding What to Try Next
+  **** *If you get large errors, you can...
+        - Get more training examples
+        - Try smaller sets of features
+        - Try getting additional features
+        - Try adding polynomial features
+        - Try decreasing lambda
+        - Try increasing lambda
+       *This week we will learn how to carry out a diagnostic (a way to test what is or isn't working with an algorithm, to see what is or
+        isn't working with a learning algorithm, to gain guidance to improving its performance). They can take time to implement, but are 
+        very useful.
+      
