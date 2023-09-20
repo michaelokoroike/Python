@@ -21,4 +21,16 @@ WEEK 3: ADVICE FOR APPLYING MACHINE LEARNING
         well the function generalizes
        *Training/test error for classification = Logistic cost function over training/test examples (regularize during training)...best way
         to do it is figure out what the fraction of the training set and the fraction of the test set which the function misclassified
-        
+  Model Selection and Training/Cross Validation/Test Sets
+  **** *Training error typically performs lower than the actual testing/generalization error, as the parameters are fit to the training
+        data, generalization error being the average error on new examples that were not in the training set
+       *Choose a model based on order of polynomial...can be flawed to use the test error of this because extra degrees of polynomials
+        are chosen using the test set
+       *This is why we split the data into training, cross validation, and testing...split into the three subsets, use squared error for
+        cost function,...if you have dev set, you now can test your nth-order polynomial function, rather than it being decided by your
+        test set
+       *Cross validation means to cross check the validity/accuracy of different models...also called the validation set, or the
+        development/dev set
+       *Choose based on lowest cross validation error when you have to make decisions such as fitting the model or choosing the model
+        architecture...parameters, order not affected by test dataset
+  
