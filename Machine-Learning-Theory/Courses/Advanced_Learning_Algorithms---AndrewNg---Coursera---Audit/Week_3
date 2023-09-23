@@ -42,3 +42,23 @@ WEEK 3: ADVICE FOR APPLYING MACHINE LEARNING
        *As the degree of polynomial increases, training cost goes down, but cross validation cost goes down but back up 
         (starts by underfitting and then overfits)
        *High bias and high variance = training cost is high (and cross validation cost is greater than training cost)
+  Regularization and Bias/Variance
+  **** *Recap = We saw how degree of polynomial affects bias and variance
+       *This video discusses how regularization (and its parameter lambda) affects bias and variance
+       *Example = Set lambda to 10,000...when the regularization parameter is large that motivates the algorithm to keep the w parameters
+        very small and you end up with f_w[vec],b(x[vec]) = b, or a constant value. This is a high bias model that underfits/doesn't even
+        do well on the training set...training cost is large.
+       *Example = Set lambda to 0...when the regularization is small (and there is really no regularization) you end up with an overfit.
+        This is a high variance model that overfits, where training cost is small, but cross validation cost is large.
+       *The goal as stated before is a small training cost and a small cross validation cost; cross validation is a good way to find a 
+        good lambda value.
+       *Choose based on cross validation trial and error of different lambda values; minimizing the training cost and calculating a 
+        cross validation cost
+       *Larger lambda is, the larger the training cost (more weight given to regularization term...parameters are tiny, underfits even 
+        training); if lambda is too large or too small, the larger the cross validation cost (overfits if lambda is small, underfits if
+        lambda is large, as stated in above example bulletpoints). It's actually a mirror image of the effect degree of polynomial has on
+        training cost and cross validation cost; cross validation cost is high if degree of polynomial is too small or too large because
+        underfits if a small degree of polynomial but overfits if a large degree of polynomial, training cost decreases as degree of 
+        polynomial increases/gets larger because the model is more complex. Essentially, high bias/underfitting was on the left of the 
+        degree of polynomial graph and on the right of the lambda graph, while high variance/overfitting was on the right of the degree
+        of polynomial graph and the left of the lambda graph.
