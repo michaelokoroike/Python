@@ -62,3 +62,17 @@ WEEK 3: ADVICE FOR APPLYING MACHINE LEARNING
         polynomial increases/gets larger because the model is more complex. Essentially, high bias/underfitting was on the left of the 
         degree of polynomial graph and on the right of the lambda graph, while high variance/overfitting was on the right of the degree
         of polynomial graph and the left of the lambda graph.
+  Establishing a Baseline Level of Performance
+  **** *This video discusses concrete numbers (hypothetically) of what training cost and cross validation cost may be, and how to judge
+        high variance or high bias. Uses speech recognition.
+       *Example: What if training cost is 10% (meaning the model transcribes 90% of the audio clips that it's trained on perfectly), but
+        cross validation cost is 15%?
+       *For the example, it would seem like even the training cost is high which means high bias (underfit), but also need to consider
+        human level performance (how well humans can transcribe speech from the audio clips)...if you hypothetically find human level
+        cost is 10%, and you find there are just some audio clips where really no one can accurately transcribe what was said, then you 
+        cannot expect the learning algorithm to do much better. Essentially, first and foremost see if the training error is much higher
+        than a human level of performance. In this example, when benchmarking to human level performance, training error can actually
+        be said to be low, but cross validation error is high, meaning it would actually more so be high variance (overfit).
+       *Other ways to establish a baseline are competing algorithms performance, or guesses based on performance.
+       *If difference between baseline and training cost is high, then problem is high bias; if difference between training cost and
+        cross validation cost is high, then you have high variance
