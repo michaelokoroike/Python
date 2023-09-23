@@ -34,3 +34,11 @@ WEEK 3: ADVICE FOR APPLYING MACHINE LEARNING
        *Choose based on lowest cross validation error when you have to make decisions such as fitting the model or choosing the model
         architecture...parameters, order not affected by test dataset
   
+* BIAS AND VARIANCE
+  Diagnosing Bias and Variance
+  **** *High bias is training cost is high and cross validation cost is high (the costs approximate each other)
+       *High variance is training cost is low and cross validation cost is high (cross validation cost is higher than training cost)
+       *Just right = training cost is low and cross validation cost is low
+       *As the degree of polynomial increases, training cost goes down, but cross validation cost goes down but back up 
+        (starts by underfitting and then overfits)
+       *High bias and high variance = training cost is high (and cross validation cost is greater than training cost)
