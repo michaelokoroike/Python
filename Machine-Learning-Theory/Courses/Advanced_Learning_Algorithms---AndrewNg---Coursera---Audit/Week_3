@@ -86,3 +86,7 @@ WEEK 3: ADVICE FOR APPLYING MACHINE LEARNING
         cost will perform much worse than human level performance (and training performance, as a result)
        *Cross validation cost has a better chance of improving with more training data in an instance of high variance, than with high
         bias
+  Deciding What to Try Next Revisited
+  **** *See very top of page; the six ideas on debugging only work if you have a high bias or a high variance problem
+       *If high variance...more training examples, smaller set of features, increasing regularization lambda are fixes
+       *If high bias...get additional features, add polynomial features, decreasing regularization lambda are fixes
