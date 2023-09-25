@@ -76,3 +76,13 @@ WEEK 3: ADVICE FOR APPLYING MACHINE LEARNING
        *Other ways to establish a baseline are competing algorithms performance, or guesses based on performance.
        *If difference between baseline and training cost is high, then problem is high bias; if difference between training cost and
         cross validation cost is high, then you have high variance
+  Learning Curves
+  **** *Cross validation error decreases with a higher amount of training examples, but training error actually increases, because it 
+        just becomes more difficult to fit a model perfectly. Cross validation error in worst-case scenario is expected to be higher than 
+        training cost.
+       *If model has high bias, then training cost will perform worse than human performance, and cross validation cost will perform
+        about equally to training cost (and much worse than human level performance)
+       *If model has high variance, then training cost will perform greater than or equal to human performance, while cross validation
+        cost will perform much worse than human level performance (and training performance, as a result)
+       *Cross validation cost has a better chance of improving with more training data in an instance of high variance, than with high
+        bias
