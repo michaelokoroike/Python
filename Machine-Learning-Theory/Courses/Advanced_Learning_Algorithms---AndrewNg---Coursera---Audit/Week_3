@@ -90,3 +90,14 @@ WEEK 3: ADVICE FOR APPLYING MACHINE LEARNING
   **** *See very top of page; the six ideas on debugging only work if you have a high bias or a high variance problem
        *If high variance...more training examples, smaller set of features, increasing regularization lambda are fixes
        *If high bias...get additional features, add polynomial features, decreasing regularization lambda are fixes
+  Bias/Variance and Neural Networks
+  **** *It's historically said you need to balance the degree of polynomial and the regularization parameter lambda and by doing so, 
+        balance the bias/variance tradeoff. Recap: if your model is too simple and underfits, that's high bias, but if your model is too
+        complex and overfits, that's high variance.
+       *Interestingly, it turns out large neural networks (when trained on small sized datasets) have low bias (don't underfit)...this
+        is an option to reduce bias/variance outside of feeling the need to trade off.
+       *Way to go: 1) is training cost good relative to human cost? if not 2) use a bigger neural network until comparable to human error 
+        (bias issue) then does it do well on cross validation? if not 4) get more data (variance issue)
+       *Bigger neural networks are computationally expensive and have been assisted by GPUs; more data can be hard to get
+       *A large neural network with well chosen regularization will usually do as well or better than a smaller one
+       *regularizing is adding a kernel_regularizer to a Dense layer (L2(0.01)).
