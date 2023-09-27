@@ -109,3 +109,17 @@ WEEK 3: ADVICE FOR APPLYING MACHINE LEARNING
         database; train on a unch of these. Reduce spam error by collecting more data, developing features based on email routing,
         defing sophisticated features from email body (discounting and discount should be the same word), design an algorithm to
         detect misspellings (example of m0rtgge being a misspelled version of mortgage), etc.
+  Error Analysis
+  **** *Bias and variance is first to consider what to try next to improve an ML algorithm, but second is error analysis
+       *Error analysis is manually looking through misclassifications to gain insight on where the algorithm is struggling; try to group
+        the misclassifications into common themes/properties (misspellings, unusual email routing, steal passwords (routing), spam
+        message in embedded image, pharmaceutical sales emails, etc); then see which are significant enough problems where you can 
+        build an algorithm to try and solve it (ex: if there are 1000 misclassifications and only 1 of them is related to misspelling,
+        building an algorithm to solve the misspelling problem may not be a great use of time)
+       *Watch out for categories being non-mutually exclusive or overlapping; example is a pharmaceuthaceutical email can also have
+        misspelling, or unusual routing
+       *If there are a lot of misclassifications, may not have time to look at every single one; take a random sample
+       *When you find out where the errors are, maybe collect more data with that error, or new features (ex: create new features related
+        to specific pharmaceutical names, etc), things like this to help the algorithm become better at recognizing that spam
+       *Limitation is it's really only good for problems that humans are good at (ex: would struggle with predicting ads a human will
+        click on when on the computer)
