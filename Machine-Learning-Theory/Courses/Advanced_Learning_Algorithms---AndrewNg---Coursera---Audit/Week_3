@@ -101,3 +101,11 @@ WEEK 3: ADVICE FOR APPLYING MACHINE LEARNING
        *Bigger neural networks are computationally expensive and have been assisted by GPUs; more data can be hard to get
        *A large neural network with well chosen regularization will usually do as well or better than a smaller one
        *regularizing is adding a kernel_regularizer to a Dense layer (L2(0.01)).
+
+* MACHINE LEARNING DEVELOPMENT PROCESS
+  Iterative Loop of ML Development
+  **** *1) Choose architecture; 2) Train the model; 3) Look at diagnostics (bias, variance, error analysis)
+       *Email spam classifier as neural network; feature vector is seeing if the individual words in an email are in a dictionary type
+        database; train on a unch of these. Reduce spam error by collecting more data, developing features based on email routing,
+        defing sophisticated features from email body (discounting and discount should be the same word), design an algorithm to
+        detect misspellings (example of m0rtgge being a misspelled version of mortgage), etc.
