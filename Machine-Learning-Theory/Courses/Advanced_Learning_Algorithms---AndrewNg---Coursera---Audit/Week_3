@@ -133,3 +133,16 @@ WEEK 3: ADVICE FOR APPLYING MACHINE LEARNING
        *It's data engineering. Conventional AI is code + data; data has typically been held fixed while code is improved. Now there are 
         algorithms/code that work very well for a many types of applications. A data-centric approach can now be used where you can focus
         on data engineering (more data, more specific data, data augmentation, data synthesis)
+  Transfer Learning: Using Data from a Different Task
+  **** *You can use parameters from a neural network of one problem for another, changing the output layer as needed; that's one option
+       *A second option would be to train all parameters, but they would be initialized using the values trained on top/originally
+       *With a very small training set, the "one option" may work better; the "a second option probably works better for larger datasets
+       *Example of transfer learning; if a neural network has already learned how to see cats, dogs, rats, elephants, you name it,
+        the hope would be it has the skills to generally process images, like that of numbers, etc. The neural network is transferred the
+        original neural network's parameters, and it is hoped with just a little further learning, a good model can be created anew.
+       *Training the parameters on a large dataset; then tuning on a smaller and different/related dataset is referred to as
+        SUPERVISED PRE-TRAINING, and FINE TUNING.
+       *It works because when you train on any image, what's actually happening is the neural network is learning to detect edges, corners,
+        curves/basic shapes, which is transferable to many computer vision tasks. One precondition is that the input has to be the same
+        type in the pre-training and the fine tuning (images with desired dimensions)...a neural network pretrained on images won't do well
+        on audio.
