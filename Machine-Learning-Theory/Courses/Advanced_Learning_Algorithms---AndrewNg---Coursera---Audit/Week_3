@@ -123,3 +123,13 @@ WEEK 3: ADVICE FOR APPLYING MACHINE LEARNING
         to specific pharmaceutical names, etc), things like this to help the algorithm become better at recognizing that spam
        *Limitation is it's really only good for problems that humans are good at (ex: would struggle with predicting ads a human will
         click on when on the computer)
+  Adding Data
+  **** *Trying to get more data of all types can be slow and expensive; focus on where error analysis has indicated help is needed, if
+        it's more feasible
+       *For images and audio, adding data is called data augmentation (in images, it can be rotating/enlarging/shrinking the data, warping,
+        contrasting; for audio, adding backgrounds, etc
+       *Don't do anything meaningless like add image structures that aren't feasible
+       *Synthesis is another mechanism (OCR images, etc)
+       *It's data engineering. Conventional AI is code + data; data has typically been held fixed while code is improved. Now there are 
+        algorithms/code that work very well for a many types of applications. A data-centric approach can now be used where you can focus
+        on data engineering (more data, more specific data, data augmentation, data synthesis)
