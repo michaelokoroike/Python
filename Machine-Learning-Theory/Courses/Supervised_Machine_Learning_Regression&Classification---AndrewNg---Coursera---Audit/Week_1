@@ -249,3 +249,13 @@ WEEK 1: WELCOME TO MACHINE LEARNING!
        *Adverse use cases = Deepfakes, toxic sppech, fake content creating bots, harmful products
        *Guidelines = Diverse teams, carry out literature reasearch in your industry, audit against possible harm during deployment,
         develop a mitigation plan/monitor even after deployment
+
+* SKEWED DATASETS (OPTIONAL)
+  Error Metrics for Skewed Datasets
+  **** *Accuracy/other usual metrics doesn't work well when a dataset is skewed
+       *Taught precision and recall. True positives are when you predict ppositive and it is positive. False positive is when you predict
+        positive and it is actually negative. True negative is when you predict negative and it is negative. False negative is when you predict
+        negative and it is actually positive.
+       *Precision is how many are positive out of the amount we guessed are positive (True positive/(true positive + false positive))
+       *Recall is how many of the total positives did we correctly guess (True positive/(true positive + false negative))
+       *Helps you see if an algorithm is just predicting zero. An algorithm that predicts 0 typically is not a good algorithm.
