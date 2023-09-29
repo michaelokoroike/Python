@@ -244,3 +244,8 @@ WEEK 1: WELCOME TO MACHINE LEARNING!
         app.
        *Software engineering needed to make reliable predictions, scaling, logging, system monitoring, model update. This is MLOps
         (machine learning operations).
+  Fairness, Bias and Ethics
+  **** *Bias = hiring tools that discriminate against women, race, etc.
+       *Adverse use cases = Deepfakes, toxic sppech, fake content creating bots, harmful products
+       *Guidelines = Diverse teams, carry out literature reasearch in your industry, audit against possible harm during deployment,
+        develop a mitigation plan/monitor even after deployment
