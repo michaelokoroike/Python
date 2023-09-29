@@ -259,3 +259,13 @@ WEEK 1: WELCOME TO MACHINE LEARNING!
        *Precision is how many are positive out of the amount we guessed are positive (True positive/(true positive + false positive))
        *Recall is how many of the total positives did we correctly guess (True positive/(true positive + false negative))
        *Helps you see if an algorithm is just predicting zero. An algorithm that predicts 0 typically is not a good algorithm.
+  Trading Off Precision and Recall
+  **** *Recap: High precision likely means you guess accurately, high recall is how many you guess out of the toal amount
+       *You can change the threshold...this usually leads to better of one of the metrics, and worse of the other
+       *Depends on what is the more desired outcome (ex: if we want to avoid too many cases of something, we want higher recall...we're
+        more willing to predict 1 than to not; maybe lower threshold. if we want to be supremely confident in something, we may want high
+        precision)
+       *Precision and recall are between 0 and 1; curve of it is right side of an upside down bowl
+       *F1 score automatically combines precision and recall to choose the right balance...makes it clear (some may be high in precision,
+        high in recall, middle of the pack in both); formula is 1 / (.5 * ((1/precision)+(1/recall))). Also called the HARMONIC MEAN of
+        precision and recall.
