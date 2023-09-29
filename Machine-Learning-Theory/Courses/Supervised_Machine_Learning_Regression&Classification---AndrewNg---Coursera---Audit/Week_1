@@ -233,3 +233,14 @@ WEEK 1: WELCOME TO MACHINE LEARNING!
   **** *Runs a model and shows how steps take it along a journey
        *Batch gradient descent = Every step taken uses all of the training examples
        *There are other versions of gradient descent, but this is the main one for linear regression
+  Full Cycle of a Machine Learning Project
+  **** *1) Define scope of project (define project)
+       *2) Collect data (define and collect data)
+       *3) Train model (training, error analysis, iterative improvement)
+       *4) Deploy in a production environment (deploy, monitor, maintain system)
+       *Sometimes you may have to go back to steps 3 and/or 2 depending on how well the data is working
+       *Deploying the model = Take model -> implement it in an inference server. If mobile app is used, the app will make an API call
+        to pass audio/imagery to the inference serve, after which the inference server returns an inference (prediction) to the mobile
+        app.
+       *Software engineering needed to make reliable predictions, scaling, logging, system monitoring, model update. This is MLOps
+        (machine learning operations).
