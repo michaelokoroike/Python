@@ -1,0 +1,8 @@
+WEEK 4: DECISION TREES 
+
+* DECISION TREES
+  Decision Tree Model
+  **** *Uses a cat classifcation example as an example...three features which only had two possibilities, and an output with only two
+        possibilities (binary classification)
+       *Shows a decision tree, which branches off and starts at the ROOT NODE and continues with DECISION NODES (look at a feature and 
+        depending on the value decide where to travel down the tree) and ends at LEAF NODES, which make predictions
