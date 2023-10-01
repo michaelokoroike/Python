@@ -6,8 +6,16 @@ WEEK 4: DECISION TREES
         possibilities (binary classification)
        *Shows a decision tree, which branches off and starts at the ROOT NODE and continues with DECISION NODES (look at a feature and 
         depending on the value decide where to travel down the tree) and ends at LEAF NODES, which make predictions
-
   Learning Process
   **** *Decision 1: What feature to split on at each node? (Maximize purity...break offs are 100% one or other)
        *Decision 2: When to stop splitting? (Small trees are less prone to overfitting...stop when a node is 100% one class, or 
         when splitting would exced a max depth, or when purity scores don't improve, or if the number of examples is below a threshold)
+
+* DECISION TREE LEARNING
+  Measuring Parity
+  **** *Entropy = Measure of impurity; entropy is denoted as H(p1)...p1 being fraction of examples that are desired outcome
+       *Graph of entropy is an upside down bowl...most impure when set of examples is 50-50
+       *Set p0 equal to 1-p1. Entropy is defined as H(p1) = -p1 log_2(p1) - p0 log_2(p0)...or
+        -p1 log_2(p1)-(1-p1)log_2(1-p1). Log base 2 makes the peak of the curve 1. 
+       *Interesting = log 0 is negative infinity.
+       
