@@ -6,3 +6,8 @@ WEEK 4: DECISION TREES
         possibilities (binary classification)
        *Shows a decision tree, which branches off and starts at the ROOT NODE and continues with DECISION NODES (look at a feature and 
         depending on the value decide where to travel down the tree) and ends at LEAF NODES, which make predictions
+
+  Learning Process
+  **** *Decision 1: What feature to split on at each node? (Maximize purity...break offs are 100% one or other)
+       *Decision 2: When to stop splitting? (Small trees are less prone to overfitting...stop when a node is 100% one class, or 
+        when splitting would exced a max depth, or when purity scores don't improve, or if the number of examples is below a threshold)
