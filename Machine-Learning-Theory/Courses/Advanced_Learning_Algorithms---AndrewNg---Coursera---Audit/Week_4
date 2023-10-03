@@ -35,3 +35,5 @@ WEEK 4: DECISION TREES
         is reached. Information gain finds the best feature to split on.    
        *Decision trees are RECURSION ALGORITHMS, which are algorithms which call themselves. Decision trees are built with smaller sub 
         decision trees and putting them together.
+  Using One-Hot Encoding of Categorical Features
+  **** *Use one-hot encoding when a variable has more than two options
