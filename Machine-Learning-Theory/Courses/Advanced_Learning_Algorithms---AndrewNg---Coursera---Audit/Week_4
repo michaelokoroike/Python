@@ -39,3 +39,8 @@ WEEK 4: DECISION TREES
   **** *Use one-hot encoding when a variable has more than two options
   Continuous Valued Features
   **** *You can find a value to split on where the information gain is largest
+  Regression Trees (Optional)
+  **** *Regression trees predict based on averages of end examples for each different leaf node
+       *Instead of trying to reduce entropy (impurity/lack of purity/etc), regression trees try to reduce variance (how much the numbers
+        in each individual leaf node vary from each other)
+       *Do a weighted variance (total variance of leaf node * number of examples in leaf node/number of total examples)
