@@ -37,3 +37,5 @@ WEEK 4: DECISION TREES
         decision trees and putting them together.
   Using One-Hot Encoding of Categorical Features
   **** *Use one-hot encoding when a variable has more than two options
+  Continuous Valued Features
+  **** *You can find a value to split on where the information gain is largest
