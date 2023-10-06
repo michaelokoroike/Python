@@ -44,3 +44,9 @@ WEEK 4: DECISION TREES
        *Instead of trying to reduce entropy (impurity/lack of purity/etc), regression trees try to reduce variance (how much the numbers
         in each individual leaf node vary from each other)
        *Do a weighted variance (total variance of leaf node * number of examples in leaf node/number of total examples)
+
+* TREE ENSEMBLES
+  Using Multiple Decision Trees
+  **** *Single decision trees can be highly sensitive to small changes in the data; a good way to combat it is to use multiple trees, or a
+        TREE ENSEMBLE  
+       *Usually there is voting involved (what does the majority of the trees in the ensemble predict)
