@@ -53,3 +53,6 @@ WEEK 4: DECISION TREES
   Sampling with Replacement
   **** *When sample with replacement, the sample values are independent; what you get on one doesn't affect what you get on another. This 
         keeps probabilities of drawing particular sampling units the same.
+  Random Forest Algorithm
+  **** *Random forest algorithm essentially uses sampling with replacement
+       *Choosing from random subsets also helps
