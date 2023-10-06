@@ -50,3 +50,6 @@ WEEK 4: DECISION TREES
   **** *Single decision trees can be highly sensitive to small changes in the data; a good way to combat it is to use multiple trees, or a
         TREE ENSEMBLE  
        *Usually there is voting involved (what does the majority of the trees in the ensemble predict)
+  Sampling with Replacement
+  **** *When sample with replacement, the sample values are independent; what you get on one doesn't affect what you get on another. This 
+        keeps probabilities of drawing particular sampling units the same.
