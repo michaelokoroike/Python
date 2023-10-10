@@ -1,0 +1,18 @@
+The Advanced Learning Algorithms course by Andrew Ng is a course that introduces a learner to the more advanced algorithms and metrics of
+machine learning. It is the coutse following the Supervised Machine Learning: Regression & Classification in the Andrew Ng machine learning
+certification program on Coursera.
+
+Week 1 is really the introduction of the student to neural networks and the original intuition behind it, as well as informing us of
+its structure in Tensorflow and real world uses. We are also introduced to vectorization.
+
+Week 2 walks us through the implementation and introduces us to integral aspects of the implemenation, such as activation functions, etc.
+We are inroduced to multiclass classification and how to use neural networks in those situations. We are introduced to other concepts in
+neural networks (optimization, layer types, back propagation, etc).
+
+Week 3 is essentially how to go about debugging neural networks and goes  through the different errors and how you would combat it; er are
+introduced to the seminally important bias and variance errors which buttresses this analysis, and other tactics such as creating thresholds,
+looking at learnings, transfer learning, adding data, error analysis, etc.
+
+Week 4 introduces us to decision trees and the intuition to how they work, and involves the talk with Chris Manning.
+
+I recommend the course, as it is more intution on the back of course 1.
