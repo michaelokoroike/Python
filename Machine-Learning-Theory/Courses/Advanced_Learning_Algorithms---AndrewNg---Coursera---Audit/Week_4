@@ -62,3 +62,7 @@ WEEK 4: DECISION TREES
         A higher cahnce is given to misclassified examples.
        *Pros: XG is open source implementation of boosted trees, fast efficient implementation, good choice of default splitting criteria
         and criteria for when to stop splitting, built in regularization to stop overfitting, good for ML competitions
+  When to use Decision Trees
+  **** *Use it on structured data. Don't use it on unstructured data. Fast. When small, can be interpretable.
+       *Neural networs work on all data, including unstructured data. slower than decision trees. Wor with transfer learning. Can
+        train multiple at a time, whereas decision trees are only one at a time.
