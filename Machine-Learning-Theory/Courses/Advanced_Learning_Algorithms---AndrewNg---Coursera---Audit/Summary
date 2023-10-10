@@ -1,6 +1,6 @@
 The Advanced Learning Algorithms course by Andrew Ng is a course that introduces a learner to the more advanced algorithms and metrics of
 machine learning. It is the coutse following the Supervised Machine Learning: Regression & Classification in the Andrew Ng machine learning
-certification program on Coursera.
+specialization program on Coursera.
 
 Week 1 is really the introduction of the student to neural networks and the original intuition behind it, as well as informing us of
 its structure in Tensorflow and real world uses. We are also introduced to vectorization.
