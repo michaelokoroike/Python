@@ -56,3 +56,9 @@ WEEK 4: DECISION TREES
   Random Forest Algorithm
   **** *Random forest algorithm essentially uses sampling with replacement
        *Choosing from random subsets also helps
+  XGBoost
+  **** *Also random forest algorithm using sampling with replacement; but instead of picking from allexamples with equal probaility,
+        picking misclassified examples from previously trained trees. DELIBERATE PRACTICE method; practicing what you struggle at.
+        A higher cahnce is given to misclassified examples.
+       *Pros: XG is open source implementation of boosted trees, fast efficient implementation, good choice of default splitting criteria
+        and criteria for when to stop splitting, built in regularization to stop overfitting, good for ML competitions
