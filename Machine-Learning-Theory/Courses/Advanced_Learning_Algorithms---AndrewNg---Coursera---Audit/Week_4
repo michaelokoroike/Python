@@ -66,3 +66,7 @@ WEEK 4: DECISION TREES
   **** *Use it on structured data. Don't use it on unstructured data. Fast. When small, can be interpretable.
        *Neural networs work on all data, including unstructured data. slower than decision trees. Wor with transfer learning. Can
         train multiple at a time, whereas decision trees are only one at a time.
+
+* CONVERSATIONS WITH ANDREW NG (OPTIONAL)
+  Andrew Ng and Chris Manning on Natural Languauge Processing
+  **** How far NLP has come; what you need to now; how andrew and Chris got in; etc
