@@ -5,3 +5,10 @@ WEEK 1: UNSUPERVISED LEARNING
   **** *We will learn about clustering (grouping data into clusters) and anomaly detection, forms of unsupervised learning.    
        *We will learn about recommender systems in the second week, one of the most commercially important machine learning technologies.
        *We will learn about reinforcement learning in the third week.
+
+* CLUSTERING
+  What is Clustering?
+  **** *Clustering looks at data points and automatically finds data points that are similar in some way, shape or form.
+       *In unsupervised learning, you are not given y...can't tell an algorithm what is the correct algorithm; can only find interesting 
+        aspects of the data. CLUSTERING algorithms look for structures in the data.
+       *Applications of clustering are grouping news, market segmentation, DNA analysis, astronomical analysis, etc.
