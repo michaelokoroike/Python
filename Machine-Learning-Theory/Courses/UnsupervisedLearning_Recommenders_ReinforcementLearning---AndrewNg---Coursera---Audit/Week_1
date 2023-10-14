@@ -19,3 +19,10 @@ WEEK 1: UNSUPERVISED LEARNING
        *After this, it will look at all the points closest to a centroid and take the average of them, and therefore recompute the centroid
         as that average
        *It repeats until CONVERGENCE, where there is no more changes to centroid
+  K-means Algorithm
+  **** *First step is to randomly initialize k cluster centroids (u1, u2, ..., uk)
+       *Like already said, first k meands assigns points to cluster centroids; distance between point and centroid is the L2 norm...in this 
+        step, knowing the initialized k cluster centroids, you find the minimum distance between the point and the centroids...better to 
+        use the squared distance (only magnifies the relationships)
+       *Second step is to move the cluster centroids by computing the average of points assigned to each cluster
+       *When a cluster has no points assigned to it, either eliminate the cluster or reinitialize it
