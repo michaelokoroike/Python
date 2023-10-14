@@ -12,3 +12,10 @@ WEEK 1: UNSUPERVISED LEARNING
        *In unsupervised learning, you are not given y...can't tell an algorithm what is the correct algorithm; can only find interesting 
         aspects of the data. CLUSTERING algorithms look for structures in the data.
        *Applications of clustering are grouping news, market segmentation, DNA analysis, astronomical analysis, etc.
+  K-means Intuition
+  **** *What K-means does is assign points to cluster centroids and move cluster centroids    
+       *First takes a random guess as to where are the centers of the clusters (CLUSTER CENTROIDS)
+       *Second after the initial guess, it (K-means) will go through all of the data points and check which centroid it is closer/closest to
+       *After this, it will look at all the points closest to a centroid and take the average of them, and therefore recompute the centroid
+        as that average
+       *It repeats until CONVERGENCE, where there is no more changes to centroid
