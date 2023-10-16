@@ -26,3 +26,16 @@ WEEK 1: UNSUPERVISED LEARNING
         use the squared distance (only magnifies the relationships)
        *Second step is to move the cluster centroids by computing the average of points assigned to each cluster
        *When a cluster has no points assigned to it, either eliminate the cluster or reinitialize it
+  Optimization Objective
+  **** *Recap: Typically, with algortihms it goes choose a cost function, then take an algorithm and optimize that cost function
+       *K means is optimizing a specific cost function; remember that it is the average of the squared distance between a training example
+        and its assigned centroid
+       *Terms: c_i = index of cluster (1...k) to which example x_i (a training example) has been currently assigned; u_k = cluster centroid
+        k; u_(c_i) = cluster centroid of cluster to which example x_i has been currently assigned.
+       *Cost function: J(c_1...c_m, u_1...u_k) = 1/m * sum of ||x_i - u_(c_i)||^2. This is a cost function run for each cluster c_i through
+        c_m, and each initialized centroid u_1 through u_k; and new centroids are calculated by these averages. It is trying to minimize 
+        the squared distance. J is called the DISTORTION FUNCTION.
+       *An option is moving the cluster centroid, instead of by average squared difference between centroid and its assigned examples, is to
+        possibly take the average of the training examples and move the centroid there...seemed to minimize the cost function more when there
+        was a lot of skew between distance between training points and centroids...just to play around; after taking the average, you would
+        still need to do average squared difference, but with a better chosen centroid.
