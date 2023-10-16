@@ -47,3 +47,9 @@ WEEK 1: UNSUPERVISED LEARNING
         reductions in distance per run, but a bad initialization choice created the centroids getting stuck at a local minimum.
        *The way to combat the getting stuck at local optima is running K-means multiple times. Run multiple and choose which one gives
         the lowest value for cost function J. 50-1000 times are the optimal amount of random initializations.
+  Choosing the Number of Clusters
+  **** *ELBOW METHOD = choose the value where the cost function decreases rapidly before, and slowly after (Andrew doesn't use elbow
+        because it is subject and the graph is often smooth)
+       *Choose based on how well the clusters perform for a desired later purpose (example is t-shirt sizing; a business can group
+        clusters based on s/m/l or xs/s/m/l/xl, depending on the business and what makes sense for them...either would be completely
+        legitimate)...but also examine tradeoff (how well the xs/s/m/l/xl fits, vs the extra costs of the more complicated sizes)
