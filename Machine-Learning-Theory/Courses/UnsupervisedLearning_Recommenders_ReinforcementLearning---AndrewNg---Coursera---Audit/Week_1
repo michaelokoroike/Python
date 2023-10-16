@@ -39,3 +39,11 @@ WEEK 1: UNSUPERVISED LEARNING
         possibly take the average of the training examples and move the centroid there...seemed to minimize the cost function more when there
         was a lot of skew between distance between training points and centroids...just to play around; after taking the average, you would
         still need to do average squared difference, but with a better chosen centroid.
+  Initializing K-means
+  **** *Video will show ways you go about the random initialization of centroids
+       *First off, centroids k should always be less than training examples m
+       *The most common way to initialize cluster centroids is to randomly select k training examples, and initialize the cluster with
+        those training example values. The problem here can be you can end up with a LOCAL OPTIMA, where there is no longer any
+        reductions in distance per run, but a bad initialization choice created the centroids getting stuck at a local minimum.
+       *The way to combat the getting stuck at local optima is running K-means multiple times. Run multiple and choose which one gives
+        the lowest value for cost function J. 50-1000 times are the optimal amount of random initializations.
