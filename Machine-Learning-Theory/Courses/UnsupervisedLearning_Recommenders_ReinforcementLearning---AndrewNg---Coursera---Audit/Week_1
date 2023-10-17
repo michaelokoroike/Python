@@ -65,3 +65,12 @@ WEEK 1: UNSUPERVISED LEARNING
         less than some small number, you could call it an anomaly.
        *Used frequently in fraud detection (how often log in, web pages visited, transactions, posts, typing speed), manufacturing, 
         monitoring computers, etc.
+  Gaussian (Normal) Distribution
+  **** *Gaussian have mean u ("mu") and variance sigma^2 (which is just standard deviation squared)
+       *Probability of x is p(x) = (1/((sq root of (2*pi))*sigma)) * e^((-(x-mu)^2)/(2*sigma^2))
+       *When sigma is smaller, the distribution is skinnier and taller; when larger, the distribution is fatter and shorter. If the mu is
+        changed the curve just shifts to the left or right
+       *Mu is computed by the average of all of the training examples, while sigma squared is the average of the squared difference between
+        examples and mu. Called the MAXIMUM LIKELIHOOD ESTIMATES for mu and sigma. Gives a PROBABILITY DISTRIBUTION, used to predict 
+        anomalies.
+       *Probabilities always have to sum to 1, so when sigma gets smaller, curve also gets taller
