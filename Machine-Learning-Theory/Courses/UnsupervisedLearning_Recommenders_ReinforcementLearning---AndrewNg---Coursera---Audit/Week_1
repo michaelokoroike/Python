@@ -82,8 +82,16 @@ WEEK 1: UNSUPERVISED LEARNING
         calculation of probability (see p(x) in section above)
        *The steps to creating an anomaly detection algorithm is 1) choosing n features x_i that may be indicative of anomalous examples,
         then 2) fitting mu and sigma squared for each example, and then 3) when given a new example, compute P(x), and 4) see if 
-        P(x) is less than epsilon (if it is it is an anomaly)
+        P(x) is less than epsilon (if it is an anomaly)
   Developing and Evaluating an Anomaly Detection Program
   **** *Good to have a small numer of anomalous examples
        *Do great engines in a training set, more great engines and a few bad ones on cross validation, and the same kind of profile for a
         testing set as there was for a cross validation set
+  Anomaly Detection vs. Supervised Learning
+  **** *Anomaly detection (AD) is good when you have a large number of negative examples and low number of positive examples
+       *Supervised learning (SL) is good for a large number of positive and negative examples
+       *Reason for AD is there are many types of anomalies and its hard for an algorithm to be able to predict them all...use anomaly detection
+        because you have a lot a negative examples which an algorithm can use to know what is typical in a non-anomaly; anything that
+        deviates widely can be flagged.
+       *With SL, you hope to have enough positive examples to get a sense of what a material amount of positive examples (anomalies) are like
+       *Good for AD is fraud because there's always something new; good with SL is spam because we've seen most of them
