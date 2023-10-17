@@ -83,3 +83,7 @@ WEEK 1: UNSUPERVISED LEARNING
        *The steps to creating an anomaly detection algorithm is 1) choosing n features x_i that may be indicative of anomalous examples,
         then 2) fitting mu and sigma squared for each example, and then 3) when given a new example, compute P(x), and 4) see if 
         P(x) is less than epsilon (if it is it is an anomaly)
+  Developing and Evaluating an Anomaly Detection Program
+  **** *Good to have a small numer of anomalous examples
+       *Do great engines in a training set, more great engines and a few bad ones on cross validation, and the same kind of profile for a
+        testing set as there was for a cross validation set
