@@ -74,3 +74,12 @@ WEEK 1: UNSUPERVISED LEARNING
         examples and mu. Called the MAXIMUM LIKELIHOOD ESTIMATES for mu and sigma. Gives a PROBABILITY DISTRIBUTION, used to predict 
         anomalies.
        *Probabilities always have to sum to 1, so when sigma gets smaller, curve also gets taller
+  Anomaly Detection Program
+  **** *Now example with multiple features
+       *Example back to aircraft. each example is a two-dimensional vector (has two features)
+       *Probability equation is p(x[vec]) = p(x1)*p(x2)*p(x3)*...*p(xn); these multiplications illustrate statistical independence from
+        the different features. Also include the mean mu and the variance sigma squared for each feature probability (needed in the 
+        calculation of probability (see p(x) in section above)
+       *The steps to creating an anomaly detection algorithm is 1) choosing n features x_i that may be indicative of anomalous examples,
+        then 2) fitting mu and sigma squared for each example, and then 3) when given a new example, compute P(x), and 4) see if 
+        P(x) is less than epsilon (if it is it is an anomaly)
