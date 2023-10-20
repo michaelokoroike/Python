@@ -6,3 +6,7 @@ WEEK 2: RECOMMENDER SYSTEMS
        *For recommender systems, there typically will be a number of users and a number of items
        *Notation: n_u is number of users, n_m is number of items, r(i,j) = 1 if a user has rated a movie in the example, y(i,j) = rating
         given by user j to to movie i (only if r(i,j) is 1)
+  Binary Labels: Favs, Likes, and Clicks
+  **** *Examples of binary applications = did a user purchase an item after being shown it, did a user like an item, did they spend
+        more than 30 seconds with an item, etc? Yes or no answers
+       *See video = becomes a logistic regression model
