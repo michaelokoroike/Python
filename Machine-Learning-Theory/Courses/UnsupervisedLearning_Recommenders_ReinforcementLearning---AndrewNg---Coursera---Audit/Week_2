@@ -11,10 +11,32 @@ WEEK 2: RECOMMENDER SYSTEMS
        *Notation continued: w_j, b_j is parameters for user j; x_i is feature vector for movie i; for user j and movie i, predict rating
         with w_j*x_i + b_j (linear regression); m_j is number of movies rated by user j; 
        *Cost function is ((1/(2*m_j)) * sum of (w(j) * x(i)+b(j) - y(i,j)) squared for each example) + 
-        ((lambda/(2*m_j)) * sum of w_k_j squared for parameters w)...trying to minimize squared error just
+        ((lambda/(2*m_j)) * sum of w_k_j squared for parameters w (b not included for simplicity))...trying to minimize squared error just
         like linear regression; difference between rating predicted and actual rating. i:r(i,j)=1 means looking only at the movies the
-        user actually rated. Cost function notation here is min J(w_j, b_j).
+        user actually rated. Cost function notation here is min J(w_j, b_j) for user j.
        *Broaden out to all users.
+  Collaborative Filtering Algorithm
+  **** *Ways to go about finding features when features not given; take a reasonable guess (if you have all the parameters and four 
+        ratings), to make the prediction equal to the actual.
+       *Cost function is ((1/(2)) * sum of (w(j) * x(i)+b(j) - y(i,j)) squared for each example) + 
+        ((lambda/(2)) * sum of x_k_i squared for features x)...trying to minimize squared error just
+        like linear regression; difference between rating predicted and actual rating. i:r(i,j)=1 means looking only at the movies the
+        user actually rated. Cost function notation here is min J(x_i) for movie i. This is to learn features like romance, etc without
+        features being given.
+       *Broaden out to all movies; sum it.
+       *This is given you haven w and b for all of the users, and wanting to learn x_i features of a movie using gradient descent.
+       *Put the two cost functions together; Cost function is ((1/(2)) * sum of (w(j) * x(i)+b(j) - y(i,j)) squared for each example) + 
+        ((lambda/(2)) * sum of x_k_i squared for features x) + ((lambda/(2*m_j)) * sum of w_k_j squared for parameters w...trying to minimize 
+        squared error just like linear regression; difference between rating predicted and actual rating. i:r(i,j)=1 means looking only at 
+        the movies the user actually rated. Cost function notation here is min J(w_j, b_j, x_i) for parameters w and b for user j and features x 
+        for movie i.
+       *Gradient descent would be 
+        repeat until convergence {
+         w_i_j = w_i_j - alpha*partial derivative with respect to w_i_j*J(w_j, b_j, x_i) over all training examples;
+         b_j = b_j - alpha*partial derivative with respect to b_j*J(w_j, b_j, x_i) over all training examples;
+         x_k_i = x_k_i - alpha*partial derivative with respect to x_k_i*J(w_j, b_j, x_i) over all training examples }.
+       *Collaborative filtering isusing multiple users rating in a sort of collaboration, which can be used to help users
+        in the future.
   Binary Labels: Favs, Likes, and Clicks
   **** *Examples of binary applications = did a user purchase an item after being shown it, did a user like an item, did they spend
         more than 30 seconds with an item, etc? Yes or no answers
