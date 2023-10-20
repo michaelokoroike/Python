@@ -41,3 +41,8 @@ WEEK 2: RECOMMENDER SYSTEMS
   **** *Examples of binary applications = did a user purchase an item after being shown it, did a user like an item, did they spend
         more than 30 seconds with an item, etc? Yes or no answers
        *See video = becomes a logistic regression model
+
+* RECOMMENDER SYSTEMS IMPLEMENTATION DETAIL
+  Mean Normalization
+  **** *You will have wide ranges of values 1-5 for movies for example; mean normalization will help th algorithm move faster and make
+        better predictions
