@@ -6,6 +6,15 @@ WEEK 2: RECOMMENDER SYSTEMS
        *For recommender systems, there typically will be a number of users and a number of items
        *Notation: n_u is number of users, n_m is number of items, r(i,j) = 1 if a user has rated a movie in the example, y(i,j) = rating
         given by user j to to movie i (only if r(i,j) is 1)
+  Using Per-Item Features
+  **** *Continuing the movie example; adding romance and action as features to the dataframe/table
+       *Notation continued: w_j, b_j is parameters for user j; x_i is feature vector for movie i; for user j and movie i, predict rating
+        with w_j*x_i + b_j (linear regression); m_j is number of movies rated by user j; 
+       *Cost function is ((1/(2*m_j)) * sum of (w(j) * x(i)+b(j) - y(i,j)) squared for each example) + 
+        ((lambda/(2*m_j)) * sum of w_k_j squared for parameters w)...trying to minimize squared error just
+        like linear regression; difference between rating predicted and actual rating. i:r(i,j)=1 means looking only at the movies the
+        user actually rated. Cost function notation here is min J(w_j, b_j).
+       *Broaden out to all users.
   Binary Labels: Favs, Likes, and Clicks
   **** *Examples of binary applications = did a user purchase an item after being shown it, did a user like an item, did they spend
         more than 30 seconds with an item, etc? Yes or no answers
