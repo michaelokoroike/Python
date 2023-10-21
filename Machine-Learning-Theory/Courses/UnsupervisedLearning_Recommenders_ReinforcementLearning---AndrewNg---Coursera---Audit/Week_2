@@ -23,6 +23,7 @@ WEEK 2: RECOMMENDER SYSTEMS
         like linear regression; difference between rating predicted and actual rating. i:r(i,j)=1 means looking only at the movies the
         user actually rated. Cost function notation here is min J(x_i) for movie i. This is to learn features like romance, etc without
         features being given.
+       *
        *Broaden out to all movies; sum it.
        *This is given you haven w and b for all of the users, and wanting to learn x_i features of a movie using gradient descent.
        *Put the two cost functions together; Cost function is ((1/(2)) * sum of (w(j) * x(i)+b(j) - y(i,j)) squared for each example) + 
@@ -46,3 +47,11 @@ WEEK 2: RECOMMENDER SYSTEMS
   Mean Normalization
   **** *You will have wide ranges of values 1-5 for movies for example; mean normalization will help th algorithm move faster and make
         better predictions
+       *Adding a new user who hasn't rated doesn't negatively affect the algorithm because it's only based on who has rated things...
+        but also not good because the algorithm will start to think all new users will give only zero star ratings
+       *Take the averages of ratings for each movie (?'s are zeros) and put into a vector those means...than subtract the original 
+        ratings used to find the means by the mean...then there is a normalized rating table
+       *Answer is w(j)*x(i)+b(j) + mean of the movie...?'s end up being the mean of all the ratings of the movie as opposed to 0, which
+        is more reasonable
+       *Normalize only rows (movie ratings)...normalizing user ratings isn't important if the movie has been rated...if it hasn't been seen
+        then it doesn't make sense to ask for ratings and then columns make sense
