@@ -70,3 +70,16 @@ WEEK 2: RECOMMENDER SYSTEMS
        *Limitations of collaborative filtering (not good at a cold start problem (ranking new iitems that haven't been rated much, show something
         reasonable to users that have not rated much), no good natural way to use side info (you know a lot about a movie or a user, but can't use 
         much of this)
+
+* CONTENT-BASED FILTERING
+  Collaborative Filtering vs Content-Based Filtering
+  **** *Collaborative Filtering is recommending items based on ratings of users who gave similar ratings as you; content-based filtering is recommending
+        based on features of user and item (limitations of collaborative filtering discussed above) to find a good match
+       *Example of movie recommendations; user features may be age, gender, country, movies watched, etc; movie features may be year released, genre, 
+        reviews, average rating, etc. User features can become a x_u_j for user j, movie features can become x_m_i for movie i. These vectors can vary in 
+        size.
+       *Prediction of content-based filtering is with the equation v_u_j * v_m_i (vectors of user features and movie features); derived from computations from
+        x_u_j and x_m_i. No b type term is needed, like in wx + b.
+       *Example of v_u_j is [4.9,0.1,...,3.0] and first number 4.9 is how much they like romance, and second 0.1 is how they like action movies, etc...and then
+        v_m_i is [4.5,0.2,...3.5] with first number capturing how much is it a romance movie, the second how much is it action...the dot product should show how
+        much the user would like the movie. These vectors have to be the same size, because a dot product is needed between the two.
