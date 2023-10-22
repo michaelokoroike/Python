@@ -62,3 +62,11 @@ WEEK 2: RECOMMENDER SYSTEMS
         compute the cost function...called AUTODIFF (package is AUTOGRAD)
        *Done this way because the collaborative filtering algorithm doesn't neatly fit into Dense layers/neural network infrastructure...so we
         we have to implement the cost function ourselves, but the tools of Tensorflow are still helpful
+  Finding Related Items
+  **** *Like going to Amazon and getting similarly related items sold to you, etc...video shows how it is done
+       *In practice, when learning features with an algorithm, they can be hard to interpret...so the features x_i of item i are hard to interpret;
+        how you go about it is find item k with features x_k similar to features x_i
+       *Math formula is sum of the squared distance between x_l_k - x_l_i vectors...written as ||x_l_k - x_l_i||^2
+       *Limitations of collaborative filtering (not good at a cold start problem (ranking new iitems that haven't been rated much, show something
+        reasonable to users that have not rated much), no good natural way to use side info (you know a lot about a movie or a user, but can't use 
+        much of this)
