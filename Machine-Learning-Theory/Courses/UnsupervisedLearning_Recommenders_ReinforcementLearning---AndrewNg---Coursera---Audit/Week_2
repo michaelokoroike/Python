@@ -94,3 +94,11 @@ WEEK 2: RECOMMENDER SYSTEMS
        *Mentioned before that neural networks are better than decision tress in the sense you can more easily put multiple neural networks together to work in 
         concert
        *Limitation of the algorithm is it can be computationally expensive
+  Recommending from a Large Catalogue
+  **** *Streaming sites may have 1000s of movies, millions of ads and songs and products, etc
+       *Two steps to recommending from a large catalogue is retrieval and ranking
+       *Example of retrieval: for each of the last 10 movies watched by the user find 10 similar; or for most viewed 3 genres find top 10 movies, etc; combining
+        those into lists and removing deplicates/items already purchased
+       *Ranking is taking the list received and raking using learned model, and then displaying ranked items to users
+       *Retrieving more items means better performance but slower recommendations; carry out offline experiments to see how much retrieving more items brings about
+        more relevant recommendations
