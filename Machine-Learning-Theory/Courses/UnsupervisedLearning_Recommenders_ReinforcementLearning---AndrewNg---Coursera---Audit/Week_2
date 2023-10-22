@@ -55,3 +55,10 @@ WEEK 2: RECOMMENDER SYSTEMS
         is more reasonable
        *Normalize only rows (movie ratings)...normalizing user ratings isn't important if the movie has been rated...if it hasn't been seen
         then it doesn't make sense to ask for ratings and then columns make sense
+  Tensorflow Implementation of Collaborative Filtering
+  **** *Tensorflow figures out automaically what are the derivatives of a cost function
+       *Recall of gradient descent...w = w-alpha*d/dw of J(w,b)...repeat til convergence
+       *Given code at 3:00 which uses Tensorflow to calculate derivatives...gradienttape...main work we have with this is to tell it how to
+        compute the cost function...called AUTODIFF (package is AUTOGRAD)
+       *Done this way because the collaborative filtering algorithm doesn't neatly fit into Dense layers/neural network infrastructure...so we
+        we have to implement the cost function ourselves, but the tools of Tensorflow are still helpful
