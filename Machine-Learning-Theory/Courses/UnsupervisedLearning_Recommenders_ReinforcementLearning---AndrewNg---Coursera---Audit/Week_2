@@ -102,3 +102,4 @@ WEEK 2: RECOMMENDER SYSTEMS
        *Ranking is taking the list received and raking using learned model, and then displaying ranked items to users
        *Retrieving more items means better performance but slower recommendations; carry out offline experiments to see how much retrieving more items brings about
         more relevant recommendations
+  Ethical Use of Recommendaer Systems
