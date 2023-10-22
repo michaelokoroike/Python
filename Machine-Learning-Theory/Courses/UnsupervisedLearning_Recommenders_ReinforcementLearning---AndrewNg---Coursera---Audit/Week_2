@@ -83,3 +83,14 @@ WEEK 2: RECOMMENDER SYSTEMS
        *Example of v_u_j is [4.9,0.1,...,3.0] and first number 4.9 is how much they like romance, and second 0.1 is how they like action movies, etc...and then
         v_m_i is [4.5,0.2,...3.5] with first number capturing how much is it a romance movie, the second how much is it action...the dot product should show how
         much the user would like the movie. These vectors have to be the same size, because a dot product is needed between the two.
+  Deep Learning for Content-Based Filtering
+  **** *A good way to develop a content-based filtering algorithm is by using deep learning
+       *Example is the inputs could start as a 128 neuron vector for the user network and a 256 neuron vector for the movie network, but the output layer for both 
+        end up as 32 neuron vectors that match up with each other. They can be drawn together as a single diagram...no separate training procedure for user and movie.
+       *You can apply the sigmoid function to the v_u_j * v_m_i prediction equation to predict the probability that y(i,j) is 1
+       *Cost function is (v_u_j * v_m_i - y(i,j))^2, or squared difference between predicted and actual ratings over all pairs of i and j, plus a neural network
+        regularization term
+       *To find movies similar, ||v_m_k - v_m_i||^2 is a way, where vector of movie k is similar to the vector movie i which is already found
+       *Mentioned before that neural networks are better than decision tress in the sense you can more easily put multiple neural networks together to work in 
+        concert
+       *Limitation of the algorithm is it can be computationally expensive
