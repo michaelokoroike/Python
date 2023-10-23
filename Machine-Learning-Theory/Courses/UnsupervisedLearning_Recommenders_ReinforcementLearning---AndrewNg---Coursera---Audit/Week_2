@@ -102,4 +102,9 @@ WEEK 2: RECOMMENDER SYSTEMS
        *Ranking is taking the list received and raking using learned model, and then displaying ranked items to users
        *Retrieving more items means better performance but slower recommendations; carry out offline experiments to see how much retrieving more items brings about
         more relevant recommendations
-  Ethical Use of Recommendaer Systems
+  Ethical Use of Recommender Systems
+  **** *Goals of recommender systems: recommend things likely to get high ratings, products likely to be purchased, ads likely to be clicked on (get more per click 
+        if a good company), products generating the largest profits, videos leading to maximum watch time, etc
+       *Problematic use cases: Squeezing customers of every single dollar (payday lenders), maximizing watch time and amplifying conspiracy theories/hate crimes, 
+        maximize profit rather than user experience
+       *Good use cases: Good travel experience (travel industry), being more transparent with users (amelioration), filtering out problematic content (amelioration)
