@@ -135,3 +135,10 @@ WEEK 2: RECOMMENDER SYSTEMS
         goal is.
        *RECONSTRUCTION = PCA can go in reverse to approximate, with approximation being the projection point times the original length 1 vector; the difference is the little
         line segment (distance of point from principal component).
+  PCA in Code (Optional)
+  **** *Doing PCA in scikit-learn; fit does mean normalization
+       *After fitting, see how much variance is explained by each principal component
+       *After, transform (project) data onto the new axes
+       *When you run PCA and say PCA(n_components = 1), you're reducing points from having whatever number of axes prior to one axis; fit to 1
+       *Then transform, and inverse transform
+       *Applications for PCA = Data compression, speeding up training of a supervised learning model
