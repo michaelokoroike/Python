@@ -25,4 +25,7 @@ WEEK 3: REINFORCEMENT LEARNING
   Making Decisions: Policies in Reinforcement Learning
   **** *Always go for a nearer reward, larger reward, smaller reward, left/right
        *Create a function that is called POLICY (pi is notational figure) that tells you what action to take in every state (s) to maximize return
-       *
+  Review of Key Concepts
+  **** *States, actions, rewards, discount factor gamma, return, policy pi
+       *Can be used in otherthings like helicopter, chess
+       *The formalism of reinforcement learning application is called MARKOV DECISION PROCESS (MDP); future only depends on current state
