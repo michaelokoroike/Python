@@ -21,4 +21,8 @@ WEEK 3: REINFORCEMENT LEARNING
        *Example: Return = S + (gamma)*(S') + (gamma^2)*(S") + ...
        *Has the effect of making the reinforcment learning algorithm impatient
        *Based on highest return decide what action to take from state
-       *Push negative rewards out into future (same way put off paying people because mney is worth less in future due to interest rate)
+       *Push negative rewards out into future (same way put off paying people because money is worth less in future due to interest rate)
+  Making Decisions: Policies in Reinforcement Learning
+  **** *Always go for a nearer reward, larger reward, smaller reward, left/right
+       *Create a function that is called POLICY (pi is notational figure) that tells you what action to take in every state (s) to maximize return
+       *
