@@ -1,4 +1,4 @@
-WEEK 2: REINFORCEMENT LEARNING
+WEEK 3: REINFORCEMENT LEARNING
 
 * REINFORCEMENT LEARNING INTRODUCTION
   What is Reinforcement Learning?
@@ -9,3 +9,10 @@ WEEK 2: REINFORCEMENT LEARNING
        *Tell it what to do rather than how to do it...this makes it powerful.
        *Examples of helicopters and dogs.
        *Applications = Controlling robots, factory optimization, stock trading, playing games
+  Mars Rover Example
+  **** *Rover can be in six positions; each position is a STATE. 1, 2, 3, 4, 5, 6.
+       *State 1 has an interesting surface, and State 6 has an interesting surface but not as interesting as State 1. Set reward of State 1
+        as 100 and State 6 as 40. Left is State 1, right is State 6.
+       *Receive a reward based on every step taken
+       *The ends are often called TERMINAL STATES
+       *Summary = Starts at state S, takes action A, enjoys rewards R(S), ends up at S' (new state)
