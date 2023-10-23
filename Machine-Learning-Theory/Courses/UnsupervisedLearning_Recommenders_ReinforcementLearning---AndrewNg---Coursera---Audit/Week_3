@@ -1,0 +1,11 @@
+WEEK 2: REINFORCEMENT LEARNING
+
+* REINFORCEMENT LEARNING INTRODUCTION
+  What is Reinforcement Learning?
+  **** *Moving an object from state s to action a
+       *Supervised learning is an option but not a great approach; it's hard to find ideal acions for helicopters every moment it is
+        in flight for example
+       *REWARD FUNCTION = Tells when an object is doing well and when poorly. Maybe +1 is positive, -1000 is negative.
+       *Tell it what to do rather than how to do it...this makes it powerful.
+       *Examples of helicopters and dogs.
+       *Applications = Controlling robots, factory optimization, stock trading, playing games
