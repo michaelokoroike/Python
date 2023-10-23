@@ -113,3 +113,25 @@ WEEK 2: RECOMMENDER SYSTEMS
        *Get the features for users and movies into appropriate neural networks (extract them) and compute the normalized vectors for users and movies
        *Get the dot product between users and movies
        *Finally specify the inputs and outputs of the model, and specify the cost function
+
+* PRINCIPAL COMPONENT ANALYSIS
+  Reducing the Number of Features (Optional)
+  **** *PCA is typically used for visualization; educe features to visualize what is going on
+       *Example: Having a lot of passenger cars; they have a lot of features. Knowledge of the fact width doesnt vary much for cars based on road constraint laws, and
+        when you graph based on length on x/horizontal axis and width on y/vertical axis, the distribution of points will be long without much variance vertically. PCA
+        essentially would just get rid of width as a variable.
+       *In an example when two features are available and both have a lot of variance, you can create another axis
+       *3d usually lives on very thin surfaces; you can lower to 2d
+  PCA Algorithm (Optional)
+  **** *First normalize/scales the features
+       *Choose an axis, and that example will be "PROJECTED" onto that axis; axis should capture the variance/spread of the data (axis should not squish the points together)...
+        less variance in a badly picked axis means you capture much less information, because the projections onto the new axis are super squished; capture a lot of information
+        with less numbers.
+       *The best axis with the most variance is called the PRINCIPAL COMPONENT.
+       *Project coordinates on the principal component by using a dot product of the original coordinates of a point and a length 1 vector of the principal component axis
+       *PCA is not linear regression; with linear regression you are trying to minimize distance across y axis; with PCA there is no ground truth label y aand you're not
+        trying to fit a line to have x1 predict x2 you want a line to maximize variance of points...treats x and "y" coordinates equally...with linear regression y is given
+        special treatment, but with PCA all axes are treated equally. Maximizing the variance in PCA actually minimizes distance of points from line, like linear regression's 
+        goal is.
+       *RECONSTRUCTION = PCA can go in reverse to approximate, with approximation being the projection point times the original length 1 vector; the difference is the little
+        line segment (distance of point from principal component).
