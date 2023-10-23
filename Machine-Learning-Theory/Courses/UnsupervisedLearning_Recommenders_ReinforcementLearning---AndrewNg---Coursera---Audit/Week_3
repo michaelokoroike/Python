@@ -16,3 +16,9 @@ WEEK 3: REINFORCEMENT LEARNING
        *Receive a reward based on every step taken
        *The ends are often called TERMINAL STATES
        *Summary = Starts at state S, takes action A, enjoys rewards R(S), ends up at S' (new state)
+  The Return in Reinforcement Learning
+  **** *Return is sum of rewards for steps taken, weighted by a DISCOUNT FACTOR gamma
+       *Example: Return = S + (gamma)*(S') + (gamma^2)*(S") + ...
+       *Has the effect of making the reinforcment learning algorithm impatient
+       *Based on highest return decide what action to take from state
+       *Push negative rewards out into future (same way put off paying people because mney is worth less in future due to interest rate)
