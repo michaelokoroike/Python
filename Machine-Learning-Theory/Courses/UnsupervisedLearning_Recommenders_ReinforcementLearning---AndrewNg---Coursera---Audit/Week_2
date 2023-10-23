@@ -108,3 +108,8 @@ WEEK 2: RECOMMENDER SYSTEMS
        *Problematic use cases: Squeezing customers of every single dollar (payday lenders), maximizing watch time and amplifying conspiracy theories/hate crimes, 
         maximize profit rather than user experience
        *Good use cases: Good travel experience (travel industry), being more transparent with users (amelioration), filtering out problematic content (amelioration)
+  Tensorflow Implementation of Content-Based Filtering
+  **** *Create neural networks for users and movies
+       *Get the features for users and movies into appropriate neural networks (extract them) and compute the normalized vectors for users and movies
+       *Get the dot product between users and movies
+       *Finally specify the inputs and outputs of the model, and specify the cost function
