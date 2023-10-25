@@ -29,3 +29,9 @@ WEEK 3: REINFORCEMENT LEARNING
   **** *States, actions, rewards, discount factor gamma, return, policy pi
        *Can be used in otherthings like helicopter, chess
        *The formalism of reinforcement learning application is called MARKOV DECISION PROCESS (MDP); future only depends on current state
+
+* STATE-ACTION VALUE FUNCTION
+  State-Action Value Function Definition
+  **** *It is the value that reinforcement learning algorithms try to compute
+       *Notation = Q(s,a)
+       *It is the return if you start in state s and take the action a once, and then behave optimally afterwards.
