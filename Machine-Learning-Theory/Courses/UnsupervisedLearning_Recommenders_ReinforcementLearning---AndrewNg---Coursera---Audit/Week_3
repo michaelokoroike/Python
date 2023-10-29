@@ -47,3 +47,8 @@ WEEK 3: REINFORCEMENT LEARNING
         is action you take in state s'; gamma is discount factor
        *Q(s,a) = R(s) + gamma*max_a' of Q(s',a')
        *R(s) is an IMMEDIATE REWARD; gamma*max_a' of Q(s',a') is the return of behaving OPTIMALLY or in the fashion dictated
+  Random (Stochastic) Environment (Optional)
+  **** *Sequence of different awards
+       *Max of average value of discounted rewards...EXPECTED RETURN
+       *Modifies Bellman Equation to Q(s,a) = R(s) + gamma*E[max_a' of Q(s',a')}; E is expected average return
+       *"MISSTEP PROBABILITY
