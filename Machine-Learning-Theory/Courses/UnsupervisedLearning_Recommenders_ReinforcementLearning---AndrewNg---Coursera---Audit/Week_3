@@ -46,3 +46,4 @@ WEEK 3: REINFORCEMENT LEARNING
        *Notation = R(s) is reward of current state; s is current state; a is current action; s' is state you get after taking action a; a'
         is action you take in state s'; gamma is discount factor
        *Q(s,a) = R(s) + gamma*max_a' of Q(s',a')
+       *R(s) is an IMMEDIATE REWARD; gamma*max_a' of Q(s',a') is the return of behaving OPTIMALLY or in the fashion dictated
