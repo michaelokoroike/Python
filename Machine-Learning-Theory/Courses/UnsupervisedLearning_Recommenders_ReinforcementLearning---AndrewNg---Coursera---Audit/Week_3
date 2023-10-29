@@ -39,3 +39,5 @@ WEEK 3: REINFORCEMENT LEARNING
        *Basically having all of the relative full returns in each state based on direction, allowing the algorithm 
         to know where to go
        *The best possible return is max Q(s,a)
+  State-Action Value Function Example
+  **** *Shows how changing the reward function and the discount factor gamma and seeing Q(s,a) and optimal return/optimal policy changes
