@@ -35,3 +35,7 @@ WEEK 3: REINFORCEMENT LEARNING
   **** *It is the value that reinforcement learning algorithms try to compute
        *Notation = Q(s,a)
        *It is the return if you start in state s and take the action a once, and then behave optimally afterwards.
+     *Q(s,a) is often called the Q function/optimal Q function
+       *Basically having all of the relative full returns in each state based on direction, allowing the algorithm 
+        to know where to go
+       *The best possible return is max Q(s,a)
