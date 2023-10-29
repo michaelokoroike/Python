@@ -41,3 +41,8 @@ WEEK 3: REINFORCEMENT LEARNING
        *The best possible return is max Q(s,a)
   State-Action Value Function Example
   **** *Shows how changing the reward function and the discount factor gamma and seeing Q(s,a) and optimal return/optimal policy changes
+  Bellman Equation
+  **** *Helps us compute Q(s,a)
+       *Notation = R(s) is reward of current state; s is current state; a is current action; s' is state you get after taking action a; a'
+        is action you take in state s'; gamma is discount factor
+       *Q(s,a) = R(s) + gamma*max_a' of Q(s',a')
