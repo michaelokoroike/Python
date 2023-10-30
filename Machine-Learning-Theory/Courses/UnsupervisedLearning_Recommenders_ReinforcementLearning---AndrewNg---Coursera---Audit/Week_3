@@ -58,3 +58,5 @@ WEEK 3: REINFORCEMENT LEARNING
   **** *What we learned above is discrete state action values
        *Continous state spaces are vectors that usually contain positioning and rate of change of object; compared to discrete which is a state and
         possible other states
+  Lunar Leader
+  **** *Goal is to learn a policy pi, given state s is [vector of positions and velocities] and action a = pi*s which maximizes the return.
