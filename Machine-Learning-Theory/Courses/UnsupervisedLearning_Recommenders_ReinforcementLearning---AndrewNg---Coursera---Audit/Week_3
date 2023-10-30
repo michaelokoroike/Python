@@ -52,3 +52,9 @@ WEEK 3: REINFORCEMENT LEARNING
        *Max of average value of discounted rewards...EXPECTED RETURN
        *Modifies Bellman Equation to Q(s,a) = R(s) + gamma*E[max_a' of Q(s',a')}; E is expected average return
        *"MISSTEP PROBABILITY
+
+* CONTINUOUS STATE SPACES
+  Example of Continuous State Space Applications
+  **** *What we learned above is discrete state action values
+       *Continous state spaces are vectors that usually contain positioning and rate of change of object; compared to discrete which is a state and
+        possible other states
