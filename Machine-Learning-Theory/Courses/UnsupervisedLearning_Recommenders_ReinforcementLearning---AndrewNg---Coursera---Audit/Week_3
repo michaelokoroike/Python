@@ -76,3 +76,11 @@ WEEK 3: REINFORCEMENT LEARNING
   Algorithm Refinement: Improved Neural Network Architecture
   **** *Normal DQN is inefficient because you have to carry out inferences for multiple Qs at each state; the more efficient way to do it is to do all inferences
         simultaneously with a single neural network.
+  Algorithm Refinement: Epsilon-Greedy Policy
+  **** *Addresses question of how to take actions while still learning
+       *Two typical options; 1) Pick an action a that maximizes Q(s,a). 2) With probability 0.95, pick the action that maximizes Q(s,a)...and with probability 0.05,
+        pick an action a randomly.
+       *The better option is 2) because with 1), if it is decided something is never a good idea by random chance, it will never learn that something may have its 
+        instances of being a good idea. With 2) you give a small probability of trying out actions (called an EXPLORATION STEP). Probability of 0.95 asect is called
+        a GREEDY/EXPLOITATION STEP because we're trying to maximize our return with what we know. This whole 1) and 2) algorithm is called EPSILON-GREEDY POLICY.
+       *Start epsilon (random guessing) high. Gradually decrease. Over time, less likely to need to randomly guess.
