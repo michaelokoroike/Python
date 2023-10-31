@@ -90,3 +90,13 @@ WEEK 3: REINFORCEMENT LEARNING
        *Soft Update = When you are updating Q with Q_new in the DQN process above, a soft updates prevents the neural network from being too negatively influenced
         by one off noisy Q's. Ex: When updatng parameters w and b (using w as the example), use formula w = 0.01*w_new + 0.99*w...giving the new less weight/gradually
         changing.
+  The State of Reinforcement Learning
+  **** *Limitations = Easier to get to work in a simulation than a real robot; few applications compared to supervised/unspuervised learning;.
+       *But...exciting research!
+
+* SUMMARY AND THANK YOU
+  Summary and Thank You
+  **** *Supervised Machine Learning: Regression and Classification (Linear Regression, Logistic Regression, Gradient Descent)
+       *Advanced Learning Algorithms (Neural Networks, Decision Trees, Advice for ML)
+       *Unsupervised Learning, Recommenders, Reinforcement Learning (Clustering, Anomaly Detection, Collaborative Filtering, Content-Based Filtering, Reinforcement
+        Learning)
