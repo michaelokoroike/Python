@@ -84,3 +84,9 @@ WEEK 3: REINFORCEMENT LEARNING
         instances of being a good idea. With 2) you give a small probability of trying out actions (called an EXPLORATION STEP). Probability of 0.95 asect is called
         a GREEDY/EXPLOITATION STEP because we're trying to maximize our return with what we know. This whole 1) and 2) algorithm is called EPSILON-GREEDY POLICY.
        *Start epsilon (random guessing) high. Gradually decrease. Over time, less likely to need to randomly guess.
+  Algorithm Refinement: Mini-Batch Updates and Soft Updates (Optional)
+  **** *Mini-batch = When you have too many training examples and your algorithm (like gradient descent) by definition averages over them all to compute...instead
+        just taking a subset. It can be adding up examples or using different examples each time. Ex: Use 100 of 1,000 examples.
+       *Soft Update = When you are updating Q with Q_new in the DQN process above, a soft updates prevents the neural network from being too negatively influenced
+        by one off noisy Q's. Ex: When updatng parameters w and b (using w as the example), use formula w = 0.01*w_new + 0.99*w...giving the new less weight/gradually
+        changing.
