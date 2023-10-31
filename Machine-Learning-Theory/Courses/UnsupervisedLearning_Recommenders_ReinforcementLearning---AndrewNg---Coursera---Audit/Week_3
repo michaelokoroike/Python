@@ -72,5 +72,7 @@ WEEK 3: REINFORCEMENT LEARNING
                    *Train a NEURAL NETWORK; create training set of 10,000 examples using x = (s,a) and y = R(s) + gamma*max_a' of Q(s',a') (or (R(s), s')).
                     Train Q_new so that Q_new(s,a) = y.
                    *Set Q = Q_new.}
-       *The algorithm above is called a DEEP Q_NETWORK.
-                    
+       *The algorithm above is called a DEEP Q_NETWORK (DQN).
+  Algorithm Refinement: Improved Neural Network Architecture
+  **** *Normal DQN is inefficient because you have to carry out inferences for multiple Qs at each state; the more efficient way to do it is to do all inferences
+        simultaneously with a single neural network.
