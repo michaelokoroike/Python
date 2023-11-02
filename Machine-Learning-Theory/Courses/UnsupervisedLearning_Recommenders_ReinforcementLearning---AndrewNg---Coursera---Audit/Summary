@@ -1,0 +1,13 @@
+The Unsupervised Learning, Recommenders, Reinforcement Learning course by Andrew Ng is the third and final course in the Machine Learning 
+specialization on Coursera.
+
+Week 1 introduces us to clustering (grouping data into clusters)/k-means and anomaly detection, which are forms of unsupervised learning.
+
+Week 2 introduces us to recommender systems and things like collaborative fltering and content-based filtering, and principal component
+analysis, all related to dealing with features and learning from them.
+
+Week 3 introduces us to reinforcement learning and the state action value function, the Bellman equation, discrete vs continuous state
+spaces, and proper algorithm refinement.
+
+It is the course which really dives deep into the not as popular unsupervised learning methods, while showing their important uses and
+their growth as methods in machine learning in things like robotics, etc.
