@@ -21,3 +21,13 @@ WEEK 1: Systems of Linear Equations
   What to Expect and How to Succeed
   **** *All that is recommended; solve a simple equation with one unknown variable (2x + 7 = 17, for example), and know how to construct 
         simple plots in the coordinate system (plot y = x, for example).
+
+* SYSTEMS OF EQUATIONS
+  Linear Algebra Applied I
+  **** *Most useful math field in machine learning
+       *Example of linear regression; intuition of finding the line of best fit, which says if you know the value of an input variable,
+        you can multiply it by a constant, and add a noise constant to be able to reasonably estimate an output (wx + b is the form; the
+        input is multiplied by a weight w and that producti is added to a bias b)
+       *In example, as you add variables, you add dimensions
+       *Notation of wx + b in a dataset is w1x1***(m) + b = y**(m); the 1 represents the number input in the equation, and the m represents
+        the row of the equation (basically the individual example)
