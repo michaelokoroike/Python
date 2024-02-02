@@ -1,0 +1,23 @@
+WEEK 1: Systems of Linear Equations
+
+* SPECIALIZATION & COURSE INTRODUCTION
+  Specialization Introduction
+  **** *Introduced to what to expect in all three courses of the specialization. The first one, this Linear Algebra course for Machine Learning
+        and Data Science, teaches us how to use vectors and matrices to store and compute on data and to build systems of linear equations by 
+        writing code and using these data structures to transform data efficiently. 
+       *The second one, Calculus for Machine Learning, teaches us optimization methods like gradient descent and Newton's method. 
+       *The third and final one, Probability and Statistics for Machine Learning and Data Science, we learn about probability and 
+        distributions, and concepts like p-values and maximum likelihood estimation.
+  Course Introduction
+  **** *Introduced to what to expect in this course. From the transcript, "In the first week you will construct systems of equations from real 
+        life examples and identify the matrix representation corresponding to these systems. From there, you will determine some important 
+        concepts such as singularity and linear independence. You will also learn to calculate the determinant and you'll learn some useful 
+        row operations for simplifying matrices."
+       *"By the end of week two you will be comfortable solving two by two and three by three systems of equations, and you'll be familiar with 
+         concepts such as the rank of a matrix."
+       *"In week three, we will swim into the depth of the simplest representation of a greater values, the vector, and how matrices can transform 
+         one vector into another."
+       *"And in week four, you will learn some more advanced concepts such as eigen values and eigen vectors."
+  What to Expect and How to Succeed
+  **** *All that is recommended; solve a simple equation with one unknown variable (2x + 7 = 17, for example), and know how to construct 
+        simple plots in the coordinate system (plot y = x, for example).
