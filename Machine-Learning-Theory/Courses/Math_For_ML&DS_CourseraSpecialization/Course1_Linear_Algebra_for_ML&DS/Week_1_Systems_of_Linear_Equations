@@ -38,3 +38,10 @@ WEEK 1: Systems of Linear Equations
        *We are given a system of equations, and we are asked if it is a singular/non-singular system, if we can solve it, if we can
         represent the system as a a matrix and a vector (the dot product of the weights and the x's), and can we calculate the
         determinant of the matrix
+  System of Sentences
+  **** *We are taught about complete, redundant and contradictory systems with sentences (COMPLETE = the dog is black and the cat is orange,
+        REDUNDANT = the dog is black and the dog is black, CONTRADICTORY = the dog is black and the dog is white). Complete systems have
+        as many has many pieces of information as they do sentences; redundant systems have multiple sentences that say the same one thing;
+        contradictory systems have sentences that can't be true at the same time.
+       *Redundant and contradictory systems are called SINGULAR systems; complete systems are NONSINGULAR systems. 
+       *NONSINGULAR = systems, in the sentence example, with as many unique pieces of information as sentences
