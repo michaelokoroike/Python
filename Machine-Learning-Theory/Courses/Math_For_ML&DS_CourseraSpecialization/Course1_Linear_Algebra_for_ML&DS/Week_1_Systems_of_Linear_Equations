@@ -45,3 +45,14 @@ WEEK 1: Systems of Linear Equations
         contradictory systems have sentences that can't be true at the same time.
        *Redundant and contradictory systems are called SINGULAR systems; complete systems are NONSINGULAR systems. 
        *NONSINGULAR = systems, in the sentence example, with as many unique pieces of information as sentences
+  System of Equations
+  **** *Equations are like sentences, and are statements that give you information; systems of linear equations can also be singular or
+        non-singular based on the information they carry
+       *Redundant systems provide you with the same information, and you don't have enough to solve it...in math, there are infinitely
+        many solutions (a + b = 10, 2a + 2b = 20; says the same thing)...SINGULAR
+       *Contradictory systems provide you with information that doesn't match up...in math, it leads to a system with no solutions (a + 
+        b = 10, 2a + 2b = 24...doesn't make sense)...SINGULAR
+       *Complete systems provide you with a unique piece of information with each equation (ex: a + b = 10, a + 2b = 12...tells us b is
+        2, which makes a 8)...NONSINGULAR
+       *Linear equations are only allowed to have numbers (scalars) attached to it and then add a constant; non-linear can be squared
+        or higher exponential variables, sine/cosine, a and b can be multiplied (not just added like in linear)
