@@ -30,4 +30,11 @@ WEEK 1: Systems of Linear Equations
         input is multiplied by a weight w and that producti is added to a bias b)
        *In example, as you add variables, you add dimensions
        *Notation of wx + b in a dataset is w1x1***(m) + b = y**(m); the 1 represents the number input in the equation, and the m represents
-        the row of the equation (basically the individual example)
+        the row of the equation in the dataset (basically the individual example)
+  Linear Algebra Applied II
+  **** *Continues on linear regression example; usine matrices and vectors is literally an efficient/short-form way to write down a 
+        w1x1***(m) + b = y**(m) model with a large m (number of rows)
+       *The system we generate with the rows/examples with weights and biases for the x and y values is a system of linear equations
+       *We are given a system of equations, and we are asked if it is a singular/non-singular system, if we can solve it, if we can
+        represent the system as a a matrix and a vector (the dot product of the weights and the x's), and can we calculate the
+        determinant of the matrix
