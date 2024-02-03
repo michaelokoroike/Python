@@ -56,3 +56,13 @@ WEEK 1: Systems of Linear Equations
         2, which makes a 8)...NONSINGULAR
        *Linear equations are only allowed to have numbers (scalars) attached to it and then add a constant; non-linear can be squared
         or higher exponential variables, sine/cosine, a and b can be multiplied (not just added like in linear)
+  Systems of Equations as Lines and Planes
+  **** *Shows how to transform a linear equation into a line
+       *Geometrically, systems of linear equations are associated with the line versions of the equations being within the same plane (in
+        a COMPLETE system, they cross at a point; in a REDUNDANT system, they are the same line, and every point in the line is a solution;
+        in a CONTRADICTORY system, the lines are parallel and never cross, so no point belongs to both the equations)
+       *Singular systems = intersect at a single point (x + y + z = 0, x + 2y + z = 0, x + y + 2z = 0 is example)
+       *Non-singular system examples (x + y + z = 0, x + y + 2z = 0, x + y + 3z = 0 is example where there are multiple solutions to the 
+        system, as only z is definitively proven to be 0 and x and y could be anything that adds to 0 (three different planes though); 
+        x + y + z = 0, 2x + 2y + 2z = 0, 3x + 3y + 3z = 0 are multiples of each other and correspond to the exact same plane); 
+        these examples are REDUNDANT
