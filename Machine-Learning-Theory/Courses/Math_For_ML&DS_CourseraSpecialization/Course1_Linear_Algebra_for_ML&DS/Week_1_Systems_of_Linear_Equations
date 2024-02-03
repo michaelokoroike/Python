@@ -21,8 +21,6 @@ WEEK 1: Systems of Linear Equations
   What to Expect and How to Succeed
   **** *All that is recommended; solve a simple equation with one unknown variable (2x + 7 = 17, for example), and know how to construct 
         simple plots in the coordinate system (plot y = x, for example).
-  Readings
-  **** *Planes account for whole coordinate systems when the answer can have infinite solutions
 
 * SYSTEMS OF EQUATIONS
   Linear Algebra Applied I
@@ -68,3 +66,20 @@ WEEK 1: Systems of Linear Equations
         system, as only z is definitively proven to be 0 and x and y could be anything that adds to 0 (three different planes though); 
         x + y + z = 0, 2x + 2y + 2z = 0, 3x + 3y + 3z = 0 are multiples of each other and correspond to the exact same plane); 
         these examples are REDUNDANT
+  Readings
+  **** *Planes account for whole coordinate systems when the answer can have infinite solutions
+  A Geometric Notion of Singularity
+  **** *Systems of linear equations are represented by lines in the plane; non-singularity is when the lines intersect at a unique point
+       *Singular systems consists of parallel lines (when you include lines that are exactly the same; lines that never cross);
+        non-singular systems consists of lines that interset at unique points
+       *Put singular and non-singular into two buckets by making constants 0; will make all singular systems redundant and identical, 
+        while non-singular systems still have unique lines that will intersect at a unique point
+       *Constants don't matter when it relates to determining if a system is singular or non-singular
+  Singular vs Non-Singular Matrices
+  **** *Constants are not important in determining singularity or non-singularity
+       *Matrices are the most fundamental objects of linear algebra; arise from coefficients of a system of equations
+       *A matrix is an array of numbers inside a rectangle
+       *Matrices can be singular (unique solution) or non-singular (infinitely many solutions)
+       *Example from the video: x + y + z = 0, x + y + 2z = 0, x + y + 3z = 0...from this you can see z is proven to be 0, but nothing
+        new is shown of x and y (x + y = 0...so x = -y, infinitely. Therefore, it is a redundant and singular system, all proven with
+        zeroes as constant).
