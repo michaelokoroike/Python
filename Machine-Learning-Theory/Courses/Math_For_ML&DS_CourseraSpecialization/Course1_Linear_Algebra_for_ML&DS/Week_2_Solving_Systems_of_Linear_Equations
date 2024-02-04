@@ -1,0 +1,10 @@
+WEEK 2: Solving Systems of Linear Equations
+
+* SOLVING SYSTEMS OF LINEAR EQUATIONS: ELIMINATION
+  Machine Learning Motivation
+  **** *We'll learn how to solve systems of linear equations and how to manipulate matrices, to vastly simplify them
+       *Uses of neural networks: image recognition, sound recognition, music generation, 
+  Check Your Knowledge
+  **** *Didn't know off the bat solving singular systems of linear equations/equations with more variables, how to tell if a matrix is
+        in row echelon form or reduced row echelon form, the rank of a matrix, or the operations that can be done in a row of a matrix
+        to preserve singularity
