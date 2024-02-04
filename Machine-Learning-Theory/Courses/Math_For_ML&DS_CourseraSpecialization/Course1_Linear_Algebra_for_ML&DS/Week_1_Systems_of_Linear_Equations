@@ -83,3 +83,7 @@ WEEK 1: Systems of Linear Equations
        *Example from the video: x + y + z = 0, x + y + 2z = 0, x + y + 3z = 0...from this you can see z is proven to be 0, but nothing
         new is shown of x and y (x + y = 0...so x = -y, infinitely. Therefore, it is a redundant and singular system, all proven with
         zeroes as constant).
+  Practice Quiz 1
+  **** *Contradictory systems are defined as assigning distinct values to the same quantity; redudnant systems are representations of
+        identical lines
+       *Coefficients in n rows of matrix are the coefficients of the different variables in the n equation of the system of equations
