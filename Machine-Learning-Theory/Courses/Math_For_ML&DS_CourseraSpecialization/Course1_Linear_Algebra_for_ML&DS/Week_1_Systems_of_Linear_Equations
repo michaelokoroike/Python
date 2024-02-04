@@ -112,4 +112,18 @@ WEEK 1: Systems of Linear Equations
         therefore the rows are LINEARLY INDEPENDENT and NON-SINGULAR)
        *Key: If there are any combinations of multiples/non-multiples of any of equations orany relations, the system/matix is LINEARLY
         DEPENDENT and SINGULAR (like 3 * row1 + 2 * row2 = row3 proves dependence...if none, they are LINEARLY INDEPENDENT and NON-SINGULAR.
-        
+  The Determinant
+  **** *The Determinant is the fastest way to tell if a matrix is singular or non-singular. IF THE DETERMINANT IS ZERO, THE MATRIX IS 
+        SINGULAR, AND IF THE DETERMINANT IS ANY NUMBER BUT ZERO, THE MATRIX IS NON-SINGULAR.
+       *The math behind is theoretically, if a matrix is SINGULAR, then ab (representing one row) * constant k = cd (representing the
+        other row). If this is true and it is a 2x2 matrix where a lines up with c and b with d, then a*k = c and b*k=d. This is
+        equivalent to c/a = d/b = that constant k. This is the same as, with cross-multiplication, ad = bc, which is equivalent to the
+        very important AD - BC = 0.
+       *AD - BC is the DETERMINANT of a matrix. If it equals 0, the matrix is SINGULAR and LINEARLY DEPENDENT because remember the root
+        of the equation...it essentially means the rows are multiples of each other; if it's non-zero, then that's not the case, it's 
+        NON-SINGULAR, and therefore LINEARLY INDEPENDENT.
+       *Determinant for a 3x3 matrix (matrix being [a b c \ d e f \ g h i]) is a(ei − fh) − b(di − fg) + c(dh − eg)
+       *In 3x3 or higher, whenever there is only 0s under the main diagonal, the answer will be the product of what's in the main diagonal
+        (see the video on how you find the determinant, and even look at the way you have noted to calculate it; in the 0 situation, only
+        the first number calculated can be non-zero)
+  Conclusion
