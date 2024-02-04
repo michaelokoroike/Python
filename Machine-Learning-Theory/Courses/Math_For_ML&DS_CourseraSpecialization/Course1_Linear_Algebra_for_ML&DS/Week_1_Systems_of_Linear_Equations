@@ -127,3 +127,7 @@ WEEK 1: Systems of Linear Equations
         (see the video on how you find the determinant, and even look at the way you have noted to calculate it; in the 0 situation, only
         the first number calculated can be non-zero)
   Conclusion
+  **** *We started with a machine learning application of linear algebra; then we learned systemsof equations and translating them into 
+        matrices...now we can extract information from matrices such as their singularity (unique/non-unique...related or no relation
+        anywhere...singular is LINEAR DEPENDENCE, and non-singular is LINEAR INDEPENDENCE) and their determinant (symbol if a system is 
+        singular/not singular).
