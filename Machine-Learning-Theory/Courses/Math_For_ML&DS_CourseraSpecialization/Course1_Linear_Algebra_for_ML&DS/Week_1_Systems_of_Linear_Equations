@@ -61,8 +61,8 @@ WEEK 1: Systems of Linear Equations
        *Geometrically, systems of linear equations are associated with the line versions of the equations being within the same plane (in
         a COMPLETE system, they cross at a point; in a REDUNDANT system, they are the same line, and every point in the line is a solution;
         in a CONTRADICTORY system, the lines are parallel and never cross, so no point belongs to both the equations)
-       *Singular systems = intersect at a single point (x + y + z = 0, x + 2y + z = 0, x + y + 2z = 0 is example)
-       *Non-singular system examples (x + y + z = 0, x + y + 2z = 0, x + y + 3z = 0 is example where there are multiple solutions to the 
+       *Non-singular systems = intersect at a single point (x + y + z = 0, x + 2y + z = 0, x + y + 2z = 0 is example)
+       *Singular system examples (x + y + z = 0, x + y + 2z = 0, x + y + 3z = 0 is example where there are multiple solutions to the 
         system, as only z is definitively proven to be 0 and x and y could be anything that adds to 0 (three different planes though); 
         x + y + z = 0, 2x + 2y + 2z = 0, 3x + 3y + 3z = 0 are multiples of each other and correspond to the exact same plane); 
         these examples are REDUNDANT
@@ -87,3 +87,29 @@ WEEK 1: Systems of Linear Equations
   **** *Contradictory systems are defined as assigning distinct values to the same quantity; redudnant systems are representations of
         identical lines
        *Coefficients in n rows of matrix are the coefficients of the different variables in the n equation of the system of equations
+  Linear Dependence and Independence
+  **** *How to tell if a matrix is singular/non-singular without solving the system of equations?
+       *Recap: A system of sentences is singular if the information in the second sentence is the same as the information in the first
+        sentence. Similarly, a system of equations is singular if the information in the second equation is the same information as the
+        first one; this is the concept of LINEAR DEPENDENCE.
+       *Example of LINEAR DEPENDENCE (look at x + y + z = 0, and 2x + 2y + 2z = 0; the second equation is a multiple of the first one...
+        this means the second row can be obtained from the first, and actually vice versa...so these rows are LINEARLY DEPENDENT; each
+        row depends on the other in a sense)
+       *Example of LINEAR INDEPENDENCE (look at x + y + z = 0, and x + y + 2z = 0; no equation is a multiple of the other; no constant
+         can be applied to either equation to get the other...this makes the equation non-singular; each equation says something
+         different; matrix is same as system of equations, as no number can be multiplied by one row and you get the other...so these rows
+         are LINEARLY INDEPENDENT
+       *Example of LINEAR DEPENDENCE (look at x = 0, and y = 1, and x + y = 1; third equation is a sum of the first two...the third
+        row (in a matrix) depends on row 1 and row 2...rows are LINEARLY DEPENDENT...therefore, thematrix and the system are SINGULAR.
+       *Example of LINEAR DEPENDENCE (look at x + y + z = 0, 2x + 2y + 2z = 0, and 3x + 3y + 3z = 0; the third equation is the sum 
+        of the first two...this means the third row depends on row/equation 1 and row/equation 2...so these rows are LINEARLY DEPENDENT.
+        Also there are dependencies like the second row/equation being 2 times the first row/equation, and the third row/equation being 3
+        times the first row/equation); highly SINGULAR (redundant and/or contradictory) system/matrix.
+       *Example of LINEAR DEPENDENCE (look at x + y + z = 0, x + y + 2z = 0, x + y + 3z = 0; if you add the first and third equation you
+        get 2x + 2y + 4z = 0, which is a multiple of x + y + 2z = 0; therefore, row/equation 2 depends on row/equation 1 and row/equation
+        3, and the rows are LINEARLY DEPENDENT and SINGULAR
+       *Example of LINEAR INDEPENDENCE (look at x + y + z = 0, x + 2y + z = 0, x + y + 2z = 0; there is no relations in the rows/equations;
+        therefore the rows are LINEARLY INDEPENDENT and NON-SINGULAR)
+       *Key: If there are any combinations of multiples/non-multiples of any of equations orany relations, the system/matix is LINEARLY
+        DEPENDENT and SINGULAR (like 3 * row1 + 2 * row2 = row3 proves dependence...if none, they are LINEARLY INDEPENDENT and NON-SINGULAR.
+        
