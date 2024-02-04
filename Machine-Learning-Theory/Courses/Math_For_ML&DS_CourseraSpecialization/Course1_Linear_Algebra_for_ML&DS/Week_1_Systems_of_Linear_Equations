@@ -126,6 +126,7 @@ WEEK 1: Systems of Linear Equations
        *In 3x3 or higher, whenever there is only 0s under the main diagonal, the answer will be the product of what's in the main diagonal
         (see the video on how you find the determinant, and even look at the way you have noted to calculate it; in the 0 situation, only
         the first number calculated can be non-zero)
+       *Also; determinant is aei + bfg + cdh - cfg - afh - bdi (matrix being [a b c \ d e f \ g h i])
   Conclusion
   **** *We started with a machine learning application of linear algebra; then we learned systemsof equations and translating them into 
         matrices...now we can extract information from matrices such as their singularity (unique/non-unique...related or no relation
