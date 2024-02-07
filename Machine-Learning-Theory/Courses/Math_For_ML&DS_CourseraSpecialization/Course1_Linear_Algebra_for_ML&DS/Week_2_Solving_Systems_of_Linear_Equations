@@ -8,3 +8,10 @@ WEEK 2: Solving Systems of Linear Equations
   **** *Didn't know off the bat solving singular systems of linear equations/equations with more variables, how to tell if a matrix is
         in row echelon form or reduced row echelon form, the rank of a matrix, or the operations that can be done in a row of a matrix
         to preserve singularity
+  Solving Non-Singular Systems of Linear Equations
+  **** *Take every system and turn it into a solved system
+       *Involves manipulating equations by swapping equations, adding equations, multiplying equations by a constant    
+       *Multiplying by a constant example (a + b = 10 * (7 purchases of the combination))
+       *Adding equations example (a + b = 10; 2a + 3b = 22; sum = 3a + 4b = 32)
+       *Eliminating variables (5a + b = 17; 4a - 3b = 6; divide each equation until there's 1a ---> a + .2b = 3.4, a - 0.75b = 1.5 --->
+        0a - 0.95b = -1.9 and b = 2 (when you subtract the two equations)
