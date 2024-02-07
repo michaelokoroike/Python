@@ -24,4 +24,9 @@ WEEK 2: Solving Systems of Linear Equations
         0 = 0 so we gain no new information from the system; solution is a = a, b = 10 - a)
        *Example : a + b = 10, 2a + 2b = 24; dividing by coefficient of a to get a + b = 10, a + b = 12; subtracting 1 from the other gets
         0 = 2 so we have a contradiction!)
-  
+  Solving Systems of Equations with More Variables
+  **** *1st, divide each row by the coefficient of a variable; next, use an equation to remove a variable from the other equations; divide
+        the reduced rows by one of its remaining variables, and use one of the equations to remove the divided variable from the other; 
+        you find the answer to one of the variables, then go backward while finding the value of all of the variables
+       *I get it...reduced (ormaybe just row echelon form) is just an efficient way of solving a system of equations...called the
+        "ELIMINATION METHOD"
