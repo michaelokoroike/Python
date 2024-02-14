@@ -30,3 +30,29 @@ WEEK 2: Solving Systems of Linear Equations
         you find the answer to one of the variables, then go backward while finding the value of all of the variables
        *I get it...reduced (ormaybe just row echelon form) is just an efficient way of solving a system of equations...called the
         "ELIMINATION METHOD"
+  Interactive Tool: Graphical Representation of Linear Systems with 3 Variables
+  **** *The difference between linear systems with 3 variables having one solution (non-singular) and none solutions (singular) is
+        with one soution, all 3 planes intersect, but with no solutions, there is no single point where all 3 intersect (although there are
+        points where 2 of the 3 planes intersect)...with no solutions, it's almost like two of the planes are more oriented along the same
+        axis, while with one solution it's like each plane is oriented in different directions
+       *For the solution of a system to be a line, all the planes need to be perpendicular to each other and have a line where they all
+        intersect...one independent/free variable
+       *For the solution to be a plane, the equations in the system are all one plane (redundant)...two or more independent/free variables
+       *For the solution to be all space, the equations in the system must have 0 as values (any coordinates will all add to 0 in each 
+        equation)
+       *Note: Free variables are the amount of variables that can be freely moved in an equation, while the other variables' values are
+        dictated by the movement of those variables...what are known as degrees of freedom
+       *Note: WHen looking at planes, the extra axis (outside of x and y) is literally a method of measurement (ex: eq is 3x + 2y = z...if
+        x is 1 and y is 1, then in a depiction of a plane, you see a line where there is a third axis equalling the sum. The best way to
+        put it is, when it is a line y is depending on x and vice versa technically...when it is a plane, any y is allowed for any x and
+        vice versa.
+       *Note: The key to understanding the plane id the implicit formula; the trajectory is based on where the plane equalled zero (for 
+        example, a plane like z = 3x + 2y; the implicit formula is 3x + 2y - z = 0...the edges of the plane would be wherever the x and y
+        part of the equation equal 0, in conjunction with z equalling 0; example is (0, 0, 0), (1, -3/2, 0), (-1, 3/2, 0)...it should be 
+        recognized that a plane is simply what you get when you take the formula z = 3x + 2y and start it from every point on the x-axis,
+        the origin of which is discovered as stated before with the implicit formula 3x + 2y - z = 0...the line projecting from each point 
+        is the same because the step of y remains the same (and these are called normal vectors, when in Ax + By + Cz = D form like
+        3x + 2y - z = 0, D is 0 and the remaining coefficients are treated as a vector from the origin, meaning the z term is 0). The
+        normal vector
+       *Random note = If two things are facing the same direction and on the same axis, they are not facing towards each other
+       *Note: Gradient vector notes = https://www.kristakingmath.com/blog/gradient-vectors-and-the-tangent-plane
