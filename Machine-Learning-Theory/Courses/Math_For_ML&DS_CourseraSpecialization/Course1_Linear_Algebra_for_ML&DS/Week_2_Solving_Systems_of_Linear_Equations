@@ -56,3 +56,12 @@ WEEK 2: Solving Systems of Linear Equations
         normal vector
        *Random note = If two things are facing the same direction and on the same axis, they are not facing towards each other
        *Note: Gradient vector notes = https://www.kristakingmath.com/blog/gradient-vectors-and-the-tangent-plane
+  Matrix Row-Reduction
+  **** *AKA Gaussian elimination; essentially solving linear equations by manipulating them
+       *Row echelon form is [1 0.2 || 0 1], reduced row echelon form is [1 0 || 0 1]...with row echelon, to the right of the main diagonal,
+        any number is allowed; with reduced row echelon, all 0s above that main diagonal
+  Row Operations that Preserve Singularity
+  **** *Same manipulations of systems of linear equations can be used for matrices
+       *Row operations preserve singularity
+       *Recap; nonzero determinist values are non-singular
+       *Rows in a matrix can be switched and maintain singularity/non-singularity; also can be added together
