@@ -83,3 +83,11 @@ WEEK 2: Solving Systems of Linear Equations
         because the dimension of a line is 1. For all 0s in a matrix, the dimensional solution space would be 2 because you could plug in 
         any a or b as a solution to arrive at constant 0.
        *In the above case, rank equals 2 - (dimension of solution space)...this is how it works for a 2x2 matrix.
+  The Rank of a Matrix in General
+  **** *Rank in general is a measure of how non-singular a matrix is (how many unique pieces of information in it...number of independent
+        equations)
+       *The key is an equation isn't independent if there's a way to obtin them from the other two (exs: for the three equations a + b + c = 0, a + 2b + c = 0, a + b + 2c = 0,
+        there's no way to obtain any one of them out of the other two, therefore there are 3 equations and 3 pieces of information, which means a rank of 3. But
+        for the three equations a + b + c = 0, a + b + 2c = 0, a + b + 3c = 0, the second equation is an average of the other two, so it's only 2 unique pieces of information
+        and rank 2. a + b + c = 0, 2a + 2b + 2c = 0, 3a + 3b + 3c = 0 are all multiples of each other and is only 1 piece of information (rank 1). All 0s is rank 0.
+       *Another way to do it is with the row echelon form of the matrix.
