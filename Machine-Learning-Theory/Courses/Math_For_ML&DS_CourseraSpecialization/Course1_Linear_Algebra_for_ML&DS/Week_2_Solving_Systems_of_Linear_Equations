@@ -65,3 +65,21 @@ WEEK 2: Solving Systems of Linear Equations
        *Row operations preserve singularity
        *Recap; nonzero determinist values are non-singular
        *Rows in a matrix can be switched and maintain singularity/non-singularity; also can be added together
+
+* SOLVING SYSTEMS OF LINEAR EQUATIONS: ROW ECHELON FORM AND RANK
+  The Rank of a Matrix
+  **** *Use of ranking machine learning is image compression for example; images can take a lot of storage because every pixel intensity
+        has to be stored as a number...but you can store slightly blurrier images using significantly less space
+       *Singular Value Decomposition can reduce the rank of a matrix while changing the matrix as little as possible
+       *Rank is essentially how many pieces of information an equation has (exs: for the two equations a + b = 10, 2a + 2b = 20, the rank 
+        is 1 because it is redundant; for the two equations a + b = 10, a + 2b = 12, the rank is 2 because there are two pieces of info;
+        for the two equations 0a + 0b = 0, 0a + 0b = 0, the rank is 0 because there's no information
+       *Solution space for a matrix = the solution(s) to the system of equations when the constants are zero (exs: for the 
+        a + b = 10, a + 2b = 12 non-singular example, the matrix is [1 1 || 1 2], with 1 and 1 corresponding to a, and 1 and 2 
+        corresponding to b...the only (a,b) that can simultaneously solve both equations would be (0,0); the dimensional solution space is
+        0 because the dimension of a point is 0. For the a + b = 10, 2a + 2b = 20 singular example, the matrix is [1 1 || 2 2], with 1 
+        and 2 corresponding to a and b...the 2 and 2 is a multiple of the 1 and 1 so we can think of it in that term...any (a,b) work where 
+        a is the opposite of b and vice versa, like 4 and -4, 1 and -1, etc, and this creates a line...the dimensional solution space is 1 
+        because the dimension of a line is 1. For all 0s in a matrix, the dimensional solution space would be 2 because you could plug in 
+        any a or b as a solution to arrive at constant 0.
+       *In the above case, rank equals 2 - (dimension of solution space)...this is how it works for a 2x2 matrix.
