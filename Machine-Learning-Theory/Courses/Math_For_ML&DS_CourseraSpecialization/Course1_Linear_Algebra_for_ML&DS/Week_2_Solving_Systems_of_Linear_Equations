@@ -74,7 +74,7 @@ WEEK 2: Solving Systems of Linear Equations
        *Rank is essentially how many pieces of information an equation has (exs: for the two equations a + b = 10, 2a + 2b = 20, the rank 
         is 1 because it is redundant; for the two equations a + b = 10, a + 2b = 12, the rank is 2 because there are two pieces of info;
         for the two equations 0a + 0b = 0, 0a + 0b = 0, the rank is 0 because there's no information
-       *Solution space for a matrix = the solution(s) to the system of equations when the constants are zero (exs: for the 
+       *SOLUTION SPACE for a matrix = the solution(s) to the system of equations when the constants are zero (exs: for the 
         a + b = 10, a + 2b = 12 non-singular example, the matrix is [1 1 || 1 2], with 1 and 1 corresponding to a, and 1 and 2 
         corresponding to b...the only (a,b) that can simultaneously solve both equations would be (0,0); the dimensional solution space is
         0 because the dimension of a point is 0. For the a + b = 10, 2a + 2b = 20 singular example, the matrix is [1 1 || 2 2], with 1 
