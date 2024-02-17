@@ -118,3 +118,13 @@ WEEK 2: Solving Systems of Linear Equations
         if the constant in the row(s) of zero is not zero, then it ends up being 0a + 0b + 0c = 10 for example, in this type of equation, there are no solutions.
        *Note: BACK SUBSTITUTION is what you do when an augmented matrix is in reduced row echelon form and you have the value of one of the variables which solves the system of
         equations.
+
+* WEEK 2 WRAP UP
+  Conclusion
+  **** *Things we've learned below...
+       *1) Solving systems of equations by translating them into matrices (built from week 1 understanding of solving 2x2 and 3x3 systems of linear equations and an understanding
+           of matrices) and conducting row operations to find solutions more efficiently
+       *2) Learn how to translate matrices into their row echelon form and their even simpler row reduced echelon form.
+       *3) Learn how to extract all possible information from a matrix (SINGULARITY vs NONSINGULARITY, DETERMINANT, RANK, solutions to its system of equations, and its graphical
+           representation).
+       *Week 3 will bring vectors, dot product, matrix multiplication, linear transformations, and more
