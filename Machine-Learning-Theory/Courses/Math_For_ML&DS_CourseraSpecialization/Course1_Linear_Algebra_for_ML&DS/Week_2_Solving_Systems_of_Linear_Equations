@@ -114,10 +114,11 @@ WEEK 2: Solving Systems of Linear Equations
   The Gaussian Elimination Algorithm
   **** *This algorithm is essentially getting a system of equations down to reduced row echelon form. This is done on an AUGMENTED MATRIX (matrix with constants; for example,
         in the equations a + b + c = 1, a + 2b + c = 1, a + b + 2c = 1, the "constant" for all three equations is 1). This solves the system of equations.
-       *Note: If a matrix is SINGULAR, in reduced row echelon form, one of the rows will be all zeroes. At that point you will know there is no solution to the system and you can
-        stop right there...but you can still determine if the matrix is contradictory and has no solutions, or has infinitely many solutions by looking at the column of constants;
-        if the constant in the row(s) of zero is also zero, then it ends up being 0a + 0b + 0c = 0, and in this type of equation, there are infinitely many solutions...
-        if the constant in the row(s) of zero is not zero, then it ends up being 0a + 0b + 0c = 10 for example, in this type of equation, there are no solutions.
+       *Note: If a matrix is SINGULAR (non-unique pieces of information), in reduced row echelon form, one of the rows will be all zeroes. At that point you will know there is no 
+        solution to the system and you can stop right there...but you can still determine if the matrix is contradictory and has no solutions, or has infinitely many solutions by 
+        looking at the column of constants; if the constant in the row(s) of zero is also zero, then it ends up being 0a + 0b + 0c = 0, and in this type of equation, there are 
+        infinitely many solutions...if the constant in the row(s) of zero is not zero, then it ends up being 0a + 0b + 0c = 10 for example, in this type of equation, there are no 
+        solutions.
        *Note: BACK SUBSTITUTION is what you do when an augmented matrix is in reduced row echelon form and you have the value of one of the variables which solves the system of
         equations.
 
