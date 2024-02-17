@@ -82,7 +82,9 @@ WEEK 2: Solving Systems of Linear Equations
         a is the opposite of b and vice versa, like 4 and -4, 1 and -1, etc, and this creates a line...the dimensional solution space is 1 
         because the dimension of a line is 1. For all 0s in a matrix, the dimensional solution space would be 2 because you could plug in 
         any a or b as a solution to arrive at constant 0.
-       *In the above case, rank equals 2 - (dimension of solution space)...this is how it works for a 2x2 matrix.
+       *In the above case, rank equals 2 - (dimension of solution space)...this is how it works for a 2x2 matrix. The lower the dimension of the solution space, the
+        less amount of (a,b) pairs/"solutions" that can go into both equations and solve the system, which means the more unique the equations likely are, which would
+        mean higher rank.
   The Rank of a Matrix in General
   **** *Rank in general is a measure of how non-singular a matrix is (how many unique pieces of information in it...number of independent
         equations)
