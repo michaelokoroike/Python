@@ -91,3 +91,30 @@ WEEK 2: Solving Systems of Linear Equations
         for the three equations a + b + c = 0, a + b + 2c = 0, a + b + 3c = 0, the second equation is an average of the other two, so it's only 2 unique pieces of information
         and rank 2. a + b + c = 0, 2a + 2b + 2c = 0, 3a + 3b + 3c = 0 are all multiples of each other and is only 1 piece of information (rank 1). All 0s is rank 0.
        *Another way to do it is with the row echelon form of the matrix.
+  Row Echelon Form
+  **** *To get into row echelon form, divide all rows by leftmost coefficients; then subtract the bottom equation by the top and replace the bottom with the new one; then divide 
+        the bottom row by the leftmost nonzero coefficient. For a 2x2 matrix, this gets you row echelon form. This is also notedly for NON-SINGULAR matrices; SINGULAR matrices
+        end up with 0s on the bottom and the final divide step discussed in the last sentence.
+       *Depending on how many 1s are in the diagonal determines how many ones are in the diagonal of a matrix in row echelon form...a matrix is NON-SINGULAR if and only if its
+        diagonal has all ones and no zeroes
+       *Note (my tangling with it in my head); when you get to row echelon form, you theoretically should have a variable solved, if it is a non-singular matrix
+  Row Echelon Form in General
+  **** *Note: It should be noted that 1s in the diagonal are unnecessary in row echelon form...they are only necessary in reduced row echelon form. Also, in reduced version, all
+        numbers under and above the main diagonal should be zeroed it; in row echelon form, it's only the numbers below it
+       *For the form, all rows with only zeroes need to go at the bottom; every row also has a leftmost nonzero entry (called pivots)...each pivot must be to the right of the
+        pivots of the rows above it
+       *Rank is number of pivots in a matrix in row echelon form
+       *Note: This class will use number as pivots only.
+       *Note: SINGULAR matrices have less pivots than number of columns (less unique pieces of information than actual total pieces of information)
+  Reduced Row Echelon form
+  **** *Reduced version,as stated before, is essentially row echelon form, but all of the numbers in the main diagonal are 1, and all numbers both below and above the main diagonal 
+        are zero.
+  The Gaussian Elimination Algorithm
+  **** *This algorithm is essentially getting a system of equations down to reduced row echelon form. This is done on an AUGMENTED MATRIX (matrix with constants; for example,
+        in the equations a + b + c = 1, a + 2b + c = 1, a + b + 2c = 1, the "constant" for all three equations is 1). This solves the system of equations.
+       *Note: If a matrix is SINGULAR, in reduced row echelon form, one of the rows will be all zeroes. At that point you will know there is no solution to the system and you can
+        stop right there...but you can still determine if the matrix is contradictory and has no solutions, or has infinitely many solutions by looking at the column of constants;
+        if the constant in the row(s) of zero is also zero, then it ends up being 0a + 0b + 0c = 0, and in this type of equation, there are infinitely many solutions...
+        if the constant in the row(s) of zero is not zero, then it ends up being 0a + 0b + 0c = 10 for example, in this type of equation, there are no solutions.
+       *Note: BACK SUBSTITUTION is what you do when an augmented matrix is in reduced row echelon form and you have the value of one of the variables which solves the system of
+        equations.
