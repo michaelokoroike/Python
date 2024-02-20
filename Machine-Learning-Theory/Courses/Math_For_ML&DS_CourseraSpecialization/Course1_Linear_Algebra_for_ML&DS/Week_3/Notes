@@ -1,0 +1,12 @@
+WEEK 3: Vectors and Linear Transformations
+
+* VECTOR ALGEBRA
+  Machine Learning Motivation
+  **** *Main topics are vectors and matrices, and their properties such as size/direction of a vector
+       *Think of vectors and matrices as a lot like numbers, can be added, multiplied, divided, subtracted (together)
+       *Just like numbers you can find the multiplicative inverse of a matrix (inverse of 2 is 1/2, for example), under 
+        certain conditions
+       *Matrices and vectors are essential in data sets
+       *Will learn about linear transformations (can hlp you visualize matrices graphically)
+       *Examples in real world/uses include AI generated images, image-to-text/text-to-image generations...all of this is
+        derived from manipulating matrices, vectors and their operations
