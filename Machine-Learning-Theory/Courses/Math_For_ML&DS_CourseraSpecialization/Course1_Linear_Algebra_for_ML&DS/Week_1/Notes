@@ -1,0 +1,134 @@
+WEEK 1: Systems of Linear Equations
+
+* SPECIALIZATION & COURSE INTRODUCTION
+  Specialization Introduction
+  **** *Introduced to what to expect in all three courses of the specialization. The first one, this Linear Algebra course for Machine Learning
+        and Data Science, teaches us how to use vectors and matrices to store and compute on data and to build systems of linear equations by 
+        writing code and using these data structures to transform data efficiently. 
+       *The second one, Calculus for Machine Learning, teaches us optimization methods like gradient descent and Newton's method. 
+       *The third and final one, Probability and Statistics for Machine Learning and Data Science, we learn about probability and 
+        distributions, and concepts like p-values and maximum likelihood estimation.
+  Course Introduction
+  **** *Introduced to what to expect in this course. From the transcript, "In the first week you will construct systems of equations from real 
+        life examples and identify the matrix representation corresponding to these systems. From there, you will determine some important 
+        concepts such as singularity and linear independence. You will also learn to calculate the determinant and you'll learn some useful 
+        row operations for simplifying matrices."
+       *"By the end of week two you will be comfortable solving two by two and three by three systems of equations, and you'll be familiar with 
+         concepts such as the rank of a matrix."
+       *"In week three, we will swim into the depth of the simplest representation of a greater values, the vector, and how matrices can transform 
+         one vector into another."
+       *"And in week four, you will learn some more advanced concepts such as eigen values and eigen vectors."
+  What to Expect and How to Succeed
+  **** *All that is recommended; solve a simple equation with one unknown variable (2x + 7 = 17, for example), and know how to construct 
+        simple plots in the coordinate system (plot y = x, for example).
+
+* SYSTEMS OF EQUATIONS
+  Linear Algebra Applied I
+  **** *Most useful math field in machine learning
+       *Example of linear regression; intuition of finding the line of best fit, which says if you know the value of an input variable,
+        you can multiply it by a constant, and add a noise constant to be able to reasonably estimate an output (wx + b is the form; the
+        input is multiplied by a weight w and that producti is added to a bias b)
+       *In example, as you add variables, you add dimensions
+       *Notation of wx + b in a dataset is w1x1***(m) + b = y**(m); the 1 represents the number input in the equation, and the m represents
+        the row of the equation in the dataset (basically the individual example)
+  Linear Algebra Applied II
+  **** *Continues on linear regression example; usine matrices and vectors is literally an efficient/short-form way to write down a 
+        w1x1***(m) + b = y**(m) model with a large m (number of rows)
+       *The system we generate with the rows/examples with weights and biases for the x and y values is a system of linear equations
+       *We are given a system of equations, and we are asked if it is a singular/non-singular system, if we can solve it, if we can
+        represent the system as a a matrix and a vector (the dot product of the weights and the x's), and can we calculate the
+        determinant of the matrix
+  System of Sentences
+  **** *We are taught about complete, redundant and contradictory systems with sentences (COMPLETE = the dog is black and the cat is orange,
+        REDUNDANT = the dog is black and the dog is black, CONTRADICTORY = the dog is black and the dog is white). Complete systems have
+        as many has many pieces of information as they do sentences; redundant systems have multiple sentences that say the same one thing;
+        contradictory systems have sentences that can't be true at the same time.
+       *Redundant and contradictory systems are called SINGULAR systems; complete systems are NONSINGULAR systems. 
+       *NONSINGULAR = systems, in the sentence example, with as many unique pieces of information as sentences
+  System of Equations
+  **** *Equations are like sentences, and are statements that give you information; systems of linear equations can also be singular or
+        non-singular based on the information they carry
+       *Redundant systems provide you with the same information, and you don't have enough to solve it...in math, there are infinitely
+        many solutions (a + b = 10, 2a + 2b = 20; says the same thing)...SINGULAR
+       *Contradictory systems provide you with information that doesn't match up...in math, it leads to a system with no solutions (a + 
+        b = 10, 2a + 2b = 24...doesn't make sense)...SINGULAR
+       *Complete systems provide you with a unique piece of information with each equation (ex: a + b = 10, a + 2b = 12...tells us b is
+        2, which makes a 8)...NONSINGULAR
+       *Linear equations are only allowed to have numbers (scalars) attached to it and then add a constant; non-linear can be squared
+        or higher exponential variables, sine/cosine, a and b can be multiplied (not just added like in linear)
+  Systems of Equations as Lines and Planes
+  **** *Shows how to transform a linear equation into a line
+       *Geometrically, systems of linear equations are associated with the line versions of the equations being within the same plane (in
+        a COMPLETE system, they cross at a point; in a REDUNDANT system, they are the same line, and every point in the line is a solution;
+        in a CONTRADICTORY system, the lines are parallel and never cross, so no point belongs to both the equations)
+       *Non-singular systems = intersect at a single point (x + y + z = 0, x + 2y + z = 0, x + y + 2z = 0 is example)
+       *Singular system examples (x + y + z = 0, x + y + 2z = 0, x + y + 3z = 0 is example where there are multiple solutions to the 
+        system, as only z is definitively proven to be 0 and x and y could be anything that adds to 0 (three different planes though); 
+        x + y + z = 0, 2x + 2y + 2z = 0, 3x + 3y + 3z = 0 are multiples of each other and correspond to the exact same plane); 
+        these examples are REDUNDANT
+  Readings
+  **** *Planes account for whole coordinate systems when the answer can have infinite solutions
+  A Geometric Notion of Singularity
+  **** *Systems of linear equations are represented by lines in the plane; non-singularity is when the lines intersect at a unique point
+       *Singular systems consists of parallel lines (when you include lines that are exactly the same; lines that never cross);
+        non-singular systems consists of lines that interset at unique points
+       *Put singular and non-singular into two buckets by making constants 0; will make all singular systems redundant and identical, 
+        while non-singular systems still have unique lines that will intersect at a unique point
+       *Constants don't matter when it relates to determining if a system is singular or non-singular
+  Singular vs Non-Singular Matrices
+  **** *Constants are not important in determining singularity or non-singularity
+       *Matrices are the most fundamental objects of linear algebra; arise from coefficients of a system of equations
+       *A matrix is an array of numbers inside a rectangle
+       *Matrices can be singular (unique solution) or non-singular (infinitely many solutions)
+       *Example from the video: x + y + z = 0, x + y + 2z = 0, x + y + 3z = 0...from this you can see z is proven to be 0, but nothing
+        new is shown of x and y (x + y = 0...so x = -y, infinitely. Therefore, it is a redundant and singular system, all proven with
+        zeroes as constant).
+  Practice Quiz 1
+  **** *Contradictory systems are defined as assigning distinct values to the same quantity; redudnant systems are representations of
+        identical lines
+       *Coefficients in n rows of matrix are the coefficients of the different variables in the n equation of the system of equations
+  Linear Dependence and Independence
+  **** *How to tell if a matrix is singular/non-singular without solving the system of equations?
+       *Recap: A system of sentences is singular if the information in the second sentence is the same as the information in the first
+        sentence. Similarly, a system of equations is singular if the information in the second equation is the same information as the
+        first one; this is the concept of LINEAR DEPENDENCE.
+       *Example of LINEAR DEPENDENCE (look at x + y + z = 0, and 2x + 2y + 2z = 0; the second equation is a multiple of the first one...
+        this means the second row can be obtained from the first, and actually vice versa...so these rows are LINEARLY DEPENDENT; each
+        row depends on the other in a sense)
+       *Example of LINEAR INDEPENDENCE (look at x + y + z = 0, and x + y + 2z = 0; no equation is a multiple of the other; no constant
+         can be applied to either equation to get the other...this makes the equation non-singular; each equation says something
+         different; matrix is same as system of equations, as no number can be multiplied by one row and you get the other...so these rows
+         are LINEARLY INDEPENDENT
+       *Example of LINEAR DEPENDENCE (look at x = 0, and y = 1, and x + y = 1; third equation is a sum of the first two...the third
+        row (in a matrix) depends on row 1 and row 2...rows are LINEARLY DEPENDENT...therefore, thematrix and the system are SINGULAR.
+       *Example of LINEAR DEPENDENCE (look at x + y + z = 0, 2x + 2y + 2z = 0, and 3x + 3y + 3z = 0; the third equation is the sum 
+        of the first two...this means the third row depends on row/equation 1 and row/equation 2...so these rows are LINEARLY DEPENDENT.
+        Also there are dependencies like the second row/equation being 2 times the first row/equation, and the third row/equation being 3
+        times the first row/equation); highly SINGULAR (redundant and/or contradictory) system/matrix.
+       *Example of LINEAR DEPENDENCE (look at x + y + z = 0, x + y + 2z = 0, x + y + 3z = 0; if you add the first and third equation you
+        get 2x + 2y + 4z = 0, which is a multiple of x + y + 2z = 0; therefore, row/equation 2 depends on row/equation 1 and row/equation
+        3, and the rows are LINEARLY DEPENDENT and SINGULAR
+       *Example of LINEAR INDEPENDENCE (look at x + y + z = 0, x + 2y + z = 0, x + y + 2z = 0; there is no relations in the rows/equations;
+        therefore the rows are LINEARLY INDEPENDENT and NON-SINGULAR)
+       *Key: If there are any combinations of multiples/non-multiples of any of equations orany relations, the system/matix is LINEARLY
+        DEPENDENT and SINGULAR (like 3 * row1 + 2 * row2 = row3 proves dependence...if none, they are LINEARLY INDEPENDENT and NON-SINGULAR.
+  The Determinant
+  **** *The Determinant is the fastest way to tell if a matrix is singular or non-singular. IF THE DETERMINANT IS ZERO, THE MATRIX IS 
+        SINGULAR, AND IF THE DETERMINANT IS ANY NUMBER BUT ZERO, THE MATRIX IS NON-SINGULAR.
+       *The math behind is theoretically, if a matrix is SINGULAR, then ab (representing one row) * constant k = cd (representing the
+        other row). If this is true and it is a 2x2 matrix where a lines up with c and b with d, then a*k = c and b*k=d. This is
+        equivalent to c/a = d/b = that constant k. This is the same as, with cross-multiplication, ad = bc, which is equivalent to the
+        very important AD - BC = 0.
+       *AD - BC is the DETERMINANT of a matrix. If it equals 0, the matrix is SINGULAR and LINEARLY DEPENDENT because remember the root
+        of the equation...it essentially means the rows are multiples of each other; if it's non-zero, then that's not the case, it's 
+        NON-SINGULAR, and therefore LINEARLY INDEPENDENT.
+       *Determinant for a 3x3 matrix (matrix being [a b c \ d e f \ g h i]) is a(ei − fh) − b(di − fg) + c(dh − eg)
+       *In 3x3 or higher, whenever there is only 0s under the main diagonal, the answer will be the product of what's in the main diagonal
+        (see the video on how you find the determinant, and even look at the way you have noted to calculate it; in the 0 situation, only
+        the first number calculated can be non-zero)
+       *Also; determinant is aei + bfg + cdh - cfg - afh - bdi (matrix being [a b c \ d e f \ g h i])
+  Conclusion
+  **** *We started with a machine learning application of linear algebra; then we learned systemsof equations and translating them into 
+        matrices...now we can extract information from matrices such as their singularity (unique/non-unique...related or no relation
+        anywhere...singular is LINEAR DEPENDENCE, and non-singular is LINEAR INDEPENDENCE) and their determinant (symbol if a system is 
+        singular/not singular).
