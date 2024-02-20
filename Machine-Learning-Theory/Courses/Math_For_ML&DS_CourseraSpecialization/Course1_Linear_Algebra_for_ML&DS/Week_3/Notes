@@ -21,3 +21,16 @@ WEEK 3: Vectors and Linear Transformations
        *Taxicab distance (two sides of triangle) vs helicopter distance (hypotenuse)...taxicab distance is "L1 norm" (|a| + |b|),
         helicopter distance is "L2 norm" (square root of (a**2 + b**2); default algorithm
        *Direction of a vector can be derived from coordinates; showed me need to target a little bit
+  Sum and Difference of Vectors
+  **** *Example of sum = u: (4, 1), v: (1, 3), u + v = (4+1, 1+3) = (5,4). The sum of (5, 4) creates a diagonal in a parallelogram
+        between the vectors u and v.
+  **** *Example of difference = u: (4, 1), v: (1, 3), u - v = (4-1, 1-3) = (3,-2). The difference of (3, -2) when translated matches
+        the vector obtained by joining the points u and v.
+       *General definition is sum/difference component by component
+  Distance between Vectors
+  **** *One measurement is L1 distance (|a| + |b|), and another is L2 distance (square root of (|a|**2 + |b|**2))
+       *Example is u: (6, 2), v: (1, 5), where u - v = (6-1, 2-5) = (5,-3). L1 distance is |5| + |-3|, which is 8. L2 distance is
+        square root of |5|**2 + |-3|**2, which is 5.8.
+  Multiplying a Vector by a Scalar
+  **** *Result of vector * scalar is an elementwise product (ex: (1,2) vector * 3 scalar = (1*3, 2*3) vector (3,6))
+       *It's a stretcing of a vector...if the scalar is negative, it's a stretching and reflecting across the origin
