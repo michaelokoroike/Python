@@ -13,3 +13,11 @@ WEEK 3: Vectors and Linear Transformations
   Check Your Knowledge
   **** *Didn't know distance between vectors, matrix that represents a transformation, compute the inverse of a matrix off 
         the bat
+  Vectors and their Properties
+  **** *Seen as arrows in a plane/higher dimensional place
+       *Impoartant aspects are magnitude (size/direction)
+       *Vector simply put is a couple of numbers
+       *Number of coordinates in the vector is the dimension of the space in which it lives
+       *Taxicab distance (two sides of triangle) vs helicopter distance (hypotenuse)...taxicab distance is "L1 norm" (|a| + |b|),
+        helicopter distance is "L2 norm" (square root of (a**2 + b**2); default algorithm
+       *Direction of a vector can be derived from coordinates; showed me need to target a little bit
