@@ -56,3 +56,6 @@ WEEK 3: Vectors and Linear Transformations
        *Geometrically a dot product is positive because the projection onto another vector has positive length; it is negative because
         the projection of a vector moves in the opposite direction of the major vector...therefore THE SIGN OF A DOT PRODUCT OF A
         VECTOR CORRESPONDS TO BEING ON A SIDE OF THE ORTHOGONAL VECTOR TO THE VECTOR IN QUESTION
+  Multiplying a Matrix by a Vector
+  **** *Basically an amalgamation of vector by vector multiplication...in multiple Ax = b in a system of equations for example,
+        x is a constant, while A and b can be switched out. It's multiple dot products stacked together
