@@ -34,3 +34,25 @@ WEEK 3: Vectors and Linear Transformations
   Multiplying a Vector by a Scalar
   **** *Result of vector * scalar is an elementwise product (ex: (1,2) vector * 3 scalar = (1*3, 2*3) vector (3,6))
        *It's a stretcing of a vector...if the scalar is negative, it's a stretching and reflecting across the origin
+  The Dot Product
+  **** *Example is buying different foods at different prices and finding how much you spent in total (2 apples and 4 bananas, with
+        an apple costing $5 and a banana costing $3...2*$5 + 4*$3 = $22)
+       *Ususally first vector is a row and second is a column
+       *L2-Norm is always the square root of the dot product between a vector and itself
+       *Vector transpose; converts columns into rows, and rows into columns. Matrix transpose; the columns become the rows. 
+        X * y-transpose is typically how two vectors are multiplied.
+       *<x, y> is another notation of the dot product
+  Geometric Dot Product
+  **** *The angle between two vectors is a significant measure...there's actually a relationship between the angle between vectors and
+        the dot product
+       *Orthogonal (perpendicular) vectors ave a dot product of 0 (ex: u: (-1, 3), v: (6, 2)...-1*6 + 3*2 = 0); necessity for
+        orthogonality.
+       *Dot product between a vector and itself (<u,u>) is L2-Norm squared (|a|**2 + |b|**2); dot product between two orthogonal 
+        (perpendicular) vectors (<u,v>) is always 0; 
+       *Dot product of a vector and itself (u, u) is the norm squared over the product of the norm and itself; dot product of a vector 
+        and a longer vector (u, v) in the same direction is similar (simply the product of the two norms u * v); if the vectors (u, v) 
+        have an angle between them, basically same as the sentence before this one, but you have to perpendicularly project one vector 
+        onto the other (u' * v)...this is where COSINE OF AN ANGLE comes in (u' * v is equal to u * v * cos of angle between vectors)
+       *Geometrically a dot product is positive because the projection onto another vector has positive length; it is negative because
+        the projection of a vector moves in the opposite direction of the major vector...therefore THE SIGN OF A DOT PRODUCT OF A
+        VECTOR CORRESPONDS TO BEING ON A SIDE OF THE ORTHOGONAL VECTOR TO THE VECTOR IN QUESTION
