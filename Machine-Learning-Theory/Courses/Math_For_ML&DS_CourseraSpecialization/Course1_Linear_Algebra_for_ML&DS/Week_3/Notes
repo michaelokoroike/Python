@@ -59,3 +59,15 @@ WEEK 3: Vectors and Linear Transformations
   Multiplying a Matrix by a Vector
   **** *Basically an amalgamation of vector by vector multiplication...in multiple Ax = b in a system of equations for example,
         x is a constant, while A and b can be switched out. It's multiple dot products stacked together
+
+* LINEAR TRANSFORMATIONS
+  Matrices as Linear Transformations
+  **** *Matrices have previously been painted as arrays of numbers that represent systems of linear equations; but another useful
+        representations of matrices is as LINEAR TRANSFORMATIONS (a way to send each point in a plane into nother point in the plane
+        in a very structured way)
+       *In example in video (square became parallelogram), untransformed and transformed coordinates are the BASIS. The main property
+        of a BASIS is that it covers an entire plane (both do)...because this is the case, LINEAR TRANSFORMATIONS are simply change in
+        coordinates, since it encompasses the same dimensional space.
+       *In example in video, you see that the linear transformation value is the value if moving by the same amount of original 
+        coordinates through the new coordinate system (ex: moving 2 to the left and 3 upwards in the original system, if the same 2 and 3
+        is done in the new system, you end up at 3 to the left and 4 up
