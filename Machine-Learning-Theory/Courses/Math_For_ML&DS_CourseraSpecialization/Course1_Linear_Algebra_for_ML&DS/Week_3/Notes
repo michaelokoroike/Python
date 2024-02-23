@@ -71,3 +71,20 @@ WEEK 3: Vectors and Linear Transformations
        *In example in video, you see that the linear transformation value is the value if moving by the same amount of original 
         coordinates through the new coordinate system (ex: moving 2 to the left and 3 upwards in the original system, if the same 2 and 3
         is done in the new system, you end up at 3 to the left and 4 up
+  Linear Transformations as Matrices
+  **** *Instead of matrix to transformation, transformation to matrix
+       *The only necessary info in the video is the point translated from (1,0) and the point translated from (0,1). In a 2x2 matrix,
+        the one translating from (1, 0) will be the first column, and the one translating from (0,1) will be second.
+  Interactive Tool: Linear Transformations
+  **** *When shearing/updating along the x axis, update the second column; along the y axis, update the first. Rotating along y = x
+        yields no change. Reflection about the origin is the same as rotating along y = -x. Projection onto an axis, is flattening onto
+        the axis (for x, it's zeroing out the second column...for y, the first). 45 degree turn is 0.70...anticlockwise is negative in
+        the second (x-changing) column, clockwise is is negative in the first column. Rotation by 180 degrees is negative in both columns.
+       *2a) Rotation about the y axis makes the face look left with the same up-down orientation. 2b) Rotation 180 degrees keeps the face
+            looking left but turns the face upside down (difference between this and 2a is a negative x translation in 2b, which flips
+            the face upside down across the x). 2c) the face disappears with a projection.
+       *3a) Depends; a standard [1 0|0 1] keeps the image ths same; a bigger identity matrix makes it a bigger image, a smaller one will
+            make it smaller, a negative one will flip upside and left along both axes. 3b) in the second column, if the 1 in the identity
+            matrix is made to be 2, it stretches vertically, but in the first column it stretches horizontally. 3c) If you change one
+            of the zeroes to a 1, it shears (in the second column horizontally, and in the first column vertically).
+       *4b) The sheared has to be sheared, etc...interestingly, you can't transform a line to a plane...but a plane can go to a line.
