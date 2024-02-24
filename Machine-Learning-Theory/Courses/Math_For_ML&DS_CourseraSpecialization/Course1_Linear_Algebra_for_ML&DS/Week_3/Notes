@@ -88,3 +88,24 @@ WEEK 3: Vectors and Linear Transformations
             matrix is made to be 2, it stretches vertically, but in the first column it stretches horizontally. 3c) If you change one
             of the zeroes to a 1, it shears (in the second column horizontally, and in the first column vertically).
        *4b) The sheared has to be sheared, etc...interestingly, you can't transform a line to a plane...but a plane can go to a line.
+  Matrix Multiplication
+  **** *Matrix multiplications = transforming two linear transformations into a third one...knowing the B from A to C, and using that
+       *Number of columns in first matrix must match numbr of rows in second matrix (example of 1. 2x3 and 2. 3x4... 3 columns in 1,
+        matches 3 rows in 2). Result takes number of rows in first matrix and number of columns in second (example of 1. 2x3 and 2. 3x4;
+        result is a 2x4 matrix)
+  Identity Matrix
+  **** *Identity matrix is the matrix equivalent of multiplying by 1; it leaves the plane intact
+  Matrix Inverse
+  **** *Example is inverse of a number (ex: inverser of 2 is 1/2, which multiply together to equal 1); inverse of a matrix has the 
+        product of an identity matrix
+       *Inverse matrix, in a linear transformation, undoes the job of the original matrix, returning the plane to what it was at the
+        beginning
+       *Way to think about it...original plane starts out as identity matrix times coordinates...the linear transformation is the 
+        transformation matrix times the identity matrix times those original coordinates. You get it back by technically dividing
+        out that transformation matrix (ex of inverse of 2 being 1/2...inverse is essentially dividng by itself). The inverse matrix
+        is the transformation matrix to the -1 (example in video: notation of inverse of [3 1|1 2] is [3 1|1 2]^-1).
+       *You get the inverse by solving a system of linear equations (ex: there's an [a b|c d] that is [3 1|1 2]^-1...so 
+        [3 1|1 2] * [a b|c d] = [1 0|0 1]; in this case, we actually have four dot products (thinking back to matrix multiplication,
+        since it's 2x2 and 2x2, dot product of n row of first matrix and n column of second matrix is the value of the n row/n column
+        of the result matrix)...therefore [3 1]*[a c] = 1 ([a c] is the first column of the second matrix), [3 1]*[b d] = 0,
+        [1 2]*[a c] = 0, [1 2]*[b d] = 1...therefore 3a + 1c = 1, 3b + 1d = 0, 1a + 2c = 0, and 1b + 2d = 1...
