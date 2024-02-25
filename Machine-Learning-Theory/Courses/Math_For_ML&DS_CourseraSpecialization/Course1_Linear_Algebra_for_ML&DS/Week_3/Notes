@@ -133,3 +133,7 @@ WEEK 3: Vectors and Linear Transformations
         [number of 'win's|number of 'lottery's|-1.5]
        *Shown a perceptron (a tiny version of a neural network) show weights*variables, with the bias also included in the input), 
         which is then updated by the activation function
+
+* WEEK 3 WRAP UP
+  Conclusion
+  **** *Worked with matrices and vectors, performing operations on them, visualized matrices with linear transformations, and more
