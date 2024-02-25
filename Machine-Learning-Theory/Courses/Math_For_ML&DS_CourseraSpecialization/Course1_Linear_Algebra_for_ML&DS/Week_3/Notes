@@ -109,3 +109,27 @@ WEEK 3: Vectors and Linear Transformations
         since it's 2x2 and 2x2, dot product of n row of first matrix and n column of second matrix is the value of the n row/n column
         of the result matrix)...therefore [3 1]*[a c] = 1 ([a c] is the first column of the second matrix), [3 1]*[b d] = 0,
         [1 2]*[a c] = 0, [1 2]*[b d] = 1...therefore 3a + 1c = 1, 3b + 1d = 0, 1a + 2c = 0, and 1b + 2d = 1...
+       *[1 1|2 2] has no solution because there is a contradiction in its system of equations
+  Which Matrices have an Inverse?
+  **** *Not all numbers have inverses (0 doesn't, etc)
+       *Matrices with a determinant of 0 have no inverse
+  Neural Networks and Matrices
+  **** *Neural networks are largely made up of matrices and matrix products
+       *Example of a spam dataset is given (which emails are spam, and how many instances of the word lotteery and win are in the
+        examples)
+       *You have to find a spam filter based on thresholds and actual values (based on what are/aren't spam and how many instances of
+        'lottery' and 'win' exist in the emails, what are the points to allot to each word, and the threshold to determine if it is
+        spam or not
+       *It ends up that the threshold line is a dot product of the points allotted to each word * word, and equalling that threshold
+        value (ex: 1 point to win and 1 point to lottery and a threshold of 1.5 = [1|1]*[number of 'win's|number of 'lottery's] as a
+        dot product)...that line is a linear classifier (negative zone has less than 1.5, positive zone has more than 1.5)
+       *Note: Linear classifiers are the simplest neural networks (they're networks with one layer)
+       *Note: A one layer neural network can be seen as a matrix product followed by a threshold check (example: a spam email
+        with 2 'lottery's and 1 'win' and points of 1 for each word is essentially [2 1]*[1 1], which is 3; since that is greater 
+        than 1.5, it is in the positive zone and is spam)
+       *[1|1]*[number of 'win's|number of 'lottery's] > 1.5 is the same as [1|1]*[number of 'win's|number of 'lottery's] - 1.5 > 0...
+        the -1.5 is the bias of the equation...to include it in the equation, you essentially add it into the dot product equation
+        (example...if bias is -1.5, you add a column to the dataset so that the matrix becomes [1|1|1] and 
+        [number of 'win's|number of 'lottery's|-1.5]
+       *Shown a perceptron (a tiny version of a neural network) show weights*variables, with the bias also included in the input), 
+        which is then updated by the activation function
