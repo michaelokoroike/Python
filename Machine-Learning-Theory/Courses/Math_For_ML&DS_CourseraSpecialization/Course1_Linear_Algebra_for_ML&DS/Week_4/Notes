@@ -1,4 +1,4 @@
-WEEK 3: Determinants and Eigenvectors
+WEEK 4: Determinants and Eigenvectors
 
 * DETERMINANTS IN-DEPTH
   Machine Learning Motivation
@@ -45,3 +45,142 @@ WEEK 3: Determinants and Eigenvectors
        *Det(A^-1) = 1/det(A). This is because if Det(AB) = det(A)det(B), then Det(AA^-1) = det(A)det(A^-1); Det(AA^-1) is Det(Identity Matrix),
         so Det(Identity Matrix) = det(A)det(A^-1). The determinant of the identity matrix is always 1, so it becomes 1 = det(A)det(A^-1).
         Then divide both sides by det(A) and you get Det(A^-1) = 1/det(A).
+
+* EIGENVALUES AND EIGENVECTORS
+  Bases in Linear Algebra
+  **** *The vectors coming out of the origin are the basis.
+       *Every point in the space can be expressed as a linear combination of elements in the basis (think: can you get to the point
+        only walking in the two directions defined by the basis? remember walking backwards is ok); really any two vectors form a basis
+       *A nonbasis is vectors pointed in the same direction (a line)...only one direction is possible so if a point doesn't go in
+        that direction it shows it doesn't form a basis
+  Span in Linear Algebra
+  **** *The question: can something not be a basis of a plane, but a basis for another space? What constitutes a basis? This is where
+        span comes in.
+       *Span of a set of vectors = set of points that can be reached by walking in the direction of these vectors in any combination
+        (ex: span of two vectors with different directions is the whole plane...span of two vectors facing the same or exact opposite
+        direction (180 degrees) is a line (line cannot be rotated, etc)
+       *In the case of a line, the two vectors don't form a basis of the line because a basis is a minimal spanning set; any one of
+        the two vectors span the line, therefore two vectors are one too many...a basis is a minimal spanning set, so each vector of
+        the line is a basis of the line individually. The two of them, though not a basis, are a spanning set (just not minimal).
+       *In the case of a plane, two vectors with two directions span the plane and are a basis...three vectors in three directions span
+        the plane but do not form a basis (only two vectors with two different directions are necessary). Extra is redundant.
+       *Key to a basis is, if a vector is removed, a plane (or line, or something) is no longer spanned.
+       *Note: Number of elements in a basis is the dimension. Two vectors forming a basis, means a 2-dimensional space is being
+        accounted for.
+       *Note: A group of vetors is linearly independent if none of the vectors in the group can be obtained as a linear combination of
+        the others. One vector will always be linearly independent. When two vectors point in different directions, you can't get one
+        from a linear combination of the other, and those two vectors are linearly independent as a result. Two vectors facing in the same
+        direction is linearly dependent (span does not change).
+       *Note: If you have more vectors than the dimension of the space you are trying to span, you will always have linear dependency.
+       *To check for linear dependence, look for the coefficients of the linear combination that gives you the dependent vector...when
+        you can find a solution to the system of equations, you've found linear dependence.
+       *Example: [1 -1 0], [0 -1 1], [1 0 -1] are linearly dependent (1 times first vector, plus -1 times the second vector, equals third.)
+        If you remove any of the vectors, you get a linearly independent set...but because each linearly independent set only has two 
+        vectors, but live in  3d space because they have three coordinates, none of them are a basis for the 3d space...if you plot
+        them geometrically, all three vectors would lie in the same plane
+       *Formal definition of a basis: A set of vectors that must span a vector space, and the vectors in that space must be linearly
+        independent (face in the different dimensional directions).
+       *Note: Not all sets of n vectors will form a basis for N-dimensional space.
+       *My Questions: What do the coefficients of a system of equations signify? Does a combination of two vectors facing
+        the exact same direction and another facing a different direction span a plane? Do 3 vectors lying within the same plane mean
+        they wouldn't span the 3d space, for clarification?
+  Eigenbases
+  **** *Some bases are more useful than others; the most important is the eigenbasis (particularly for PCA, etc).
+       *Linear transformation is a change of coordinates or change of basis...eigenbasis is special because it is the sending of a 
+        parallelogram to another parallelogram (with sides parallel to the original one..this is instead of the original being a square,
+        etc). This is useful because it simplies the transformation...you can use the transformation from 1,0 and 1,1 and see how the
+        horizontal and diagnal vector are transformed. You can essentially stretch those original vectors, and combinations remain the same
+        (good ex: if a transformation stretches its basis (horizontal and diagonal vectors) 2 in horizontal direction and 3 in the 
+        vertical direction, say it takes 1 horizontal vector and 1 diagonal vector to get to 2,1... in the transformation, that vector
+        goes to 5,3 because instead of streching 1 horizontally and then 1 vertically (to 2,1), you stretch 2 horizontally and 3
+        diagonally (5,3).
+       *Note: The two values in the basis (the horizontal and diagonal vectors) are called the EIGENVECTORS and the stretching factors
+        (2 and 3 in the last bullet point) are the EIGENVALUES...these simplify calculations
+  Eigenvalues and Eigenvectors
+  **** *Eigenvectors must face the same direction after transformation...must be a constant which you could multiply the original
+        vector by to get the final vector
+       *Note: Eigenvectors are special vectors.
+       *The importance is with special eigenvectors, matrix multiplication can become scalar multiplication (example is above, I showed
+        [2 1|0 3]*[1|0] = [2|0], an equation which can be translated to [2 1|0 3]*[1|0] = 2*[1|0]...[1|0] is the eigenvector and 2 is
+        the eigenvalue...instead of multiplying by the matrix (8 multiplications) you can multiply by the scalar (2 multiplications)
+        for less multiplying time. Additionally, with what we learned about basis vectors and being able to reach any point in a plane,
+        this also makes it so we can just do combinations as shortcuts (any vector (representing the origin to the point) can be represented
+        as a linear combination of those eigenvectors)...helps to start geometrically using those eigenvectors
+       *Recap: Standard notation is A*v = lambda*v, with v being an eigenvector and lambda being an eigenvalue. Eigenvectors are direction
+        of stretch, while eigenvalues are the magnitude/how much it is stretched. An eigenbasis is a set of a matrix's eigenvectors...from
+        the perspective of the eigenbasis, the linear transformation matrix A is just a collection of stretches
+  Calculating Eigenvalues and Eigenvectors
+  **** *Finding the eigenbasis entails solving an equation with a determinant
+       *Find the characteristic polynomial
+       *Talk-through...using the example of the [2 1|0 3] matrix which we know stretches 2 horizontally and 3 diagonally; compare it to
+        a matrix that stretches 3 in all directions ([3 0|0 3]) and you see the two transformations are the same among the diagonal
+        infintitely...since they should only match at one point but actually match at infinite points along the line, something non-singular
+        can be said to be happening...when you look at the difference between the two matrices, since they match at infinite points along
+        the line, the difference between them should be zero at infinite points along that line, and the result of subtracting the two
+        matrices should bring about a new transformation matrix that for infinitely many vectors brings about 0,0...this is the trait of a 
+        singular transformation. Bottom line is whenever you have a matrix that has infinite solutions (as is the one we endude up with), 
+        that is a singular matrix, which can be verified when seeing that the determinant is zero. The same with 2 horizontally.
+       *The talk-through was done in knowing the 2 and 3 eigenvalues from previous videos...but the theory to derive is if we have an
+        eigenvalue called x, keeping on with the example, [2 1|0 3] and [x 0|0 x] should match at infinite points along certain solution
+        lines...their difference, which is [2-x 1|0 3-x] times any vector should equal 0,0, which means this matrix must be singular...that
+        means the determinant of [2-x 1|0 3-x] equals 0, meaning (2-x)(3-x) - 1*0 = 0 (this is the characteristic polynomial). You can
+        find the answer is 2 and 3.
+       *Once you have eigenvalues, you get eigenvectors by systems of equations with the eigenvalues (ex with example is system becomes
+        for [2 1|0 3] is 2x + 1y = 2x and 0x + 3y = 2y for eigenvalue 2, and 2x + 1y = 3x and 0x + 3y = 3y for eigenvalue 3...solve for
+        these equations and you get 1,0 and 1,1 respectively.
+       *This process is shown for a 3x3 matrix in this video.
+       *note: non-square matrices don't have eigenvalues or eigenvectors.
+       *My Questions = Why does a singular matrix have inifinitely many solutions?
+  On the Number of Eigenvectors
+  **** *Not always the case that n*n matrix has n number of eigenvectors and n number of eigenvalues; example shows 3 distinct eigenvectors
+        but 2 eigenvalues, and other...watch video
+  Dimensionality Reduction and Projection
+  **** *Recap: goal of PCA is to reduce the dataset by as many dimensions (columns) as possible, while preserving the information in the
+        dataset
+       *One method is to just delete columns...but done wrong, you can lose valuable insight, which PCA attempts to preserve
+       *The basic idea behind the PCA is projection (dot product, but dividing the vector's norm to ensure no stretching happens); vector
+        divided by L2-norm
+  Motivating PCA
+  **** *How do you pick the vectors to project onto?
+       *Base the points around 0,0...then project onto the x-axis and y-axis...on which axis are the points less spread? the more spread
+        the data points are, the more information that is actually preserved
+       *Benefits = easier dataset tomanage, reduces dimensiona while preserving information loss, simpler visualizations
+  Variance and Covariance
+  **** *Mean is average of data (do for x and y columns)
+       *Variance is spread of dataset ((every x - mean of x column)**2) / (total number of x's - 1); the average squared distance from
+        the mean
+       *Covariance is important when variance alone isn't helpful (ex of 2 datasets with identical x and y variance)...
+        covariance is ((every x - mean of x column)*(every y - mean of y column)) / (total number of instances - 1)...negative if data
+        is down and to the right, zero if horizontal, positive if up and to the right. Quadrants of this graph are all in relation to 
+        the mean of a dataset...use it to be able to eyeball, because if more in negative than positive quadrants, covariance will be
+        negative, vice versa. It measures the direction of the relationship of two variables.
+  Covariance Matrix
+  **** *Covariance matrix is a compact way of storing all of the relationships between pairs of variables in the dataset.
+       *In the main diagonal, you put the x and y variances...in the backwards (right to left) diagonal you put the covariance (twice)...
+        this is a covariance matrix
+       *Note: Covariance of a variable with itself is just the variance of that variable
+       *Two matrices (one of the x and y values of a dataset called A, and the other with the mean values of x and y (u))...use these to get
+        C = (1/n-1)*((A-u)_transpose*(A-u))
+       *Step by step; 1) arrange data with a different feature in each column, 2) calculate column averages, 3) subtract each average
+        from their respective columns to get A-u, 4) C = (1/n-1)*((A-u)_transpose*(A-u))
+  PCA - Overview
+  **** *The big question; how do we find the best line that preserves the most data following PCA? This is where it all comes together
+       *What we've learned: projections use matrix multiplication and allow data to e projected onto a lower dimension; learned about
+        eigenvalues and eigenvectors, which capture the directions in which a linear transformation stretches space (but doesn't rotate
+        or shear it); and just learned about covariance matrix (how it compactly represents relationships between pairs of variables in
+        the dataset). PCA combines all three of these ideas.
+       *With dataset centered around origin, find the covariance matrix; then find the eigenvalues and eigenvectors of the covariance
+        matrix, which is how we'll figure out the line (since eigenvectors and eigenvalues of a 2*2 matrix come in pairs, with eigenvectors
+        giving direction and eigenvalues giving magnitude)...the eigenvectors are orthogonal on purpose (the covariance matrix is symmetric,
+        meaning the transpose of itself is identical to a non-transpose...these makesit symmetric, which breeds orthogonality). Now with
+        your eigenvectors (aka principal components), you want to project your data onto one of them...it turns out the eigenvector with the 
+        largest eigenvalue will be the one that gives the greatest variance when you project your data. Now you no longer need to graph
+        them in two dimensions...all that matters is the points' positions along the line.
+       *Works on much larger datasets.
+       *Questions...why is the eigenvector with the highest eigenvalue the one that will provide more variance for projection?
+  PCA - Why it Works
+  **** *Covariance matrix C characterizes the spread of the data; the eigenvectors of C tells you the direction in which you view the matrix
+        as stretching; the largest eigenvalue tells you where that stretching is greatest...this is the simplest intuition
+  PCA - Mathematical Formulation
+  **** *Example of reducing 5 variables to 2 variables 
+        (https://www.coursera.org/learn/machine-learning-linear-algebra/lecture/G907M/pca-mathematical-formulation)
