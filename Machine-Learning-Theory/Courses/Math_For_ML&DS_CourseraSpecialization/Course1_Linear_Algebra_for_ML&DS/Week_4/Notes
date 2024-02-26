@@ -1,0 +1,22 @@
+WEEK 3: Determinants and Eigenvectors
+
+* DETERMINANTS IN-DEPTH
+  Machine Learning Motivation
+  **** *We will learn what determinants and singularity mean in the context of linear transfomations; then we'll learn one of the more
+        powerful applications of linear algebra in the real world, eigenvalues and eigenvectors (used extensively in machine learning,
+        particularly in principal component analysis, or PCA)
+       *PCA is essentially a group of points that are bunched together to the point of their having a line of best fit...and those points being
+        projected onto that line (which is why it's also referred to as dimensionality reduction...from a 2d plane to a line, for ex)...this
+        method essentially uses less data while also capturing most of the information the original data captured). Put another way, this
+        method reduces columns (dimensions) of a dataset while losing as little info as possible. Good for large datasets.
+       *Path of learning will be 1) starting with a linear transformation like learned in week 3...2) find if the transformation is singular
+        or not...3) then we will look at a geometric interpretation of the determinant (stretching and shrinking)...4) finally we learn
+        properties of determinants (this is the path for linear transformations)
+       *Path of learning for PCA will be 1) definition of a basis (group of vectors that define a space)...2) definition of a span (tells us
+        what space we can access or generate with linear combinations of groups of vectors...ex is a single vector always spanning a line; 2
+        elements not pointed in the same direction will always span a plane)...3) we will learn eigenvectors and eigenvalues (example of
+        [2 1|0 3]*[1|0] = [2|0]...this equation can be translated to [2 1|0 3]*[1|0] = 2*[1|0], where [1|0] is the eigenvector and 
+        [2 1|0 3] or 2 is the eigenvalue (which is essentially the number constant which the matrix represents in matrix form)
+  Check Your Knowledge
+  **** *Didn't understand the determinant question...the base question...the characteristic polynomial question...or the eigenbase
+        question
