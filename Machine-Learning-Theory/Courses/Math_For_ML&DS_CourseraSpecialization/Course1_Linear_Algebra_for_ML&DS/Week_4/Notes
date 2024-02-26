@@ -19,4 +19,29 @@ WEEK 3: Determinants and Eigenvectors
         [2 1|0 3] or 2 is the eigenvalue (which is essentially the number constant which the matrix represents in matrix form)
   Check Your Knowledge
   **** *Didn't understand the determinant question...the base question...the characteristic polynomial question...or the eigenbase
-        question
+        question...knew none of the questions
+  Singularity and Rank of Linear Transformations
+  **** *Recap: Learned about singularity and non-singularity of matrices...as matrices correspond to linear transformations, these
+        transformations also have singularity and non-singularity and rank (we will find out how to identify the different ones)
+       *Non-singular transformations still cover every single point on the plane (points of the transformation are the image of the
+        transformation)...singular transformations don't get sent to the entire plane, but to a line/point (cannot cover the entire plane
+        like it could before the transformation); the singular transformations have a lower rank and dimension than non-singular
+       *Note: Rank is the dimension of the image of the linear transformation
+  Determinant as an Area
+  **** *Recap: Learned how determinants showd singularity or non-singularity of a matrix...in linear transformations, it can be explained
+        as an area, or as a volume. When the area/volume is zero, the matrix is singular.
+       *Determinant of the matrix is the area of the image of the fundamental initial basis (typically described as [1 0|0 1]) after
+        transformation
+       *Determinant being positive or negative does not affect singulatiy/non-singularity
+  Determinant of a Product
+  **** *The determinant of a matrix product is the product of the determinants of the multiplied matrices (ex: matrix with a detwerminant of
+        5 multiplied by a determinant of 3 will have a determinant of 15
+       *This is because no matter the area you initially have, the transformation blows it up by a factor of the determinant
+       *Det(AB) = det(A)det(B). If a singular matrix is multiplied by a singular or non-singular matrix, the product is a singular matrix 
+        because a singular matrix's determinant is 0, and anything multiplied by 0 is 0.
+  Determinant of Inverses
+  **** *The determinant of a initial matrix's inverse is the inverse of the determinant of the initial matrix (ex: a matrix with a
+        determinant of 5 will have an inverse matrix with a determinant of 0.2)
+       *Det(A^-1) = 1/det(A). This is because if Det(AB) = det(A)det(B), then Det(AA^-1) = det(A)det(A^-1); Det(AA^-1) is Det(Identity Matrix),
+        so Det(Identity Matrix) = det(A)det(A^-1). The determinant of the identity matrix is always 1, so it becomes 1 = det(A)det(A^-1).
+        Then divide both sides by det(A) and you get Det(A^-1) = 1/det(A).
