@@ -1,0 +1,14 @@
+WEEK 1: Derivatives and Optimization
+
+* LESSON 1: DERIVATIVES
+  Course Introduction
+  **** *We will learn about derivatives, what they mea, how it works, how is it used in machine learning. Learn about advanced
+        techniques in Newton's method
+       *Machine learning is a lot of minimizing and maximizing functions...this is the main point of calculus (this minimizing and
+        maximizing is done with derivatives).
+       *Large fraction of machine learning is creating a cost function and minimizing it (this is calculus)...when you want to train 
+        a machine learning model, you see the error and try to minimize it using derivatives, gradients, and more.
+       *The optimizers are based on calculus.
+       *Gradient descent is taking small steps to get lower and lower values.
+       *Data can be very high dimensional and move in all different directions.
+       *Newton's method is a way to minimize functions as an alternative to gradient descent.
