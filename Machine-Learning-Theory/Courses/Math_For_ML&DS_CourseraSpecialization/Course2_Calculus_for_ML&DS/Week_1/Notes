@@ -20,4 +20,8 @@ WEEK 1: Derivatives and Optimization
        *Derivatives are used to optimize functions (maximize or minimize them)
        *We'll learn about square loss and log loss (two most important loss functions in machine learning)
        *Video shows with line of best fit, you are given the method of predcting a value in a regression problem...shown the difference
-        for regression and classification...going to learn the math underlying concepts
+        for regression and classification...going to learn the math underlying concepts4
+  Motivation to Derivatives - Part 1
+  **** *First thing when he thinks abut derivatives is velocity; a derivative is a instantaneous change of rate of a function...in driving
+        the function is distance and the derivative is velocity
+       *Note: Slope is change in distance/change in time
