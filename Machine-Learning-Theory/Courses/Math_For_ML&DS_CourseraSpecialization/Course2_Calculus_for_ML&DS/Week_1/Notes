@@ -12,3 +12,12 @@ WEEK 1: Derivatives and Optimization
        *Gradient descent is taking small steps to get lower and lower values.
        *Data can be very high dimensional and move in all different directions.
        *Newton's method is a way to minimize functions as an alternative to gradient descent.
+  Machine Learning Motivation
+  **** *We'll learn the intuition behind concept of derivative; example is velocity (
+       *We'll also learn about linear functions, constant functions, quadratic polynomials, exponential functions, and logarithmic
+        functions...we'll learn the derivatives of these
+       *We'll learn sum rule, product rule, chain rule, and multiplication by scalars...to find derivatives of more complex functions
+       *Derivatives are used to optimize functions (maximize or minimize them)
+       *We'll learn about square loss and log loss (two most important loss functions in machine learning)
+       *Video shows with line of best fit, you are given the method of predcting a value in a regression problem...shown the difference
+        for regression and classification...going to learn the math underlying concepts
