@@ -25,3 +25,18 @@ WEEK 1: Derivatives and Optimization
   **** *First thing when he thinks abut derivatives is velocity; a derivative is a instantaneous change of rate of a function...in driving
         the function is distance and the derivative is velocity
        *Note: Slope is change in distance/change in time
+  Derivatives and Tangents
+  **** *The derivative of a function at a point is the slope of the tangent at that point
+  Slopes, Maxima and Minima
+  **** *Horizontal lines have a slope of zero
+       *Max or min of a function occurs where the derivative is zero
+  Derivatives and their Notation
+  **** *This video shows two ways to express a derivative; Leibniz's notation and LaGrande's notation
+       *Recap that slope is defined by change in distance over change in time...can also be known as delta_x / delta_t...slope at a 
+        point is dx/dt
+       *Works by recalculating slpe at a point until the interval between delta_x and delta_t is so tiny that we officially have the
+        tangent line
+       *If y = f(x)...the notation y = f'(x) is LaGrange's Notation; dy/dx, or d/dx*f(x), is Leibniz's selection
+  Some Common Derivatives - Lines
+  **** *Goal is to be able to calulate derivatives of most functions
+       *Constant/linear/quadratic
