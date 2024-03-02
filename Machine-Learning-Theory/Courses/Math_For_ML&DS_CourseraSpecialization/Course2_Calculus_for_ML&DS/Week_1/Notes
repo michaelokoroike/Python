@@ -45,3 +45,12 @@ WEEK 1: Derivatives and Optimization
         as the change of x (delta_x) goes to 0
        *The slope can also be written as ((x + delta_x)**2 - (x)**2)/delta_x; in the example of y = x**2, if you decrease delta_x, delta_f
         decreases, and at x is 1, f approaches 2; so the slope at the tangent is 2
+  Some Common Derivatives - Higher Degree Polynomials
+  **** *A cubic function is y = x**3, in the shape of a long sguiggly vertical line, with the slope being the change of f (delta_f) over 
+        the change of x (delta_x), as the change of x (delta_x) goes to 0
+       *The slope can be written as ((x + delta_x)**3 - (x)**3)/delta_x; in the example of y = x**3, if you decrease delta_x, delta_f
+        decreases, and at x is 1, f approaches 2; so the slope at the tangent is 3
+  Some Common Derivatives - Other Power Functions
+  **** *We are shown the 1/x function, which has the derivative of a hyperbola graph. The slope can be written as 
+        ((x + delta_x)**-1 - (x)**-1)/delta_x
+       *We are shown f'(x) = nx***n-1, if f(x) = x**n
