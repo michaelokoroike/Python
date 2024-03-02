@@ -40,3 +40,8 @@ WEEK 1: Derivatives and Optimization
   Some Common Derivatives - Lines
   **** *Goal is to be able to calulate derivatives of most functions
        *Constant/linear/quadratic
+  Some Common Derivatives - Quadratics
+  **** *The simplest quadratic is the parabola y = x**2, with the slope being the change of f (delta_f) over the change of x (delta_x), 
+        as the change of x (delta_x) goes to 0
+       *The slope can also be written as ((x + delta_x)**2 - (x)**2)/delta_x; in the example of y = x**2, if you decrease delta_x, delta_f
+        decreases, and at x is 1, f approaches 2; so the slope at the tangent is 2
