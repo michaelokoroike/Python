@@ -54,3 +54,31 @@ WEEK 1: Derivatives and Optimization
   **** *We are shown the 1/x function, which has the derivative of a hyperbola graph. The slope can be written as 
         ((x + delta_x)**-1 - (x)**-1)/delta_x
        *We are shown f'(x) = nx***n-1, if f(x) = x**n
+  The Inverse Function and its Derivative
+  **** *The inverse function is if a function does a certain thing, then the inverse function undoes that function (ex: if function f
+        sends the number 3 to 5, the inverse of function f sends 5 to 3)
+       *If you know function f, the derivative is quite easy to get to
+  Derivative of Trigonometric Functions
+  **** *Derivative of sin(x) is cos(x)
+       *Derivative of cos(x) is -sin(x)
+       *We are shown an illustration as to why the derivatives of these two functions are what they are; the triangle of change is shown
+        between one radial line (line from origin to circle edge) to another which touches the circle edge at a different point; the 
+        angle changes slightly, but also there now exists that triangle of change created by the change of angle, which has a base of
+        - delta cos x and height of delta sin x (it is - delta for cos because the angle growing means x of the new radial line 
+        decreasing, meaning the base of the triangle actually moves in the opposite of the "delta"; similarly, y increases as does the 
+        height of the radial line, meaning the height (or sin) of the triangle moves in the direction of "delta"). In trigonometry, the
+        cosine of an anle is the adjacent side divided by hypotenuse...for cos of the angle in the video, the adjacent side is 
+        delta sin x and the eqn for cos(angle) is delta sin x/hypotenuse, which means delta sin x = hypotenuse * cos(angle); sine of
+        an angle is opposite/hypotenuse...for sin of the angle in the video, the opposite side is - delta cos x and the eqn for sin(angle)
+        is - delta cos x/hypotenuse, which means - delta cos x = hypotenuse * sin(angle). A key note is the hypotenuse coincides with the 
+        arch of the circle and approaches delta of x; this means delta sin x = hypotenuse * cos(angle) can be also written as
+        delta sin x = delta x * cos(angle), and - delta cos x = hypotenuse * sin(angle) can also be written as - delta cos x = delta x *
+        sin(angle). THEREFORE, we get the derivatives shown above.
+  Meaning of the Exponential (e)
+  **** *e = 2.71828182...decimal never terminates because it is irriational (can't be expressed as a ratio between two integers)
+       *e also equals (1 + (1/n))^n...at 1, it equals 2; at 10, it's 2.59; at 100, it equals 2.705, and at 1000, it equals 2.717; the 
+        more it increases, the more it converges to a certain number (2.718)...this is how e can be defined
+       *The interesting thing about this function; when f(x) = e^x, f'(x) also equals e(x); makes it important in science, statistics,
+        probability, etc
+       *Shown relevance with interest rate...the more ofen interest is paid, the more you end up receiving; (1 + (1/n))^n definitely
+        relates to interest...for example, n equalling 2 would be like starting at a bank with $1 and being paid $.50 ($1/2) twice a year.
