@@ -82,3 +82,24 @@ WEEK 1: Derivatives and Optimization
         probability, etc
        *Shown relevance with interest rate...the more ofen interest is paid, the more you end up receiving; (1 + (1/n))^n definitely
         relates to interest...for example, n equalling 2 would be like starting at a bank with $1 and being paid $.50 ($1/2) twice a year.
+  The Derivative of e^x
+  **** *Y = e^x is the exponential function, and this function is its own derivative (ex: at point x, height on the curve is e^x; the
+        slope of the tangent at that point is also e^x
+  The Derivative of log(x)
+  **** *We're going to use the knowledge of Euler's number and exponential function e^x, along with the inverse function rule, to
+        calculate the logarithmic function
+       *What is a logarithm? Define it by this example...euler's number to the power of an unknown value is n; the unknown value is ln(n),
+        or the natural log of n (log_e(x)).
+       *The fact that e^log(x) = x means f(x) = e^x has inverse f^-1(y) = log(y); if e^log(x) = x, log(e^y) = y. This is because the 
+        derivative of f^-1(y) is 1/f'(x)...because x is f^-1(y), the derivative of f^-1(y) is 1/f'(f^-1(y)); therefore, the derivative of 
+        log(y) is 1/e^log(y), which can be equated to 1/y.
+  Existence of the Derivative
+  **** *Not always the case that you can find the derivative of a function at every point; these functions are called NON-DIFFERENTIABLE
+        FUNCTIONS
+       *For a function to be differentiable at a point, the derivative has to exist for that point; for a function to be differentiable
+        at an interval, the derivative has to exist for every point in the interval...at functions like f(x) = |x| (absolute value),
+        its nondifferentiable because f(x) equals x if x is greater than/equal to 0, and is -x if x is less than 0 (at 0 it's 
+        nondifferentiable because a derivative does not exist for all points in domain; think of a corner where a bunch of lines with
+        different trajectories can be drawn off of it); also at piecewise functions where there is a jump discontinuity (y = 2 and 
+        y = x+1), derivatives cannot be defined at certain points; also at functions like f(x) = x^1/3 where there are vertical
+        tangents running straight-up and parallel
