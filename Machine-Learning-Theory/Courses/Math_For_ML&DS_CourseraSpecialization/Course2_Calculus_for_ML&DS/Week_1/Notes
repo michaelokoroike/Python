@@ -118,3 +118,40 @@ WEEK 1: Derivatives and Optimization
        *Example is temperature changing as you climb a mountain (dT/dh)...but also as you climb a mountain time is going by (dh/dt);
         therefore, temperature is changing as time is going by (dT/dh * dh/dt = dT/dt)
        *Good three dimensional graph that showcases the dynamic relationship
+
+* LESSON 2: OPTIMIZATION
+  Introduction to Optimization
+  **** *Now we need to kno what the tools to calculate derivatives which we have learned useful for?
+       *The main use for derivatives is use for optimization
+       *Optimization is when you ant to find the max or min value of a function; important in machine learning because we want to find
+        the model that provides the best fit for our dataset...to do this you need to calculate error functions that tells us how far
+        we are from an ideal model --- when you can minimize the error function you have the best model
+       *Example is being on a hot bench in a sauna and moving around until you can find the coolest spot (where you will get hotter
+        no matter where you move)
+       *Slope at max and min points is always 0
+       *Not always true that a point with slope 0 is a max or min (local minima); absolute minimum is the GLOBAL minimum
+  Optimization of Squared Loss - The One Powerline Problem
+  **** *Build a house to have the least amount of cost for power...if there's one power line, build right there
+  Optimization of Squared Loss - The Two Powerline Problem
+  **** *If x is a house and a and b are the different powerlines...(x-a)^2 + (x-b)^2 is the total cost...to find the minimum is to find
+        the best spot to build the house...it's minimizing the total area of the squares created by the distances (the way to think
+        about when things are squared is to make a square of it geometrically (connect the horizontal and vertical), which matches the
+        area you got in the calculation
+       *Derivative of (x-a)^2 + (x-b)^2 is 2(x-a) + 2(x-b), which is equal to (x-a) + (x-b), or 2x - a - b; equal it to 0, 2x - a - b = 0
+        and 2x = a + b, so x = (a+b)/2...this means in the middle of the two lines is the best position\
+  Optimization of Squared Loss - The Three Powerline Problem
+  **** *(x-a)^2 + (x-b)^2 + (x-b)^2 is the total cost
+       *x = (a+b+c)/3
+       *In general, the square loss is minimizing (x-a1)^2+...+(x-an)^2; the solution is x = (a1+...+an)/n
+  Optimization of Log Loss - Part 1
+  **** *Example is coin toss
+       *Logarithm of a product is the sum of logarithms
+       *Used in classification
+  Optimization of Log Loss - Part 2
+  **** *Logarithms are better than derivatives because derivatives of products are hard, while derivative of sums are easier, but also
+        because products of tiny things are tiny
+
+* WEEK 1 WRAP UP
+  Week 1 Conclusion
+  **** *We learned what derivatives are, how to calculate them, how to use them for optimization, and how the optimaization process
+        translates to machine learning problems...but only in 1 variable; next is doing all of this in more than one variable
