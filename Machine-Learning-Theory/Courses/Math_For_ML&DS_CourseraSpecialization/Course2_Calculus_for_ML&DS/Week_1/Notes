@@ -103,3 +103,18 @@ WEEK 1: Derivatives and Optimization
         different trajectories can be drawn off of it); also at piecewise functions where there is a jump discontinuity (y = 2 and 
         y = x+1), derivatives cannot be defined at certain points; also at functions like f(x) = x^1/3 where there are vertical
         tangents running straight-up and parallel
+  Properties of the Derivative: Multiplication by Scaler
+  **** Example is f = cg, with f being the function and c being the constant...f' = cg'; function multiplies by constant c, and the 
+       derivative multiplies by constant c
+  Properties of the Derivative: The Sum Rule
+  **** *Example is f = g + h; f' = g' + h'...example is if a boat moves at 5 mph and a kid moves at 1 mph, the speed of the child with
+        respect to the earth is 6 mph. Velocities can be added together if they move in the same direction.
+       *The sum rule says if distances can be added, then velocities can be added; similarly, if functions can be added then derivatives
+        can be added
+  Properties of the Derivative: The Product Rule
+  **** *Example is f = gh; f' = g'h + gh'
+  Properties of the Derivative: The Chain Rule
+  **** *Example is d/dt of g(h(t)); dg/dt =  dg/dh * dh/dt...this equals g'(h(t)) * h'(t)
+       *Example is temperature changing as you climb a mountain (dT/dh)...but also as you climb a mountain time is going by (dh/dt);
+        therefore, temperature is changing as time is going by (dT/dh * dh/dt = dT/dt)
+       *Good three dimensional graph that showcases the dynamic relationship
