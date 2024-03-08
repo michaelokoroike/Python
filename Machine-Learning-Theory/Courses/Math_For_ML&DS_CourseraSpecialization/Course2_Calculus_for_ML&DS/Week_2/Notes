@@ -1,0 +1,27 @@
+WEEK 2: Gradients and Gradient Descent
+
+* LESSON 1 - GRADIENTS
+  Introduction to Tangent Planes
+  **** *Will deal in functions with two or more variables; the idea of a tangent line in two dimensions generalizes in the idea of
+        a tangent plane in three dimensions
+       *Optimizing functions with two or more variables can be very complicated; gradient descent is a method that speeds it up
+       *Already learned about derivatives for functions with one variable, with derivatie being the slope of the tangent line at each
+        point on the curve; now with functions with two inputs and one output (3-d) the derivative is a tangent plane
+       *To find tangent planes, cut the 3d graph at x = ? and y = ?, and you have it...see the video
+  Partial Derivatives - Part 1
+  **** *The sliced space is the partial derivative; you treat one variable as a constant to do so (ex: for f(x, y) = x2 + y2...if you
+        make y a constant, you'll get the function of one variable x)...with y as a constant, partial derivative is 2x, and vice versa
+        for x as a constant
+  Partial Derivatives - Part 2
+  **** *If f(x) = 3x2y3, partial derivative with respect to x is 6xy3...with respect to y is 9x2y2
+  Gradients
+  **** *Gradients essentially are vectors carrying partial derivatives (for f(x, y) = x2 + y2, gradient is [2x | 2y]
+  Gradients and Maxima/Minima
+  **** *Plane is parallel to the floor when at a local max or min (equals 0)
+       *In 3d plane, local minimum is when the slopes of the partial derivatives of both tangent line given by partial derivatives are zero
+       *All partial derivatives need to be zero to find a local minimum
+  Optimization with Gradients: An Example
+  **** *Multiple dimentions (3d) with same sauna example
+  Optimization using Gradients: An Analytical Method
+  **** *Reiteration; minimize the sum of squares cost
+       *Tough to solve when there are multiple variables in a partial derivative
