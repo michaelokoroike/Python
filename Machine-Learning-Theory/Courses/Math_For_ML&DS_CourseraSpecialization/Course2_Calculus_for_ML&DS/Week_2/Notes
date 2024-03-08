@@ -25,3 +25,23 @@ WEEK 2: Gradients and Gradient Descent
   Optimization using Gradients: An Analytical Method
   **** *Reiteration; minimize the sum of squares cost
        *Tough to solve when there are multiple variables in a partial derivative
+
+* LESSON 2 - GRADIENT DESCENT
+  Optimization using Gradient Descent in one variable - Part 1
+  **** *Example is f(x) = e^x - log(x); finding the minimum requires us finding f'(x) and setting it equal to 0, then solve for x...
+        derivative of f(x) : e^x - 1/x = 0...hard to solve for but this equates to e^x = 1/x, with x equalling 0.5671 (omega constant)
+       *Shown a guesstimation method that may not lead to the minimum but is close enough
+  Optimization using Gradient Descent in one variable - Part 2
+  **** *Logic says on a curve where the slove is positive, you want to subtract to be closer to a minimum, and when the slope is negative,
+        you want to add to be closer to the minimum...so basically, the new point should be the old point - slope
+       *The caveat is at certain parts of the slope, the derivative may be steep and the slope is large, causing a big and chaotic
+        jump; these jumps may be so large that you actually overstep the minimum...so we want to ensure small steps are taken by adding
+        a LEARNING RATE, making the equation for a new point the old point - (learning rate*slope)...this is good because then there
+        are no outlandish steps and the steps are relative to position; think about golf and driving when far away from the hole and
+        putting when close...same dynamic.
+       *What's described above is GRADIENT DESCENT (do a gradient descent alg?)
+  Optimization using Gradient Descent in one variable - Part 3
+  **** *A learning rate can't be too large (you miss the minum) or too small (take forever to converge to the minimum)
+       *Research problem to find a good learning rate
+       *Another drawback of the difficulty of finding a good learning rate is in a function with a lot of curves, it may converge to 
+        local minima and not global minima...you need to run it many times with many starting points (batch?)
