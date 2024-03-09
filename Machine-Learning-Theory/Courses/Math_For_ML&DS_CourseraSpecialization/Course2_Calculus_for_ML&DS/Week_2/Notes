@@ -45,3 +45,21 @@ WEEK 2: Gradients and Gradient Descent
        *Research problem to find a good learning rate
        *Another drawback of the difficulty of finding a good learning rate is in a function with a lot of curves, it may converge to 
         local minima and not global minima...you need to run it many times with many starting points (batch?)
+  Optimization using Gradient Descent in two variables - Part 1
+  **** *Details on gradient descent coming up in next video (like what direction to move in, how far to move, etc)
+  Optimization using Gradient Descent in two variables - Part 2
+  **** *Random steps in the algorithm discussed before...but there's more of an exact way
+       *With two variables, the curve has two tangents;
+       *Start with a function f(x,y); the define a learning rate a and choose a starting point (x0, y0), then update
+  Optimization using Gradient Descent - Least Squares
+  **** *Goal = Minimize sum of squares cost
+  Optimization using Gradient Descent - Least Squares with multiple observations
+  **** *Get the loss at each point (actual-expected)^2; add together all of the losses of all of the points, and then take the average;
+        when we get that, we have the first step to take (multiplied by the learning to normalize the step in case it would be a large
+        one)...and continue until that loss is marginal
+
+* WEEK 2 WRAP UP
+  Week 2 - Conclusion
+  **** *Learned how derivatives and gradients work in two or more dimensions, learned how to turn that into an optimization problem,
+        and how it wors in machine learning in things such as linear regression. Also learned gradient descent, which will help in
+        optimizing functions quickly
