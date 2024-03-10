@@ -32,4 +32,14 @@ WEEK 3: Optimization in Neural Networks and Newton's Method
        *Better model because its a lower loss function
        *Gradient Descent = w1 -> w1 - a*(d_L/d_w1), or w1 -> w1 - a*(-x1(y - y-hat)). Similarly, w2 -> w2 - a*(-x2(y - y-hat)), and
         b -> b - a*(-(y - y-hat)).
-  **** *
+  Classification with a Perceptron
+  **** *Perceptrons better for binary classfication problems; all you have to do is change the ACTIVATION FUNCTION
+       *Just like in regression, first thing you do is plot the points; have your inputs; those inputs go through a prediction function;
+        and the y-hat will tell what the model predicts
+       *Note: inputs will include weights and biases
+       *The activation function takes all the numbers in the input number line and crunch them into the interval 0,1.
+       *Note: The sigmoid function is the activation function. Formula is 1/(1 + e^-z).
+  Classification with a Perceptron - The sigmoid function
+  **** *The sigmoid graph is the s-shaped graph between 0 and 1 on the y axis
+       *Formula of sigmoid is 1/(1 + e^-z); if z is very positive it's close to 1, if z is very negative it's close to 0.
+       *Derivative of sigmoid function is -1(1 + e^-z)^-2(e^-z)(-1), or 1/((1 + e^-z)^2).
