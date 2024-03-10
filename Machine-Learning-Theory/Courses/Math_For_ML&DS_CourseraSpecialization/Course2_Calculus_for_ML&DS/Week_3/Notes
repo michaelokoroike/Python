@@ -12,7 +12,24 @@ WEEK 3: Optimization in Neural Networks and Newton's Method
         in
        *Perceptron = start with input -> plug them into summation function -> get the output y-hat (which will be the prediction). In
         the summation function step, each feature is multiplied by a weight to determine how important it is for the output (w1x1, etc),
-        but also a bias term needs to be added (w1x1 + w2x2 + b, etc)...goal is to find the best w1, w2, and b (the best weight and bias
-        to optimize prediction)
+        but also a bias term needs to be added (y-hat = w1x1 + w2x2 + b, etc)...goal is to find the best w1, w2, and b (the best weight 
+        and bias to optimize prediction)
+       *Prediction Function : y-hat = w1x1 + w2x2 + b
        *To find the best weights and bias over time for a function, you need to reduce the errors in the predictions, which is done by
         the LOSS FUNCTION
+  Regression with a Perceptron
+  **** *In prior video, we wanted to find the best possible line through the dataset points, which would make a ggod prediction; with that
+        line, we need to find a way to examine how well the model is doing, and then improve it to get a better one
+       *We are shown mean squared error...if we just find the errors (without squaring) we can get negative and positive errors, and in 
+        aggregate, you may end up with canceled out errors, which would not be appropriate in the analysis
+       *Loss Function : L(y, y-hat) = 1/2*(y - y-hat)^2. The main goal of the loss function is to find the w1, w2, and b that give y-hat
+        with the least error
+  Regression with a Perceptron - Gradient Descent
+  **** *We want to find a prediction function with the best weights and bias that minimizes the loss function L(y, y-hat)...the best model
+        that makes the smallest mistakes
+       *We minimize L (find the best w1, w2, b) using gradient descent (ex: w1 -> w1 - a*(d_L/d_w1), and same for w2 and b being updated);
+        the main aspct is calculating the partial derivatives (d_L/d_w1), (d_L/d_w2), (d_L/d_b)
+       *Better model because its a lower loss function
+       *Gradient Descent = w1 -> w1 - a*(d_L/d_w1), or w1 -> w1 - a*(-x1(y - y-hat)). Similarly, w2 -> w2 - a*(-x2(y - y-hat)), and
+        b -> b - a*(-(y - y-hat)).
+  **** *
