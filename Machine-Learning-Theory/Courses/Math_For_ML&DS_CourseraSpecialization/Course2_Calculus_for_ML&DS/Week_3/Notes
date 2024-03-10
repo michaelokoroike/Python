@@ -1,0 +1,18 @@
+WEEK 3: Optimization in Neural Networks and Newton's Method
+
+* LESSON 1 - OPTIMIZATION IN NEURAL NETWORKS
+  Regression with a Perceptron
+  **** *We'll learn about neural networks and how to train them using gradient descent
+       *We'll learn an alternate method to gradient descent called Newton's Method
+       *This video is about perceptrons, which are the fundamental units of neural networks (note; linear regression can
+        be expressed as a perceptron)
+       *Motivation from a regression problem (example of housing prices used); you find a line of best fit (the points look like
+        they form a line) and this is be able to predict the price of a house, so you wnt to find the best one. If there are
+        multiple features and the problem becomes complex (deciphering how each one affects the output) that's where perceptrons come
+        in
+       *Perceptron = start with input -> plug them into summation function -> get the output y-hat (which will be the prediction). In
+        the summation function step, each feature is multiplied by a weight to determine how important it is for the output (w1x1, etc),
+        but also a bias term needs to be added (w1x1 + w2x2 + b, etc)...goal is to find the best w1, w2, and b (the best weight and bias
+        to optimize prediction)
+       *To find the best weights and bias over time for a function, you need to reduce the errors in the predictions, which is done by
+        the LOSS FUNCTION
