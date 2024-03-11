@@ -43,3 +43,12 @@ WEEK 3: Optimization in Neural Networks and Newton's Method
   **** *The sigmoid graph is the s-shaped graph between 0 and 1 on the y axis
        *Formula of sigmoid is 1/(1 + e^-z); if z is very positive it's close to 1, if z is very negative it's close to 0.
        *Derivative of sigmoid function is -1(1 + e^-z)^-2(e^-z)(-1), or 1/((1 + e^-z)^2).
+  Classification with a Perceptron - Gradient Descent
+  **** *What happens is the perceptron taes inputs, multiplies them by weight functions, applies the sum, and then that sum is
+        applied to the sigmoid function to get a prediction (y-hat). We use y-hat with a loss function to find out how far y-hat is
+        from what it should be in order to update the weights
+       *Best loss function for classification is LOG LOSS
+       *We use the error to update the weight and bring the error down
+       *Prediction Function (Classification) : y-hat = sigmoid*(w1x1 + w2x2 + b)
+       *Loss Function (Classification) : L(y, y-hat) = -y ln(y-hat) - (1-y)ln(1- y-hat)
+       *Main goal is finding optimal values for 21
