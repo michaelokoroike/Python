@@ -44,11 +44,29 @@ WEEK 3: Optimization in Neural Networks and Newton's Method
        *Formula of sigmoid is 1/(1 + e^-z); if z is very positive it's close to 1, if z is very negative it's close to 0.
        *Derivative of sigmoid function is -1(1 + e^-z)^-2(e^-z)(-1), or 1/((1 + e^-z)^2).
   Classification with a Perceptron - Gradient Descent
-  **** *What happens is the perceptron taes inputs, multiplies them by weight functions, applies the sum, and then that sum is
+  **** *What happens is the perceptron takes inputs, multiplies them by weight functions, applies the sum, and then that sum is
         applied to the sigmoid function to get a prediction (y-hat). We use y-hat with a loss function to find out how far y-hat is
         from what it should be in order to update the weights
        *Best loss function for classification is LOG LOSS
        *We use the error to update the weight and bring the error down
        *Prediction Function (Classification) : y-hat = sigmoid*(w1x1 + w2x2 + b)
        *Loss Function (Classification) : L(y, y-hat) = -y ln(y-hat) - (1-y)ln(1- y-hat)
-       *Main goal is finding optimal values for 21
+       *Main goal is finding optimal values for w1, w2, and b
+  Classification with a Perceptron - Calculate the Derivatives
+  **** *See how w1, w2 affects L...when you know the direction, you can iterate in the direction many times. Use chain rule (in the 
+        example, first find d_L/d_y-hat, then d_y-hat/d_w1...this tells us how L is affected by w1. Same for w2 and b.
+       *The calculations of the partial deriatives lead to -(y - y-hat) times the input (for the non-bias inputs)...if y and y-hat
+        are close enough, the derivative will be small and the step therefore will be small
+       *Gradient Descent Function (which you need for optimal values): w1 -> w1 - a*(d_L/d_w1), or w1 -> w1 - a*(-x1(y - y-hat)). 
+        Similarly, w2 -> w2 - a*(-x2(y - y-hat)), and b -> b - a*(-(y - y-hat)).
+  Classification with a Neural Network
+  **** *A neural network is just a bunch of perceptrons organized in layers where the information of the perceptrons are passed to the
+        next layer...you train the neural networks with gradient descent, except now with many derivatives.
+       *Previous example can only do so well, because it builds a linear boundary between "happy" and "sad", but language is typically
+        more complex than that...in that case, more than one perceptron is ideal
+       *See video for example
+  Classification with a Neural Network - Minimizing Log-loss
+  **** *See video; a bunch more chain rule
+  Gradient Descent and Backpropagation
+  **** *Backpropagation essentially calculates a lot of derivatives using chain rule and updating weights/biases just like before
+       *Just longer chain
