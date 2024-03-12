@@ -70,3 +70,15 @@ WEEK 3: Optimization in Neural Networks and Newton's Method
   Gradient Descent and Backpropagation
   **** *Backpropagation essentially calculates a lot of derivatives using chain rule and updating weights/biases just like before
        *Just longer chain
+
+* LESSON 2 - NEWTON'S METHOD
+  Newton's Method
+  **** *Newton's method is used to find the zeroes of a function
+       *It basically finds where a tangent line hits an axis, and iterates to that point by projecting to that point on the curve 
+        (ex: moving horizontally or vertically off of the axis and finding your new point on the curve for a tangent line)
+       *Derivative slope = rise/run...this can be manipulated into rise/derivative slope to find the run and the new tangent point
+        (numeriacally, xk - x(k+1) = f(xk)/f'(xk))
+       *Goal of Newton's Method = find the zeroes of a function (not the minimum). Remember though that to minimize a function g(x),
+        you have to find the zeroes of g'(x), which Newton's Method can...therefore using Newton's Method can get you close to minimums
+       *Same as gradient desecent for iteration, except instead of starting out with f(x), you start with g'(x) 
+        (x(k+1) = xk - (g'(xk)/(g'(xk))'), the second derivative
