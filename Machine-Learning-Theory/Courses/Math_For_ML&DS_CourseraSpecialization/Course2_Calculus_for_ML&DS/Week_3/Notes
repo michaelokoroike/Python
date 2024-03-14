@@ -115,3 +115,19 @@ WEEK 3: Optimization in Neural Networks and Newton's Method
         derivatives are differentiable, these will be the same
        *We are shown the Leibniz and LaGrange version of f_x(x,y) w.r.t y (d2f/dxdy for Leibniz, f_xy(x,y) for LaGrange), etc
        *Hessian matrix is a matrix of these second partial derivatives [f_xx(x,y) f_xy(x,y) | f_yx(x,y) f_yy(x,y)]
+  Hessians and Concavity
+  **** *Recall concave up (convex) functions have a f''(0) > 0, while concave down (concave) functions have a f''(0) < 0
+       *Concave up in two variables looks like f(x,y) = 2x^2 + 3y^2 - xy, which visually appears concave up...the Hessian of f(x,y) -- 
+        which is a matrix of the second derivatives of f(x,y) -- is H(0,0) = [4 -1|-1 6]...with one variable, if we wanted to know if a 
+        function was concave up, we'd look at f''(0) and see if f''(0) > 0; with two variables, we check the Hessian matrixs sign by 
+        checking its eigenvalues
+       *Note: Eigenvalue is calculated by finding the determinant of the Hessian minus lambda I (det(H(0,0) - lambda_I)), which equals
+        det((4-lambda) -1|-1 (6-lambda))...when you do the multiplication and find the two eigenvalues are positive, this means the matrix
+        is positive definite
+       *We are shown an example of a concave down function (both eigenvalues are negative, and H(0,0) is a maximum). We are also shown
+        a saddle point function, where H(0,0) is neither a maximum or minimum (eigenvalues are split positive and negative)
+  Newton's Method for Two Variable
+  **** *For 1 variable, x(k+1) = xk - (f'(xk)/(f''(xk))), or x(k+1) = xk - ((f''(xk)^-1)*(f'(xk)))
+       *For 2 variables, [x(k+1) | y(k+1)] = [xk | yk] - (H^-1(xk,yk)*f'(xk,yk)), with H being the Hessian matrix
+       *An example of f(x,y) = x^4 + 0.8y^4 + 4x^2 + 2y^2 - xy - 0.2x^2 being a convcave up function; start at some point and plug
+        into the Hessian and the first derivative...inch closer to the minimum
