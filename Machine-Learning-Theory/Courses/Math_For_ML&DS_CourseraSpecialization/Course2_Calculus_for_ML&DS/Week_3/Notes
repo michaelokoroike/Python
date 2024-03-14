@@ -131,3 +131,9 @@ WEEK 3: Optimization in Neural Networks and Newton's Method
        *For 2 variables, [x(k+1) | y(k+1)] = [xk | yk] - (H^-1(xk,yk)*f'(xk,yk)), with H being the Hessian matrix
        *An example of f(x,y) = x^4 + 0.8y^4 + 4x^2 + 2y^2 - xy - 0.2x^2 being a convcave up function; start at some point and plug
         into the Hessian and the first derivative...inch closer to the minimum
+
+* WEEK 3 WRAP UP
+  Week 3 - Conclusion
+  **** *Learned derivatives in 1 variable, then learned gradients and derivatives in multiple variables (learning how to calculate
+        them and use them to optimize functions. We use gradient descent and Newton's method to speed up; we learned how to apply
+        all the optimization methods to machine learning
