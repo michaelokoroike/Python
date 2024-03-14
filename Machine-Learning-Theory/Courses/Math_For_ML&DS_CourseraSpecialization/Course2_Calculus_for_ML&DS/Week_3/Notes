@@ -82,3 +82,36 @@ WEEK 3: Optimization in Neural Networks and Newton's Method
         you have to find the zeroes of g'(x), which Newton's Method can...therefore using Newton's Method can get you close to minimums
        *Same as gradient desecent for iteration, except instead of starting out with f(x), you start with g'(x) 
         (x(k+1) = xk - (g'(xk)/(g'(xk))'), the second derivative
+  Newton's Method: An Example
+  **** *Given the former example of g(x) = e^x-log(x), which had a g'(x) of e^x - (1/x) and a minimum of 0.5671; recall that with 
+        Newton's Method, you use it to find the zeros of the derivative...(g'(x))' = e^x + (1/(x^2)) is the derivative of the derivative,
+        so g'(x) is f(x) and (g'(x))' is f'(x). Start with x0 = 0.05; x1 = x0 - (g'(x0)/(g'(x0))')...iterate this step until you get
+        close to the minimum (it actually only takes five steps)
+  The Second Derivative
+  **** *Newton's Method notates (x(k+1) = xk - (g'(xk)/(g'(xk))'), where g'(xk))' is the second derivative; under Leibniz notation the 
+        second derivative is d/dx (df(x)/dx); Lagrange notation is f''(x)
+       *Example is distance to velocity to acceleration; velocity is the change of distance with respect to time; acceleration is
+        the change of velocity with respect to time. Acceleration is the second derivative in this equation...if you have zero
+        acceleration, you have constant velocity.
+       *Video showed how in a graph of distance, a curve at 750t^2 will have a velocity of 1500t at the same time; the acceleration
+        graph at that point will be at a constant line of 1500
+       *Second derivative tells us the curvature of an original function...if a second derivative is positive than 0, it's increasing...
+        if it's negative then positive, it's decreasing. A second derivative above zero is a convex (concave up, local minimum, 
+        first derivative increasing) function, and below zero is a concave (concave down, local maximum, first derivative decreasing) 
+        function
+       *Note: If f''(x) = 0, f'(x) is constant...if a derivative (f'(x)) is constant, then it must be a line
+  The Hessian
+  **** *The Hessian matrix is a matrix of second derivatives
+       *When we want to optimize function of many variables using multivariable Newton's method, we use Hessians
+       *One variable (f(x)) vs two input variable (f(x,y)); first derivative of 1 variable version is f'(x) (rate of change of f(x)
+        with respect to x), but with 2 variables the first derivative can be f_x/y(x,y) (rate of change of the function with 
+        respect to x or y) and you can put them together in a vector; second derivative of 1 variable version is f''(x) (rate of
+        change of the rate of change of f(x), but with 2 variables
+       *Note: partial derivatives do not include terms of orignial function that do not include the term the partial derivative is in
+        respect to (ex: f(x,y) = 2x^2 + 3y^2 - xy...f_x(x,y) = 4x - y (3y^2 is not derivative or included in this partial derivative),
+        and we would be able to do f_x(x,y) with respect to x or y for the second derivative...four total terms would be in the
+        second derivative of f(x,y))
+       *Note: Aspects of the second derivative are the exact same typically (f_x(x,y) w.r.t y, or f_y(x,y) w.r.t x)...if the partial
+        derivatives are differentiable, these will be the same
+       *We are shown the Leibniz and LaGrange version of f_x(x,y) w.r.t y (d2f/dxdy for Leibniz, f_xy(x,y) for LaGrange), etc
+       *Hessian matrix is a matrix of these second partial derivatives [f_xx(x,y) f_xy(x,y) | f_yx(x,y) f_yy(x,y)]
