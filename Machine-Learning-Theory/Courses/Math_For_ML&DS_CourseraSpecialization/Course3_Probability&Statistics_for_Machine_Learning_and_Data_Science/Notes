@@ -1,0 +1,13 @@
+WEEK 1: Introduction to Probability and Probability Distributions
+
+* LESSON 1 - INTRODUCTION TO PROBABILITY
+  Course Introduction
+  **** *Probability is important because a lot of algorithms in machine learning have results that can be phrased as a probability
+       *Ex: spam detection outputs probability that an email is spam
+       *Bayes Theorem = Calculate probability given certain events
+       *Maximum Likelihood Estimation = Probability that modelgives you your data (squared error is used because you are using a Gaussian
+        distribution which has a square...when you take the logrithm it has a square)
+       *Regularization is important because when you start thinking about the probability of a model, there's another Gaussian there for the
+        coefficients, which the squares of the regularization terms of the terms come out too (L2 regularization comes from a Gaussian
+        distribution assumption)
+       *Hypothesis testing is covered as well...also, confidence, confidence interval, p-value
