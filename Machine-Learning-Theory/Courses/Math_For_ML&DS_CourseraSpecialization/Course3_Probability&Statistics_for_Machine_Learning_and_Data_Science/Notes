@@ -22,3 +22,6 @@ WEEK 1: Introduction to Probability and Probability Distributions
         Would be denoted as P(soccer) = soccer/total...the number of kids who play soccer is the EVENT, and the denominator total is the
         SAMPLE SPACE
        *Ex: On coin flips, P(heads) = heads/heads or tails; P(HH) = HH/HH*HT*TH*TT (flipping heads twice)
+  What is Probability? - Dice Example
+  **** *P(6) = 6/(1,2,3,4,5,6) = 1/6
+       *P(66) = 6,6/((1,2,3,4,5,6)(1,2,3,4,5,6)) = 1/36
