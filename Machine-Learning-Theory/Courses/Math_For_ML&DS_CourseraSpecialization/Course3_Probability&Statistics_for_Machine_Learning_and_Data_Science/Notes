@@ -11,3 +11,14 @@ WEEK 1: Introduction to Probability and Probability Distributions
         coefficients, which the squares of the regularization terms of the terms come out too (L2 regularization comes from a Gaussian
         distribution assumption)
        *Hypothesis testing is covered as well...also, confidence, confidence interval, p-value
+  Check Your Knowledge
+  **** *Understood the basic probability point...not sure about complement of probability...not sure about sum of probabilities...not sure
+        about sum of proabilities, joint events...not sure about Bayes' Theorem...not sure about random variables...not sure about
+        probability distributions...not sure about probability density function
+  What is Probability?
+  **** *Rules of probabiility and Bayes Theorem in Lesson 1; in Lesson 2 we'll learn about probability distributions
+       *Probability is the measure of how likely an event is to occur
+       *Ex: In a school with ten kids, 3 play soccer and 7 don't. Probability that the kid we pick at random plays soccer is 3/10, or 30%.
+        Would be denoted as P(soccer) = soccer/total...the number of kids who play soccer is the EVENT, and the denominator total is the
+        SAMPLE SPACE
+       *Ex: On coin flips, P(heads) = heads/heads or tails; P(HH) = HH/HH*HT*TH*TT (flipping heads twice)
