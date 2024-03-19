@@ -25,3 +25,11 @@ WEEK 1: Introduction to Probability and Probability Distributions
   What is Probability? - Dice Example
   **** *P(6) = 6/(1,2,3,4,5,6) = 1/6
        *P(66) = 6,6/((1,2,3,4,5,6)(1,2,3,4,5,6)) = 1/36
+  Complement of Probability
+  **** *Complement of probability is the probaility that an event does not occur; if an event has a 75% probzbility of occurring, then
+        the complement of that event has a 25% probability of occurring
+       *Ex: In a school with ten kids, 3 play soccer and 7 don't. Probability that the kid we pick at random doesn't play soccer is 7/10, 
+        or 70%. Would be denoted as P(not soccer) = not soccer/total...the number of kids who play soccer is the EVENT, and the 
+        denominator total is the SAMPLE SPACE...P(not soccer) = 1 - P(soccer).
+       *Ex: Probability of not landing on heads three times is P(not HHH) = 1 - P(HHH) = 1 - 1/8 = 7/8.
+       *Ex: Rolling a die, what is the probability of rolling anything other than 6? P(not 6) = 1 - P(6) = 1 - 1/6 = 5/6.
