@@ -51,3 +51,9 @@ WEEK 1: Introduction to Probability and Probability Distributions
         want to double count.
        *Disjoint events don't overlap, and are mutually exclusive...joint events do, and are non-mutually exclusive.
        *Ex: Probability of rolling two dice that sum to 7 or have a difference of 1...14/36 (4,3 and 3,4 overlap)
+  Independence
+  **** *P(A and B) = P(A) * P(B)
+  Birthday Problem
+  **** *In a party of 30, which is more likely, that no two ppl have the same birthday, or that at least two ppl have the same birthday?
+       *Probability that they all have different birthdays is 365/365 * 364/365 * 363/365...until 336/335 (which gives us around 30%); the
+        complement of this is the probability that at least two ppl share the same birhtday (1 - 30% = 70%)
