@@ -57,3 +57,20 @@ WEEK 1: Introduction to Probability and Probability Distributions
   **** *In a party of 30, which is more likely, that no two ppl have the same birthday, or that at least two ppl have the same birthday?
        *Probability that they all have different birthdays is 365/365 * 364/365 * 363/365...until 336/335 (which gives us around 30%); the
         complement of this is the probability that at least two ppl share the same birhtday (1 - 30% = 70%)
+  Conditional Probability - Part 1
+  **** *Conditional probability = probability that an event happened given that another event has happened
+       *Ex: Landing on heads twice in coin flip; P(HH) = P(H and H) = P(H) * P(H) = 1/2 * 1/2 = 1/4 (25%)
+       *Ex: Landing on heads twice GIVEN the FIRST FLIP IS HEADS; P(H) = 1/2 (50%)...notation is P(HH | first is HH) = HH/((HH)(HT))
+       *Conditional probability changes sample space
+       *Ex: Proability that a first roll of a die is 6 and the next gives you sum of 10 = P(1st is 6 and sum of 2 is 10) = P(6)*P(4)
+        = 1/6 * 1/6...P(sum is 10, given 1st roll is six)
+  Conditional Probability - Part 2
+  **** *Ex: School of 100 kids (50 soccer likers, 50 non-soccer likers) are told they have two options: go in a room with the World Cup
+        on TV, or go in a room not watching it...we would expect all 50 soccer likers to go in the room with the World Cup.
+       *In previous examples, the rooms and the liking of soccer or not were independent; when you add the variable of the World Cup
+        being played in one of the rooms, it becomes two dependent variables (liking soccer and students' chosen room).
+       *Ex: School with 100 kids (50 soccer likers, 50 non-soccer likers)...on any given day, 80% of the soccer likers wear running
+        shoes...how many soccer students wear running shoes? P(S and RS) = P(S) * P(RS | S) = (50) * (.8) = 40. Also, 50% who don't like soccer
+        wear running shoes; how many nonsoccer students wear running shoes? P(NS and RS) = P(NS) * P(RS | NS) = (50) * (.5) = 25.
+        In the scenario, there's 4 scenarios...soccer students who wear running shoes (40), soccer students who don't wear running shoes
+        (10), nonsoccer students who wear running shoes (25), nonsoccer students who don't wear running shoes (25).
