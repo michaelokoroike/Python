@@ -90,3 +90,27 @@ WEEK 1: Introduction to Probability and Probability Distributions
         incorrectly diagnosed as sick (healthy incorrectly diagnosed...9,999).
   Bayes Theorem - Mathematical Formula
   **** *Conditional probability = P(A | B) = P (A and B) / P(B)
+  Bayes Theorem - Spam example
+  **** *Finding if emails are spam
+       *Example of 100 emails with 20 of them being spam...building a classifier
+       *P(spam | lottery) = spam emails with 'lottery' / all emails with 'lottery'
+       *Bayes Theorem removes emails that don't matter (in the case of above, non-spam emails with 'lottery')
+       *We are shown that P(spam) = 20% and P(not spam) = 80%, P(lottery | spam) = lottery given spam = 14/20 = 0.7, 
+        P(lottery | not spam) = lottery given not spam = 10/80 = 0.125
+       *It's how many of something given a certain defined sample space
+  Bayes Theorem - Prior and Posterior
+  **** *Prior = P(A); event = E; posterior = P(A | E)
+       *In spam example, prior is probability of email beng spam; event is email containing 'lottery'; posterior is probability of spam
+        given the email contains 'lottery'...the way to think about the EVENT is what comes after the 'given'
+  Bayes Theorem - Naive Bayes Model
+  **** *Example of two events in email classification (email contains 'lottery' and 'winning')
+       *Naive assumption is assuming that the appearances of the words/features in a document are independent, because the more features
+        there are, the more likely all of them together are less likely to be found (have 0 instances of what you're looking for)...it
+        ends up being, in the example of lottery and winning, instead of lottery and winning being the test, it's the product of 
+        lottery in the spam and winning in the spam (separate)
+  Probability in Machine Learning
+  **** *Machine learning is all about probabilities (for spam classifiers, the probability an email is a spam based on message or 
+        recipient, or other features; in image recognition, does an image have a certain thing in it or not)
+       *In image recognition, example is probability a cat is in an image is P(cat | image) = P(cat | pixel_1, ..., pixel_n)
+       *Other options is health of a patient, the tone of a sentence, etc
+       *It's all about conditional probabilities
