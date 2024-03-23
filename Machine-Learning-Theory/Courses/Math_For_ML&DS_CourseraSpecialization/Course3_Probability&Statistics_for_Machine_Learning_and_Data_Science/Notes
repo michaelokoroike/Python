@@ -89,4 +89,4 @@ WEEK 1: Introduction to Probability and Probability Distributions
         were diagnosed as sick is those correctly diagnosed as sick (99) divided by the correctly diagnosed as sick (99) plus those
         incorrectly diagnosed as sick (healthy incorrectly diagnosed...9,999).
   Bayes Theorem - Mathematical Formula
-  **** *Conditional probability = P(A | B) = P (A snd B) / P(B)
+  **** *Conditional probability = P(A | B) = P (A and B) / P(B)
