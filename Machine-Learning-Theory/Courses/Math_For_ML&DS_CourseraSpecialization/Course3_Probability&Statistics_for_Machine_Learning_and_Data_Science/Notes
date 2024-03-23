@@ -74,3 +74,17 @@ WEEK 1: Introduction to Probability and Probability Distributions
         wear running shoes; how many nonsoccer students wear running shoes? P(NS and RS) = P(NS) * P(RS | NS) = (50) * (.5) = 25.
         In the scenario, there's 4 scenarios...soccer students who wear running shoes (40), soccer students who don't wear running shoes
         (10), nonsoccer students who wear running shoes (25), nonsoccer students who don't wear running shoes (25).
+  Bayes Theorem - Intuition
+  **** *Used for spam recognition, speech detection, etc
+       *Ex: 1,000,000 million people in a population...1/10,000 are affected by an illness. Test that is given is 99% effective (out of 
+        100 sick people, 99 are correcctly diagnosed as sick...out of 100 healthy people, 99 are correctly diagnosed as healthy). If
+        someone went to the doctor and tested sick, are they really sick?
+       *Answer to above: in the 1,000,000 person population, only 100 are sick (1/10,000), and 99 are actually sick and diagnosed as such. The 
+        probability that someone in the population that tested sick is sick is P(sick | diagnosed as sick)...99 are sick, and this is out
+        of the pool of 99 people that are correctly diagnosed as sick, and the 9,999 that are healthy and incorrectly diagnosed as sick.
+       *The math is best depicted in the arrow map infographic...in the 1,000,000 population, 999,000 are healthy and 100 are sick (the
+        1/10,000 ratio); in the 999,900 that are healthy, because of the 99% effectiveness, 99% of this pool (989,901) will be correctly
+        diagnosed as healthy and 1% of the pool (9,999) will be incorrectly diagnosed as sick...in the 100 that are sick, 99% (99) will be
+        correctly diagnosed as sick, and 1% (1) will be incorrectly diagnosed as healthy; the probability that someone is sick GIVEN they
+        were diagnosed as sick is those correctly diagnosed as sick (99) divided by the correctly diagnosed as sick (99) plus those
+        incorrectly diagnosed as sick (healthy incorrectly diagnosed...9,999).
