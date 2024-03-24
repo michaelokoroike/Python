@@ -127,3 +127,8 @@ WEEK 1: Introduction to Probability and Probability Distributions
         continuous takes values on an interval
        *Deterministic takes a value and it's always that value forever...random variables can take many values, and are associated with
         an uncertain outcome
+  Probability Distributions (Discrete)
+  **** *Putting all of the possible values of an experiment on a horizontal axis and showing the probability that each happen is a 
+        discrete probability distribution
+       *Shows three coin flips as a probability distribution of flipping heads in 3 coin tosses, then 4 coin tosses, then 5 coin tosses
+       *Probability mass function is the name of the probability distribution
