@@ -114,3 +114,16 @@ WEEK 1: Introduction to Probability and Probability Distributions
        *In image recognition, example is probability a cat is in an image is P(cat | image) = P(cat | pixel_1, ..., pixel_n)
        *Other options is health of a patient, the tone of a sentence, etc
        *It's all about conditional probabilities
+
+* LESSON 2 - PROBABILITY DISTRIBUTIONS
+  Random Variables
+  **** *Random variables can take many values
+       *Example: Random variable X equalling the result of a coin flip (X = 1 if heads, X = 0 if tails) and both P(X = 1) and P(X = 0)
+        have a 50% probability
+       *Random variables allow you to model the whole experiment at once
+       *Other examples of random variables = X equalling the number of times we get 1 when we roll a die, or the number of sick patients
+       *Two types of random variables are discrete (e.g., number of times flipping heads or rolling 1 on die) and continuous (e.g.,
+        amount of time until a bus arrives, height of a jump, amount of rain during a month)..discrete have countable number of values,
+        continuous takes values on an interval
+       *Deterministic takes a value and it's always that value forever...random variables can take many values, and are associated with
+        an uncertain outcome
