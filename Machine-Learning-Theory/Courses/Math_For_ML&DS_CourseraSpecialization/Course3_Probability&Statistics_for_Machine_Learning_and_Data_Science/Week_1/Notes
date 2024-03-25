@@ -212,9 +212,15 @@ WEEK 1: Introduction to Probability and Probability Distributions
         normal distribution when W is its negative and positive value (w of probability of 2 on CDF is area between -2 and 2 on normal
         distribution)...this is the chi squared distribution with 1 degree of freedom
        *W = Z1^2 + Z2^2 is a chi squared distribution with 2 degrees of freedom...as number of degrees of freedom increases, it becomes a
-        more symmetrical distribution
+        more symmetrical distribution (PDF)
   Sampling from a Distribution
   **** *Create sythetic data from distribution (when you cannot get more data)
        *Step 1: Generate a random number between 0 and 1, step 2: find out which interval the number belongs to, step 3: assign outcome
         based on the interval
        *When you choose uniformly from the CDF, you get the variety of numbers that make up the normal/discrete distribution 
+
+* WEEK 1 - WRAP UP
+  Week 1 - Conclusion
+  **** *Learned probabilities, random variables, and probability distributions
+       *Next week will learn properties of probability distributions, as well as generalizations of probability distributions
+       *See slides
