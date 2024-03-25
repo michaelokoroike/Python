@@ -157,3 +157,64 @@ WEEK 1: Introduction to Probability and Probability Distributions
        *Interesting: with continuous distributions, the probability that we will wait any specific time for a call is 0...so the question
         has to be restructured in terms of windows (probability that we will wait between 1 and 2 minutes, etc)...the intervals can be
         split...the sum of heights of this distribution will equal 1
+  Probability Density Function
+  **** *The binomial distribution, but for intervals (with discrete, you cannot have significant probabilities for pinpoint values)
+       *It's a shaded area probability...but cannot just look at height, because as you create more and more intervals, shaded areas
+        squeeze and squeeze until close to zero
+       *Notation = f_x(x)
+       *It tells you the rate at which you accumulate probability for each point
+       *Probability notation is P(a < x < b) being the area under f_x(x), with a and b being the interval (ex: between 1 and 2 minutes
+        call is a=1 and b=2)
+       *Assumptions = 1) f_x(x) is defined for all numbers (0 before and after the curve, for example), and 2) it needs to be greater than
+        or equal to 0 at all values (there is no negative chance/probability that something has to occur), and 3) the area under the curve
+        needs to be 1 (all probabilities defined under the curve)
+       *Reiterate: discrete random variables take on a finite or countable number of variables (ex: trial of 10 coin flips, with
+        experiment result being probability of certain amount of times landed on heads...this is probability mass function 
+        p_x(x) = P(X = x)); continuous random variables take on values at intervals (ex: phone call length, with experiment result being
+        probability it lasts within certain intervals of time...this is probability density function f_x(x) = P(X = x) = 0, because at any
+        singular point, the probability will be 0)
+  Cumulative Distribution Function
+  **** *Shows actual probability that a call is between 0 and a certain number of minutes for example (for continuous); also a cumulative
+        distribution function for discrete distributions
+       *For continuous, it ends up being the sum of all the preceding intervals and the current interval; for discrete, it's similar (the
+        amount under the curve up until a point)
+  Interactive Tool
+  **** *Interesting; of note was the continuous - uniform function (from -2 to 3 was constant 0.2 on y value); slants up to 1 during that
+        interval
+  Uniform Distribution
+  **** *It is essentially a density function, but with a constant (for a phone call experiment with 1 minute intervals over 15 minutes,
+        the constant is 0.06 on y value over that period)
+       *Continuous random variable can be modeled with it if all possible values lie within an interval andthere is the same theoretical
+        frequency of occurrence
+       *Straight line, followed by diagonal, followed by straight line
+       *f_x(x) = {(0 for x < a), ((x-a)/(b-a) for a less than or greater than x nd x less than b), (1 for b > x)}
+  Normal Distribution
+  **** *If data looks like a bell curve (with e^(-1/2(x^2)) as the function), to properly adjust it if the mean is two would mean to 
+        adjust the equation to e^(-1/2((x-2)^2); to properly adjust the curve if it's too skinny and needs to be widened by a multiple
+        of 3 is e^(-1/2(((x-2)/3)^2); to properly adjust the height of a curve if it is too tall is divide by the area of the too tall 
+        curve (1/3 * e^(-1/2(((x-2)/3)^2), for example (if area of wrong curve is 3 and area of correct curve is 1)
+       *Parameters of a normal distribution are mean and standard deviation (sd)...the above dictates the equation of the Gaussian, which
+        is 1/(sd*sq_root_of_2pi) * e^(-1/2(((x-mean)/sd)^2)...1/(sd*sq_root_of_2pi) is the SCALING CONSTANT...notation is
+        X ~ N(mean, sd^2)...sd^2 is the VARIANCE (sd and sd^2 convey the same info)
+       *Mean is the center of the bell and standard deviation is the spread of the bell
+       *Range is all real numbers; symmetrical distribution
+       *Standardization = subtracting by mean (to get it to 0), and dividing that result by the standard deviation (makes the standard
+        deviation the right width of 1)...helps to compare variables of different magnitudes
+       *CDF of a normal distribution looks like a sigmoid function (kind of s-like)
+       *Models a lot of things in nature
+  (Optional) Chi-Squared Distribution
+  **** *Ex: communication between power lines can be obstucted by things in between them, noise, etc (a message sent of 10010 can be a
+        message received of 10010 + Z (noise that affected the message, and has a random nature)
+       *Question of above example is what is the power of the noise of the W channel between the power lines (W = Z^2); when we assume
+        Z follows a standard normal distribution, F_w(W) = P(W LTOET w) = P(Z^2 LTOET w) = P(|Z| LTOET sqrt of w) =
+        P(neg sqrt of w LTOET Z LTOET pos sqrt of w)...LTOET is less than or equal to.
+       *CDF is integral of PDF...the probability that W LTOET value of w on the CDF is equal to finding the area under the curve of a
+        normal distribution when W is its negative and positive value (w of probability of 2 on CDF is area between -2 and 2 on normal
+        distribution)...this is the chi squared distribution with 1 degree of freedom
+       *W = Z1^2 + Z2^2 is a chi squared distribution with 2 degrees of freedom...as number of degrees of freedom increases, it becomes a
+        more symmetrical distribution
+  Sampling from a Distribution
+  **** *Create sythetic data from distribution (when you cannot get more data)
+       *Step 1: Generate a random number between 0 and 1, step 2: find out which interval the number belongs to, step 3: assign outcome
+        based on the interval
+       *When you choose uniformly from the CDF, you get the variety of numbers that make up the normal/discrete distribution 
