@@ -132,3 +132,23 @@ WEEK 1: Introduction to Probability and Probability Distributions
         discrete probability distribution
        *Shows three coin flips as a probability distribution of flipping heads in 3 coin tosses, then 4 coin tosses, then 5 coin tosses
        *Probability mass function is the name of the probability distribution
+  Binomial Distribution
+  **** *Ex: Flip a coin ten times and consider how many heads can be obtained...it can be 0, 1, 2, 3,..., 10...each one has a 
+        corresponding probability; the histogram of probabilities is the BINOMIAL DISTRIBUTION
+       *Binomial distributions are examples of discrete distributions
+       *Ex: Probability that if a coin is flipped five times, two of them will land on heads? (.5 ^ 5 = 1/32; but also a factorial
+        comes into play (there are actually ten combinations of ways this can happen)...in the mentioned case the equation would be
+        5! / 2!(5-2)!, where 5! is the number of ways 5 coins can be ordered, 2! is the number of heads, and (5-2)! is the number of tails
+       *The above can also be written as (5 2)^T (the 5 and 2 are actualy in a column) and this is called the BINOMIAL COEFFICIENT.
+        In general, the notation is (n k)^T, where it counts all of the combinations for landing k heads in n coin tosses...also can
+        have the notation of (n (n-k))^T, where k heads is the same as obtaining n-k tails
+       *Ex: Probability of number of heads in 5 coin tosses? (5 x)^T*(p^x(1-p)^(5-x))...p^x is the probablity of choosing x amount of heads,
+        (1-p)^(5-x) is the probability of choosing 5-x tails, and (5 x)^T represents all of the possible orders; this is the PROBABILITY
+        MASS FUNCTION for x (number of heads in n coin tosses)...p_x(x) = (n x)^T*(p^x(1-p)^(n-x)), and n and p are the PARAMETERS of
+        the equation (X ~ Binomial(n,p))...n is the amount of iterations of the test, and p is the natural probability.
+  (Optional) Binomial Coefficient
+  **** *k! factorial is important in understanding the amount of soultions and combinations of a problem
+       *(n k)^T*(p^x(1-p)^(n-x))
+  Bernoulli Distribution
+  **** *Bernoulli distribution is essentially a binomial distribution, but always with a theoretically correct probability (ex: p in 
+        (n x)^T*(p^x(1-p)^(n-x)) for rolling a number on a die would be 1/6).
