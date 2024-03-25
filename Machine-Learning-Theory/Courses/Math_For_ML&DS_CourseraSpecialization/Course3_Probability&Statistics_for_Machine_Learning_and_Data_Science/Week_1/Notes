@@ -152,3 +152,8 @@ WEEK 1: Introduction to Probability and Probability Distributions
   Bernoulli Distribution
   **** *Bernoulli distribution is essentially a binomial distribution, but always with a theoretically correct probability (ex: p in 
         (n x)^T*(p^x(1-p)^(n-x)) for rolling a number on a die would be 1/6).
+  Probability Distributions (Continuous)
+  **** *Continuous is based off of intervals that cannot be listed
+       *Interesting: with continuous distributions, the probability that we will wait any specific time for a call is 0...so the question
+        has to be restructured in terms of windows (probability that we will wait between 1 and 2 minutes, etc)...the intervals can be
+        split...the sum of heights of this distribution will equal 1
