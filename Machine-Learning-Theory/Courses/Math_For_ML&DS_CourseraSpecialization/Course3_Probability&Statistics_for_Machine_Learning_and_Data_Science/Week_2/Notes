@@ -9,3 +9,11 @@ WEEK 2: Describing Probability Distributions and Probability Distributions with 
         continuous variables = sum of probability x for all f_x's of an integral (the un-derivative of a function over an interval...
         for example x^2 in an integral means the function to test is 1/3*x^3)
        *Difference between mean and median is discussed later; we learn about torque
+  Other Measures of Central Tendency: Median and Mode
+  **** *Median = Important because of outliers (Michael Jordan was an outlier for geography majors, made the average starting salary
+        appear higher than in actuality); middle point in even distribution, or average of two middle ones
+       *Mode = Outcome with the highest probability; in continuous distribution, outcome with the highest height
+       *Mean = Average (wieghted usually)
+  Expected Value of a Function
+  **** *Weighted average is shown in the E[x^2] example, etc
+       *In general, E[aX + b] = aE[X] + b...E[aX] = aE{X], and E[b] = b
