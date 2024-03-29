@@ -17,3 +17,12 @@ WEEK 2: Describing Probability Distributions and Probability Distributions with 
   Expected Value of a Function
   **** *Weighted average is shown in the E[x^2] example, etc
        *In general, E[aX + b] = aE[X] + b...E[aX] = aE{X], and E[b] = b
+  Sum of Expectations
+  **** *Ex: If you flip a coin (heads is $1, tails is nothing), then roll a die and win the amount you roll (ex: roll 1 and get $1, etc)
+        what are the expected winnings?...it equals ($1+$0)/2 + ($1+$2+$3+$4+$5+$6)/6, or $4.
+       *Ex: If there is a game where 3 people with three different names has their names in a bag, there are 6 different ways those three
+        names can be distributed (one way with all three correct, and three other ways with 1 correct); as it would be a 6-run test with
+        6 correct calculations, the expected number of correct assignments is 6/6 (which equals 1)
+       *Easiest way to do above is E[Matches], and equal it to the sum of expectations for each person; because each person has 1/3 chance
+        to pick their name in the 3 erson example above, the sum of expectations would be 1/3 + 1/3 + 1/3, which equals 1. It ends up
+        being 1/n, for n amount of times.
