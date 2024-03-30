@@ -46,3 +46,17 @@ WEEK 2: Describing Probability Distributions and Probability Distributions with 
         all the deviations have doubled so the variance of the transform is the square of that deviation change, when in comparison to
         the original)
        *in Var(ax + b), changes in b don't chage the pread, but changes in a do
+  Standard Deviation
+  **** *Variance squares things (leaves them in units like feet squared); standard deviation is the sqrt of variance (measures spread of
+        a distribution using same units of the distribution)
+       *Example is a distribution of meters...variance will provide a meters squared figure; just take the sqrt for standard deviation
+       *68% of data is within 1 standard deviation of a maean of a normal distribution...95% is within 2 sd...99.7% is within 3 sd
+  Sum of Gaussians
+  **** *Ex: Total response time of a computer system (R) being sum of processing time (T) and network latency (L)...equation is
+        R = T + L. If we could model T in milliseconds with a Gaussian distribution of T ~ N(10, 2^2) and L in milliseconds with
+        L ~ N(5, 1^2) which means a mean of 5 and standard deviation of 1, and that T and L are independent of each other, the
+        Gaussian of R would be N(10+5,4+1)
+  Standardizing a Distribution
+  **** *Desiring for a mean of 0 and a standard deviation of 1
+       *With a distribution of X of mean 2 and sd 2, for example X - 2 centers the distribution, (X - 2) / 2 scales the distribution,
+        and it is fully standardized
