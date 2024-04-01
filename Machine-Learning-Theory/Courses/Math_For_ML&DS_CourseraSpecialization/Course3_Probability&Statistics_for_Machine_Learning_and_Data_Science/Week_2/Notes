@@ -60,3 +60,6 @@ WEEK 2: Describing Probability Distributions and Probability Distributions with 
   **** *Desiring for a mean of 0 and a standard deviation of 1
        *With a distribution of X of mean 2 and sd 2, for example X - 2 centers the distribution, (X - 2) / 2 scales the distribution,
         and it is fully standardized
+  Skewness and Kurtosis: Moments of a Distribution
+  **** *E[x] is the first moment of a distribution, and E[x^2] is the second distribution (second moment is related to variance, but uncentered);
+        third moment is E[x^3] and so on until the kth moment (probability at this point would be p1x1^k+...+pnxn^k)
