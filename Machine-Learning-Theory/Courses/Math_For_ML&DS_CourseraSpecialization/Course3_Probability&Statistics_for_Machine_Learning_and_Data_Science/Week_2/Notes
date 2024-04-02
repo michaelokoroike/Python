@@ -103,3 +103,10 @@ WEEK 2: Describing Probability Distributions and Probability Distributions with 
        *How do we get an exact answer of if a distribution is normal? Quantile Quantile plots, or QQ plots.
        *Get it by standardizing data (subtracting by mean and dividing by standard deviation), then compare quantiles of data, then
         compare to Gaussian quantiles
+
+
+* LESSON 2 - Probability Distributions with Multiple Variables
+  Joint Distribution (Discrete) - Part 1
+  **** *Ex: In a 10 child pool, what's the probability a child is 9 years old and 49 inches tall? (0.4 likelihood of child being 9, because 4 of the kids in the child pool are 9; 
+        3 of these kids are 49 inches tall...divide 3 by 10 and you get a joint distribution
+       *Notation = Pxy(x, y)
