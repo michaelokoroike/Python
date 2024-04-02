@@ -63,3 +63,43 @@ WEEK 2: Describing Probability Distributions and Probability Distributions with 
   Skewness and Kurtosis: Moments of a Distribution
   **** *E[x] is the first moment of a distribution, and E[x^2] is the second distribution (second moment is related to variance, but uncentered);
         third moment is E[x^3] and so on until the kth moment (probability at this point would be p1x1^k+...+pnxn^k)
+  Skewness and Kurtosis - Skewness
+  **** *Lottery vs Car Insurer...lottery = pay $1, can win $100 means that you can win $99 with 1% probability and lose $1 with 99% probability;
+        car insurance = costs $1, crash repairs are covered to $100 means that you gain $1 (as insurer) with 99% probability and lose $99 with
+        1% probability
+       *In above example variance (spread of outcomes) looks the same (-1 to 99, 1 to -99); and expected values are the same (99*.01 - 1*.99 = 0;
+        1*.99 - 99*.01 = 0). You could find actual variance by simply squaring the expected value and then multiplying it by its probability and adding
+        the different components (ex: for lottery, (-1)^2*0.99 + (99)^2*0.01 = 99, for car insurance, (1)^2*0.99 + (-99)^2*0.01 = 99)
+       *By having the same expected value and variance, they have the same first and second moment respectively...but these are different games so the
+        way to tell them apart is to go on to the third moment, which is CUBING the expected value and then multiplying it by its probability (ex: 
+        for lottery, (-1)^3*0.99 + (99)^3*0.01 = 9702, for car insurance, (1)^2*0.99 + (-99)^2*0.01 = -9702)...this tells us, in the example of 9702,
+        there are some values really far out to the right (positive skewness), and for -9702, some values really far to the left (negative skewness)
+       *Skewness is the standardized and cubed distribution; the third moment (notation is E[(X - mean/sd)^3]...note when this is 0, it's not a skewed
+        distribution
+  Skewness and Kurtosis - Kurtosis
+  **** *Game 1 vs Game 2...game 1 is 1/2 chance you win a dollar, 1/2 chance you lose a dollar; game 2 is 100/202 chance you win 10 cents, 100/202 chance
+        you lose 10 cents, 1/202 chance you win 10 dollars, 1/202 chance you lose 10 dollars
+       *It appears both distributions have the same expected value (they do)...same variance (they do)...same skewness (they do...distributions symmetric
+        around the midpoint always do)
+       *The way to describe the difference is Game 2 has values that are really far away from the midpoint 0...this can be in the fourth moment or KURTOSIS
+       *Notation of kurtosis = E[(X - mean/sd)^3]; in the case of distributions when tails are skinny (not many far out points), kurtosis is small...when
+        the tails are thicker, kurtosis is large
+  Quantiles and Box-Plots
+  **** *Median is the point that splits data in half...the median percentile isthe 50% percentile or square percentile
+       *Quantized essays provide solution, as the kth quantile is value that leaves k% of data to the lef, and (100-k)% to the right
+       *25% = first quartile; 50% = second quartile; 75% = third quartile
+  Visualizing Data: Box-Plots
+  **** *Quartile in even list is the average of the two middle values
+       *Interquartile range tells you where the percentage of your data lies (ex: difference between Q3 and Q1 tells how much of your data is in 50% of the data)
+       *Shown a box plot without outliers, with outliers
+  Visualizing Data: Kernel Density Estimation
+  **** *Approximate the probability density function of a dataset with KERNEL DENSITY ESTIMATION
+       *Kernel Density Estimation process = 1) draw the observations along the x axis, and see where there's a lot of density, then 2) draw a gaussian centered at each
+        observation, and 3) multiplying everything by 1/n and sum the curves
+  Visualizing Data: Violin Plots
+  **** *Brings together the data of the kernel density estimation and the box plot
+  Visualizing Data: QQ Plots
+  **** *Some models assume normally distributed data (linear/logistic regression, Gaussian Naive Bayes, etc)
+       *How do we get an exact answer of if a distribution is normal? Quantile Quantile plots, or QQ plots.
+       *Get it by standardizing data (subtracting by mean and dividing by standard deviation), then compare quantiles of data, then
+        compare to Gaussian quantiles
