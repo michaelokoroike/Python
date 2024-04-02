@@ -82,7 +82,7 @@ WEEK 2: Describing Probability Distributions and Probability Distributions with 
        *It appears both distributions have the same expected value (they do)...same variance (they do)...same skewness (they do...distributions symmetric
         around the midpoint always do)
        *The way to describe the difference is Game 2 has values that are really far away from the midpoint 0...this can be in the fourth moment or KURTOSIS
-       *Notation of kurtosis = E[(X - mean/sd)^3]; in the case of distributions when tails are skinny (not many far out points), kurtosis is small...when
+       *Notation of kurtosis = E[(X - mean/sd)^4]; in the case of distributions when tails are skinny (not many far out points), kurtosis is small...when
         the tails are thicker, kurtosis is large
   Quantiles and Box-Plots
   **** *Median is the point that splits data in half...the median percentile isthe 50% percentile or square percentile
