@@ -110,3 +110,11 @@ WEEK 2: Describing Probability Distributions and Probability Distributions with 
   **** *Ex: In a 10 child pool, what's the probability a child is 9 years old and 49 inches tall? (0.4 likelihood of child being 9, because 4 of the kids in the child pool are 9; 
         3 of these kids are 49 inches tall...divide 3 by 10 and you get a joint distribution
        *Notation = Pxy(x, y)
+  Joint Distribution (Discrete) - Part 2
+  **** *Probability mass function of rolling a die; all six options have a 1/6 propbability of being rolled
+       *If there were two distributions of die roll probabilities, they would be independent distributions...for example, probability of rolling 1 on one die and 6 on another is
+        1/6 multiplied by 1/6, which equals 1/36. Probability mass function of this joint distribution would be a table of 1/36 for each combination.
+       *Notation if the dice were labelled x and y would be P_xy(x, y) = P(X = x, Y = y) = P(x) * P(y)
+       *Now non-independent example; x is a first die rolled and y is the sum of the two dice after a second die is rolled. Distribution of x is the same 1/6 probaility for each
+        number to be rolled...distribution of y is shaped like a bell-shaped normal distribution with some values having more probbability than others (6/36 probability for 7, for
+        example)...an example in this case is P(X=1, Y=1) = 0 because can't roll 0 on a die...P(X=1, Y=2) = 1/36 because only 1 can be rolled on the second die, so 1/6 * 1/6 = 1/36.
