@@ -172,3 +172,10 @@ WEEK 2: Describing Probability Distributions and Probability Distributions with 
        *General definition = f_x(x) = (1/(2*pi)^(n/2)*(SQRT COV MAT DET))*e^(-1/2*((x - mean)^T * COV MAT^-1(x - mean))).
        *NOTE: THE BIGGER THE DETERMINANT THE BIGGER THE SPREAD.
        *NOTE: FOR UNIVARIATE, WE WORK WITH SCALAR VALUES AND VARIANCES. FOR MULTIVARIATE, WE WORK WITH VECTORS AND THE COVARIANCE MATRIX.
+
+* WEEK 2 WRAP UP
+  Week 2 - Conclusion
+  **** *Learned ways of describing distributions (mean, variance, kurtosis, skewness, etc); distributions of two variables and how to measure them usingcovriance, correlation, and other
+        things. 
+       *Next week is statistics.
+  
