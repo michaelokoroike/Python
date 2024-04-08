@@ -8,3 +8,9 @@ WEEK 3: Sampling and Point Estimation
        *Dependent random sampling isn't good...must start over if necessary
        *Samples need to be independently distributed; whatever rules used to pick one has to be used to pick another
        *Every dataset we use is a sample
+  Sample Mean
+  **** *Good to do random sampling for mean, because it avoids bias and allows each instance an equal opportunity to be chosen
+       *Bigger the sample size, the better
+  Sample Proportion
+  **** *Population proportion = number of items with a given characteristic divided by the number of items in a population, denoted by P
+       *Sample proportion = number of items in a subset of a population with a given characteristic divided by the number of items in that subset, denoted by P-hat
