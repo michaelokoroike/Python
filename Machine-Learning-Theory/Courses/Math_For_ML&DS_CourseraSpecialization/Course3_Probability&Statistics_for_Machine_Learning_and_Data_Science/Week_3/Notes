@@ -44,3 +44,7 @@ WEEK 3: Sampling and Point Estimation
        *I.I.D dictates that sample means are the same as population means, and sample variance is same as population variance, but divided by number of variables being averaged. Mean stays
         same but variance gets smaller; this makes sense because the more samples we take, the closer we'll be to the population mean, meaning less spread and less variance
        *Formal definition ofCentral Limit Theorem = as X goes to infinity, the standardized average will follow a standard normal distribution. Typicallyaround n of 30 or higher.
+
+* LESSON 2 - Point Estimation
+  Point Estimation
+  **** *Definitions already heard
