@@ -14,3 +14,33 @@ WEEK 3: Sampling and Point Estimation
   Sample Proportion
   **** *Population proportion = number of items with a given characteristic divided by the number of items in a population, denoted by P
        *Sample proportion = number of items in a subset of a population with a given characteristic divided by the number of items in that subset, denoted by P-hat
+  Sample Variance
+  **** *All that is discussed is notation...big N for population calculation, little N for sample population...variance is still average squared deviation, or value of variable
+        instance minus mean of variable squared, divided by number of population (or sample)
+       *Bias is over or underestimation of variance
+       *Exaample = Game where you could pick 1, 2, 3 out of a hat randomly...population mean is 2, population variance is 2/3...but you pick 1, 2, 3 out of a hat, put it back, and pick
+        again, you only get a variance of 1/3 (which is wrong), which is why below is real
+       *Dividing by n-1 in variance fixes bias when all you have is a sample. As n gets big, this doesn't matter...if it does, sample is too small. Without n-1, still have a pretty
+        good estimation of variance, but will have a bias...in full populations, no n-1 is needed.
+  Law of Large Numbers
+  **** *More samples we get, the closer we get to population mean. If n is the number of samples, and x_i is the ith sample from the population, each x_i are independent and identically
+        distributed...as x goes to infinity, expected value of x approaches the population mean
+  Central Limit Theorem - Discrete Random Variable
+  **** *You can take any distribution and take samples from it and plot the averages of it, and you'll get a population distribution
+       *Example is coinflip - random variable X is number of heads when coin is flipped n times, and if n = 1, X = 1 for heads and X = 0 for tails. Probaility is 0.5 for X = 1 and
+        0.5 for X = 2...as we increase the number of coins we flip, it actually starts to naturally look bell-shaped as a distribution related to expected value
+       *Counting the number of heads in n coinflips is the same as adding n Bernoulli variables, where each variable takes value 1 when you see heads and 0 when tails
+       *Mean is n*p, variance is n*p*(1-p)...in coinflip for heads, mean is 1*0.5 for heads (0.5), and variance is 1*0.5*0.5 (second 0.5 is probability of tails, or not heads) is 0.25
+       *Mean and variance go up uniformly with added flips
+  Central Limit Theorem - Continuous Random Variable
+  **** *Example of the call; random variable X is the wait time for a call to be answered, with X = U(0,15), meaning it follows a uniform distribution, meaning every interval of the same
+        length ahs the same chance of occurring, leading to a constant probability density function
+       *In example, looiking at 1 call, versus average of 2 calls, vs average of 3 calls, random variable Y_n is the average for all the waits on the n calls. It also becomes bell shaped 
+        over time and has less dispersion
+       *Saince all variables are I.I.D, all outcomes have identical probability, and mean is sum of X_i divided by number of X_i, or simply mean of x. Variance is still normal variance,
+        but divided again by n (WHY?).
+       *As n grows, so does variance of average.
+       *If more skewed initially, need more samples to see the normality of more samples take place.
+       *I.I.D dictates that sample means are the same as population means, and sample variance is same as population variance, but divided by number of variables being averaged. Mean stays
+        same but variance gets smaller; this makes sense because the more samples we take, the closer we'll be to the population mean, meaning less spread and less variance
+       *Formal definition ofCentral Limit Theorem = as X goes to infinity, the standardized average will follow a standard normal distribution. Typicallyaround n of 30 or higher.
