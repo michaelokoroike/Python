@@ -54,3 +54,9 @@ WEEK 3: Sampling and Point Estimation
        *The math for multiple runs (like a series of coin flips) is probability of cause multiplied by not cause (example: if heads is rolled 8 of 10 times, if a coin has a probability of 
         rolling heads 0.7, the probability is 0.7^8 * (1-0.7)^2. This actually ends up a higher value than if it were a non-bias coin of 0.5 probability heads in the 8 of 10 scenario, so
         it becomes a better estimate)
+  MLE - Bernoulli Example
+  **** *Same coin example as above
+       *In example of finding probability to maximize p^8*(1-p)^2, finding the natural logarithm of the function simplifies and finds the maximum likelihood...this becomes
+        8 log(p) + 2 log(1-p). This is the LOG-LIKELIHOOD. Notation would be L(p; 8H). The derivative of  8 log(p) + 2 log(1-p) is (8/p) + ((2/(1-p))*(-1))...equal this to 0 and the
+        optimal value for p-hat is 8/10.
+       *General equation is, for n coins and k heads as example, L(p; x) = P_p(X=x) = log(P^x_i * (1-p)^(n-x_i))
