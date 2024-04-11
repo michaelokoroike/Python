@@ -48,3 +48,9 @@ WEEK 3: Sampling and Point Estimation
 * LESSON 2 - Point Estimation
   Point Estimation
   **** *Definitions already heard
+  Maximum Likelihood Estimation - Motivation
+  **** *Essentially, if an outcome occurs, what is the likeliest cause? (spilled popcorn; caused by people watching a movie, playing board gmes, or taking a nap?)
+       *Notation = P(outcome|cause)
+       *The math for multiple runs (like a series of coin flips) is probability of cause multiplied by not cause (example: if heads is rolled 8 of 10 times, if a coin has a probability of 
+        rolling heads 0.7, the probability is 0.7^8 * (1-0.7)^2. This actually ends up a higher value than if it were a non-bias coin of 0.5 probability heads in the 8 of 10 scenario, so
+        it becomes a better estimate)
