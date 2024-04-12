@@ -99,3 +99,8 @@ WEEK 3: Sampling and Point Estimation
        *The math is multiplying the likelihoods by the individual probability of each possible cause of the outcome; notation would be P(popcorn|movies) * P(movies). This looks like
         P(A|B) * P(B), which equals P(A intersection B), or the probability of A and B happening at the same time. That's what er care about...not cocnditional probability, but probability
         that both things happen at the same time.
+  Bayesian Statistics - Frequentist vs Bayesian
+  **** *Bayesians introduced the idea of prior belief (belief before gathering samples), while being willing to adjust their beliefs for what they have seen, whether it aligns with those
+        original beliefs or not. The frequentist sees experiments occur and then draws belief purely based off of that.
+       *Frequentists: probability represents long-term frequency of events, no concept of prior only likelihood, goal is to find model that most likely generated observed data
+       *Bayesians: probability represents degree of certainty of events, use concept of prior, goal is to update pirior belief based on observations
