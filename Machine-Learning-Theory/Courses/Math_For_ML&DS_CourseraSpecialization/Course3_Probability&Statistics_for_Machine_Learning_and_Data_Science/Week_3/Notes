@@ -60,3 +60,19 @@ WEEK 3: Sampling and Point Estimation
         8 log(p) + 2 log(1-p). This is the LOG-LIKELIHOOD. Notation would be L(p; 8H). The derivative of  8 log(p) + 2 log(1-p) is (8/p) + ((2/(1-p))*(-1))...equal this to 0 and the
         optimal value for p-hat is 8/10.
        *General equation is, for n coins and k heads as example, L(p; x) = P_p(X=x) = log(P^x_i * (1-p)^(n-x_i))
+  MLE - Gaussian Example
+  **** *Example = Say have have points -1 and 1 on a graph; given it was sampled from an unknown normal distribution, which distribution is more likely to have generated the sample...
+        a distribution with a mean of 10 and a standard deviation of 1, or a mean of 2 and a standard deviation of 1? The obvious answer is 2, but even graphically, heights on curves
+        correspond with likelihood...the curve with mean 2 corresponds with higher likelihood at the points -1 and 1 than on the curve with mean 10, because it is closer to the mean.
+       *Multiply likelihoods of each observation on the different curves...the highest product is the curve most likely to have generated the observations
+       *NOTE: The best distribution is the distribution where the mean of the distribution is the same as the mean of the sample...same with variance.
+  MLE for Gaussian Population
+  **** *Equation for a normal gaussian distribution is f_x(x) = (1/(sqrt of 2*pi)(sd))*e^(-1/2*((x-mean)^2/(sd)^2)).
+       *1) Likelihood is a function of mean and sd, so notation is L(mean, sd; x) = (1/(2*pi)^(n/2)*(sd^n))*e^(-1/2*((x - mean)^2/(sd)^2)) with n for n
+           number of samples.
+       *2) To maximize/optimize likelihood, take derivative of above function and equate it to zero. This is easiest done with the LOGARITHM FUnction, because this logarithm
+           function is always increasing, and logarithm has the property of turning a product into a sum. The notation for LOG-LIKELIHOOD is l(mean,sd) = log(L(mean, sd; x)), which
+           gets you (-n/2) log (2 pi) - n log (sd) - (1/2)((sum of n (x-mean)^2)/sd^2).
+       *3) With that, find the partial derivatives for mean and sd. For mean, the first two terms of l(mean,sd) don't include mean, so focusing on the 3rd term, the partial is
+           (-1/2)((2*(x-mean))/sd^2)*(-1), or (x - mean)/sd^2 over n samples. For sd, it's (-n/sd) + ((x-mean)^2)/(sd^3).
+       *4) Equate the partial derivatives to 0. This is sqrt of sum of ((x-mean)^2)/n for sd, and sum of x's over n for mean.
