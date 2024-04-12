@@ -104,3 +104,7 @@ WEEK 3: Sampling and Point Estimation
         original beliefs or not. The frequentist sees experiments occur and then draws belief purely based off of that.
        *Frequentists: probability represents long-term frequency of events, no concept of prior only likelihood, goal is to find model that most likely generated observed data
        *Bayesians: probability represents degree of certainty of events, use concept of prior, goal is to update pirior belief based on observations
+  Bayesian Statistics - MAP
+  **** *Now example is of 3 Bayesians, 1 very biased one, 1 normal one, and 1 non-informed...the very biased one will change a lot, the normal one whill change but not significantly,
+        and the non-informed one will change drastically upon any new information (same as frequentist ideology)
+       *The mode of your prior beliefs is MAXIMUM A POSTERORI, or MAP.
