@@ -76,3 +76,26 @@ WEEK 3: Sampling and Point Estimation
        *3) With that, find the partial derivatives for mean and sd. For mean, the first two terms of l(mean,sd) don't include mean, so focusing on the 3rd term, the partial is
            (-1/2)((2*(x-mean))/sd^2)*(-1), or (x - mean)/sd^2 over n samples. For sd, it's (-n/sd) + ((x-mean)^2)/(sd^3).
        *4) Equate the partial derivatives to 0. This is sqrt of sum of ((x-mean)^2)/n for sd, and sum of x's over n for mean.
+  Interactive Tool
+  **** *Showed how log-likelihood is approached
+  MLE: Linear Regression
+  **** *Models with highest probability have maximum likelihood
+       *Points that are regressable are on a graph...the line of best fit model would be the winning distribution; it ends up being the same as finding least squares error
+        through linear regression
+  Regularization
+  **** *Example is a graph with 3 models being the possible creators of it, one badly underfit, one well fit, and one very overfit. using loss (squared error), the underfit one is no
+        competitor, and the overfit one slightly edges the well fit one, although we intuitively know the well fit one is the better generalized model. This is where REGULARIZATION
+        comes in.
+       *REGULARIZATION IS A PENALTY; THE MORE COMPLICATED (AND, TYPICALLY AS A RESULT, OVERFITTING) THE MODEL, THE HIGHER THE PENALTY. IT'S CALLED THE L2-PENALTY; YOU GET IT BY
+        SQUARING EVERY COEFFICIENT OF THE MODEL EQUATION AND ADDING THAT TO THE PREVIOUS LOSS, ENSURING THAT PENALTY FOR COMPLEXITY IS APPROPRIATELY BALANCED WITH ORIGINAL LOSS. THIS
+        IS USED WHEN TRYING TO FIND THE SIMPLEST MODEL THAT FITS THE DATA WELL.
+       *Mathematically, the model is y = a_nx^n + a_(n-1)x^(n-1)+...+a_1x + a_0; log-loss (original loss) is LL (notation); L2 regularization error is a_n^2 + a_(n-1)^2 + ... + a_1^2; 
+        regularization parameter is rp; and the final regularization error is LL + rp(a_n^2 + a_(n-1)^2 + ... + a_1^2).
+       *Note: What is regularization parameter?
+  Back to Bayesics
+  **** *Back to the popcorn example...we chose movies as the highest probabilitiy, but that's not the whole story; we compared movies to board games and sleeping before, but imagine now
+        comparing movies to a popcorn throwing contest?...popcorn throwing would have a high probability of leaving popcorn on the ground, but movies should still be the winner of the 
+        highest probaility, because popcorn throwing contest is itself an unlikely event.
+       *The math is multiplying the likelihoods by the individual probability of each possible cause of the outcome; notation would be P(popcorn|movies) * P(movies). This looks like
+        P(A|B) * P(B), which equals P(A intersection B), or the probability of A and B happening at the same time. That's what er care about...not cocnditional probability, but probability
+        that both things happen at the same time.
