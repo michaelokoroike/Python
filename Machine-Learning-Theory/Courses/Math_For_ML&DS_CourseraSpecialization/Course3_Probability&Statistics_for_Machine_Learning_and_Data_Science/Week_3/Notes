@@ -47,7 +47,7 @@ WEEK 3: Sampling and Point Estimation
 
 * LESSON 2 - Point Estimation
   Point Estimation
-  **** *Definitions already heard
+  **** *Definitions already heard...finding an approximate value of someparameter such as mean of a population from random samples of the population
   Maximum Likelihood Estimation - Motivation
   **** *Essentially, if an outcome occurs, what is the likeliest cause? (spilled popcorn; caused by people watching a movie, playing board gmes, or taking a nap?)
        *Notation = P(outcome|cause)
@@ -108,3 +108,36 @@ WEEK 3: Sampling and Point Estimation
   **** *Now example is of 3 Bayesians, 1 very biased one, 1 normal one, and 1 non-informed...the very biased one will change a lot, the normal one whill change but not significantly,
         and the non-informed one will change drastically upon any new information (same as frequentist ideology)
        *The mode of your prior beliefs is MAXIMUM A POSTERORI, or MAP.
+  Bayesian Statistics - Updating Priors
+  **** *P(A|B) = (P(B|A)*P(A))/P(B)...A is the event you are trying to predict and B is an event that refines prediction (predicting A given the occurrence/evidence of B)
+       *P(A|B) is the POSTERIOR, or belief that A will happen after considering evidence B.
+       *P(A) is the PRIOR, or belief that A will happen BEFORE considering evidence B.
+       *P(B|A) is the likelihood of evidence B appearing, given A happened
+       *P(B) is the likelihhod of evidence B in any circumstances...usually found by doing P(B|A)*P(A) + P(B|A')*P(A')
+       *Example of coin flipping; PRIORS are 0.75 chance coin is fair (0.5 heads probability) and 0.25 chance coin is biased (0.8 heads probability)...input x will be 1 if H (heads)
+        or 0 if T (tails). First flip is 1/H; to update the priors, first write the posterior of P(Y=0.5|X=1) = 
+        (P(X=1|Y=0.5) * P(Y=0.5)) / ((P(X=1|Y=0.5) * P(Y=0.5)) + (P(X=1|Y=0.8) * P(Y=0.8))), which equals ((0.5)*(0.75))/((0.5*0.75)+(0.8*0.25)), which equals 0.65, compared to the
+        original 0.75 belief that the coin is fair (makes sense, as heads favors the biased coin)
+       *General equation for Bayes' Theorem for all discrete variables is P_Y|X=x(y) = ((P_X|Y=y(x))*(P_Y(y)))/P_X(x)
+       *General equation for Bayes' Theorem for an X continuous variable and a Y discrete variable is P_Y|X=x(y) = ((f_X|Y=y(x))*(P_Y(y)))/f_X(x)
+       *General equation for Bayes' Theorem for all continuous variables is f_Y|X=x(y) = ((f_X|Y=y(x))*(f_Y(y)))/f_X(x)
+       *General equation for Bayes' Theorem for an X discrete variable and a Y continuous variable is f_Y|X=x(y) = ((P_X|Y=y(x))*(f_Y(y)))/P_X(x)
+  Bayesian Statistics - Full Worked Example
+  **** *Example where X is discrete and Y is continuous, so f_Y|X=x(y) = ((P_X|Y=y(x))*(f_Y(y)))/P_X(x). P_X|Y=y(x) is probability of all the coin flips, which is Y^8*(1-Y)^2.
+        Assuming no prior knowledge, the prior f_Y(y) is a UNIFORM PRIOR, where you can't distinguish between values so max likelihood of 1 is used.
+        f_Y|X=x(y) = (((Y^8*(1-Y))^2) * 1)/constant (you can typically ignore the constant); this is a BETA distribution
+       *Prior knowledge of what happened when you had no knowledge? (((Y^6*(1-Y))^4)*((Y^8*(1-Y))^2)) / constant
+       *Summary: Bayesians update prior beliefs; MAP with uninformed priors is just MLE; with enough data, MAP and MLE data usually converges; this is good for instanceswith limited data
+        or strongprior beliefs; wrong priors, wrong conclusion
+  Relationship between MAP, MLE and Regulatization
+  **** *Learned max likelihood estimation (MLE) and max a posteriori (MAP) and regularization; they combine
+       *Example of the 3 models and the fitting line (polynomial regression)...the overfitting model has the highest likelihood, but lowest probability of happening, so 
+        multiply them together and get medium fit. If you are doing max likelihood (P(Data|Model) with Bayes (P|Model), and the polynomial regression with regularization is square-loss
+        + regularization term, to turn left into right, take logarithms, to turn the product P(Data|Model) * P(Model) into a sum.
+       *What is meant by likelihood? (search, look at this video again)
+       *Note: is Bayesian philosophy essentially the prior knowledge?
+
+* WEEK 3 WRAP UP
+  Week 3 - Conclusion
+  **** *Learned difference between sample and population...pretty straightforward statistics theorems such as law of large numbers and the central limit theorem...then we learned
+        point estimates, maximum likelihood estimates, and maximum a posteriori estimates, learned how it ties into machine learning through regularization
