@@ -1,0 +1,22 @@
+WEEK 3: Confidence Intervals and Hypthesis Testing
+
+* LESSON 1 - Confidence Intervals
+  Confidence Interals - Overview
+  **** *Example: In the world population, you'll never have a way to measure the ccurate height of every individual, you have to get samples and rely on those sample means...but
+        YOU'LL ALWAYS HAVE A DEGREE OF UNCERTAINTY HOW ACCURATE YOUR RESULTS IN ARE ACCORDANCE TO THE REALITY OF THE POPULATION. This is where confidence intervals come in.
+       *Confidence intervals allow you to use sample means with A DEGREE OF CERTAINTY.
+       *Confidenc intervals have a lower and upper limit that contain the population parameters with degree of certainty.
+       *Example is you lose your key along the side of the road, and you and your friend go to look for it. You give a best guess as to where it may be, and then decide on a search 
+        distance east and west to rtry and find it in case the guess may not be correct (which it likely isn't on the dot correct); what actually matters is the search distance, and
+        how large it should be, based on how confident you'll be with that search distance to actually find the key, which is expressed as a percentage. The lower and upper limits are 
+        the bounds of the search. The key, importantly, is unknown and fixed, while the interval is random (the guess) and generated with desired (un)certainty.
+       *Going off the example, a 50% confidence level means not that 50% of keys are the confidence interval, but that 50% of guesses are within a search distance of the key.
+       *Going off the example, the true mean value is where the key is...it has an unknown and fixed value...we randomly generate a confidence interval to estimate where it is 
+        located based off of a random sample from the population. Example would be taking the height of 1 person and going from there; measure their height and use it to generate pop.
+        mean (the one person's height is the sample mean, or x-bar)...(x and x bar have same mean, though we don't know true meaning of x?)...can't knowif the person is taller or shorter
+        than average, so question to ask is how far are most sample means from the true population means? if typical, our sample mean will be in that range; to answer this we need a 
+        MARGIN OF ERROR (distance on either side of mean) and a CONFIDENCE LEVEL (probability that sample mean is within that margin of error); you get these values by starting with a 
+        SIGNIFICANCE LEVEL (probability that sample mean falls outside margin of error)...confidence level is 1 - significance level
+       *CONFIDENCE INTERVAL IS SAMPLE MEAN (X BAR) PLUS/MINUS MARGIN OF ERROR
+       *WHEN CONFIDENCE LEVEL IS 95%, 95% OF CONFIDENCE INTERVALS PERTAINING TO EACH INDIVIDUAL EXAMPLE (LIKE WITH A PERSON AND THEIR HEIGHT, VS POP. MEAN) WILL CONTAIN THE POP. MEAN,
+        WHILE 5% WON'T
