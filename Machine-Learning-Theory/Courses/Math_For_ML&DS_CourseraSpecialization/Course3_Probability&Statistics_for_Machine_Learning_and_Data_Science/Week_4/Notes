@@ -20,3 +20,27 @@ WEEK 3: Confidence Intervals and Hypthesis Testing
        *CONFIDENCE INTERVAL IS SAMPLE MEAN (X BAR) PLUS/MINUS MARGIN OF ERROR
        *WHEN CONFIDENCE LEVEL IS 95%, 95% OF CONFIDENCE INTERVALS PERTAINING TO EACH INDIVIDUAL EXAMPLE (LIKE WITH A PERSON AND THEIR HEIGHT, VS POP. MEAN) WILL CONTAIN THE POP. MEAN,
         WHILE 5% WON'T
+  Confidence Intervals - Changing the Interval
+  **** *Mean of sample means = population mean (in theory)...doesn't depend on sample size
+       *Standard deviation of sample means = population standard deviation divided by square root of number of individuals in population...does depend on sample size (makes sense...the
+        larger the sample size, the more acurate representation of the population, hence sample means are going to be closer to the population mean, hence less variation); graphically,
+        this looks like the distribution getting taller and having more outcomes concentrated nearer to the mean...in this case, with confidence levels remaining the same, the difference
+        is with higher sample size, the confidence intervals become smaller while still generating the same levels of accuracy, because you have a more precise estimate of the true value
+        of the population mean
+       *When confidence level is lowered, what happens is smaller margins of error are used, and because of this, there end p being more instances where overall cofidence interval(s) does
+        not contain the true population mean...but of note is the actual distribution (which is of sample means generated) is not changed by confidence level
+       *Summary of key points: 1) confidence intervals are a sample mean with a margin of error added to each side; 2) confidence level is the probability that a confidence interval
+        contains the population mean (like 95%); 3) ideally we have high confidence and a narrow interval; 4) larger samples give narrower interval; 5) decreasing confidence level
+        will decrease confidence interval
+  Confidence Intervals - Margin of Error
+  **** *Given a general case of a population with standard mean and variance; with goal of trying to find average height of population (standard mean), you take a sample of size n and 
+        calculate the sample mean x bar; the sample mean is probably a little taller or a little shorter than the true poplation mean (it's a random variable with standard mean, but
+        variance divided by population), but close enough; as sample size increases, that sample man is going to theoretically converge towards population mean (note, you still don't 
+        actually know the population mean); to make a confidence interval (knowing outliers/etc are possible in sample), use knowledge 68% of normal distribution is within 1 sd of mean,
+        and 95% of the distribution is within 2 sd, and this is where Z-SCORE comes in (example: point 1 sd above mean has a Z SCORE of 1, and point 1 sd below mean has Z SCORE of -1)...
+        Z SCORE of a point is found by subtracting mean and dividing by standard deviation (note; the standard nomal distribution is actually also called the Z DISTRIBUTION)
+       *Actual Z scores for 2 sd are -1.96 (z_.025) and 1.96(z_.975), and are called CRITICAL VALUES
+       *Knowing this, margin of error is sample mean +/- 1.96*sample standard deviation (populaion sd divided by sqrt of n number of samples; STANDARD ERROR)
+       *All possible by Central limit Theorem (we can assume normality wity samples and population)
+       *Note: What is standard deviation of a normal distribution?
+      
