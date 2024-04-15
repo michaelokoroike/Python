@@ -49,7 +49,24 @@ WEEK 3: Confidence Intervals and Hypthesis Testing
   **** *1) Find the sample mean
        *2) Define a confidence level
        *3) Get the critical value for this confidence level
-       *4) Find the standard error (pop. standard deviation, divided by sqrt of n in sample pop)
+       *4) Find the standard error (sample standard deviation, divided by sqrt of n in sample pop)...larger the population, sample statistics are all that can be drawn; this standard error
+           is actually based off sample standard deviation, which is why it is divided by sqrt of n, to mathematically suggest as a SAMPLE gets larger, standard deviation shrinks because
+           variation/uncertainty shrinks
        *5) Find the margin of error (criticsl value * standard error)
        *6) Add/subtractmargin of error to the sample mean
        *Assumptions - simple random sample, sample size > 30 or population is normal, 
+  Confidence Intervals - Example
+  **** *Example of a place with a population of 6000, but a sample size of 49; mean height of the samples is 1 meter (170 cm) and the standard deviation is 25 cm; we know margin of error 
+        is standard deviation/sqrt of number of samples, so margin of error is the 1.96 (confidence level threshold) * sd (25) / sqrt of individuals in the sample (sqrt, 14, etc)
+       *Question: Why again is the sample standard deviation one which we can be confident about? (it is part of the standard error, which is part of the margin of error, which both take
+        into consideration the size of the sample; as the sample size gets bigger, the standard error and margin of error gets smaller, because we have a better estimate of true pop. mean,
+        and essentially more data is concentrated closer around the mean, hence sd's get smaller...the thing is if something falls outside of a 95% confidence level, then it's smaller
+        than or larger than 97.5% of the mean (or two sds), so by adding and subtracting the margin of error (z score of 2 sds, for instance, and the standard error), you are creating
+        a 2 sd distribution for each sample mean generated, which will only not contained the population mean if outside of two sds of the true population distribution, which would be 
+        outside of 95% of the data of the true population distribution...therefore, we can have 95% confidence about a true population value falling within a confidence interval based on 
+        sample mean and standard deviation (sample statistics, which lead to confidence interval)
+  Calculatng Sample Size
+  **** *Example; we get a margin of error, but we decide we want a smaller one; we need a bigger sample size, but what is the smallest sample size that will allow us to obtain a smaller
+        desired margin of error
+       *Remember, margin of error is critical value * (sd/sqrt of sample size)...use values you have
+  
