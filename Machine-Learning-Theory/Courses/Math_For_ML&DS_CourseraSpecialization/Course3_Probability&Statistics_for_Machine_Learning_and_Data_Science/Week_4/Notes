@@ -43,4 +43,13 @@ WEEK 3: Confidence Intervals and Hypthesis Testing
        *Knowing this, margin of error is sample mean +/- 1.96*sample standard deviation (populaion sd divided by sqrt of n number of samples; STANDARD ERROR)
        *All possible by Central limit Theorem (we can assume normality wity samples and population)
        *Note: What is standard deviation of a normal distribution?
-      
+  Interactive Tool: Confidence Intervals
+  **** *What was shown in the video; multiple different intervals and 80% of them including the population mean
+  Confidence Intervals - Calculation Steps
+  **** *1) Find the sample mean
+       *2) Define a confidence level
+       *3) Get the critical value for this confidence level
+       *4) Find the standard error (pop. standard deviation, divided by sqrt of n in sample pop)
+       *5) Find the margin of error (criticsl value * standard error)
+       *6) Add/subtractmargin of error to the sample mean
+       *Assumptions - simple random sample, sample size > 30 or population is normal, 
