@@ -69,4 +69,18 @@ WEEK 3: Confidence Intervals and Hypthesis Testing
   **** *Example; we get a margin of error, but we decide we want a smaller one; we need a bigger sample size, but what is the smallest sample size that will allow us to obtain a smaller
         desired margin of error
        *Remember, margin of error is critical value * (sd/sqrt of sample size)...use values you have
-  
+  Difference Between Confidence and Probability
+  **** *Population mean = fixed but unknown, no probability distributions, in the interval or not, does not fall within an interval 95% of the time
+       *Sample mean = they have a probability distribution (sampling distributions of sample = values change; concept of confidence interval is tied to sample mean and changes based on
+        the value of sample mean...95% confidence has to do with REPEATING A SAMPLING EXPERIMENT MANY TIMES AND CALCULATING THE INTERVLS FOR EACH SAMPLE ESTIMATE...95% OF THE TIME, THE
+        CONFIDENCE INTERVALS WILL CONTAIN THE MEAN; IT IS NOT THE PROBABILITY THAT ONE SPECIFIC INTERVAL CONTAINS THE POPULATION MEAN (IT EITHER CONTAINS IT OR NOT), BUT RATHER THE 
+        SUCCESS RATE OF CONSTRUCTING A CONFIDENCE INTERVAL
+  Unknown Standard Deviation
+  **** *Student t-distribution when we don't know standard deviation; it is simply using the sample standard deviation when the population one is unknown...no longer a normal distribution
+        and has fatter tails (more variability)
+       *Note: z-score is ok to use when it's a normal distribution...when it's not normal, use a T-SCORE; all else is the same in terms
+       *note: T-distributions are defined by DEGREES OF FREEDOM (number of samples used, minus 1)...higher the degrees of freedom, the closer it is to a normal distribution
+  Confidence Intervals for Proportion
+  **** *For means, confidence intervals = sample means +/- margin of error (margin of error is z/t value * (sd/sqrt of n))
+       *For proportions, confidence interval = sample proportion +/- margin of error (margin of error is z/t value * (sqrt of (p-hat*(1-p-hat))/sqrt of n))
+       *Difference in calculation is in standard error and how it is calculated
