@@ -116,3 +116,20 @@ WEEK 3: Confidence Intervals and Hypthesis Testing
         (saying mean is not equal to 66, even though it did not actually change) or a Type 2 error (not rejecting that mean is 66, even though it actually changed/got bigger or smaller)
        *Note: Data needs to be reliable (representative of population, randomized/randomly chosen, sample size large enough)
        *Note: Sample means are TEST STATISTICS, as is the S-SQUARE STATISTIC (later video)
+  P-Value
+  **** *If sample mean is too far away from null, reject H_0/null...but wat is "too far away"?
+       *Example with height problem; if sd is 3 and sample size is 10, distribution is N(66, (3^2)/10). Question for too far away is "how likely was the sample if H_0/null is true?"...
+        and if the answer is very unlikely, reject H_0/null. Remember alternative is greater than 66, and Type 1 error probability needs to be less than significance level of 0.05 
+        (error is the false positive of saying it's the bigger height we looked to find, when in fact it didn't actually change)
+       *Type 1 error probability = probability mean is greater than sample mean 68 given that the population mean is 66...ths was .03, less than .05...because that's true, reject H_0
+        with a 5% significance level
+       *P-value is the probability that, assuming the H_0/null is true, that the test statistic takes on a value as extreme or more extreme than the value observed (moves in the direction
+        of H_1)
+       *Decision rule depends on significance value you choose...if p-value is less than significance value, reject H_0 and accept H_1 as true
+       *Note from Quiz, #1:  A smaller p-value indicates stronger evidence against the null hypothesis. When the p-value is small, it suggests that the observed data are unlikely to have 
+        occurred if the null hypothesis were true, leading to rejection of the null hypothesis.
+       *Note from Quiz, #2: The p-value represents the probability of observing the data or more extreme results under the assumption that the null hypothesis is true. It helps assess 
+        the strength of evidence against the null hypothesis based on the observed data.
+       *Note from Quiz, #3:You reject the null hypothesis if the p-value is less than alpha (significance level). This decision rule is commonly used in hypothesis testing to determine 
+        whether the observed data provides enough evidence to reject the null hypothesis.
+       *Z-statistic = sample mean minus pop. mean/(sd/sqrt of samples)
