@@ -178,3 +178,16 @@ WEEK 3: Confidence Intervals and Hypthesis Testing
         difference is we don't know sigma, which could affect the distribution...so now complete the 3 tests using the T-STATISTIC instead.
        *In example, observed t-statistic is 1.77...now what is the probability that the t statistic is greater than 1.77 given the null/H_0 is true...the shaded area to right is 0.052,
         and since this is greater than 0.05, do not reject the null/H_0; with z-statistic we got that you should reject...the difference is the uncertainty of not knowing the sd; etc
+  Test for Proportions
+  **** *READING (FAVORITED)
+  Two Sample T-test
+  **** *We've worked with one sample in one population; but what if you want to take different samples in different populations? (like the people in this country are taller)
+       *Example: heights of 18 year olds in US, vs heights of 18 year olds in Argentina? different size samples, means, and sd's/test statistics...the null is the heights are equal,
+        and the right tailed alternative is US is taller, left tailed is US is shorter, two tailed is they simply are different
+       *Assumptions are all people in the two samples are different, each person in both samples are independent, populations are normally distributed, 
+       *Then define sample means for each group; the Gaussian of this distribution ends up being N(mean_US - mean_Arg, (sd_US^2/10) + (sd_Arg^2/9)), and Z-STATISTIC is 
+        (sample mean of Us - sample mean of Arg) - (pop mean of Us - pop mean of Arg) divided by the sqrt of ((sd_US^2/10) + (sd_Arg^2/9))...but not knowing sample sd, replace with
+        estimate sd for each, which brings a t-distribution.
+       *Degrees of freedom is (square of sum of estimate sd for each divided by number of samples for each), which is divided by (the sum of the square of estimate sd over sample size for 
+        each, which each divided by sample size - 1)
+       *Run through the three tests
