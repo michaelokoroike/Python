@@ -191,3 +191,13 @@ WEEK 3: Confidence Intervals and Hypthesis Testing
        *Degrees of freedom is (square of sum of estimate sd for each divided by number of samples for each), which is divided by (the sum of the square of estimate sd over sample size for 
         each, which each divided by sample size - 1)
        *Run through the three tests
+  Two Sample Test for Proportions
+  **** *READING (FAVORITED)
+  Paired T-test
+  **** *In two sample t-test, we compared two groups, where the samples were independent; but what if the examples weren't independent?
+       *Example: Effectiveness of weight loss plans (1 group is "before" and another is the "after" of the before); these samples are PAIRED
+       *Interest is in difference between pairs...typically average of difference is important here...sample mean is denoted as d-bar.
+       *If the samples are gaussian then D is Gaussian as well.
+       *When you standardize it, you get a statistic with a standard normal distribution...when you don't know the standard distribution of the population, replace with sample
+        standard deviation
+       *Null is always no change in prior
