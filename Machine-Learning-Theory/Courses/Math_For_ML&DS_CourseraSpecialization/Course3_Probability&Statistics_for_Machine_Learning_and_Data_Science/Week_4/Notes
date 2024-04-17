@@ -137,3 +137,8 @@ WEEK 3: Confidence Intervals and Hypthesis Testing
   **** *What is the least extreme value you can get and still reject H_0/null? This is a sample that has a p-value of exactly significance level value...this is called a CRITICAL VALUE.
        *Uusually denoted as k_alpha (critical value) to denote dependency on alpha (significance value)...if sample value, greater than critical value, reject H_0/null
        *Reject if score greater/less/unequal to critical in right/left/two tailed test
+  Power of a Test
+  **** *Type 2 errors can be for any value above population values
+       *Type 2 error = beta
+       *Power of the Test = function that tells you for each possible value of the population (alternative hypothesis) the probability of rejecting H_0...
+        notation is P(Reject H_0|value=H_1)...complementary to P(Do not reject H_0|value=H_1)
