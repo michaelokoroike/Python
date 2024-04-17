@@ -133,3 +133,7 @@ WEEK 3: Confidence Intervals and Hypthesis Testing
        *Note from Quiz, #3:You reject the null hypothesis if the p-value is less than alpha (significance level). This decision rule is commonly used in hypothesis testing to determine 
         whether the observed data provides enough evidence to reject the null hypothesis.
        *Z-statistic = sample mean minus pop. mean/(sd/sqrt of samples)
+  Critical Values
+  **** *What is the least extreme value you can get and still reject H_0/null? This is a sample that has a p-value of exactly significance level value...this is called a CRITICAL VALUE.
+       *Uusually denoted as k_alpha (critical value) to denote dependency on alpha (significance value)...if sample value, greater than critical value, reject H_0/null
+       *Reject if score greater/less/unequal to critical in right/left/two tailed test
