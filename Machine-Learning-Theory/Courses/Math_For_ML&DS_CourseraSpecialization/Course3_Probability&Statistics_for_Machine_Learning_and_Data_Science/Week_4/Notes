@@ -201,3 +201,11 @@ WEEK 3: Confidence Intervals and Hypthesis Testing
        *When you standardize it, you get a statistic with a standard normal distribution...when you don't know the standard distribution of the population, replace with sample
         standard deviation
        *Null is always no change in prior
+  ML Application: A/B Testing
+  **** *Example: Studying a website with conversion rate...now with an improved website you wanted to test if the conversion rate has improved...use A/B testing
+       *A/B is a methodology for comparing two variations; steps include proposing variations (A/B), randomly splitting sample, measuring outcomes for each group and determining a
+        metric, statistical analysis to make a decision based on the data gathered (which is where t-test comes in)
+       *Which design gets more customers to buy?
+       *Variables of each group follow binomial distributions of paramaters
+       *statistic is based off law of large numbers/central limit theorem...they follow a distribution where mean is sample probaility of group, with a variance of 
+        sample prob.*(1-sample prob)/sample size...the subtracion of the two groups should be Gaussian...everything else becomes same as T-test (see video again)
