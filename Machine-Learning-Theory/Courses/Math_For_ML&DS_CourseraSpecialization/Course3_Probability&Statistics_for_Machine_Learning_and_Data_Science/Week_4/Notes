@@ -142,3 +142,22 @@ WEEK 3: Confidence Intervals and Hypthesis Testing
        *Type 2 error = beta
        *Power of the Test = function that tells you for each possible value of the population (alternative hypothesis) the probability of rejecting H_0...
         notation is P(Reject H_0|value=H_1)...complementary to P(Do not reject H_0|value=H_1)
+  Interpreting Results
+  **** *Steps in Hypothesis Testing = 
+       *1) State your hypotheses (find baseline null (66 in height example), alternative hypothesis to prove (above 66 in height example)); 
+       *2) Design your Test (decide test statistic to work with (x bar), defining the significance level (0.05 for example...max probability of making a Type 1 error, and should be small)
+       *3) Compute observed statistic based on sample (sample mean/x-bar of 68 for example)
+       *4) Reach a conclusion (if the p-value is smaller than the significance level, reject H_0/null; because sample mean is far enough away from perceived null hypothesis/H_0 mean based
+           on a significance level, so, considering this is a randomized, representative, and lare enough sample, it can be believable that there is a difference from historical belief?)
+       *Note: Ask why reject null based on p-value/significance level?
+       *Type 1 error = rejecting the null hypothesis when it is true (reject H_0 when H_0 is true; false positive; choose H_1/positive when H_0/negative)
+       *Type 2 error = do not reject the null hypothesis when it is false (do not reject H_0 when H_0 is false; false negative; choose H_0/negative when H_1/positive)
+       *Note: Positive is when you can reject the null/prove a changed H_1 state; negative is when you cannot reject null/stay at unchanged H_0 state.
+       *Significance level is max probability of a Type 1 error
+       *For a fixed sample size, Type 1 and Type 2 errors are entangled
+       *For P-values, if P(reject H_0|H_0) < significance level, reject H_0 and accept H_1...the p value represents the probability of seeing the observed data by chance (a small p value
+        means chances of observing sample test statistics are small based on prior beliefs (which would mean we should reject prior beliefs)
+       *For test conclusions, if you reject the null hypothesis, you accept the alternative hypothesis as true...but if you cannot reject the null hypothesis, you instead conclude with 
+        there was not enough evidence to show that the alternative hypothesis presented was True
+  T-Distribution
+  **** *
