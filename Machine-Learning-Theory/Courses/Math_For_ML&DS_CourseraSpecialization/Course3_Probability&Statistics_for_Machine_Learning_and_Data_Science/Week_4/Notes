@@ -105,3 +105,14 @@ WEEK 3: Confidence Intervals and Hypthesis Testing
         H_1 (spam email)); WE WANT A SMALL SIGNIFICANCE LEVEL, BUT NEVER 0...0.05 IS TYPICAL (in example this means a good email is sent to spam 5% of the time)
        *Note: A thing to watch out for is IF YOU REDUCE A TYPE 1 ERROR TOO MUCH, YOU ARE INCREASING THE TYPE 2 ERROR, AND VICE VERSA
        *Notation for significance level is a = max P(Type 1 error), or max P(reject H_0|H_0)
+  Right-Tailed, Left-Tailed, and Two-Tailed Tests
+  **** *Example: Average heightss of 18 year olds in the US; we find the sample mean (68 inches), while historically it was 66 inches; null hypothesis is it's still 66 inches, but
+        there are three different alternatives
+       *Right-tailed test in above example is null of 66 and alternative of greater than 66 (alternative is to right of null)...example of errors that can come up is a Type 1 error
+        (saying mean is greater than 66, even though it did not actually change) or a Type 2 error (not rejecting that mean is 66, even though it actually got bigger)
+       *Left-tailed test in above example is null of 66 and alternative of less than 66 (alternative is to left of null)...example of errors that can come up is a Type 1 error
+        (saying mean is less than 66, even though it did not actually change) or a Type 2 error (not rejecting that mean is 66, even though it actually got smaller)
+       *Two-tailed test in above example is null of 66 and alternative of not equal to 66 (alternative is either side of null)...example of errors that can come up is a Type 1 error
+        (saying mean is not equal to 66, even though it did not actually change) or a Type 2 error (not rejecting that mean is 66, even though it actually changed/got bigger or smaller)
+       *Note: Data needs to be reliable (representative of population, randomized/randomly chosen, sample size large enough)
+       *Note: Sample means are TEST STATISTICS, as is the S-SQUARE STATISTIC (later video)
