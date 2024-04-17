@@ -94,3 +94,14 @@ WEEK 3: Confidence Intervals and Hypthesis Testing
         MUTUALLY EXCLUSIVE (example is email can't be ham and spam at the same time) and have a True/False answer. In examplw, if there's evidence that an email is spam, then the null 
         hypothesis is rejected and thealternative hypotesis (the email is spam)...if not enough evidence to show that the emaik is spam, you can reject the null hypothesis
        *Clarifying = If plenty of evidence against H_0, reject H_0/null (and accept H_1/alternative)...this action would lead tosending email to spam
+  Type 1 and Type 2 Errora
+  **** *With email example, either we send email to spam or to regular inbox...either could be wrong
+       *Type 1 error = FALSE POSITIVE/FALSE 1 (Sending a good/ham email to spam/1)
+       *Type 2 error = FALSE NEGATIVE/FALSE 0 (Thinking a spam email was good/ham/0)
+       *Again, Type 1 error is worse than Type 2 error because, in example of spam, sending a good email to spam is worse than not sending a true spam email to regular inbox...so the
+        question is, what is the greatest level of probability that you are willing to tolerate (how many times are you willing to incorrectly send a good/ham/0/negative email to 
+        spam/1 box in order to have a good spam classifier that sends most emails to correct place? This maximum probability is called the SIGNIFICANCE LEVEL (denoted by letter a).
+       *Significance level is between 0 and 1 (example is if significance level is 0, it will always lean to H_0 (good email), and if the significance level is 1, it will always lean to
+        H_1 (spam email)); WE WANT A SMALL SIGNIFICANCE LEVEL, BUT NEVER 0...0.05 IS TYPICAL (in example this means a good email is sent to spam 5% of the time)
+       *Note: A thing to watch out for is IF YOU REDUCE A TYPE 1 ERROR TOO MUCH, YOU ARE INCREASING THE TYPE 2 ERROR, AND VICE VERSA
+       *Notation for significance level is a = max P(Type 1 error), or max P(reject H_0|H_0)
