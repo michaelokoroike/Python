@@ -160,4 +160,17 @@ WEEK 3: Confidence Intervals and Hypthesis Testing
        *For test conclusions, if you reject the null hypothesis, you accept the alternative hypothesis as true...but if you cannot reject the null hypothesis, you instead conclude with 
         there was not enough evidence to show that the alternative hypothesis presented was True
   T-Distribution
+  **** *Example of sampling the height of 10 18 year olds
+       *Heights can be modeled as a Gaussian distribution with parameters for pop. mean and pop. sd...the sample will follow a Gaussian distribution of the same mean but a smaller
+        standard deviation (with now 10 samples), which ends up being sd/sqrt of 10. 
+       *But if you don't know the value of sd? If mean and sd are known, we know that sample mean minus pop. mean, divided by sample sd divided by sqrt 10 would follow a standard
+        normal distribution of N(0, 1^2)...this is sample standardization, and "sample mean minus pop. mean, divided by sample sd divided by sqrt 10" is called the Z-STATISTIC; but
+        if sample sd is unknown, then this formula isn't useful...so what you do is replace sample sd with "estimate sd" (this is basically sd, except sum of squared differences is 
+        divided by n-1 instead of n, and then sqrt'ed, which gives us the T-STATISTIC).
+       *This T-distribution is not exactly a normal Gaussian...it is bell-shaped but has heavier tails, which account for variability.
+       *Parameter of T-distribution is DEGREES OF FREEDOM, which controls heaviness of tails; the larger the sample size, the smaller the tails and the closer the t-distribution is to
+        a Gaussian...specifically when it hits 30 samples (why that is a number thrown out a lot). Degrees of freedom is sample saize minus 1...it's independent of population mean and 
+        variance.
+       *T-stat is used when a population has a Gaussian distribution, but you don't know the variance.
+  T-tests
   **** *
