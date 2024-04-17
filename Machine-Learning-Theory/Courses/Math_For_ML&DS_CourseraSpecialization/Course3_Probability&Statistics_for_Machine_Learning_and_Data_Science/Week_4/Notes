@@ -84,3 +84,13 @@ WEEK 3: Confidence Intervals and Hypthesis Testing
   **** *For means, confidence intervals = sample means +/- margin of error (margin of error is z/t value * (sd/sqrt of n))
        *For proportions, confidence interval = sample proportion +/- margin of error (margin of error is z/t value * (sqrt of (p-hat*(1-p-hat))/sqrt of n))
        *Difference in calculation is in standard error and how it is calculated
+
+* LESSON 2 - Hypothesis Testing
+  Defining Hypotheses
+  **** *Hypothesis Testing = A way to tell if some belief you have about the population is likely to be true or false
+       *Good example = email spam detector to determine if a email is ham (good email) or spam (bad email). By default, we will assume that all the emails are ham/good because it's worse
+        to delete a good email than to put a spam email in our inbox...this assumption is the NULL HYPOTHESIS (baseline assumption when we assume nothing is happening; notation is H_0...
+        baseline)...the special assumption that we are trying to identify is the ALTERNATIVE HYPOTHESIS (notation is H_1...what you want to prove). The null and alternative hypotheses are 
+        MUTUALLY EXCLUSIVE (example is email can't be ham and spam at the same time) and have a True/False answer. In examplw, if there's evidence that an email is spam, then the null 
+        hypothesis is rejected and thealternative hypotesis (the email is spam)...if not enough evidence to show that the emaik is spam, you can reject the null hypothesis
+       *Clarifying = If plenty of evidence against H_0, reject H_0/null (and accept H_1/alternative)...this action would lead tosending email to spam
