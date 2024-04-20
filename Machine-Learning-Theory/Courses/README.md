@@ -1,3 +1,5 @@
+Links to files within the repository of courses (notes, labs, etc.).
+
 # 1. Machine Learning - Coursera Specialization
 
 ## 1A. Course 1 - Supervised Machine Learning
