@@ -49,3 +49,14 @@ Video 7: SELECT & FROM
   SELECT *
 - SELECT and FROM clauses are mandatory
 - With just this information, you can read a table and export the results to Excel
+
+Text: Formatting Best Practices
+- COMMANDS ARE CAPITALIZED AND EVERYTHING ELSE NOT
+- AVOID SPACES IN TABLE AND VARIABLE NAMES (instead of table name, do table_name)
+- USE WHITE SPACE IN QUERIES
+- ADD SEMICOLONS AT THE END OF STATEMENTS ("SELECT x FROM y" will work in the course's workspace, but best practice is "SELECT x FROM y;")
+
+Video 8: LIMIT
+- Aim of most quesries will be to see what a table looks like; scan first few rows of it to see what data you care about
+- THe LIMIT clause is the way to see only a few lines of data and avoid queries taking too long to return; it is written in at the end of the query and is given a number (limit number of rows returned)
+- Example = LIMIT 10 will return first 10 rows of a data table
