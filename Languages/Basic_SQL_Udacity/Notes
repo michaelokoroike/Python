@@ -37,4 +37,7 @@ Text: Types of Databases
 - Article for differences: https://www.digitalocean.com/community/tutorials/sqlite-vs-mysql-vs-postgresql-a-comparison-of-relational-database-management-systems
 
 Videos: Type of Statements
-- 
+- Most basis element of SQL is a statement, which tells database what you'd like to do with the database
+- CREATE TABLE = statement that creates a new table in a database
+- DROP TABLE = statement that removes a table from a database
+- SELECT = allows for reading data and displaying it, which is called a QUERY (majority of this is what is done in analytical work)
