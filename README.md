@@ -6,4 +6,5 @@ Machine Learning
 
 Languages
  - Python
+ - SQL (in process)
 
