@@ -36,8 +36,16 @@ Text: Types of Databases
 - We will use Postgres in the course which should mostly translate
 - Article for differences: https://www.digitalocean.com/community/tutorials/sqlite-vs-mysql-vs-postgresql-a-comparison-of-relational-database-management-systems
 
-Videos: Type of Statements
+Video 6: Type of Statements
 - Most basis element of SQL is a statement, which tells database what you'd like to do with the database
 - CREATE TABLE = statement that creates a new table in a database
 - DROP TABLE = statement that removes a table from a database
 - SELECT = allows for reading data and displaying it, which is called a QUERY (majority of this is what is done in analytical work)
+
+Video 7: SELECT & FROM
+- SELECT statement is like filling out a form to get a set of results (questions are what database do you want to pull from, and which elements of the database do you want to pull from); these questions are
+  structured in the same order every time. When writing out this statement, each of the statements are represented by a single word like SELECT or FROM, which are called CLAUSES.
+- FROM clause tells the query which table to use; SELECT clause tells the query which column to use from the table (with column names separated by columns)...all column names are selected by doing
+  SELECT *
+- SELECT and FROM clauses are mandatory
+- With just this information, you can read a table and export the results to Excel
