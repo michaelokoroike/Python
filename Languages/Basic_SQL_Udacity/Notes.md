@@ -35,3 +35,5 @@ Text: Types of Databases
 - Popular ones are MySQL, Access, Oracle, Microsoft SQL Server, and Postgres
 - We will use Postgres in the course which should mostly translate
 - Article for differences: https://www.digitalocean.com/community/tutorials/sqlite-vs-mysql-vs-postgresql-a-comparison-of-relational-database-management-systems
+
+Videos: Type of Statements
