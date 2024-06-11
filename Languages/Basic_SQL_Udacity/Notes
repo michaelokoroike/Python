@@ -74,3 +74,7 @@ Video 11: WHERE
 - WHERE clause allows filtering for specific set of results based on a specific set of criteria
 - It goes after FROM but before ORDER BY or LIMIT
 - Symbols: > (greater than), < (less than), >= (greater than or equal to), <= (less than or equal to), = (equal to), != (not equal to)
+
+Video 12: WHERE with Non-Numeric Data
+- Can be used with words, etc
+- The non-numeric data has to be in single quotes (ex: WHERE name = 'Michael')
