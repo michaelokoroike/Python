@@ -65,3 +65,7 @@ Video 9: ORDER BY
 - ORDER BY clause allows one to sort by date
 - Must go between FROM and LIMIT clause, or query won't run
 - Default is to go from smallest to largest (earlier to later); to flip it from largest to smallest (later to earlier) put DESC at the end of the ORDER BY
+
+Video 10: ORDER BY Part 2
+- You can do multiple columns of order to sort...the sorting happens by order
+- In the video, there is ORDER BY account_id, total_amt_usd DESC...this orders the table by account, and then rearranges it by the largest to snallest orders ever made by the account
