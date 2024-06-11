@@ -60,3 +60,8 @@ Video 8: LIMIT
 - Aim of most quesries will be to see what a table looks like; scan first few rows of it to see what data you care about
 - THe LIMIT clause is the way to see only a few lines of data and avoid queries taking too long to return; it is written in at the end of the query and is given a number (limit number of rows returned)
 - Example = LIMIT 10 will return first 10 rows of a data table
+
+Video 9: ORDER BY
+- ORDER BY clause allows one to sort by date
+- Must go between FROM and LIMIT clause, or query won't run
+- Default is to go from smallest to largest (earlier to later); to flip it from largest to smallest (later to earlier) put DESC at the end of the ORDER BY
