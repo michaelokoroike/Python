@@ -14,3 +14,6 @@ Video 3: Introduction to JOINs
            JOIN demo.accounts #also grab everything from this table
            ON orders.account_id = accounts.id #combine the two tables that the data is derived from by specifying the relationship between the two tables...account_id in the orders table is the same as id in the
                                                                                                                                                             accounts table
+- Tables that a column comes from need to be specified in the SELECT statement
+
+
