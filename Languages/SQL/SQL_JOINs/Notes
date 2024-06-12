@@ -16,4 +16,39 @@ Video 3: Introduction to JOINs
                                                                                                                                                             accounts table
 - Tables that a column comes from need to be specified in the SELECT statement
 
+Video 4: Alias
+- Give your table names aliases when trying to perform JOINs; do this by typing a space after the table name and typing the intended name after the space
+- Example: SELECT o.*, a.*        #can refer to these as the alias at the SELECT level
+           FROM demo.orders o     #o is the alias for the database
+           JOIN demo.accounts a   #a is the alias for the database
+           ON o.account_id = a.id #changed to o and a at the ON level
 
+Video 5: Motivation for Other JOINs
+- Inner JOINs is for 1 to 1 or 1 to many
+- Outer JOINs are for everything, including 0s
+
+Video 6: LEFT and RIGHT JOINs
+- Inner JOINs only work for data that exist in both/all of the tables being joined
+- Outer JOINs are for the data that don't exist in all of the adjoining tables
+- Types of outer JOINs = Left join, Right join, and Full Outer join
+- Must always have at least as many rows in the inner JOIN by definition
+- Example: SELECT
+           FROM left_table
+           LEFT JOIN right_table #whatever comes after the LEFT JOIN clause, I'm guessing, is the right table?
+- Above: Returns all matches with the right_table, and return any non matches from the left_table
+- LEFT JOIN is the standard (it is effectively the same as right, so this one is the one chosen)
+- My Question: Which is the left table, and which is the right table?
+
+Video 7: JOINs and Filtering
+- Combining data isn't an end unto itself
+- Example: SELECT o.*, a.*       
+           FROM demo.orders o     
+           JOIN demo.accounts a   
+           ON o.account_id = a.id
+           WHERE a.sales_rep_id = 100
+- Above example would include all information from both tables where the sales rep id is 100...but what if we wanted to mark all of the orders for sales rep id 100 while also keeping all others?
+- Example: SELECT o.*, a.*       
+           FROM demo.orders o     
+           JOIN demo.accounts a   
+           ON o.account_id = a.id AND a.sales_rep_id = 100
+- Above example moves it to ON clause...includes only rows for sales rep 100 before JOIN is executed
