@@ -85,8 +85,14 @@ Video 13: Arithmetic Operators
 - Example of above: SELECT column1 + column2 AS column3 FROM table...column 3 for a table is the sum of what is in column1 and column2 in each row in the table dataset
 
 Text: Logical Operators
-- LIKE This allows you to perform operations similar to using WHERE and =, but for cases when you might not know exactly what you are looking for.
-- IN This allows you to perform operations similar to using WHERE and =, but for more than one condition.
-- NOT This is used with IN and LIKE to select all of the rows NOT LIKE or NOT IN a certain condition.
-- AND & BETWEEN These allow you to combine operations where all combined conditions must be true.
-- OR This allows you to combine operations where at least one of the combined conditions must be true.
+- LIKE: This allows you to perform operations similar to using WHERE and =, but for cases when you might not know exactly what you are looking for.
+- IN: This allows you to perform operations similar to using WHERE and =, but for more than one condition.
+- NOT: This is used with IN and LIKE to select all of the rows NOT LIKE or NOT IN a certain condition.
+- AND & BETWEEN: These allow you to combine operations where all combined conditions must be true.
+- OR: This allows you to combine operations where at least one of the combined conditions must be true.
+
+Video 14: LIKE
+- LIKE clause is similar where you have a bunch of similar but slightly different values in any given column
+- Example used is a column of google searches that all have the slightest differences in the endings
+- LIKE requires the use of wildcards (example: SELECT * FROM orders [WHERE website LIKE '%google%']...wildcards are %, and this will return all rows in an orders table where the website contains google in it...it
+  means to start with with any number of characters, then contains Google, then ends with any number of characters
