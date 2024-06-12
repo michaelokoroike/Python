@@ -12,3 +12,5 @@
 
 ## Practice Question 5
 ![image](https://github.com/michaelokoroike/Courses/assets/39680418/1ca5558f-6c2c-4c6b-ac58-703369176c05)
+
+- Note: For 3,4, and 5, only needed to do SELECT name, instead of SELECT *
