@@ -105,7 +105,13 @@ Video 15: IN
 - You can put as many values as you want in the parentheses, but there needs to be commas in between distinct values
 
 Video 16: NOT
-- NOT clause provides inverse for LIKE, IN, or similar operators
+- NOT operator provides inverse for LIKE, IN, or similar operators
 - IN Example (numerical): SELECT * FROM orders [WHERE id NOT IN (1001, 1002)]...this checks to see the items where you can filter out and see the rows in the orders table where orders are made by account other than 
   1001 or 1002
 - LIKE Example: SELECT * FROM orders [WHERE website NOT LIKE '%google%']...this checks to see any website that does not contain google within it
+
+Video 17: AND & BETWEEN
+- AND operator used within WHERE statement to consider more than one logical clause at a time
+- AND Example: SELECT * FROM orders [WHERE date > April 1 AND date < October 1]...this checks to see any order that went through between April and October
+- BETWEEN operator is just a cleaner version of AND
+- BETWEEN Example: SELECT * FROM orders [WHERE date BETWEEN April 1 AND October 1]...this also checks to see any order that went through between April and October
