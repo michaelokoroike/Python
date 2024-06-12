@@ -96,3 +96,10 @@ Video 14: LIKE
 - Example used is a column of google searches that all have the slightest differences in the endings
 - LIKE requires the use of wildcards (example: SELECT * FROM orders [WHERE website LIKE '%google%']...wildcards are %, and this will return all rows in an orders table where the website contains google in it...it
   means to start with with any number of characters, then contains Google, then ends with any number of characters
+
+Video 15: IN
+- IN function allows you to filter data based on several possible values
+- IN requires single quotation marks around non-numeriacal data
+- Example: SELECT * FROM orders [WHERE website IN ('Amazon', 'EBay')]...this checks to see the items where you can filter out and see the rows in the orders table where orders where in Amazon and EBay
+- Example (numerical): SELECT * FROM orders [WHERE id IN (1001, 1002)]...this checks to see the items where you can filter out and see the rows in the orders table where orders are made by account 1001 or 1002
+- You can put as many values as you want in the parentheses, but there needs to be commas in between distinct values
