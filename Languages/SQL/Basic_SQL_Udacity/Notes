@@ -73,7 +73,13 @@ Video 10: ORDER BY Part 2
 Video 11: WHERE
 - WHERE clause allows filtering for specific set of results based on a specific set of criteria
 - It goes after FROM but before ORDER BY or LIMIT
-- Symbols: > (greater than), < (less than), >= (greater than or equal to), <= (less than or equal to), = (equal to), != (not equal to)
+- Symbols: 
+    - > (greater than) 
+    - < (less than)
+    - >= (greater than or equal to)
+    - <= (less than or equal to)
+    - = (equal to) 
+    - != (not equal to)
 
 Video 12: WHERE with Non-Numeric Data
 - Can be used with words, etc
@@ -81,7 +87,7 @@ Video 12: WHERE with Non-Numeric Data
 
 Video 13: Arithmetic Operators
 - Derived columns are columns that are manipulations of existing columns in the database
-- To chanfe the name of a derived column (that is a manipulation of existing columns, like an addition, multiplication, etc) add the AS clause to the end of the creation of the derived column
+- To change the name of a derived column (that is a manipulation of existing columns, like an addition, multiplication, etc) add the AS clause to the end of the creation of the derived column
 - Example of above: SELECT column1 + column2 AS column3 FROM table...column 3 for a table is the sum of what is in column1 and column2 in each row in the table dataset
 
 Text: Logical Operators
