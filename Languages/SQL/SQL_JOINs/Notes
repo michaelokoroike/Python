@@ -1,1 +1,4 @@
-Video 1
+Video 1: Motivation
+- The real power of SQL is in working with multiple tables at once
+- Relational database: refers to the fact that tables iwthin the datasets being worked with contain tables with common identifiers for easy coombination
+- To do everything in a single Excel data set is not clean...too many different types of things a company needs to keep track of
