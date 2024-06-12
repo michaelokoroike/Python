@@ -103,3 +103,9 @@ Video 15: IN
 - Example: SELECT * FROM orders [WHERE website IN ('Amazon', 'EBay')]...this checks to see the items where you can filter out and see the rows in the orders table where orders where in Amazon and EBay
 - Example (numerical): SELECT * FROM orders [WHERE id IN (1001, 1002)]...this checks to see the items where you can filter out and see the rows in the orders table where orders are made by account 1001 or 1002
 - You can put as many values as you want in the parentheses, but there needs to be commas in between distinct values
+
+Video 16: NOT
+- NOT clause provides inverse for LIKE, IN, or similar operators
+- IN Example (numerical): SELECT * FROM orders [WHERE id NOT IN (1001, 1002)]...this checks to see the items where you can filter out and see the rows in the orders table where orders are made by account other than 
+  1001 or 1002
+- LIKE Example: SELECT * FROM orders [WHERE website NOT LIKE '%google%']...this checks to see any website that does not contain google within it
