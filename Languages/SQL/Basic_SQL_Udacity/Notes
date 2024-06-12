@@ -83,3 +83,10 @@ Video 13: Arithmetic Operators
 - Derived columns are columns that are manipulations of existing columns in the database
 - To chanfe the name of a derived column (that is a manipulation of existing columns, like an addition, multiplication, etc) add the AS clause to the end of the creation of the derived column
 - Example of above: SELECT column1 + column2 AS column3 FROM table...column 3 for a table is the sum of what is in column1 and column2 in each row in the table dataset
+
+Text: Logical Operators
+- LIKE This allows you to perform operations similar to using WHERE and =, but for cases when you might not know exactly what you are looking for.
+- IN This allows you to perform operations similar to using WHERE and =, but for more than one condition.
+- NOT This is used with IN and LIKE to select all of the rows NOT LIKE or NOT IN a certain condition.
+- AND & BETWEEN These allow you to combine operations where all combined conditions must be true.
+- OR This allows you to combine operations where at least one of the combined conditions must be true.
