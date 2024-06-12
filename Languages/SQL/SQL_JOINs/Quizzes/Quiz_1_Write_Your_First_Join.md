@@ -9,6 +9,7 @@
 
 ## Practice Question 1
 ![image](https://github.com/michaelokoroike/Courses/assets/39680418/cda50779-a5da-4e9b-a29e-e92677cf0c9e)
+- On this one, actually should have flipped it to FROM accounts and JOIN orders; SELECT should have been orders.asterisk, accounts.asterisk; ON should have been accounts.id = orders.accounts_id
 
 ## Practice Question 2
 ![image](https://github.com/michaelokoroike/Courses/assets/39680418/a85cb512-5587-4a16-9864-5ba1cd2fd55e)
