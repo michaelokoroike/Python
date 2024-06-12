@@ -121,3 +121,9 @@ Video 17: AND & BETWEEN
 - AND Example: SELECT * FROM orders [WHERE date > April 1 AND date < October 1]...this checks to see any order that went through between April and October
 - BETWEEN operator is just a cleaner version of AND
 - BETWEEN Example: SELECT * FROM orders [WHERE date BETWEEN April 1 AND October 1]...this also checks to see any order that went through between April and October
+
+Video 18: OR
+- OR is a logical operator that allows you to select rows that satisfy either of two conditions...similar to AND
+- OR Example: SELECT * FROM orders [WHERE qty_orders_good1 = 0 OR qty_orders_good2 < 0]...this checks to see any account where no orders of good 1 or good 2 have been made
+- Longer OR example: SELECT * FROM orders [WHERE (qty_orders_good1 = 0 OR qty_orders_good2 < 0) AND date_of_order >= '1-1-2016']...this checks to see any account where no orders of good 1 or good 2 were been made,
+  and if the order came after January 1, 2016
