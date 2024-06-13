@@ -7,5 +7,6 @@
 ![image](https://github.com/michaelokoroike/Courses/assets/39680418/c0d3056f-c62a-4bec-b1b5-40f99624c2ba)
 ## Practice Question 4
 ![image](https://github.com/michaelokoroike/Courses/assets/39680418/7cdb24b0-bdc2-48a6-a3bb-33e01adccad8)
+- This should have added standard and gloss together
 ## Practice Question 5
 ![image](https://github.com/michaelokoroike/Courses/assets/39680418/ac367433-7465-4ee8-82db-5b61a0029d23)
