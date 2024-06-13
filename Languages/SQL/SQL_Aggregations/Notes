@@ -1,0 +1,40 @@
+Video 1: Introduction to Aggregation
+- We've learned LEFT/RIGHT/INNER JOINs, as well as filtering results with WHERE and ON clauses
+- It's sometimes useful to look at row-level data, though often times this is less valuable than aggregated data
+- This is done in SQL similarly to Excel (for columns);
+  - COUNT = counts how many rows are in a column
+  - SUM = adds all values in a column
+  - MIN and MAX = returns lowest and highest values in particular columns
+  - AVERAGE = calculates the average of all values in particluar column
+
+Video 2: Introduction To NULLs
+- NULL = not zero...no data
+
+Video 3: NULLs and Aggregation
+- Example: SELECT *
+           FROM accounts
+           WHERE id > 1500;
+- In above example, we see a primary_poc is blank, maybe as a mistake or maybe the point of contact left the comany...we don't know
+- To follow up and find NULL data in primary_poc column we would do:
+- Example: SELECT *
+           FROM accounts
+           WHERE primary_poc IS NULL;
+- Witn NULL you need to write IS NULL instead of '= NULL', because NULL is not a value like 0 or another number/string/etc, it is a property
+- Inverse example: SELECT *
+                   FROM accounts
+                   WHERE primary_poc IS NOT NULL;
+
+Video 4 (and Text): First Aggregation - COUNT
+- Say we have an example like above and we want to return the amount of rows where id > 1500...all we'd have to do is update the SELECT statement
+- Example: SELECT COUNT(*) as order_count
+           FROM accounts
+           WHERE id > 1500;
+- This returns the amount of rows with the alias order_count thet have SOME NON-NULL DATA
+
+Video 5: COUNT & NULLs
+- Example: SELECT COUNT(*) as account_count
+           FROM accounts
+- Above returns the amount of rows in the data table
+- Example: SELECT COUNT(id) as account_id_count
+           FROM accounts
+- Above returns the amount of rows in the id column in the data table that are non-null; if same as the example above it, there are no null values in the column
