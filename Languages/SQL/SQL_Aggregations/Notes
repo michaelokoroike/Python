@@ -45,3 +45,81 @@ Video 6: SUM
                   SUM(poster_qty) AS poster
            FROM orders;
 - This sums total in each column in the parentheses and gives them aliases
+
+Video 7: MIN & MAX
+- Example: SELECT MIN(standard_qty) AS standard_min,
+                  MIN(gloss_qty) AS gloss_min,
+                  MIN(poster_qty) AS poster_min,
+                  MAX(standard_qty) AS standard_max,
+                  MAX(gloss_qty) AS gloss_max,
+                  MAX(poster_qty) AS poster_max
+           FROM orders;
+- This gives the maximum and minimum value in each column in the parentheses and gives them aliases
+
+Video 8: AVG
+- Example: SELECT AVG(standard_qty) AS standard_avg,
+                  AVG(gloss_qty) AS gloss_avg,
+                  AVG(poster_qty) AS poster_avg
+           FROM orders;
+- This gives the average order quantity in each column in the parentheses and gives them aliases
+- Can only be used on numerical columns, and ignores NULLs completely
+
+Video 9: GROUP BY
+- GROUP BY allows for the creation of segments that will aggregate independent of one another
+- GROUP BY always goes between the WHERE clause (if there is one) and the ORDER BY clause
+- Example: SELECT account_id,
+                  SUM(standard_qty) AS standard,
+                  SUM(gloss_qty) AS gloss,
+                  SUM(poster_qty) AS poster
+           FROM orders
+           GROUP BY account_id
+           ORDER BY account_id;
+- Above example groups these sums by account; whenever there's a field in the SELECT statement not being aggregated (like account_id), the query expects it to be in the GROUP BY clause
+
+Video 10: GROUP BY Part 2
+- You can GROUP BY multiple columns at once (already done -- see Quiz 3)
+- ORDER BY list makes a difference (the first to last is left to right); order after GROUP BY doesn't make a difference
+- You can substitute numbers for column names in ORDER BY and GROUP BY clause
+
+Video 11: DISTINCT
+- Essentially GROUP BY but don't want to use aggregations
+- Example: SELECT DISTINCT column1, column2, column3
+           FROM table1
+           ORDER BY column1;
+- This example would return the distinct rows across all three of these columns, ordered by the column1
+
+Video 12: HAVING
+- Essentially WHERE for aggregations
+- Example: SELECT account_id,
+                  SUM(total_amt_usd) AS sum_total_amt_usd,
+           FROM orders
+           GROUP BY 1
+           HAVING SUM(total_amt_usd) >= 250000;
+- This returns a query with just the account ids having more than 250k in total sales
+- Note = use AS in SELECT statement when refenecing the same thing from different tables (ex: a.name, b.name may accidentally have the same result without extra clarification)
+
+Video 13: DATE Functions
+- Databases do YYYY MM DD (year is most important)
+- But also exact in the date and time, which doesn't help much
+
+Video 14: DATE Functions 2
+- To group by day, make it YYYY MM DD 00:00:00 (make times not matter)
+- Example: SELECT DATE_TRUNC('day', occurred_at) AS day,
+                  SUM(standard_qty) AS standard_qty
+           FROM orders
+           GROUP BY DATE_TRUNC('day', occurred_at)
+           ORDER BY DATE_TRUNC('day', occurred_at)
+- Can use day, month, year for this function
+- To pull out day of the week, use DATE_PART
+- Example: SELECT DATE_PART('dow', occurred_at) AS day,     #'dow' is day of week
+                  SUM(standard_qty) AS standard_qty
+           FROM orders
+           GROUP BY DATE_TRUNC('day', occurred_at)
+           ORDER BY DATE_TRUNC('day', occurred_at)
+- Note = Adding numbers after GROUP BY references the number of column in the SELECT statement
+- Example: - Example: SELECT DATE_PART('dow', occurred_at) AS day,     #'dow' is day of week
+                  SUM(standard_qty) AS standard_qty
+           FROM orders
+           GROUP BY 1     #DATE_PART('dow', occurred_at) reference
+           ORDER BY 2     #standard_qty reference
+- Note: use HAVING when your query has aggregations
