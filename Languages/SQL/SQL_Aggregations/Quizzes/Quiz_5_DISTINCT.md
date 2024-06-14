@@ -1,0 +1,5 @@
+![image](https://github.com/michaelokoroike/Courses/assets/39680418/50869c7b-55c0-48d8-b7ab-0a1475447a40)
+## Practice Question 1 (Solution from Udacity)
+![image](https://github.com/michaelokoroike/Courses/assets/39680418/0e81c90d-06e7-4ee8-864b-113db4e1e150)
+## Practice Question 2 (Solution from Udacity)
+![image](https://github.com/michaelokoroike/Courses/assets/39680418/8828ad3e-7f30-46f7-90b9-2adcf89da155)
