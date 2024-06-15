@@ -117,9 +117,46 @@ Video 14: DATE Functions 2
            GROUP BY DATE_TRUNC('day', occurred_at)
            ORDER BY DATE_TRUNC('day', occurred_at)
 - Note = Adding numbers after GROUP BY references the number of column in the SELECT statement
-- Example: - Example: SELECT DATE_PART('dow', occurred_at) AS day,     #'dow' is day of week
+- Example: SELECT DATE_PART('dow', occurred_at) AS day,     #'dow' is day of week
                   SUM(standard_qty) AS standard_qty
            FROM orders
            GROUP BY 1     #DATE_PART('dow', occurred_at) reference
            ORDER BY 2     #standard_qty reference
-- Note: use HAVING when your query has aggregations
+- Note: use HAVING when your query has aggregations...actually WHERE can't be between GROUP and ORDER
+
+Video 15: CASE Statements
+- Derived columns = Take data from existing columns and modify them
+- Example: SELECT id,
+                  account_id,
+                  occurred_at,
+                  channel,
+                  CASE WHEN channel = 'facebook' THEN 'yes' END AS is_facebook     #Essentially CASE primes for an 'IF-THEN' statement ('WHEN-THEN' in SQL), which you formally end with END
+           FROM web_events
+           ORDER BY occurred_at
+- This table has a 5th column called 'is_facebook' that returns 'yes' when channel is 'facebook'
+- ELSE captures values not specified in "WHEN" and "THEN" statements
+- Example: SELECT id,
+                  account_id,
+                  occurred_at,
+                  channel,
+                  CASE WHEN channel = 'facebook' THEN 'yes' ELSE 'no' END AS is_facebook     #Essentially CASE primes for an 'IF-THEN' statement ('WHEN-THEN' in SQL), which you formally end with END
+           FROM web_events
+           ORDER BY occurred_at
+- This table has a 5th column called 'is_facebook' that returns 'yes' when channel is 'facebook' and 'no' when not
+- Example: SELECT id,
+                  account_id,
+                  occurred_at,
+                  total,
+                  CASE WHEN total > 500 THEN 'Over 500'
+                       WHEN total > 300 AND total < 500 THEN '301-500'
+                       ELSE '300 or under' END AS total_group
+           FROM orders
+           ORDER BY occurred_at
+
+Video 16: CASE & Aggregations
+- Example: SELECT CASE WHEN total > 500 THEN 'Over 500'
+                       ELSE '500 or under' END AS total_group,
+                  COUNT(*) AS order_count
+           FROM orders
+           GROUP BY 1
+- Note: column aliases created in a SELECT statement are not to be reused in that SELECT statement for logic purposes
