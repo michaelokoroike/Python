@@ -1,1 +1,19 @@
-hi
+Video 1: Introduction
+- We will learn in this lesson to query the results of another query
+- This will allow us to build out more transformations, organize work better, and make queries run faster
+
+Video 2: Introduction to Subqueries
+- Also known as inner queries or nested queries
+- Allow you to answer more complex questions than you could with a single table
+- 1) Start with querying the entire table to see if it can do what we need it for; 2) next we'll count all of the events in each channel by day; 3) then we'll want to average across events column we've created. This
+  creates a subquery, which are required to have aliases
+- Example: SELECT channel,
+                  AVG(event_count) AS avg_event_count
+           FROM
+           (SELECT DATE('TRUNC', occurred_at) AS day,
+                  channel,
+                  COUNT(*) AS event_count
+           FROM web_events
+           GROUP BY 1,2)
+           GROUP BY 1
+           ORDER BY 2 DESC
