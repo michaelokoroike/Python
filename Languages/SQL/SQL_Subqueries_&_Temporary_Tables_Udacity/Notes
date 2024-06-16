@@ -17,3 +17,16 @@ Video 2: Introduction to Subqueries
            GROUP BY 1,2)
            GROUP BY 1
            ORDER BY 2 DESC
+
+Video 3: More On Subqueries
+- Subqueries can be used anywhere you might use a table name, a column name, even an individual value
+- Subqueries are especially good in conditional logic, in conjunction with WHERE and JOIN clauses, or in the WHEN portion of a CASE statement
+- Example: Returning orders that occurred in the first month of business...get the first order by writing a subquery with a MIN function, with a DATE_TRUNC function to get the month...then write an outer query
+  which uses the inner query to filter the orders table and sort by the occurred_at column. It will work because the result of the subquery, as is the case for most subqueries, has one-cell results. 
+- Example (in code): SELECT *                                                      #select all data from the orders table
+                     FROM orders
+                     WHERE DATE_TRUNC('month', occurred_at) =                      #asks for a specific month to filter out for
+                     (SELECT DATE_TRUNC('month', MIN(occurred_at)) AS min_month    #finds the month of the earliest orders in the company
+                      FROM orders)   
+                     ORDER BY occurred_at                                          #display from earliest to latest
+- Note: When doing the quizzes, didn't need to ORDER BY or GROUP BY after the subquery...only did that when the outer query was SELECT *
