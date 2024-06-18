@@ -26,3 +26,6 @@
 ![image](https://github.com/michaelokoroike/Courses/assets/39680418/a8903605-4184-48e3-bbcb-f995d4e1d10f)
 ### Question 6
 ![image](https://github.com/michaelokoroike/Courses/assets/39680418/cb6a16ab-0bd9-4e0d-a29c-19cc235b5cf0)
+
+# CTE Quiz
+![image](https://github.com/michaelokoroike/Courses/assets/39680418/4cdf14fc-2676-4d5d-a344-f8d281c3e4d6)
