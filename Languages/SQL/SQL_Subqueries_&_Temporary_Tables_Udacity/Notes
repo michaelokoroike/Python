@@ -30,3 +30,27 @@ Video 3: More On Subqueries
                       FROM orders)   
                      ORDER BY occurred_at                                          #display from earliest to latest
 - Note: When doing the quizzes, didn't need to ORDER BY or GROUP BY after the subquery...only did that when the outer query was SELECT *
+
+Video 4: WITH
+- For really long subqueries, maybe make it into its own query and then write it into the database as its own table. This can improve speed
+- The main problem with subqueries is they can make the queries lengthy and difficult to read...Common Table Expression (CTEs) can help break the query into separate components so the query logic is more
+  readable
+- Example: WITH events AS ((SELECT DATE('TRUNC', occurred_at) AS day,
+                                   channel,
+                                   COUNT(*) AS event_count
+                            FROM web_events
+                            GROUP BY 1,2))
+
+           SELECT channel,
+                  AVG(event_count) AS avg_event_count
+           FROM events
+           GROUP BY 1
+           ORDER BY 2 DESC
+- See notes under Video 2 above: the query defined in WITH is the same as what is in the messy FROM statement above...this is a Common Table Expression
+- Has to be used above the actual/final queries
+- Can write as many as we want
+- Each CTE gets an alias like a subquery
+
+Video 5: Subquery Conclusion
+- Learned subqueries and temp tables
+- Following videos are more direct use cases
