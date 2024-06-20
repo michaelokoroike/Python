@@ -1,1 +1,13 @@
-hi
+Video 1: Introduction to Data Cleaning
+- We will learn to clean and reorgainizing messy data
+- We will learn how to change a column's data type
+- We will learn some tricks on how to manipulate NULLs
+
+Video 2: LEFT & RIGHT
+- Example: SELECT first_name,
+                  last_name,
+                  phone_number,
+                  LEFT(phone_number, 3) AS area_code              #LEFT pulls a specified number of characters for each row in a specified column starting at the beginning (or from the left)
+                  RIGHT(phone_number, 8) AS phone_number_only     #RIGHT pulls a specified number of characters for each row in a specified column starting at the end (or from the right)
+                  RIGHT(phone_number, LENGTH(phone_number) - 4) AS phone_number_alt #LENGTH provides the number of characters for each row of a specified column
+           FROM customer_data
