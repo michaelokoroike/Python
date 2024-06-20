@@ -11,3 +11,21 @@ Video 2: LEFT & RIGHT
                   RIGHT(phone_number, 8) AS phone_number_only     #RIGHT pulls a specified number of characters for each row in a specified column starting at the end (or from the right)
                   RIGHT(phone_number, LENGTH(phone_number) - 4) AS phone_number_alt #LENGTH provides the number of characters for each row of a specified column
            FROM customer_data
+
+Video 3: POSITION, STRPOS, & SUBSTR
+- Example: SELECT first_name,
+                  last_name,
+                  city_state,
+                  POSITION(',' IN city_state) AS comma_position               #POSITION takes a character and a column, and provides the index where that character is for each row
+                  STRPOS(city_state, ',') AS substr_comma_position            #STRPOS provides the same result as POSITION, but the syntax for achieving those results is a bit different as shown here: STRPOS(city_state, ',')
+                  LOWER(city_state)                                           #LOWER makes every string in a character to become lowercase 
+                  UPPER(city_state)                                           #UPPER makes every string in a character to become uppercase 
+                  LEFT(city_state, POSITION(',' IN city_state) - 1)  AS city  #Everything in the city_state value up to and including a character before the comma (which is the city)
+           FROM customer_data
+- Note: POSITION and STRPOS are case-sensitive
+
+Video 4: CONCAT
+- Example: SELECT first_name,
+                  last_name,
+                  CONCAT(first_name, ' ', last_name) AS full_name
+                  first_name || ' ' || last_name, AS full_name_alt
