@@ -29,3 +29,28 @@ Video 4: CONCAT
                   last_name,
                   CONCAT(first_name, ' ', last_name) AS full_name
                   first_name || ' ' || last_name, AS full_name_alt
+
+Video 5: CAST
+- Most data analyzed will have dates attached to it...but we won't get good value from them if the dates aren't formatted correctly
+- Example: If dates were in 3 columns (like month being one/in words, day being another, and year being another), you'd have to make the month a number and then concatenate all the fields with hyphens
+- Example (cont): SELECT *, #gives a month (in name form), day, and year in separate columns
+                         DATE_PART('month', TO_DATE(month, 'month')) AS clean_month, #make the month number format
+                         year || '-' || DATE_PART('month', TO_DATE(month, 'month')) || '-' || day AS concatenated_date, #get the date in the proper year-month-day format
+                         CAST(year || '-' || DATE_PART('month', TO_DATE(month, 'month')) || '-' || day AS date) AS formatted_date, #completely convert it to a date format, so it's passable as such
+                         (year || '-' || DATE_PART('month', TO_DATE(month, 'month')) || '-' || day)::date AS concatenated_date, #the two colons is essentially the shorthand version of CAST
+                  FROm demo.ad_clicks
+- CAST allows us to change columns from one data type to another; most especially for turning strings into numbers or dates
+- Note: || is the same as to concatenate; ()::'new_data_type' is the same as CAST()
+- Note: LEFT, RIGHT, or SUBSTR automatically casts data to string data type while performing the operation
+
+Video 6: COALESCE
+- Sometimes we'll have NULLs in a dataset which we'd like to contain actual values
+- COALESCE returns the first non-NULL value passed for each row
+- Example: Where there's no primary point of contact, we may want to label that
+- Example (cont.): SELECT *,
+                          COALESCE(primary_poc, 'no POC') AS primary_poc_modified #will display nulls as 'no POC'
+                   FROM accounts
+                   WHERE primary_poc IS NULL
+
+Video 7: Recap
+- Learned how to clean data...SQL does it really well at scale
