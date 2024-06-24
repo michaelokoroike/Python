@@ -6,6 +6,10 @@ Video 1 - Introduction to Window Functions
 Video 2 - Window Functions 1
 - Example of creating a running total (below):
 - SELECT standard_qty,  
-         SUM(standard_qty) OVER (ORDER BY occurred_at) AS running_total #will create an aggregation/running total with out needing GROUP BY
-  FROM accounts
-                   
+         SUM(standard_qty) OVER (ORDER BY occurred_at) AS running_total #will create an aggregation/running total with out needing GROUP BY...reads as "take the sum of standard_qty, across all rows up to a given row, in order by occurred_at 
+    FROM accounts
+-  Note: Use PARTITION BY to narrow the window from entire dataset to individual groups within a data set. Example below builds on above:
+- SELECT standard_qty, 
+         DATE_TRUNC('month', occurred_at) AS month #find the month
+         SUM(standard_qty) OVER (PARTITION BY DATE_TRUNC('month', occurred_at) ORDER BY occurred_at) AS running_total #goes over month
+    FROM accounts
