@@ -2,3 +2,10 @@ Video 1 - Introduction to Window Functions
 - Window function allows you to compare one row to another without doing any JOINs 
 - Create running totals, determine if one row was greater than the previous row, and classify based on finding
 - Most people don't get this far as beginners
+
+Video 2 - Window Functions 1
+- Example of creating a running total (below):
+- SELECT standard_qty,  
+         SUM(standard_qty) OVER (ORDER BY occurred_at) AS running_total #will create an aggregation/running total with out needing GROUP BY
+  FROM accounts
+                   
