@@ -13,3 +13,103 @@ Video 2 - Window Functions 1
          DATE_TRUNC('month', occurred_at) AS month #find the month
          SUM(standard_qty) OVER (PARTITION BY DATE_TRUNC('month', occurred_at) ORDER BY occurred_at) AS running_total #goes over month
     FROM accounts
+
+Video 3 - ROW_NUMBER & RANK
+- Window functions are easiest used with functions that count, not aggregate
+- SELECT id, 
+         account_id,
+         occurred_at,
+         ROW_NUMBER() OVER (ORDER BY id) AS row_num #orders by ID field which increments by 1 every row...1,2..10 in ID will be 1,2...10 in "row_num"
+    FROM accounts
+- SELECT id, 
+         account_id,
+         occurred_at,
+         ROW_NUMBER() OVER (ORDER BY occurred_at) AS row_num #orders by occurred_at field ...earliest to second earliest to tenth earliest order will be 1,2...10 in "row_num"
+    FROM accounts
+- SELECT id, 
+         account_id,
+         occurred_at,
+         ROW_NUMBER() OVER (PARTITION BY account_id ORDER BY occurred_at) AS row_num #orders by occurred_at field whiile partitioned by account_id...within each account_id, earliest to second earliest to tenth earliest order will be 1,2...10 in "row_num"
+    FROM accounts
+- SELECT id, 
+         account_id,
+         occurred_at,
+         RANK() OVER (PARTITION BY account_id ORDER BY occurred_at) AS row_num #orders by occurred_at field whiile partitioned by account_id...within each account_id, earliest to second earliest to tenth earliest order will be 1,2...10 in "row_num"
+    FROM accounts
+- SELECT id, 
+         account_id,
+         DATE_TRUNC('month', occurred_at,) AS month,
+         RANK() OVER (PARTITION BY account_id ORDER BY DATE_TRUNC('month', occurred_at)) AS row_num  #orders by occurred_at field whiile partitioned by account_id...within each account_id, earliest to second earliest to tenth earliest order will be 1,2...10 in "row_num"...if numbers within the same month they will be ranked the same, and some numbers may be left out
+    FROM accounts
+- SELECT id, 
+         account_id,
+         DATE_TRUNC('month', occurred_at,) AS month,
+         DENSE_RANK() OVER (PARTITION BY account_id ORDER BY DATE_TRUNC('month', occurred_at)) AS row_num  #orders by occurred_at field whiile partitioned by account_id...within each account_id, earliest to second earliest to tenth earliest order will be 1,2...10 in "row_num"...if numbers within the same month they will be ranked the same, but no numbers will be left out
+    FROM accounts
+- Note: RANK is different than ROW_NUMBER in that RANK will give two rows with the same ordered by value the same "row_num", while ROW_NUMBER would give diffrent numbers
+- Note: DENSE_RANK is same as RANK, except numbers aren't skipped over...instead of going to 4 with 2 are tied for 2nd, it goes to 3
+
+Video 4 - Aggregates in Window Functions
+- Real power of window functions is using them in aggregates
+- SELECT id, 
+         account_id,
+         standard_qty,
+         DATE_TRUNC('month', occurred_at,) AS month,
+         DENSE_RANK() OVER (PARTITION BY account_id ORDER BY DATE_TRUNC('month', occurred_at)) AS dense_rank,
+         SUM(standard_qty) OVER (PARTITION BY account_id ORDER BY DATE_TRUNC('month', occurred_at)) AS sum_standard_qty, #rows will have same value when same account_id and orders occurred in the same month...running sum of orders
+         COUNT(standard_qty) OVER (PARTITION BY account_id ORDER BY DATE_TRUNC('month', occurred_at)) AS count_standard_qty, #rows will have same value when same account_id and orders occurred in the same month...running count of orders
+         AVG(standard_qty) OVER (PARTITION BY account_id ORDER BY DATE_TRUNC('month', occurred_at)) AS avg_standard_qty, #rows will have same value when same account_id and orders occurred in the same month...running avg sum of orders
+         MIN(standard_qty) OVER (PARTITION BY account_id ORDER BY DATE_TRUNC('month', occurred_at)) AS min_standard_qty, #rows will have same value when same account_id and orders occurred in the same month...running min of orders
+         MAX(standard_qty) OVER (PARTITION BY account_id ORDER BY DATE_TRUNC('month', occurred_at)) AS max_standard_qty, #rows will have same value when same account_id and orders occurred in the same month...running max of orders
+  FROM accounts
+
+Video 5 - Aliases for Multiple Window Functions
+- If you're writing several window functions in the same query with the same window, we can create an alias
+- SELECT id, 
+         account_id,
+         standard_qty,
+         DATE_TRUNC('month', occurred_at,) AS month,
+         DENSE_RANK() OVER main_window AS dense_rank,
+         SUM(standard_qty) OVER main_window AS sum_standard_qty,
+         COUNT(standard_qty) OVER main_window AS count_standard_qty,
+         AVG(standard_qty) OVER main_window AS avg_standard_qty,
+         MIN(standard_qty) OVER main_window AS min_standard_qty,
+         MAX(standard_qty) OVER main_window AS max_standard_qty
+  FROM accounts
+  WINDOW main_window AS (PARTITION BY account_id ORDER BY DATE_TRUNC('month', occurred_at))
+- Note: It goes between WHERE and GROUP BY clause
+
+Video 6 - Comparing a Row to a Previous Row
+- It's often useful to compare rows to preceding or following rows
+- SELECT account_id, #account_id/customer
+         standard_sum, #total standard_qty bought, grouped by account_id/customer
+         LAG(standard_sum) OVER (ORDER BY standard_sum) AS lag, #the amount the account_id/customer who bought immediately less than you bought
+         LEAD(standard_sum) OVER (ORDER BY standard_sum) AS lead #the amount the account_id/customer who bought immediately more than you bought
+         standard_sum - LAG(standard_sum) OVER (ORDER BY standard_sum) AS lag_difference, #difference between prior and current row
+         LEAD(standard_sum) OVER (ORDER BY standard_sum) - standard_sum AS lead_difference #difference between current and next row
+  FROM (
+      SELECT account_id,
+             SUM(standard_qty) AS standard_sum #total standard_qty bought, grouped by account_id
+        FROM orders
+        GROUP BY 1 (or account_id)
+     ) sub
+
+Video 7 - Introduction to Percentiles
+- Best way to understand data is by percentiles, or where most orders fall
+- Done with NTILE window function
+
+Video 8 - Percentiles
+- SELECT id, 
+         account_id,
+         occurred_at,
+         standard_qty,
+         NTILE(4) OVER (ORDER BY standard_qty) As quartile,
+         NTILE(5) OVER (ORDER BY standard_qty) As quintile,
+         NTILE(100) OVER (ORDER BY standard_qty) As percentile
+  FROM orders
+  ORDER BY standard_qty DESC  #Highest quantity of standard_qty will go in 4th quartile, 5th quintile, and 100-80 percentile, while lowest will be 0, 0, and 0 to 20 respectively 
+- Note: Number in parentheses after NTILE is the number of parts in which you'll divide the window
+
+Video 9 - Recap
+- Learned how to create windows and use window functions for analysis
+- Next will be to join data in advanced ways, where simple inner and left JOINs won't cut it
