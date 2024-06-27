@@ -1,1 +1,112 @@
-hi
+Video 1 - Introduction to Advanced SQL
+- We'll learn more advanced JOINs and to run queires that run quickly even over giant datasets
+- We learn about 'edge cases'; we won't use the functions day in and day out, but it's something to know when it comes up
+
+Video 2 - JOINs with Comparison Operators
+- Joining without an Equals Sign
+  - For cases where you don't want to JOIN by matching values to one another in different tables
+- Inequality JOINs
+  - SELECT orders.id,
+           orders.occurred_at AS order_date,
+           events.*
+      FROM demo.orders orders
+      LEFT JOIN demo.web_events_full events
+      ON events.account_id = orders.account_id
+      AND events.occurred_at < orders.occurred_at #get events that happened earlier than the earliest orders
+    WHERE DATE_TRUNC('month', orders.occurred_at) = 
+      (SELECT DATE_TRUNC('month', MIN(orders.occurred_at)) FROM demo.orders) #earliest month of sales
+    ORDER BY orders.account_id, orders.occurred_at
+- Note: Even when using inequalities, there's usually some type of equality to meake sure it joins
+- Expert Tip (from Udacity): If you recall from earlier lessons on joins, the join clause is evaluated before the where clause -- filtering in the join clause will eliminate rows before they are joined, 
+  while filtering in the WHERE clause will leave those rows in and produce some nulls.
+
+Video 3 - Self JOINs
+- Sometimes it's useful to join a table onto itself
+- SELECT o1.id AS o1_id,
+         o1.account_id AS o1_account_id,
+         o1.occurred_at AS o1_occurred_at,
+         o2.id AS o2_id,
+         o2.account_id AS o2_account_id,
+         o2.occurred_at AS o2_occurred_at,
+      FROM demo.orders o1
+      LEFT JOIN demo.orders o2
+      ON o1.account_id = o2.account_id #compare account_ids of o1 and o2, which are really the same table (we want to join on the same account)
+      AND 02.occurred_at > o1.occurred_at #get orders that happened after the original order was placed
+      AND 02.occurred_at <= o1.occurred_at + INTERVAL '28 days' #but only list those orders that happened after the original order if it occurred within the same month (28 days)
+    ORDER BY o1.account_id, o2.occurred_at
+- Note: The above table essentially rejoins the original order table with itself, but with the condition that the o2 orders displayed will be orders occurring within a month of the one listed in the o1 table, 
+  which is ordered by account_id and time of occurrence...since each account seems to order twice monthly and those two orders occur on the same day, then the order that is first on that day chronologically
+  will have an o2 order (the one later that day) match it, for lack of a better term, while the one later in the day wouldn't match an o2 order
+- Note: This is common in job interviews
+- Note: Quiz Question answer for "What use case below is appropriate for self joins?" is to show parent child relationships...not running total, not showing first four digits of an id, not joining records of
+  two tables
+
+Video 4 - UNION
+- JOINs do side by side amalgamation...but sometimes it's better to stack data on top of one another. The latter can be done with a UNION
+- Appending Data via UNION
+  - Rules: Both tables must have same number of columns; and the columns must have the same data types in the same order in both tables.
+  - Column names do not need to be the same in appending two tables, but typically are
+  - SELECT * FROM web_events
+    UNION
+    SELECT * FROM web_events_2
+  - Only appends distinct rows; rows in the second table identical to those in the firsst table are dropped. But UNION ALL appends all rows.
+- Pretreating Tables before doing a UNION
+  - SELECT * FROM web_events 
+    WHERE channel = 'Facebook'
+    UNION ALL
+    SELECT * FROM web_events_2
+  - The above events will only return events where channel is equal to Facebook, but will still return/append all rows from second table
+- Performing Operations on a Combined Dataset
+  - SELECT channel,
+           COUNT(*) AS sessions # counts up all sessions by channel (grouped by channel)
+    FROM
+    (SELECT * FROM web_events 
+    UNION ALL
+    SELECT * FROM web_events_2)
+    GROUP BY 1
+    ORDER BY 2 DESC
+  - Note: Perform operations on the combined dataset by treating it as a subquery, as above
+  - Note: A better way to do it may be to create the union as a Common Table Expression (or CTE; WITH), as below
+    - WITH web_events AS (SELECT * FROM web_events 
+                          UNION ALL
+                          SELECT * FROM web_events_2)
+      SELECT channel,
+             COUNT(*) AS sessions # counts up all sessions by channel (grouped by channel)
+      FROM web_events
+      GROUP BY 1
+      ORDER BY 2 DESC
+- Note: Quiz Question answer for "What use case below is appropriate to use a union?" is to show all reasons a child is late...not state which a kid lives, not average price, not total number of teachers
+
+Video 5 - Performance Tuning Motivation
+- SQL is good with massive datasets
+- Some queries take hours to return; take effort to write the queries in ways that will allow the databasr to execute them as fast as possible
+- We'll learn to identify when the queries can be improved, and how to improve them
+
+Video 6 - Performance Tuning 1
+- How You Can and Can't Control Performance
+  - Software can only process as much information as the hardware is capable of handling
+  - The way to make quries run faster is to reduce the amount of calculations that need to be performed
+  - High-level things controlling number of calculations: table size (large tables), JOINs (JOINing tables to make a large one), aggregations (combining multiple rows to achieve results vs just retrieval, 
+    COUNT DISTINCT vs regular COUNT due to checking all rows against each other for duplicate values)
+  - Low-level things: queries running at the same time, database and task (Postgres optimized to read/write rows quickly, while Redshift is for quicker aggregations)
+- Limit time-series data to time windows...for exploratory analysis, this is a given
+- LIMIT doesn't work that well with aggregations...aggregations are always performed first. Best way to circumvent this is in a subquery, and putting the limit there (rule is to limit the data in the 
+  place where it will be executed first); this does affect reults, though, so should not be done for actual results
+
+Video 6 - Performance Tuning 2
+- You can make JOINs less complicated (reduce the number of rows evaluated during the JOIN)
+- In same way it is better to limit data in the place where it will be executed first, it's better to reduce table sizes before JOINing them
+
+Video 7 - Performance Tuning 3
+- Add EXPLAIN at the beginning of any query to see about how long it would take
+- It would return a query plan...shows cost of the query
+- Best used as relatve measure of things that make the query more or less cost-efficient
+
+Video 8 - JOINing Subqueries
+- JOINing Subqueries to Improve Performance
+  - Avoid data explosions in SQL (see SQL file)
+  - Example: Without preaggregating, you have to join all of the rows with the same day from the other tables onto each other...by preaggregating, you COUNT across far smaller datasets
+- See video on https://learn.udacity.com/courses/ud198/lessons/a869ee25-182d-40c8-b860-0f2bbf58be31/concepts/3e1ed8d2-32b5-4271-9f1b-3fa5ecf287e1?tab=lesson
+
+Video 9 - SQL Completion Congratulations
+- Apply skills in real world
