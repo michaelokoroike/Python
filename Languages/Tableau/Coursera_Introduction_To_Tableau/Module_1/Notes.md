@@ -1,4 +1,4 @@
-Introduction To Tableau Public (section #1)
+## Introduction To Tableau Public (section #1)
 
 Video 1 - Welcome to the Course
 - Data visualizations are an essential part of data analysis
@@ -14,7 +14,7 @@ Video 2 - The Business Intelligence Analyst Role
 - Skills we learn with Tableau will translate for PowerBI, Board, Looker, etc
 
 
-Data Visualization for Business Intelligence Analysts (section #2)
+## Data Visualization for Business Intelligence Analysts (section #2)
 
 Video 1 - Welcome to Week 1
 - We will get a high level overview of data visualizations
@@ -52,3 +52,10 @@ Reading - Range of Data Viz Goals
 
 Reading - Data Viz and the Analysis Process
 - Explore data, Wrangle data, Create data visualizations, Produce insights
+
+
+## Tableau for Analytics (section #3)
+
+Reading - Introduction to Tableau Software
+- Spreadsheet tools such as Google Sheets or Microsoft Excel are great for exploring your data and practicing new data viz skills but can sometimes be too simple to use for in-depth analysis. 
+- Tableau is one of the most powerful data visualization tools in the analytics industry. A business analyst using Tableau can explore expert-level visual insights within a few clicks of connecting to a data source. 
