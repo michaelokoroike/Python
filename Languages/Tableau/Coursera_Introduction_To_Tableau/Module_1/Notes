@@ -23,3 +23,17 @@ Video 1 - Welcome to Week 1
 Reading - Data Visualizations
 - A data visualization, also referred to as a data viz, is a visual representation of information and data. Visual elements like charts, graphs, plots, and maps are all examples of data visualizations and are accessible ways to see and understand trends, 
   outliers, and patterns in data.
+
+Reading - Careers in Data Visualization
+- Data visualization engineer
+  - A data visualization engineer is an expert in the design and development of data visualization and works collaboratively with software engineers, consultants, and many others to create data visualizations for the appropriate stakeholders.
+    As a data visualization engineer, you should know how to develop data visualizations using both data viz tools (e.g., Tableau) and writing code to develop them from scratch. A data visualization engineer is also an expert in applying the theory of 
+    design to their work and is considered the data viz expert of their company.
+- Analyst/Data Scientist
+  - As an analyst or data scientist, you will be using data visualizations in your work nearly every day. Although the objective of your work is more around creating insights from your analysis — not so much creating the data visualizations themselves — 
+    knowing how to create and interpret data viz is still very important. As you've explored, one of the most effective ways to communicate discoveries with stakeholders is through data visualizations.
+    As an analyst, you should know how to develop data visualizations using data viz tools like Tableau. Data scientists and some data analysts should also know how to develop data visualizations by coding them from scratch. Both an analyst and a 
+    data scientist should have a good understanding of visual design principles and best practices.
+- Other
+  - "Other" is an umbrella for almost every other career out there. Not every career will involve creating data visualizations, but many do involve interpreting data visualizations. Generally speaking, you don't have to be in the data world to use a data viz. 
+    Regardless of whether or not you choose to go into analytics, the ability to develop or analyze data visualizations is a strong skill set to have in today's workforce.
