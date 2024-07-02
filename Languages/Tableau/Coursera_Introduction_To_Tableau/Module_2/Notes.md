@@ -44,3 +44,29 @@ Video 4 - Pivot Fields
 Reading - Optional: Explore the Data Interpreter
 - Mainly used for spreadsheets with titles, notes, footers, empty cells, etc can be ignored and removed using this tool
 - If not the proper type of file, too big, or clean, Data Interpreter will not appear as an option (on the left pane)
+
+
+## Tableau Data Types (section #2)
+
+Reading - Classifying Data in Tableau
+- Tableau occasionally encounters challenges in data type preprocessing; up to us to spot these mistakes and manually fix them when they arise
+- We will learn about the different data types in this section
+
+Reading - Data Fields in Tableau
+- Discrete fields (columns) = Data individually separate and distinct...countable and uniquely identifiable (stands alone...you can have 16 or 17 cars, but not 16.5; you can be located in only one county at a time); strings are always discrete; **BLUE IN TABLEAU**
+- Continuous fields = Data that forms an unbroken whole (weight...there is an infinite number of values our weight can be); this is always a number; **GREEN IN TABLEAU**
+
+Reading - Tableau Data Types
+- Data Types = A way of classifying a data point or a collection of data points, reflecting the kind of information within each field of the table and also distinguishes how that field can be manipulated
+- ![image](https://github.com/michaelokoroike/Courses/assets/39680418/0a7bc23e-2131-44f2-8ec3-86f1c96af209)
+
+Reading - Edit Data Types
+- Sometimes there's numeric data that shouldn't be treated numerically (postal codes are geographical, IDs are just IDs)
+- Also, there are sometimes dirty data (incorrect data type classifications, for example; typo within a field that's supposed to be numbers)
+
+Video 1 - Edit Data Types
+- Right click...change data type, or geographic role; update
+
+
+
+## Splits (section #3)
