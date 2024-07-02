@@ -58,4 +58,15 @@ Reading - Data Viz and the Analysis Process
 
 Reading - Introduction to Tableau Software
 - Spreadsheet tools such as Google Sheets or Microsoft Excel are great for exploring your data and practicing new data viz skills but can sometimes be too simple to use for in-depth analysis. 
-- Tableau is one of the most powerful data visualization tools in the analytics industry. A business analyst using Tableau can explore expert-level visual insights within a few clicks of connecting to a data source. 
+- Tableau is one of the most powerful data visualization tools in the analytics industry. A business analyst using Tableau can explore expert-level visual insights within a few clicks of connecting to a data source.
+
+Reading - Tableau Public
+- Free platfrom that allows for the creation and sharing of data visualizations
+
+Reading - What is a User Interface?
+- A user interface (UI) is the visual layer between the user and the software
+
+Reading - Tableau vs. Excel
+- Tableau is not optimal as a data creation tool; not a great solution when you want to perform multiple operations on the data before you begin to analyze it; not great for multilayered calculations like we would create in Excel
+- Good for data visualization and dashboards and interactability
+- Business analysts should know how to use both...they both have different functions
