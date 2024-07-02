@@ -70,3 +70,22 @@ Reading - Tableau vs. Excel
 - Tableau is not optimal as a data creation tool; not a great solution when you want to perform multiple operations on the data before you begin to analyze it; not great for multilayered calculations like we would create in Excel
 - Good for data visualization and dashboards and interactability
 - Business analysts should know how to use both...they both have different functions
+
+Reading - Tableau for Analytics
+- ![image](https://github.com/michaelokoroike/Courses/assets/39680418/7303d1de-4764-436d-ba5d-b68ed34327b3)
+- If data we have is clean, Tableau is all we need...if not SQL/Excel should be used to clean it (SQL large dataset cleaning, Excel small dataset cleaning)
+
+Reading - Working in Two Tabs
+- How to navigate between different tabs (ctrl + t, or ctrl + alt + -> or <-)
+
+Reading - Creating a Tableau Account
+- How to create an account; account created
+
+Video 1 - Connecting to a Data Source
+- Getting data onto Tableau
+
+Reading - The Data Source Page
+- Renaming the data
+
+Video 2 - The Data Source Page
+- Essentially, how to work within Tableau
