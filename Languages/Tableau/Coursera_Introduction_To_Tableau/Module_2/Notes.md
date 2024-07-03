@@ -71,4 +71,11 @@ Video 1 - Edit Data Types
 
 ## Splits (section #3)
 
+Reading - Overview
+- **Complex values** = values that contain two or more standalone values that are concatenated (placed together)...example is a full name field with a first name and last name together
+- These values are sometimes more useful if they are separated into multiple fields rather than remaining in one.
+- Multiple fields can allow for more data manipulation, which allows for more flexibility in your data visualization creation.
 
+Reading - Calculated Fields
+- **Calculated fields** = new fields created by manipulating existing fields using mathematical operators (symbols) and/or Tableau’s built-in functions
+- Example is a dataset that includes information on the number of beds and price (among other fields) for Airbnb rentals in New York City; you could create a calculated field by dividing Price column by Beds column
