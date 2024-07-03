@@ -79,3 +79,25 @@ Reading - Overview
 Reading - Calculated Fields
 - **Calculated fields** = new fields created by manipulating existing fields using mathematical operators (symbols) and/or Tableau’s built-in functions
 - Example is a dataset that includes information on the number of beds and price (among other fields) for Airbnb rentals in New York City; you could create a calculated field by dividing Price column by Beds column
+
+Reading - Tableau Functions
+- **Functions** = are often used within calculated fields to help you to manipulate data
+- Two parts to a function are: 1) Function name, and 2) parameters (placeholder variables used in the function definition, letting you know what values to pass into the function)/arguments (actual values passed into a function)
+- Function documentation: https://help.tableau.com/current/pro/desktop/en-us/functions.htm
+
+Reading - The SPLIT Function
+- SPLIT Function is SPLIT(string, delimiter, token number)...see below:
+- ![image](https://github.com/michaelokoroike/Courses/assets/39680418/17fa8c06-8cdf-4a8d-b836-1a8f752a8497)
+- Example of how it works below:
+- ![image](https://github.com/michaelokoroike/Courses/assets/39680418/99a6faee-57b7-4f1b-8357-a719be334aa7)
+
+Video 1 - Split a Field
+- Right-click -> Create -> Calculated Field -> input formula
+
+Reading - Additional Practice Splitting Fields
+- Practice on a Tour De France data set...following videos is Coursera going through how to do the things in this challenge
+
+Videos - Tour de France
+- Remember you can hide columns
+- Also remember to change data types
+- Also remember to look through functions on the Tableau functions website
