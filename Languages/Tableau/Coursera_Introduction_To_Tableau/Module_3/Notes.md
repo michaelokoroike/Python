@@ -56,3 +56,39 @@ Reading - Unions in Tableau
 Video 3 - Unions
 - Drag the table to the canvas -> Drag another table under the first table until you see where it says "Union" and then let it go
 - Merge mismatched fields
+
+Reading - Relationships in Tableau
+- The third option for connecting multiple tables = relationships
+
+Video 4 - Relationships
+- When joining leads to redundancy do union
+- Directions: Drag a table over -> drag the other over and stop when you see the noodle
+
+
+
+## Accessing Multiple Data Sources (section #2)
+
+Reading - Data Sources
+- **Data Source** = the location and container of the data you choose to access when you use Tableau (excel, text file, pdf, etc)
+- Data sources can hold multiple tables or sheets of data
+- Connecting multiple data sources is common in Tableau...it may make sense to keep these data sources separate to keep the company's data organized and protected, but combining them with Tableau is often necessary for analysis
+- There are three ways to combine data sources in Tableau: cross-database joins, blends, and relationships.
+- Important to gain an understanding of the differences between a data source and a Tableau data source, coming next;
+
+Reading - Tableau Data Sources
+- **Tableau data source** = link between Tableau and the data...Tableau data source contains any edits, connections, joins, and other manipulations you have made to the data source _in_ Tableau. Example:
+- ![image](https://github.com/michaelokoroike/Courses/assets/39680418/7bea90d4-517d-46a6-ab9c-8a639cb22049)
+- You can create multiple Tableau data sources that connect to the same or different data sources. The benefit of creating multiple Tableau data sources from the same data source is that you can create different table configurations that you can quickly access during your analysis.
+- You can either connect data sources through: A single Tableau data source, like how you join and union tables, OR Multiple Tableau data sources.
+
+Reading - Connecting Data Sources
+- As mentioned abovr, you can connect data sources through a single Tableau data source or through multiple Tableau data sources. These two approaches are called cross-database joins and blends, respectively.
+- **Cross-database join** = works nearly the same as a regular join except that they join columns from tables that are in separate data sources rather than tables within a single data source...cross-database joins are used strictly for combining data sources — not Tableau data sources.
+- **Blend** = used to connect Tableau data sources.
+- ![image](https://github.com/michaelokoroike/Courses/assets/39680418/de6e38fd-314f-441d-bd08-fc9acaae27f8)
+
+Reading - Cross-Database Joins
+- Next video on cross-database joins
+
+Video 1 - Cross-Database Joins
+- Directions: To add another data source is to press the + button next to the Connections label...based on this it then becomes like normal JOIN, except you need to toggle in between sources to access the different tables
