@@ -92,3 +92,15 @@ Reading - Cross-Database Joins
 
 Video 1 - Cross-Database Joins
 - Directions: To add another data source is to press the + button next to the Connections label...based on this it then becomes like normal JOIN, except you need to toggle in between sources to access the different tables
+
+Reading - Data Blends
+- Above we just learned how to combine multiple data sources using cross-database joins. As a reminder, cross-database joins are created within a single Tableau data source. You will now explore how to combine multiple Tableau data sources using blends.
+- Behind the scenes, blends and cross-database joins are fundamentally different. A **data blend** combines information from a secondary Tableau data source and displays that information with the primary Tableau data source. **Unlike cross-database joins, data blending does not directly combine the Tableau data sources**. Instead, both Tableau data sources are queried, and only the returned information from each Tableau data source is displayed together.
+- In a nutshell, this means that when a data visualization is created, only the information needed to make the visualization is used from the blended Tableau data sources. Cross-database joins and regular joins, on the other hand, will join all of the data from both data sources — even if some of the data is not needed for the visualization.
+- A blend's ability to use less data can lead to significant performance benefits when working with large datasets.
+
+Reading - Data Blends vs. Joins
+- Data blends will work between any two Tableau data sources as long as they share values within a column, just like a join. When data is blended, it is similar to a left join because the first table in the blend is always the primary table. The main difference is when the aggregation is performed.
+- See https://www.coursera.org/learn/introduction-to-tableau/supplement/X53e4/data-blends-vs-joins...with data blends, aggregations occur before joining happens; in joins, they occur after the tables are joined together
+- It becomes a beneficial thing on large datasets to do blends
+
