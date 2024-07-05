@@ -104,3 +104,37 @@ Reading - Data Blends vs. Joins
 - See https://www.coursera.org/learn/introduction-to-tableau/supplement/X53e4/data-blends-vs-joins...with data blends, aggregations occur before joining happens; in joins, they occur after the tables are joined together
 - It becomes a beneficial thing on large datasets to do blends
 
+Reading - Creating a New Tableau Data Source
+- If you would like to blend multiple Tableau data sources, you will first need to know how to create more than one Tableau data source.
+- Directions: A new data source can be created by clicking on the cylinder icon in the top-left corner of the canvas and selecting "New Data Source." From there, the popup should look familiar...select the data source again. Now, if you click on the cylinder icon again, you will have the option to toggle between your two Tableau data sources.
+
+Video 2 - Netflix
+- Note: The double click and drags are the 1 to 1s...the non-double click and noodles are relationships that aren't 1 to 1
+- Note: The vertical stacking is when you "union"
+- Sheet 1 is where you get data into analysis form
+
+
+## Live vs. Extracts (section #3)
+
+Reading - Optimization
+- While processing large datasets can be time-consuming for many tools, Tableau has put in place special functionality to optimize workbook performance.
+- In Tableau, **optimization** is the act of editing your Tableau content or data source to increase the overall performance of your Tableau workbook by increasing the speed of queries and calculations. Increasing the performance of your workbook is vital for holding your audience's attention when you are sharing data visualizations that are built on large datasets.
+- **Processing speed** is the speed at which software performs an action. In the case of Tableau, processing speed is how fast Tableau can process data and create data visualizations using that data.
+
+Reading - Live vs. Extract
+- In Tableau Desktop, each time you connect to a data source, Tableau automatically sets up a live connection to that data.
+- A **live connection** is a connection to a data source that updates every time there is a change within that data source. This means that if you were to edit a Tableau-connected Excel sheet or update a Tableau-connected server, then any visualizations created using that data source would also update.
+- An **extract** is a specified portion of a data source, frozen in time and saved on your local computer. Using extracts instead of live connections will increase the performance of your Tableau workbooks.
+- There are two reasons why extracts speed up the Tableau workbook:
+  - The extract is saved on your local computer. This means that Tableau does not need to connect with an external server to get the information for the data visualizations you are building, which speeds up Tableau's runtime.
+  - Extracts can be used to minimize the amount of data you are working with. Extracts give you the option of filtering the data before the data is saved. In doing so, you reduce the amount of data processed when you go to build and manipulate data visualizations.
+- When it comes to workbook performance, extracts are one of the most impactful optimization techniques. Extracts are best utilized when working with large datasets or optimizing visualization-heavy presentations so that the visualizations load quickly. The extracts' ability to limit data by removing all unnecessary information will save you time analyzing data and reduce the load time for data visualizations when presenting to an audience.
+- Note that in Tableau Public, the only option is to use extracts — live connections are not an option. Still, you should be familiar with the concept of working with live connections vs. extracts, because you will likely find yourself working with both in Tableau Desktop as an analyst.
+
+
+## Course Recap (section #4)
+
+Discussion Prompt - My Learning Journey (My Personal Response)
+- _Most interesting thing I learned is how similar Tableau feels to SQL! It got a little confusing with deciphering when joins are good vs unions vs relationships as I followed along with the videos, but I want to continue to learn!_
+
+Reading - Course Recap
