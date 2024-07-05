@@ -138,3 +138,7 @@ Discussion Prompt - My Learning Journey (My Personal Response)
 - _Most interesting thing I learned is how similar Tableau feels to SQL! It got a little confusing with deciphering when joins are good vs unions vs relationships as I followed along with the videos, but I want to continue to learn!_
 
 Reading - Course Recap
+- See home folder
+
+Reading - Want to Become a Business Intelligence Analyst?
+- 
