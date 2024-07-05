@@ -141,4 +141,7 @@ Reading - Course Recap
 - See home folder
 
 Reading - Want to Become a Business Intelligence Analyst?
-- 
+- See home folder
+
+Video - Congratulations
+- Done with the course
