@@ -29,7 +29,7 @@ Reading - Course Overview
   -  Lists and Tuples
   -  Dictionaries
   -  Sets
--  Module 3: Python Programming Fundamentals
+- Module 3: Python Programming Fundamentals
   -  Conditions and Branching
   -  Loops
   -  Functions
