@@ -36,11 +36,11 @@ Reading - Course Overview
   -  Exception Handling
   -  Objects and Classes
   -  Practice with Python Programming Fundamentals
--  Module 4: Working with Data in Python
+- Module 4: Working with Data in Python
   -  Reading and Writing Files with Open
   -  Pandas
   -  Numpy in Python
--  Module 5: APIs and Data Collection
+- Module 5: APIs and Data Collection
   -  Simple APIs
   -  REST APIs, Web Scraping, and Working with Files
   -  Final Exam
@@ -79,3 +79,15 @@ Reading - Introduction to Jupyter
 Video 2 - Getting Started with Jupyter
 - Essentially the way to use Jupyter
 - Slides functionality (new information)
+
+## Types (section #3)
+
+Video 1 - Types
+- **Type** = how Python represents different types of data
+- Examples:
+  - 11 = int
+  - 21.213 = float
+  - "Hello world" = str
+  - True/False = bool
+- See type using type command (example: type(11) will return int, type(10.5) will return float, etc)
+- Typecasting examples: float(2) = 2.0, int(1.1) = 1, int(True/False) = 1/0, bool(1/0) = True/False
