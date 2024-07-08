@@ -145,3 +145,5 @@ Optional (Reading) - Format Strings in Python
     print("Raw String:", raw_string)...outputs "Raw String: C:\new_folder\file.txt"
     
 ## Module 1 Summary, Cheatsheet, Graded Quiz, and Glossary (section #6)
+
+See home folder
