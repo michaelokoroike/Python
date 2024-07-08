@@ -91,3 +91,56 @@ Video 1 - Types
   - True/False = bool
 - See type using type command (example: type(11) will return int, type(10.5) will return float, etc)
 - Typecasting examples: float(2) = 2.0, int(1.1) = 1, int(True/False) = 1/0, bool(1/0) = True/False
+
+## Expressions and Variables (section #4)
+
+Video 1 - Expressions and Variables
+- Expressions
+  - 43 + 60 + 16 + 41 = 160 (non-160 numbers = _operands_; +'s = _operators_)
+  - * (multiplication), - (subtraction), / (division...results in a float), // (integer division)
+- Variables
+  - my_variable = 1...assigns a value of 1 to a variable named my_variable; can be updated
+  - can perform operations on variables
+ 
+## String Operations (section #5)
+
+Video 1 - String Operations
+- **String** = sequence of characters contained within two quotes (double or single quotes)...can be spaces or digits, special characters
+- A string can be bound to another variable
+- A string can be indexed
+  - name = "Michael Jackson"
+    - name[0] = "M"
+    - name[-15] = "M" (negative indexing)
+    - name[::2] = "McalJcsn" (step/stride variable; print every other letter)
+    - name[0:5:2] = "Mca" (sliced step/stride variable; print every other letter _up to index 4_)
+- Len("Michael Jackson") will return 15, as there are 15 elements in the string, including the space
+- A string can be concatenated (name = "Michael Jackson"; statement = name + "is the best"...statement is Michael Jackson is the best)
+- A string can be replicated (name = "Michael Jackson"; name = name*3 returns "Michael Jackson Michael Jackson Michael Jackson")
+- Strings are immutable
+- Escape sequences
+  - \n is new line
+  - \t is tab
+  - \\ is a back slash
+- Strings are sequences (have apply methods that work on lists and tuples); also have methods that just work on strings
+  - name = "Michael Jackson"; name.upper() = "MICHAEL JACKSON"
+  - name = "Michael Jackson"; name.replace('Michael', 'Janet') = "Janet Jackson"
+  - name = "Michael Jackson"; name.find('el') = 5 (first index of the sequence you are looking for is returned)
+ 
+Optional (Reading) - Format Strings in Python
+- String Interpolations
+  - name = "John"
+    age = 30
+    print(f"My name is {name} and I am {age} years old.")...outputs "My name is John and I am 30 years old."
+    print("My name is {} and I am {} years old.".format(name, age))...also outputs "My name is John and I am 30 years old."
+    print("My name is %s and I am %d years old." % (name, age))...also outputs "My name is John and I am 30 years old."
+- Additional Capabilities
+  - x = 10
+    y = 20
+    print(f"The sum of x and y is {x+y}.")...outputs "The sum of x and y is 30."
+- Raw string (r")
+  - regular_string = "C:\new_folder\file.txt"
+    print("Regular String:", regular_string)...outputs "Regular String:  C:
+                                                        ew_folderile.txt" (wrong because \n creates a new line)
+  - raw_string = r"C:\new_folder\file.txt"
+    print("Raw String:", raw_string)...outputs "Raw String: C:\new_folder\file.txt"
+    
