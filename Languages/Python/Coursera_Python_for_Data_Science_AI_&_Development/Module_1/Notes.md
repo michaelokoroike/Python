@@ -144,3 +144,4 @@ Optional (Reading) - Format Strings in Python
   - raw_string = r"C:\new_folder\file.txt"
     print("Raw String:", raw_string)...outputs "Raw String: C:\new_folder\file.txt"
     
+## Module 1 Summary, Cheatsheet, Graded Quiz, and Glossary (section #6)
