@@ -61,3 +61,72 @@ Video 1 - Loops
     while x < i:
       print(x) #essentially print 0 through 4
       x = x+1
+
+## Functions (section #3)
+
+Video 1 - Functions
+- Functions take an input then produce an output or change...it's just a piece of code you can reuse
+  - def function(a): 
+        b = a+1;
+        return b
+  - Above function adds 1 to a
+- Python has many built-in functions
+  - len, for example, takes an input of type _sequence_ (string, list) or type _collection_ (dictionary, set) and returns the length of that sequence or collection
+    - list = [1,2,3];
+      length_list = len(list);
+      length_list is 3
+  - sum takes an iterable (tuple, list) and returns the total of all elements
+    - list = [1,2,3];
+      sum_list = sum(list);
+      sum_list is 6
+  - sorted and sort
+- Building your own function
+  - def add1(a): 
+        b = a+1;
+        return b
+  - Above function adds 1 to a
+- Add documentation in triple quotes...help(function) to read documentation of function
+- Functions can have multiple parameters (can be integers and strings)
+  - def Mult(a,b):
+      c=a*b;
+      return c
+- Functions don't have to have a return function
+  - def MJ():
+     print("Michael Jackson")
+- Functions can't have an empty body
+  - def NoWork():
+      pass;
+    print(NoWork()) #prints none
+- Functions usually perform multiple tasks
+  - def add1(a): 
+        b = a+1; #create variable
+        print(b); #print the variable
+        return b
+- Using loops in functions
+  - def printnums(a): 
+        for i in range(a):
+          print(a)
+- Collecting Arguments
+  - def printnames(*names): 
+        for name in names:
+          print(name)
+  - Argument in above function could be  "a","b","c","d" and it will print all of those
+- Scope (part of program where a variable is accessible)
+  - def add1(a): 
+        b = a+1;
+        return b;
+    x = 1;
+    y = add1(x)
+  - x is within global scope (accessible anywhere after it is defined)...called a _global variable_
+  - def Thriller(): 
+        Date=1982;
+        return Date;
+    Date = 2017;
+  - In above function, if you print Thriller() you'll get 1982 because that is a _local variable_ defined within a function...if you print Date, you'll get 2017
+  - If a variable is not defined in a dunction, Python checks the global scope (if Thriller asked for argument Date and you passed it, then it would print 2017)
+  - def Thriller():
+        global Date;
+        Date=2017;
+        return Date
+  - Above returns 2017 but checks global scope first for a Date
+      
