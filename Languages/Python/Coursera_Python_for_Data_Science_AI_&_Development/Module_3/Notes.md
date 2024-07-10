@@ -46,6 +46,18 @@ Video 1 - Loops
 - Range function outputs an ordered sequence as a list i (range(N) = [0,...,N-1])...if input is positive integer, the output is a sequence
   - Same number of elements as input but starts at 0
   - Range(10,15) = [10,11,12,13,14]
-- For loop
+- For loop (examples)
   - for i in range(0,5):
-      print(i) #will print 0 through 4 (video paused at 2:31)
+      print(i) #will print 0 through 4
+  - squares = ['red', 'yellow', 'green']
+    for square in squares:
+      print(square) #print each item in the list...
+    for i,square un enumerate(squares):
+      print(square) #prints item
+      print(i) #prints index
+- While loops...like for loops but instead of executing a statement a set number of times, while loops run only if conditions are met. (Examples)
+  - i = 5
+    x = 0
+    while x < i:
+      print(x) #essentially print 0 through 4
+      x = x+1
