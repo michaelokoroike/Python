@@ -186,4 +186,4 @@ Video 1 - Objects and Classes
         - self.width = width
         - self.height = height
         - self.color = color
-    - 
+    - __Note: In the lab for classes and objects, did not change my answer once i saw the solution, to know what I didn't know. Only updated next problem with prior problem's solution.__
