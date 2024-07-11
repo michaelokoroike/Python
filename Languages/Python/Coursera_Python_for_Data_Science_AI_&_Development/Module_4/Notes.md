@@ -23,3 +23,14 @@ Video 2 - Writing Files with Open
   - Example: with open("/resources/data/Example1.txt","a") as file1: file1.write("This is line A"); file1.write("This is line B")
     - This just writes to the existing file
 - __Note: Lab answers are incorrect; they are my first answer, compared to the actual solution to see what I'm not understanding__
+
+## Pandas (section #2)
+
+Video 1 - Pandas: Loading Data
+- import pandas...gets all of the data from the pandas library
+- pandas.read_csv(filepath)...loads the csv file from filepath, creates a dataframe
+- import pandas as pd...standard abbreviation but you can use anything
+- Goes over using dataframes (accessing columns, usinf iloc to locate specific entries in dataframes, how to change indices, etc)
+
+Video 2 - Pandas: Working with and Saving Data
+- Listing unique values of columns (df[col].unique()), using inequality operators, save as csv (.to_csv(filepath))
