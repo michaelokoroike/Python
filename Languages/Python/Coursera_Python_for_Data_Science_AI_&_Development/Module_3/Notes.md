@@ -130,3 +130,60 @@ Video 1 - Functions
         return Date
   - Above returns 2017 but checks global scope first for a Date
       
+## Exception Handling (section #4)
+
+Video 1 - Exception Handling
+- Try...except statement attempts to execute code in the "try" block, but if an error occurs it will kick out and begin searching for the exception that matches the error. See code below:
+  - try:
+    - getfile = open("file", "r")
+    - getfile.write("File for exception handling")
+  - except IOError:
+    - print("Unable to open or read the data in the file.")
+  - except:
+    - print("Some other error occurred!")
+  - else:
+    - print("File was written successfully.")
+  - finally:
+    - getfile.close()
+    - print("File is now closed.")
+  - In example above we tried to open and write to a file, but we got an IOError, so that triggered our "Unable..." print statement. If it weren't that, the other print statement would have printed. If no errors,
+    the print statement under else would be triggered to show things ran smoothly. The finally statement ends by closing the file no matter what happens beforehand.
+
+## Objects and Classes (section #5)
+
+Video 1 - Objects and Classes
+- Python has many data types (integers, floats, strings, lists, dictionaries, sets, booleans, etc)...each is an _object_
+- Every object has
+  - A type
+  - An internal data representation/blueprint
+  - A set of procedures for interacting with the object (method)
+- Objects are instances of particular types
+  - Example: Every time we create an integer, we create an instance of type integer, or an _integer object_...same with all other types
+- We find the type of object using type() command...example is type([1,2,3]) returns <class 'list'>
+- A class or or type's methods are functions that every instance of that class or type provides...it's how you interact with the object.
+  - Example: ratings = [10,9,7,6,5]...ratings.sort() is a method example (sort is the method, which changes the data contained in/state of the object
+- You can create your own class in Python (with data attributes and methods)
+  - class Circle...data attributes are radius and color
+    - Class Circle(object): ##### Class is the definition of the class (like def for a function); Circle is the name of the class; (object) is the parent
+      - def __init__(self, radius, color): #####__init__ tells Python you're making a new class...radius and color are parameters...self is a parameter referring to the newly created instance of the class
+        - self.radius = radius ##### think of self as a box that contains all of the the data attributes of the object
+        - self.color = color
+    - Instance of class Circle:
+      - RedCircle = Circle(10, red)
+        - Call RedCircle.radius and you'll get 10
+        - Say RedCircle.color = 'blue' and you change the color attribute from red to blue...done with methods
+      - Creating a method for class Circle...
+        - Class Circle(object):
+          - def __init__(self, radius, color):
+            - self.radius = radius
+            - self.color = color
+          - def add_radius(self, r):
+            - self.radius = self.radius + r ##### adds r to radius
+        - RedCircle = Circle(10, red) is an instance of Circle...if we do RedCircle = add_radius(10), the radius of this instance is now 20
+  - class Rectangle...data attributes are width, height, and color
+    - Class Rectangle(object):
+      - def __init__(self, width, height, color):
+        - self.width = width
+        - self.height = height
+        - self.color = color
+    - 
