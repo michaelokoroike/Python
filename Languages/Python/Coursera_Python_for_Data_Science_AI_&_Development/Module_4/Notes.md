@@ -22,3 +22,4 @@ Video 2 - Writing Files with Open
   - Example: with open("/resources/data/Example1.txt","w") as file1: file1.write("This is line A"); file1.write("This is line B")
   - Example: with open("/resources/data/Example1.txt","a") as file1: file1.write("This is line A"); file1.write("This is line B")
     - This just writes to the existing file
+- __Note: Lab answers are incorrect; they are my first answer, compared to the actual solution to see what I'm not understanding__
