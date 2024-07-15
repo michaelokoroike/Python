@@ -77,6 +77,56 @@ Video 2 - REST APIs and HTTP Requests - Part 2
       - r_post.request.body #see request body (has one)
       - r_post.json()['form'] #see names and values for query string
 
- 
+ Video 3 - (Optional) HTML for Web Scraping
+ - HTML composition (see below):
+   - ![image](https://github.com/user-attachments/assets/89f11143-660c-4ab4-9dd8-1034a5bda6d7)
+     - DOCTYPE HTML declares it's HTML
+     - "<html>" is root element of HTML page
+     - "<head>" contains meta info about the HTML page
+     - "<body>" is what is displayed on HTML page
+     - "<h3>" is type 3 heading (like # in markdown), and makes text larger and bold
+     - "<p>" is for paragraph
+ - HTML anchor tag
+   - ![image](https://github.com/user-attachments/assets/11cbd936-ebdc-419a-a349-f1b476554218)
+   - a is tag name, like class in Python...what's in between the a's are what is displayed on the webpage; href is attribute name and the website is the attribute value
+ - HTML Tree
+   - ![image](https://github.com/user-attachments/assets/377c7067-672c-4ff7-8887-fc9ab139ae31)
+   - html is parent of head and body (who are siblings), etc, etc
+ - HTML Tables
+   - ![image](https://github.com/user-attachments/assets/f78aa9c3-9568-4864-b1a7-78554a532319)
+   - table rows have tr tag...table cells in a row have a td tag
+  
+Video 4 - (Optional) Web Scraping
+- To find the name and salaryies of players in the NBA from this webpage/HTML:
+  - ![image](https://github.com/user-attachments/assets/7827a49d-5bfb-4b98-a670-114d47602464)
+- First import BeautifulSoup
+  - ![image](https://github.com/user-attachments/assets/ab44b475-f365-4f7a-8f1d-55a49b6e0906)
+    - store the webpage html as a string in variable html
+    - parse the html into the BeautifulSoup() constructor...document is now represented as a nested data structure
+      - soup.title prints "<title>Page Title</title>"
+      - soup.h3 prints Lebron James tag because it is the first h3 tag
+        - soup.h3.b shows the "<b id='boldest>" tag which is the child of the Lebron James h3 tag
+        - soup.h3.b.parent brings it back to h3, as the parent of the "<b id='boldest>" tag
+        - soup.h3.b.next_sibling finds the next sibling
+        - soup.h3.b.child.attrs prints dictionary of child
+        - soup.h3.b.child.string prints string version of child
+- Next use find_all (filter based on tag's name, attributes, text, combination of these, etc
+  - ![image](https://github.com/user-attachments/assets/f4269a27-bf91-4553-a5e0-f10dd6c20399)
+    - apply to table with tag 'tr' and you get all rows in the table...like a list you can get a list item from (table_row[0] is the first row found in the find_all search), or iterate through
+- Full example:
+  - ![image](https://github.com/user-attachments/assets/b5b8cd58-cd94-4af5-8ad6-f79fc9a39ec0)
+    - First import requests and BeautifulSoup, which are needed
+    - Next download the webpage using the get method...get the text of it and assign it to a variable
+    - Next create a BeautifulDoup object from the variable, which will allow you to parse through the HTML from the variable
+    - Now scrape the page (example above scrapes for a links
+
+
+
+
+
+
+
+     
+
 
  
