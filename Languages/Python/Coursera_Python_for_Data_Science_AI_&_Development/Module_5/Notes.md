@@ -120,7 +120,8 @@ Video 4 - (Optional) Web Scraping
     - Next create a BeautifulDoup object from the variable, which will allow you to parse through the HTML from the variable
     - Now scrape the page (example above scrapes for a links
 
-
+Video 5 - Working with Different File Formats
+- Goes over downloading CSV, JSON, and XML files
 
 
 
