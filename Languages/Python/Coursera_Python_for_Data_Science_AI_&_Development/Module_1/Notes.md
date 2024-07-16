@@ -143,7 +143,3 @@ Optional (Reading) - Format Strings in Python
                                                         ew_folderile.txt" (wrong because \n creates a new line)
   - raw_string = r"C:\new_folder\file.txt"
     print("Raw String:", raw_string)...outputs "Raw String: C:\new_folder\file.txt"
-    
-## Module 1 Summary, Cheatsheet, Graded Quiz, and Glossary (section #6)
-
-See home folder
