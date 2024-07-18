@@ -46,4 +46,5 @@ Optional Practice Quiz - Browser Sync install
 
 Video 4 - Development Environment Setup, Part 3: Github and Browser Sync
 - To learn Git: https://git-scm.com/book/en/v2
-- 
+- got it figured out how to change the layout of my webpage from Github…create a _config.yml page at your main folder in your repository, then https://pages.github.com/themes/, then click one of them, then click the _config.yml of that repository, then copy what  is in that file and paste it in your file and go from there
+- You would need to merge if you did old school launch automatic page generator and it made another branch where the html info was...merge onto the html info branch
