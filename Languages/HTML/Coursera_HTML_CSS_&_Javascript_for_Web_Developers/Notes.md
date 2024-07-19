@@ -55,3 +55,80 @@ Video 5 - Resources for Asking Questions
 - Stackoverflow.org (provide working code)
 - JSfiddle.net (run html, css, java code)
 - Codepen.io (Chris coyer...created css-tricks.com; same type of thing as JSfiddle.net)
+
+## HTML Basics (section #3)
+
+Video 1 - Lecture 1: What is HTML?
+- HTML = HyperText Markup Language (human readable)
+  - Hypertext = text that contains links to other texts (entire web...1 doc points to another which points to another...meaning of web; also hypermedia)
+  - Markup = to annotate (using tags to tell what something is, like body, title, etc)
+  - Language = it has its own syntax and semantics...right and wrong way to code it
+- Three technologies that drive the web
+  - HTML = Provides structure (headings, paragraphs, footer)...like knowing the components of a house but nothing about them (3 rooms and a kitchen...what are their colors, size, etc)
+  - CSS = Provides color/style (tells us the color/style of headings, paragraphs, footers, etc)
+  - Javascript = Provides behavior/functionality (what happens when you click on a heading, etc)
+ 
+Optional Practice Quiz - HTML purpose
+  - ![image](https://github.com/user-attachments/assets/e4b33fd7-0800-4563-8f4d-7b92edc07644)
+
+Video 2 - Lecture 2: Relevant History of HTML
+- Before 1997, there were no community standards (browsers did what they wanted...had their own tags, etc); go to a website and very often browser would be incompatible with the website and you'd have to go get a different browser to even view the website
+- Around 1997, World Wide web Consortium (W3C) created first standard browsers took into consideration (HTML4, HTML4.01), but was still loose
+- Around 2000, W3C came up with XHTML 1.0 (based on XML)...problem was browser vendors started to feel the W3C was moving to slowly and the specifications were not going in the right direction
+- Browser vendors banded together and created Web Hypertext Application Technology Group (WHATWG) and in 2004, they started driving toward HTML5
+- Around 2007, WHATWG and W3C started to work together (W3C knew this group was important)...produced HTML5
+- How are things working now?
+  - W3C is in charge of HTML5 standards (current stuff)...take new things that appear to work well from WHATWG innovation and implement them into official standards slowly
+  - WHATWG is in charge of HTML (constanrly evolving...some of their standards may not yet be accepted by W3C)
+- This history shows HTML is muddy waters...developers must keep track of changes...especially since most browsers are evergreen (silently update themselves on computers)
+- Track changes using...
+  - w3c (w3.org)
+  - caniuse.com (keeps track of standards, tells you which browser supports what)
+  - validator.w3.org (see if HTML would work in browsers
+  - browser statistics at w3schools.com (which browsers are most popular, which web page should you market to)
+  - google.com (you have to look things up; things are changing and no human being can know it all)
+ 
+Optional Practice Quiz - W3C and WHATWG
+- ![image](https://github.com/user-attachments/assets/90de6267-e907-4b58-b5a7-4dc8850e8d6a)
+
+Video 3 - Lecture 3: Anatomy of an HTML tag
+- Example: "<p id="myId"> "</p>"
+  - p is element name; "<p>" is opening tag, "</p>" is closing tag, id is attribute name, "myId" is attribute value, whatever is in between the opening and closing tags is content
+- Attributes can only be specified in the opening tag; no space between opening bracked and tag name of opening tag, forward slash and opening bracket of closing tag; must be at least one space between tag and any attributes; attribute values should be in quotes
+
+Optional Practice Quiz - HTML5 Tags
+- ![image](https://github.com/user-attachments/assets/6724fbdd-fe6d-40bc-8257-5f14e2c714be)
+
+Video 4 - Lecture 4: Basic HTML Document Structure
+- Structure
+  - All documents should start with "<!doctype html>"...tell browser get ready to render HTML (historical)
+  - Next is "<html> </html"
+  - Next is "<head> </head>" which contains items describing the main contents of the page
+    - Typically includes metadata like "<meta charset='utf-8'>"
+    - Includes "<title></title>" (required)
+  - Next is "<body> </body>"...root of all content viewable to the user (referred to as viewport)
+    - Example: "<body> Coursera is so cool! </body>" will print this out in the browser
+- Interpreted from top to bottom
+
+Optional Practice Quiz - HTML5 page declaration
+- ![image](https://github.com/user-attachments/assets/e16d3d59-2818-4dd9-b51a-1325824e47de)
+- ![image](https://github.com/user-attachments/assets/08539eae-9d3c-4206-a039-1dd6d9ed44c2)
+- ![image](https://github.com/user-attachments/assets/707cab1f-cc30-4713-937c-f9c2ca4a7688)
+
+Video 5 - Lecture 5: HTML Content Models
+- _Content model_ refers to the full behavior the browser applies to the elements belonging to that content model, and to the nesting rules of those elements. In other words, which elements are allowed to be nested inside which other elements.
+- Elements used to be categorized as one of two types:
+  - Block-level elements: render to begin on a new line in the flow of a document by default
+    - can contain inline or other block-level elements
+    - flow content of HTML5
+    - "<div></div>" is block-level...requires new line
+  - Inline elements: render on the same line (as if there's no new line character present)
+    - can only contain other inline elements
+    - phrasing content of HTML5
+    - "<span></span>" is inline...no new line
+- The new standards have become more complex, but above distinction remians practical (aligns well with still existing CSS rules)
+
+Optional Practice Quiz - HTML5 page declaration
+- ![image](https://github.com/user-attachments/assets/2ed0663d-317c-4cca-b26e-4897592739d0)
+- ![image](https://github.com/user-attachments/assets/95df9ed9-64d5-406d-8e8a-256c1a4b34ce)
+
