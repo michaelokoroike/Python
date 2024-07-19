@@ -1,4 +1,4 @@
-* __Note: for all of the videos where notes taken were either insufficient or rendered incorrectly due to an attempt to make html type language appear in markdown, slides are downloaded__
+* __Note: for all of the videos where notes taken were either insufficient or rendered incorrectly due to an attempt to make html type language appear in markdown, lecture slides are downloaded__
 
 ## Welcome to HTML, CSS, and Javascript for Web Developers! (section #1)
 
