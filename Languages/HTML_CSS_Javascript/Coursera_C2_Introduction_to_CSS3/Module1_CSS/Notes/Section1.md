@@ -65,7 +65,39 @@ Optional Practice Quiz - Element, Class, and ID Selectors
   - Above will target every p (paragraph) element that is a descendant of an article element at any level
 - Combinations aren't confined to elements...see below:
 - ![image](https://github.com/user-attachments/assets/50e91c10-d8ec-4e75-ac34-683f9d5c4a2c)
-- **Note: You can apply multiple classes to a tag by just listing them in the " " after class (example: p class="class1 class2")
+- **Note: You can apply multiple classes to a tag by just listing them in the " " after class (example: p class="class1 class2")**
+- **Note: Also there are "adjacent sibling selectors" and "general sibling selectors"**
+
+Optional Practice Quiz - Combining Selectors
+- ![image](https://github.com/user-attachments/assets/89c0b2af-6c78-4c55-a016-eb33e1dcbc94)
+- ![image](https://github.com/user-attachments/assets/577a7c29-28ee-472b-91b0-d3f817716574)
+- ![image](https://github.com/user-attachments/assets/d3a64462-b116-4490-ad93-8a7579cf53a7)
+
+**Video 5: Lecture 15: Pseudo-Class Selectors**
+- Pseudo-class selectors address targeting only the structures that can be targeted by simple combinations of regular selectors, or targeting the ability to style based on user interaction with the page. For example, we would want the styling of an element to change if the user hovers or moves their mouse over that element.
+- General way of specifying a pseudo-class selector (see below):
+- ![image](https://github.com/user-attachments/assets/ab7a4161-8930-4371-b06e-d7434c1b633a
+- Pseudo-class selectors that exist and are being covered in the video (see below):
+- ![image](https://github.com/user-attachments/assets/2724fde1-fe69-4b6d-b0a9-ce3270df6a0a)
+- Example (see below):
+- ![image](https://github.com/user-attachments/assets/3c53ee02-20bc-401f-b090-daf9cae8c8ca)
+- ![image](https://github.com/user-attachments/assets/0edeba39-6987-4272-a057-8ef42b81a75e)
+- ![image](https://github.com/user-attachments/assets/08ed3d61-3fde-4461-9aa7-f596ab10ffd6)
+- ![image](https://github.com/user-attachments/assets/b253a832-ceec-4934-a138-61c3fc84d257)
+  - a:link is general links; a:visited is links that were clicked, like above
+  - a:hover is what happens when you hover over something, and a:active is when you click but heve not yet released the button
+  - header li:nth-child(3) says basically the third link that is a descendant within a header section (Facebook in this example)...can do nth-child(even) or nth-child(odd) when working with long lists of stuff
+  - section div:nth-child(4):hover says basically the fourth div inside section will have this style and behavior when hovered over
+- **Note: Make sure it is still readable**
+
+Optional Practice Quiz - Pseudo-Class Selectors
+- ![image](https://github.com/user-attachments/assets/13c951cd-03c1-44fd-8245-30ff1b4fab06)
+- ![image](https://github.com/user-attachments/assets/fcef0c3c-b84b-4fc5-8abf-6c9a26a09026)
+
+
+
+
+
 
 
 
