@@ -111,14 +111,31 @@ Optional Practice Quiz - Style Placement
 - Cascading is a fundamental principle of CSS. It's an algorithm defining how to combine properties values originating from different sources. The _cascade_ algorithm is at the core of understanding and using CSS. Essentially it's how to tell which CSS rule wins in conflict scenarios (like PEMDAS in math).
 - Concepts of Cascading Algorithm:
   - Origin: Last declaration wins (when two declarations are in conflict, like two for font-size)...HTML is processed sequentially, from top to bottom...external CSS is declared at the spot it's linked to in HTML. Declarations merge (when two declarations are not in conflict/are different properties, like one for font-size and one for color for p tags).
-  - Merge
+  - Merge (I think see above)
   - Inheritance (see below):
   - ![image](https://github.com/user-attachments/assets/9ffeb4ad-29b7-4eb2-9c2a-48d848ad4acb)
     - Any thing specificed for the body is inherited by all of the nested elements/children (see red...anything specified for elements, children of those elements inherit what was specified ut not parents (see blue)
+  - Specificity (done in Part 2)...
 
-  - Specificity
+**Video 3: Lecture 17, Part 2: Conflict Resolution**
+- Concepts of Cascading Algorithm (cont):
+  - Specificity: Most specific selector combination wins. See depictions below:
+  - ![image](https://github.com/user-attachments/assets/661e703e-afe9-4db3-90e4-d5ced66db55c)
+    - left to right is based on the fact that you can use the attributes on the left less often than to the right...highest score is typically in the 1000s. Another example:
+  - ![image](https://github.com/user-attachments/assets/c5bc1066-8039-4a45-b225-c3c40af55f34)
+    - no style attribute in the code (0), no id selector (0), no class definition selector (0), 2 elements (div and p...descendant combination of selectors). A comparison example:
+  - ![image](https://github.com/user-attachments/assets/97a3a718-41bc-4355-a8c9-334c631a326b)
+    - first one = no style attribute in the code (0), 1 id selector (see "#" or "id="; 1), no class definition selector (see "." or "class="; 0), 1 element (div)
+    - second one = no style attribute in the code (0), no id selector (see "#" or "id="; 0), 1 class definition selector (see "." or "class="; 0), 2 elements (div and p...descendant combination of selectors)
+    - **the first one takes precedence; so the color of the text of the paragraph will be blue**
+    - **Note: add !important to any attribute and it will override all specificity...not the greatest practice**
+
+Optional Practice Quiz - Conflict Resolution
+- ![image](https://github.com/user-attachments/assets/01b2a256-ccba-45ba-89d3-7ccb11ee029c)
+- ![image](https://github.com/user-attachments/assets/55d6aae1-d839-4779-adbc-7eec430437fa)
 
 
+  
 
 
 
