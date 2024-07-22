@@ -134,9 +134,40 @@ Optional Practice Quiz - Conflict Resolution
 - ![image](https://github.com/user-attachments/assets/01b2a256-ccba-45ba-89d3-7ccb11ee029c)
 - ![image](https://github.com/user-attachments/assets/55d6aae1-d839-4779-adbc-7eec430437fa)
 
+**Video 3: Lecture 18, Part 1: Styling Text**
+- ![image](https://github.com/user-attachments/assets/6f015007-a44e-4467-8bb7-f1242e7cc6f3)
+  - multiple fonts because a client may not have one installed on their computer
+  - for colors, you want hexadecimal values (example: #0000ff...first two numbers represent the value for red, second two numbers is green, last two numbers is blue)
+  - Font-style (bold, italic, etc)
+  - Font-weight (bold typically)
+  - Font-size (24px)
+  - Text-transform (capitalize)...every word is capitalized...uppercase would make all letters uppercase
+  - Text-align (right)...right justify
 
-  
+**Video 4: Lecture 18, Part 2: Styling Text**
+- ![image](https://github.com/user-attachments/assets/94230503-4bb8-4da9-b21c-aaba1919f13d)
+  - font-size in body will make the font 1.2X default of browser
+  - font-size with "em" that follow are _cumulative_; first 2em is essentially 120% of default multiplied by two; second em is 120% of default multiplied by two _multiplied by two again_; etc.
+  - percentages can be used in place of em (example: 2em could be 200%)...don't mix and match
+ 
+Reading - Connect with (the instructor)
+- https://www.coursera.org/learn/introduction-to-css3-jhu/supplement/ySUYO/connect-with-me
 
+Optional Practice Quiz
+- ![image](https://github.com/user-attachments/assets/f5ff846b-7f09-48b5-8cd8-16bc633345df)
+
+## The Box Model and Layout (section #3)
+
+**Video 1: Lecture 19, Part 1: The Box Model**
+- Elements in HTML are considered _boxes_...see below:
+- ![image](https://github.com/user-attachments/assets/9dbc04df-800d-4565-bee3-51e4ed7d82b2)
+  - each box has:
+    - padding
+    - border
+    - margin
+    - width/height
+- Example:
+- ![image](https://github.com/user-attachments/assets/57645914-071b-4943-9b29-411488606f47)
 
 
 
