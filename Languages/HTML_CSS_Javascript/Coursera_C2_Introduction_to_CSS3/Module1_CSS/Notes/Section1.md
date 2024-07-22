@@ -168,9 +168,13 @@ Optional Practice Quiz
     - width/height
 - Example:
 - ![image](https://github.com/user-attachments/assets/57645914-071b-4943-9b29-411488606f47)
+  - content is in the green; padding is around that; border is around that; margin is around that
+  - width can be added to make it wider or skinnier...height naturally adjusts
+  - **To set the width of the box and not the content, see below:**
+  - ![image](https://github.com/user-attachments/assets/8a452756-e883-4755-9843-e6d03a4484ba)
+    - in CSS3, you can set "box-sizing:"...when you equal it to border-box, the width you provide for the box will always be the total width from border to border of the box (not including margins); if set equal to content-box, the width provided will be the width of the content box only
 
-
-
+**Video 2: Lecture 19, Part 2: The Box Model**
 
 
 
