@@ -94,7 +94,29 @@ Optional Practice Quiz - Pseudo-Class Selectors
 - ![image](https://github.com/user-attachments/assets/13c951cd-03c1-44fd-8245-30ff1b4fab06)
 - ![image](https://github.com/user-attachments/assets/fcef0c3c-b84b-4fc5-8abf-6c9a26a09026)
 
+## CSS Rules Conflict Resolution and Text Styling (section #2)
 
+**Video 1: Lecture 16: Style Placement**
+- See below picture:
+- ![image](https://github.com/user-attachments/assets/5959f8f8-2aa7-4b33-aa34-16ac8f6c05fd)
+  - You can have styles within style tags (lines 7-13) or you can update the style directly in an element in the html (see line 20)...line 20 technique is referred to as inline styling, and is not very reusable (use for quick testing)...style tags are better for single pages, but what about if there are multiple pages, external to the html file?
+  - You need an external spreadsheet, like **LINE 6** (labeled a stylesheet, and given a relative location of 'style.css' which must be in the same folder as style-placement.html), which is how you should do it in a real world website
+  - ![image](https://github.com/user-attachments/assets/b944178e-ac4a-4f60-b6a1-c0611f2e30de)
+- Note: Head styles (the style tag option) are usually there to override external ones for particular pages...as stated above, inline styling is for quick testing only
+
+Optional Practice Quiz - Style Placement
+- ![image](https://github.com/user-attachments/assets/22e3c104-549c-44b5-8b00-8f3befef5870)
+
+**Video 2: Lecture 17, Part 1: Conflict Resolution**
+- Cascading is a fundamental principle of CSS. It's an algorithm defining how to combine properties values originating from different sources. The _cascade_ algorithm is at the core of understanding and using CSS. Essentially it's how to tell which CSS rule wins in conflict scenarios (like PEMDAS in math).
+- Concepts of Cascading Algorithm:
+  - Origin: Last declaration wins (when two declarations are in conflict, like two for font-size)...HTML is processed sequentially, from top to bottom...external CSS is declared at the spot it's linked to in HTML. Declarations merge (when two declarations are not in conflict/are different properties, like one for font-size and one for color for p tags).
+  - Merge
+  - Inheritance (see below):
+  - ![image](https://github.com/user-attachments/assets/9ffeb4ad-29b7-4eb2-9c2a-48d848ad4acb)
+    - Any thing specificed for the body is inherited by all of the nested elements/children (see red...anything specified for elements, children of those elements inherit what was specified ut not parents (see blue)
+
+  - Specificity
 
 
 
