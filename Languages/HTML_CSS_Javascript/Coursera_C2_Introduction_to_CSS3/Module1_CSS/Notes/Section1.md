@@ -175,6 +175,11 @@ Optional Practice Quiz
     - in CSS3, you can set "box-sizing:"...when you equal it to border-box, the width you provide for the box will always be the total width from border to border of the box (not including margins); if set equal to content-box, the width provided will be the width of the content box only
 
 **Video 2: Lecture 19, Part 2: The Box Model**
+- "Box-sizing" is a non-inherited CSS property...can't set it on parent element and expect the child element to receive it. You get around that with the _*_ selector, which says select every element there is and apply these CSS properties, but is different from normal parent elements in that * doesn't say "inherit", it says "select every element".
+- Caniuse.com...can it be used in every browser (border-box), yes it can.
+- See below:
+- ![image](https://github.com/user-attachments/assets/f7995fe2-b4a4-425c-b691-4121c66620e7)
+  - When side by side, margins are cumulative...when stacked on top of each other, margins collapse (larger margin wins)
 
 
 
