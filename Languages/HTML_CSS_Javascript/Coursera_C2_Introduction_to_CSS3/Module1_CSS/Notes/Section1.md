@@ -153,7 +153,7 @@ Optional Practice Quiz - Conflict Resolution
 Reading - Connect with (the instructor)
 - https://www.coursera.org/learn/introduction-to-css3-jhu/supplement/ySUYO/connect-with-me
 
-Optional Practice Quiz
+Optional Practice Quiz - Styling Text
 - ![image](https://github.com/user-attachments/assets/f5ff846b-7f09-48b5-8cd8-16bc633345df)
 
 ## The Box Model and Layout (section #3)
@@ -181,6 +181,12 @@ Optional Practice Quiz
 - ![image](https://github.com/user-attachments/assets/f7995fe2-b4a4-425c-b691-4121c66620e7)
   - When side by side, margins are cumulative...when stacked on top of each other, margins collapse (larger margin wins)
 
+**Video 3: Lecture 19, Part 3: The Box Model**
+- Use overflow property in the case content spills over
+- Summary to box model:
+- ![image](https://github.com/user-attachments/assets/fb1d4717-fcbe-4a78-b1f0-cdaa1d94762b)
 
-
+Optional Practice Quiz - Box Model
+- ![image](https://github.com/user-attachments/assets/77798143-e8b3-4a11-aa70-f07328990e43)
+- ![image](https://github.com/user-attachments/assets/bc1f94be-35d8-45bd-a219-17e0e0f3a74e)
 
