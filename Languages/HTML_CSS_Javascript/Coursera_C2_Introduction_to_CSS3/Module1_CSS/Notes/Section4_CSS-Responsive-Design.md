@@ -31,3 +31,24 @@ Optional Practice Quiz - Media Queries
 - Responsive design is a site that's designed to adapt its layout to the viewing environment by using fluid, proportion-based grids (width/height in percentages), flexible images, and CSS3 media queries. Content/visual delivery may change.
 - Alternative to this: a server-side technology that detects your user agent (browser) and figure out if you're on mobile or desktop, and based on that info, serve up a desktop or mobile version of it...problems are risk of feature diversion, and mobile devices are too diversified in size.
 - Common layout is a 12-column grid; 12 is used because of factors of 12
+
+**Video 4: Lecture 24, Part 2: Responsive Design**
+- Start with styling a paragrah tag...see below:
+- ![image](https://github.com/user-attachments/assets/ed991697-f2b5-417a-a067-1fb390e0e727)
+- Below is a responsive framework off of that paragraph/content:
+- ![image](https://github.com/user-attachments/assets/e6763d0d-0804-4e9a-97cb-8be8391ccb5f)
+  - Defines each column for a 12-column layout and properties if screen is larger than 1200px..the.col-lg things don't exist outside of the media query. See demo below:
+  - ![image](https://github.com/user-attachments/assets/805d5bfe-4c0b-4fcd-9dbf-9beb17e03556)
+    - Based on above, class will toggle between col-lg-3 and col-md-6 depending on screen size...when larger (above 1200px), the structure of those 8 paragraphs will be 4 a row (3 columns in a 12-column layout becomes one), like below
+    - ![image](https://github.com/user-attachments/assets/bf80cdf6-4a9a-416b-91ab-1022c3f40d18)
+    - When screen is between 950 and 1200px, the structure of those 8 paragraphs will be 2 a row (6 columns in a 12-column layout becomes one...col-md-6), like below
+    - Below 950px, they stack on top of each other
+- In phones, they naturally try to zoom out to fit all data; the meta tag with name='viewport' below is the meta tag to add to html to ensure this doesn't happen
+- Summary:
+- ![image](https://github.com/user-attachments/assets/3699e6b0-ea2a-434a-b817-5cee0267f43d)
+
+
+Optional Practice Quiz - Responsive Design
+- ![image](https://github.com/user-attachments/assets/0f9406c2-a330-44d3-9299-8b4f639126eb)
+
+
