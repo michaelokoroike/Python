@@ -13,3 +13,16 @@
 - Update logo style in css file like below (see after #logo-img)
   - ![image](https://github.com/user-attachments/assets/f8b62485-f2f3-4897-a426-3c906bfc3de1)
 
+**Video 2 - Lecture 30, Part 2: Coding Basics of Navbar Header**
+- Branding should go under 'navbar-brand'
+- Put name of company in a href so it's a clickable region
+- H1 is for important aspects of a webpage
+- Div's stack on top of each other; float link left with class = "pull-left"
+- No underlying link on a clickable link is text-decoration: none
+- class = 'visible-md" makes it so you can only see something when the screen is md size
+- **Note: ok to play around and it not work at first**
+
+<ins>Optional Practice Quiz - Coding Basics of Navbar Header</ins>
+![image](https://github.com/user-attachments/assets/76397ccb-c45e-4455-badb-0f2668c7d4d2)
+
+
