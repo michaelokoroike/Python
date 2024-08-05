@@ -25,4 +25,34 @@
 <ins>Optional Practice Quiz - Coding Basics of Navbar Header</ins>
 ![image](https://github.com/user-attachments/assets/76397ccb-c45e-4455-badb-0f2668c7d4d2)
 
+**Video 3 - Lecture 31: Coding Button for Future Collapsible Menu**
+- create a button selector
+- class is navbar-toggle
+- "data-" is html5 that allows javascript to get to certain attributes quickly
+- see below:
+- ![image](https://github.com/user-attachments/assets/02a0eb07-dea8-4687-8aea-249f43d7372b)
+- Button shows up at 760-ish pixels
 
+<ins>Optional Practice Quiz - Coding Button for Future Collapsible Menu</ins>
+![image](https://github.com/user-attachments/assets/7dc07da1-91d3-4515-8a9b-a26dbed310b7)
+![image](https://github.com/user-attachments/assets/bd17d8cb-a010-4df9-9bdc-1250615aa794)
+
+**Video 4 - Lecture 32, Part 1: Coding Nav Menu Buttons**
+- #collapsible nave in button references div id = collapsible
+- break in html
+- icon in html (glyphicon...go on getbootstrap.com)
+- what is span for?
+- tel:916-721-9474 in a href triggers a phone to call
+- hidden xs as class means you hide an element
+- "/*" is for comment, i think in html and css?
+
+**Video 5 - Lecture 32, Part 2: Coding Nav Menu Buttons**
+- Read about clear property in CSS
+- Read about margin
+
+**Video 6 - Lecture 33, Part 1: Fixing Navbar Layout, Text, and Dropdown Menus**
+- fontsize = 5VW means 5% of viewport width...responsive unit
+
+**Video 7 - Lecture 33, Part 2: Fixing Navbar Layout, Text, and Dropdown Menus**
+- Not crossed out in developer mode means it's applicable
+- Override with specificity (see old notes about what overrides what)
