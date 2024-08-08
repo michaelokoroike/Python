@@ -25,3 +25,46 @@ Reading - Recommended Books
   - x was defined in script.js, which is defined in the html already
 - If multiple "console.log()", what is printed will be ordinally based off of the succession of the html page (if there's a console log on line 1 and another on line 5, the content in the line 1 log will be printed first)
 
+**Video 3 - Lecture 41, Part 1: Defining Variables, Function, and Scope**
+- Defining variables below...
+- ![image](https://github.com/user-attachments/assets/600583a1-5db3-4263-aecd-a5a695267a6d)
+- Defining functions below...
+- ![image](https://github.com/user-attachments/assets/041ae0db-dc5f-4b32-a950-fd683cfc9da0)
+- ![image](https://github.com/user-attachments/assets/f98ac70e-aba1-4d46-b6aa-29c1e2d8794a)
+- Executing a function...
+- ![image](https://github.com/user-attachments/assets/f19cdd5d-bc3b-4eb1-94e4-cadd8263c62c)
+- Define arguments to be passed to a function...
+- ![image](https://github.com/user-attachments/assets/12c55c3c-4c25-4313-b60f-da50d53b8d8f)
+- Legal ways of calling functions...
+- ![image](https://github.com/user-attachments/assets/a37a132c-5392-4c41-9aca-21606ceff8a9)
+- Information about scope...
+- ![image](https://github.com/user-attachments/assets/08bb4830-1f8f-411d-accc-8850e35b2b02)
+- ![image](https://github.com/user-attachments/assets/7ec586c5-53b3-4446-b465-7ddc951d5ad5)
+- ![image](https://github.com/user-attachments/assets/285b7c7e-0469-4d99-8aed-dbc6deba73bc)
+- ![image](https://github.com/user-attachments/assets/117dc337-dc82-41e1-95cb-9667b766bca1)
+  - This prints 2 because B is defined within the global scope
+
+**Video 4 - Lecture 41, Part 2: Defining Variables, Function, and Scope**
+- ![image](https://github.com/user-attachments/assets/6467e8e7-bd02-49ce-9aac-3cae65125171)
+  - a: message = inside a because this message variable is sitting inside of the function scope
+- ![image](https://github.com/user-attachments/assets/470dd45e-e5df-4b16-856f-5847488c7619)
+  - b does not define its own message on an inner scope basis...search to the outer scope
+- ![image](https://github.com/user-attachments/assets/8b5c8583-1ede-42c9-bb9a-56ce96da5a15)
+  - b is now inside function a...now its message is inside a because it senses that now beforein global
+- Summary
+- ![image](https://github.com/user-attachments/assets/8613898b-dac5-43bc-b1f0-cebdd1532611)
+
+<ins> Optional Practice Quiz - Defining Variables, Function, and Scope </ins>
+![image](https://github.com/user-attachments/assets/733422b5-c3ca-4881-98aa-e637e7adbf0e)
+![image](https://github.com/user-attachments/assets/8827f749-0bab-42fe-ace3-fcd7136502c6)
+
+
+
+
+
+
+
+
+
+
+
