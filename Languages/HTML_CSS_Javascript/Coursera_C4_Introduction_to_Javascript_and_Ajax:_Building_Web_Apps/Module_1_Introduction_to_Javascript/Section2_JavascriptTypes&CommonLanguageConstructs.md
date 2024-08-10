@@ -40,4 +40,27 @@
 <ins> Optional Practice Quiz - Javascript Types </ins>
 ![image](https://github.com/user-attachments/assets/e13af9e8-0558-469c-a8a0-0198c8c0666c)
 
+**Video 3 - Lecture 43, Part 1: Common Language Constructs**
+- You can concatenate strings
+- ![image](https://github.com/user-attachments/assets/5254c014-2c7d-4ef3-b808-37d6233c71b5)
+- Regular math operators
+- ![image](https://github.com/user-attachments/assets/6ada8c4c-1e0f-4c19-9eec-c3f073c4fc55)
+  - Undefined divided by something is not a number
+- Equality
+- ![image](https://github.com/user-attachments/assets/6bec42ee-7fa3-4426-9c7c-2529332c8419)
+  - Type coercion makes '4' equal to 4...why you need strict equality
+- Strict Equality
+- ![image](https://github.com/user-attachments/assets/b048b92b-3fe8-4965-a257-77041ae73de4)
+  - Triple equal sign
+ 
+**Video 4 - Lecture 43, Part 2: Common Language Constructs**
+- Things that evaluate to false or true...
+- ![image](https://github.com/user-attachments/assets/500e84ac-7043-4d6b-9551-2ff1c414e231)
+
+
+
+
+
+
+
 
