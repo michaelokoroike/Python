@@ -57,6 +57,22 @@
 - Things that evaluate to false or true...
 - ![image](https://github.com/user-attachments/assets/500e84ac-7043-4d6b-9551-2ff1c414e231)
 
+**Video 5 - Lecture 43, Part 3: Common Language Constructs**
+- ![image](https://github.com/user-attachments/assets/49c3b960-6d5b-450d-a9c4-2b0d49344c3a)
+  - if curly braces not after the return, it pputs a ";" there
+- For loop
+- ![image](https://github.com/user-attachments/assets/ead5cf3e-9593-49bd-bd28-365d1358dfa6)
+  - i++ is same as i = i+1
+- Summary
+- ![image](https://github.com/user-attachments/assets/43749ffa-a916-494b-a085-a7f52fff29ec)
+- not including for loop
+
+**Video 6 - Lecture 44: Handling Default Values**
+- Default value creation as filler; example...
+
+<ins> Optional Practice Quiz - Common Language Constructs/Handling Default Values </ins>
+![image](https://github.com/user-attachments/assets/99be0a50-d5f4-488b-9b82-60b81b2d7633)
+
 
 
 
