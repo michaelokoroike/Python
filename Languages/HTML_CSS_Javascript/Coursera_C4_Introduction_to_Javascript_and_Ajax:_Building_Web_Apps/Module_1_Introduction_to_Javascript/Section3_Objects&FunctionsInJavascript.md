@@ -79,7 +79,8 @@
 - Summary
 - ![image](https://github.com/user-attachments/assets/66a50235-8f02-4c2f-9cdc-21c06e8759c2)
 
-
+<ins> Optional Practice Quiz - Passing Variables by... </ins>
+![image](https://github.com/user-attachments/assets/dfcdb37c-96f5-46b2-9f72-15fd61fc2ccc)
 
 
 
