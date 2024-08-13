@@ -82,6 +82,29 @@
 <ins> Optional Practice Quiz - Passing Variables by... </ins>
 ![image](https://github.com/user-attachments/assets/dfcdb37c-96f5-46b2-9f72-15fd61fc2ccc)
 
+**Video 6 - Lecture 48: Function Constructors, prototype, and the 'this' Keyword**
+- Another way to create objects in Javascript =
+- When we invoke a fxn,  a new execution context is created in which whatever is in the function is executed, and the function gets a special variable called 'this'
+- Can't return in function constructors
+- ![image](https://github.com/user-attachments/assets/088992ee-108c-4ced-8d82-21a73ceb0c03)
+- ![image](https://github.com/user-attachments/assets/c815cadc-2bbd-4e5e-bc7a-7d157dea005e)
+- Prototype...save processing by not putting this inside a function construcor by not repeating it over and over
+- ![image](https://github.com/user-attachments/assets/a4371790-9425-4ac8-b24c-7dd99175daf0)
+
+**Video 7 - Lecture 49: Object Literals and the 'this' Keyword**
+- ![image](https://github.com/user-attachments/assets/1e7d2f45-5749-4e96-8032-920f6f73e012)
+- ![image](https://github.com/user-attachments/assets/b2567762-e451-4ce4-a3e1-e65a32676c3d)
+- refer to this in innser functions as self (see below...)
+- ![image](https://github.com/user-attachments/assets/76bc6fe3-ce52-42e1-bb5b-e4e6d806bc24)
+
+Reading - New Tutorials
+- Note that course will be updated
+
+<ins> Optional Practice Quiz - ... and the 'this' keyword </ins>
+![image](https://github.com/user-attachments/assets/63afcb7a-9aa4-4cc2-b47d-7fc4e74fa40c)
+
+
+
 
 
 
