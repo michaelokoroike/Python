@@ -17,4 +17,30 @@ Reading - Recommended Books
 **Video 3 - Lecture 53, Part 2: DOM Manipulation**
 - assign buttons functions using "onclick"
 - retrieve inputted values by getting the element and accessing the value (see below)...
-- 
+- ![image](https://github.com/user-attachments/assets/7d76bd37-4e71-4ff6-b648-92d74f797f4d)
+- insert text inside of an element with ".textcontent" or ".innerHTML" (see below)...
+- ![image](https://github.com/user-attachments/assets/4ff27fb5-53a8-4b28-8c59-06df5c856533)
+- .querySelector...
+
+**Video 4 - Lecture 54: Handling Events**
+- Event handlers are basically functions that you bind using specific methods to certain events that happen in the browser. these events may be triigered by a lifecycle (page loading, etc), user interaction, etc. Use the on___ functions based on your desire (like onblur, etc)
+- Side effect of certain language is having to be dirtied up
+- "This" is in the context of most outer scope
+- Unobtrusive event finding?...
+
+**Video 5 - Lecture 55: The 'event' Argument**
+- There's an argument that's passed by the JavaScript engine into every single event handler
+- MouseEvent properties
+- API documentation for event = mozilla developer network
+- .addEventListener?
+- We log where the mouse is moving
+- shift key property is discussed
+
+Reading = Connect with Me!
+- https://www.coursera.org/learn/introduction-to-javascript-and-ajax-building-web-apps-jhu/supplement/qiAVQ/connect-with-me
+
+<ins> Optional Practice Quiz </ins>
+![image](https://github.com/user-attachments/assets/db902d49-a685-4257-b452-22343885bcda)
+![image](https://github.com/user-attachments/assets/bd966134-15cc-4cb8-b4fd-b8102f5a87d5)
+
+
