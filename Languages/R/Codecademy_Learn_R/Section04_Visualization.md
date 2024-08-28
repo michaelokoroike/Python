@@ -1,3 +1,13 @@
+**Layers and Geoms**
+- ![image](https://github.com/user-attachments/assets/9381ef8b-0000-4e8d-8949-5961f0c958c5)
+- ![image](https://github.com/user-attachments/assets/dcbdcc9b-3c6c-4b63-bca0-0c132b150383)
+- ![image](https://github.com/user-attachments/assets/2fc741b1-0a74-4838-a86a-aaa3a09f5d12)
+- ![image](https://github.com/user-attachments/assets/209f62b2-a75a-4bf4-a8f1-1f7c5954d0ba)
+- ![image](https://github.com/user-attachments/assets/b1fe8ecf-93a3-40b8-b9df-45dd985863a9)
+- ![image](https://github.com/user-attachments/assets/3239ef10-0114-47ea-b462-869bb3921929)
+- ![image](https://github.com/user-attachments/assets/85130cd4-6b70-49c4-8d16-8acb55af8305)
+- ![image](https://github.com/user-attachments/assets/d5c827bc-42cb-4f2f-ad85-85bb1f107247)
+
 **The ggplot() function**
 - ![image](https://github.com/user-attachments/assets/1279b1f2-539e-4f62-89ca-f738ddc8d958)
 - ![image](https://github.com/user-attachments/assets/82ed530e-cbc3-4a69-9f75-004fab158489)
