@@ -1,3 +1,9 @@
+**The ggplot() function**
+- ![image](https://github.com/user-attachments/assets/1279b1f2-539e-4f62-89ca-f738ddc8d958)
+- ![image](https://github.com/user-attachments/assets/82ed530e-cbc3-4a69-9f75-004fab158489)
+- ![image](https://github.com/user-attachments/assets/91f56c59-0db7-4a97-a0c8-dd4208d1b4f9)
+- ![image](https://github.com/user-attachments/assets/2cc260f7-b489-44e1-adc9-527f7f4f21a4)
+
 **Associating the Data**
 - ![image](https://github.com/user-attachments/assets/26219499-77bf-4cac-b53d-45ccc6b087af)
 - ![image](https://github.com/user-attachments/assets/a4c9de65-e7dd-4afc-9506-15a98dad283a)
