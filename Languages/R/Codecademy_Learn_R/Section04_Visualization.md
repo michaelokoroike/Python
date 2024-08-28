@@ -1,3 +1,10 @@
+**Labels**
+- ![image](https://github.com/user-attachments/assets/49d22dbb-a923-4649-86a0-b6927b0cee06)
+- ![image](https://github.com/user-attachments/assets/d4fe7467-b54e-46d4-ab2c-c86b97a70b59)
+- ![image](https://github.com/user-attachments/assets/0868ef9e-516e-4af0-87c3-b2cecc71fe11)
+- ![image](https://github.com/user-attachments/assets/2a1e9f94-1f45-4dab-a657-8db2796f8a73)
+- ![image](https://github.com/user-attachments/assets/cbeea701-247d-4bd3-a3c8-c8860055968e)
+
 **Extending the Grammar**
 - ![image](https://github.com/user-attachments/assets/552130a3-a5cb-4ac9-b1f9-d23be99bb26c)
 - ![image](https://github.com/user-attachments/assets/49f8fb7b-22a6-42d7-a2a7-3c2d4cd801e5)
