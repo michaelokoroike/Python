@@ -1,3 +1,12 @@
+**Manual Aesthetics**
+- ![image](https://github.com/user-attachments/assets/371cbe47-0590-448e-9500-2fd149999f72)
+- ![image](https://github.com/user-attachments/assets/f764527d-2523-466f-9493-3c65877528a6)
+- ![image](https://github.com/user-attachments/assets/a410bd6c-1ab2-4577-80e1-9bcb55a84f5a)
+- ![image](https://github.com/user-attachments/assets/2e52f745-e1f3-4336-8d9b-e5bfd25c487d)
+- ![image](https://github.com/user-attachments/assets/3380c50d-054e-4ed1-bbac-0a22803e774b)
+- ![image](https://github.com/user-attachments/assets/885126da-7498-4e4c-b10c-bcb367663b43)
+- ![image](https://github.com/user-attachments/assets/ef7eb4de-10c8-42e0-98ea-daefc9ef9a83)
+
 **Labels**
 - ![image](https://github.com/user-attachments/assets/49d22dbb-a923-4649-86a0-b6927b0cee06)
 - ![image](https://github.com/user-attachments/assets/d4fe7467-b54e-46d4-ab2c-c86b97a70b59)
