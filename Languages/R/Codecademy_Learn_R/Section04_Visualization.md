@@ -1,3 +1,33 @@
+**Associating the Data**
+- ![image](https://github.com/user-attachments/assets/26219499-77bf-4cac-b53d-45ccc6b087af)
+- ![image](https://github.com/user-attachments/assets/a4c9de65-e7dd-4afc-9506-15a98dad283a)
+- ![image](https://github.com/user-attachments/assets/9b723eea-4ee9-4015-b6bc-67d516dd00f3)
+
+**What are aesthetics?**
+- ![image](https://github.com/user-attachments/assets/9706129e-59b5-4225-83db-796f4ff486b4)
+- ![image](https://github.com/user-attachments/assets/10ae672d-d000-46a1-afe0-2f74433f5a4e)
+- ![image](https://github.com/user-attachments/assets/29b6b71e-fd18-41cd-a8ba-cff500028893)
+- ![image](https://github.com/user-attachments/assets/cddd8408-c14a-41be-b301-86de1b9706c4)
+- ![image](https://github.com/user-attachments/assets/bf364f11-fc3d-45de-8b53-a2c9af7ee8a9)
+- ![image](https://github.com/user-attachments/assets/d80dbb95-5aa0-4400-af1f-57e93f2b7574)
+
+**Adding Geoms**
+- ![image](https://github.com/user-attachments/assets/a14224c2-4219-4514-9090-24ba4a4d56f3)
+- ![image](https://github.com/user-attachments/assets/654e52e4-1381-404c-b3a3-35f224d8c948)
+- ![image](https://github.com/user-attachments/assets/f0723a2d-5996-4034-be63-354f60365175)
+- ![image](https://github.com/user-attachments/assets/cafa3ce6-3147-4c27-bc16-cad4b7caf835)
+- ![image](https://github.com/user-attachments/assets/0dc99c03-a06a-40a9-97f9-72d1c2bae657)
+- ![image](https://github.com/user-attachments/assets/276ebf9c-7d5f-4c6c-a07f-a6b4e9951c1b)
+- ![image](https://github.com/user-attachments/assets/b55190b8-d676-4839-8ee1-b9b4a81614e2)
+
+**Geom Aesthetics**
+- ![image](https://github.com/user-attachments/assets/bb3aec32-afb3-4d72-b0d2-2839f47942e2)
+- ![image](https://github.com/user-attachments/assets/71c0419d-a71b-4e34-9d65-02793734c54e)
+- ![image](https://github.com/user-attachments/assets/84d98455-ac52-4cde-a568-bbabf6adb5e9)
+- ![image](https://github.com/user-attachments/assets/cf1bc36c-d9e6-4ef0-974c-71f410973571)
+- ![image](https://github.com/user-attachments/assets/ef9ad54e-6745-49bc-a808-53f619fab933)
+- ![image](https://github.com/user-attachments/assets/92e9b796-6350-43c5-858d-24cbab2c1a80)
+
 **Manual Aesthetics**
 - ![image](https://github.com/user-attachments/assets/371cbe47-0590-448e-9500-2fd149999f72)
 - ![image](https://github.com/user-attachments/assets/f764527d-2523-466f-9493-3c65877528a6)
