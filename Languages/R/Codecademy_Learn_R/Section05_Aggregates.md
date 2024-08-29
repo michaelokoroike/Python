@@ -1,3 +1,12 @@
+**Combining Grouping with Filter**
+- ![image](https://github.com/user-attachments/assets/9c477344-2cc1-4b56-8e94-28489a0aba35)
+- ![image](https://github.com/user-attachments/assets/a1a7173a-0dbf-456a-ae89-1fc5f7016d17)
+- ![image](https://github.com/user-attachments/assets/cf8b6da9-20bf-4a7f-a475-3847e1275ca2)
+- ![image](https://github.com/user-attachments/assets/496f73f8-934d-40c3-b5e6-b2d762f238a4)
+- ![image](https://github.com/user-attachments/assets/a4d655f6-abf7-4311-9c0b-d83ba5450819)
+- ![image](https://github.com/user-attachments/assets/b58326cc-6cba-485a-82de-8a0cc29fb07b)
+- ![image](https://github.com/user-attachments/assets/bb39370d-f581-4ce6-a7cd-64271ae9620c)
+
 **Combining Grouping with Mutate**
 - ![image](https://github.com/user-attachments/assets/ee48803b-4936-4e41-b386-75ca06c62e52)
 - ![image](https://github.com/user-attachments/assets/14e37dc6-f334-4ed5-93db-3517070e3652)
