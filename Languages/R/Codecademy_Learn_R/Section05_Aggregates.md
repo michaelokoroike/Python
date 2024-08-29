@@ -1,3 +1,24 @@
+**Introduction**
+- ![image](https://github.com/user-attachments/assets/3840aac2-fed7-4795-a7b1-a7dc09ad92f0)
+- ![image](https://github.com/user-attachments/assets/8b3b1a0e-e5b1-48c6-ba7a-4eaa2a6f3880)
+- ![image](https://github.com/user-attachments/assets/66e69617-54f7-47dc-b576-5d7a2cd18cdb)
+- ![image](https://github.com/user-attachments/assets/f2d472a7-6a23-490d-a387-3746ec41e6ed)
+- ![image](https://github.com/user-attachments/assets/eb12f6ae-d901-4d6f-b059-733083b7463b)
+- ![image](https://github.com/user-attachments/assets/66c2bd4e-3f98-4f5b-8f76-0f5fbd88ac12)
+- ![image](https://github.com/user-attachments/assets/d5b13404-c607-4e51-93c9-8865c90982c0)
+- ![image](https://github.com/user-attachments/assets/0c727ec9-cfe4-4b6c-b07d-45d9ae9a0bbc)
+
+**Calculating Column Statistics**
+- ![image](https://github.com/user-attachments/assets/e06f56b4-ee50-4724-9aa1-d9a2c7e2aacc)
+- ![image](https://github.com/user-attachments/assets/097f7230-c1c7-4502-90af-00dda537a276)
+- ![image](https://github.com/user-attachments/assets/a20692ea-0caa-426d-91f0-3d80be45c711)
+- ![image](https://github.com/user-attachments/assets/b5dddb5f-f397-4136-8df3-428781f5f0be)
+- ![image](https://github.com/user-attachments/assets/1124b962-1cf5-49a0-aff7-8feb1a8bb580)
+- ![image](https://github.com/user-attachments/assets/7b4f4dc7-fceb-4dbb-95dd-6a4627127442)
+- ![image](https://github.com/user-attachments/assets/459449e4-5d7e-45da-8aed-1b400dbc15f4)
+- ![image](https://github.com/user-attachments/assets/01a50384-d9ef-4fa7-a4cb-5f53f09ce421)
+- ![image](https://github.com/user-attachments/assets/761e1414-ce1c-479e-b93b-97da88410a9b)
+
 **Calculating Aggregate Functions 1**
 - ![image](https://github.com/user-attachments/assets/aa973dc4-e763-4b7b-8cec-68a550f302d8)
 - ![image](https://github.com/user-attachments/assets/9f883ee1-54ab-4297-bc25-5aa22803ca10)
@@ -7,9 +28,6 @@
 - ![image](https://github.com/user-attachments/assets/916ef675-c1d7-4ace-b8c4-cbb5c04bac44)
 - ![image](https://github.com/user-attachments/assets/9fe3119c-433e-489f-b561-9df944684b10)
 - ![image](https://github.com/user-attachments/assets/d8ed36c2-779d-4496-b0fb-e6da024df32c)
-
-
-
 
 **Calculating Aggregate Functions 2**
 - ![image](https://github.com/user-attachments/assets/171b5744-764d-4e5a-820b-790975facbda)
