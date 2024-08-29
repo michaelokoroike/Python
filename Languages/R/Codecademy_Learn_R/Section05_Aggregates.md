@@ -1,3 +1,26 @@
+**Calculating Aggregate Functions 1**
+- ![image](https://github.com/user-attachments/assets/aa973dc4-e763-4b7b-8cec-68a550f302d8)
+- ![image](https://github.com/user-attachments/assets/9f883ee1-54ab-4297-bc25-5aa22803ca10)
+- ![image](https://github.com/user-attachments/assets/a7f62863-24a6-429a-a1c5-77901c17e360)
+- ![image](https://github.com/user-attachments/assets/7a70fac1-ff99-44d0-961c-2ece6180451b)
+- ![image](https://github.com/user-attachments/assets/17de56ed-0e1f-4933-8169-cc7726d7917a)
+- ![image](https://github.com/user-attachments/assets/916ef675-c1d7-4ace-b8c4-cbb5c04bac44)
+- ![image](https://github.com/user-attachments/assets/9fe3119c-433e-489f-b561-9df944684b10)
+- ![image](https://github.com/user-attachments/assets/d8ed36c2-779d-4496-b0fb-e6da024df32c)
+
+
+
+
+**Calculating Aggregate Functions 2**
+- ![image](https://github.com/user-attachments/assets/171b5744-764d-4e5a-820b-790975facbda)
+- ![image](https://github.com/user-attachments/assets/617e898f-4bf8-4477-a6f7-e73218e72f0f)
+- ![image](https://github.com/user-attachments/assets/bad2c36d-1d04-4b36-9e95-b40819329eec)
+- ![image](https://github.com/user-attachments/assets/c093166c-c8cf-4765-9983-2b4771a8fec5)
+- ![image](https://github.com/user-attachments/assets/c53d5750-4c31-4ce6-8fe2-e981d998d63b)
+- ![image](https://github.com/user-attachments/assets/ea978f7d-62f5-4f4d-a398-0fc613de0a0d)
+- ![image](https://github.com/user-attachments/assets/7d8f9afd-0c11-4a15-a48a-0c8ef3c1e9fa)
+- ![image](https://github.com/user-attachments/assets/9fdfb664-9ed2-4d44-b2c4-3326ea383886)
+
 **Combining Grouping with Filter**
 - ![image](https://github.com/user-attachments/assets/9c477344-2cc1-4b56-8e94-28489a0aba35)
 - ![image](https://github.com/user-attachments/assets/a1a7173a-0dbf-456a-ae89-1fc5f7016d17)
