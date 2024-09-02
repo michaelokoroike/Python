@@ -5,3 +5,11 @@
 - ![image](https://github.com/user-attachments/assets/47d76394-c796-48d6-af2e-b1875e837739)
 - ![image](https://github.com/user-attachments/assets/7738ff7a-6963-4d6a-a1a5-af598fed42ea)
 - ![image](https://github.com/user-attachments/assets/f25cc585-f47d-4c94-806d-486b1393a4db)
+
+**The Second Quartile (median)**
+- ![image](https://github.com/user-attachments/assets/6194ee53-57e9-4483-aab5-3f5fe8d2fe2d)
+- ![image](https://github.com/user-attachments/assets/620992eb-ad68-4e56-9fd4-3c51b410014e)
+- ![image](https://github.com/user-attachments/assets/fae47711-6564-47d9-b42b-39d9f37acc3d)
+- ![image](https://github.com/user-attachments/assets/37e09eba-d3e5-41c9-ad4d-34826b0b1a23)
+- ![image](https://github.com/user-attachments/assets/3aaca06b-afe6-46fd-9325-59b43b6f19c6)
+- ![image](https://github.com/user-attachments/assets/4a1e0faa-464f-45e1-8c8e-aa7e00841104)
