@@ -21,3 +21,5 @@
 - ![image](https://github.com/user-attachments/assets/832ae4e0-03f8-4ea4-8954-0076796e450d)
 - ![image](https://github.com/user-attachments/assets/36f5c95a-95cd-4df1-bbbd-5d9e45ddf9de)
 
+**Method 2: Including Q2**
+- 
