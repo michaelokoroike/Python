@@ -9,3 +9,8 @@
 - ![image](https://github.com/user-attachments/assets/1b3186f0-c917-4faa-9f8c-1a0db616a3d2)
 - ![image](https://github.com/user-attachments/assets/ac126a07-b527-413e-a241-24c7d8aa45cc)
 - ![image](https://github.com/user-attachments/assets/a66ffa9c-9db5-4656-9fe2-ee8fe8eee3e0)
+
+**Quantiles in R**
+- ![image](https://github.com/user-attachments/assets/0893459f-e4dd-4892-8b01-3e0f4f453cea)
+- ![image](https://github.com/user-attachments/assets/8f95ec81-3392-4fcf-ace1-ef110cad79a6)
+- ![image](https://github.com/user-attachments/assets/19b5f042-629f-4e77-8228-53ba6c3710f8)
