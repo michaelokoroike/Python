@@ -38,6 +38,13 @@
 - ![image](https://github.com/user-attachments/assets/25e91c24-9798-47b4-be28-50b34b42a57a)
 - ![image](https://github.com/user-attachments/assets/b83ae771-9fdd-46c5-96be-6a15a5f2e0cc)
 
+**Quartiles Review**
+- ![image](https://github.com/user-attachments/assets/a4e86d61-edd7-4e0c-9aa1-2f8130e6f7f6)
+- ![image](https://github.com/user-attachments/assets/eb359d34-5ff4-4c98-bfda-8169f5d156fb)
+- ![image](https://github.com/user-attachments/assets/c80994a9-6936-444a-885e-f1a5a3e22d33)
+- ![image](https://github.com/user-attachments/assets/93162bef-cb21-4806-9bcd-aab048ec966d)
+- ![image](https://github.com/user-attachments/assets/a76eefdd-157d-4bb8-9dcc-3a97d436a73c)
+
 
 
 
