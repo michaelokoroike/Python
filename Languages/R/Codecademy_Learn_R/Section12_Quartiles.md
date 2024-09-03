@@ -22,4 +22,13 @@
 - ![image](https://github.com/user-attachments/assets/36f5c95a-95cd-4df1-bbbd-5d9e45ddf9de)
 
 **Method 2: Including Q2**
-- 
+- ![image](https://github.com/user-attachments/assets/e88cf6e6-8e3a-43aa-a973-c771429693de)
+- ![image](https://github.com/user-attachments/assets/a73bb28f-b3f6-4321-8ca4-fe64092e4592)
+- ![image](https://github.com/user-attachments/assets/5de1d5e3-0fbd-42c0-8260-c21a91814e6d)
+- ![image](https://github.com/user-attachments/assets/11fe0d49-cfd6-4ef9-b461-a5a00b0974cf)
+- ![image](https://github.com/user-attachments/assets/e7e78d16-167d-4197-a858-49bd236a3542)
+- ![image](https://github.com/user-attachments/assets/857eedc3-2987-4591-9a8f-808b49b14236)
+
+
+
+
