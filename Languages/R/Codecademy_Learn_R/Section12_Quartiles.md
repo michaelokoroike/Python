@@ -29,6 +29,20 @@
 - ![image](https://github.com/user-attachments/assets/e7e78d16-167d-4197-a858-49bd236a3542)
 - ![image](https://github.com/user-attachments/assets/857eedc3-2987-4591-9a8f-808b49b14236)
 
+**Quartiles in R**
+- ![image](https://github.com/user-attachments/assets/a457e757-929a-448c-8345-e23ec901b169)
+- ![image](https://github.com/user-attachments/assets/62e6c526-66c4-43cf-b005-dd87d5be4d87)
+- ![image](https://github.com/user-attachments/assets/b2c365e5-e9be-4e0a-b7e1-5dfc3b2fed90)
+- ![image](https://github.com/user-attachments/assets/9e4aa136-e52f-47bf-801b-4edc10e49bc7)
+- ![image](https://github.com/user-attachments/assets/8e4bc1c7-cf2b-473e-b5f1-7adf9272bc38)
+- ![image](https://github.com/user-attachments/assets/25e91c24-9798-47b4-be28-50b34b42a57a)
+- ![image](https://github.com/user-attachments/assets/b83ae771-9fdd-46c5-96be-6a15a5f2e0cc)
+
+
+
+
+
+
 
 
 
