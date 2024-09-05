@@ -43,6 +43,12 @@
 - ![image](https://github.com/user-attachments/assets/3508585f-89cb-4014-8e08-65fbdcf347e4)
 - ![image](https://github.com/user-attachments/assets/fa7cd10b-73dd-4324-845c-c1f179a043ee)
 
+**P-Values**
+- ![image](https://github.com/user-attachments/assets/8600f8f1-f7b8-46ae-a937-be9e937a1879)
+- ![image](https://github.com/user-attachments/assets/605eef0c-82d2-4551-9d52-ef513c2e74bc)
+- ![image](https://github.com/user-attachments/assets/fcc3ac79-ea87-45ad-b4c9-08d70536bfdd)
+
+
 
 
 
