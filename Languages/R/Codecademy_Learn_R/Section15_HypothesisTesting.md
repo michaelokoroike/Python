@@ -48,6 +48,15 @@
 - ![image](https://github.com/user-attachments/assets/605eef0c-82d2-4551-9d52-ef513c2e74bc)
 - ![image](https://github.com/user-attachments/assets/fcc3ac79-ea87-45ad-b4c9-08d70536bfdd)
 
+**Significance Level**
+- ![image](https://github.com/user-attachments/assets/1374e722-72ec-4528-ba3b-536667a8167e)
+- ![image](https://github.com/user-attachments/assets/07495c0a-c9b3-4afc-9caf-36ee7eea406c)
+
+**One Sample T-test**
+- ![image](https://github.com/user-attachments/assets/d7af8a2d-3534-49e1-bb11-8ad928b304a9)
+- ![image](https://github.com/user-attachments/assets/1c9fdee0-f158-4160-8aa8-078dbb881523)
+- ![image](https://github.com/user-attachments/assets/f069f0dc-74e3-41fc-b087-caebeab60ec9)
+
 
 
 
