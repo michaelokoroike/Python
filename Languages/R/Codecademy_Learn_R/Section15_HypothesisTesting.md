@@ -57,6 +57,66 @@
 - ![image](https://github.com/user-attachments/assets/1c9fdee0-f158-4160-8aa8-078dbb881523)
 - ![image](https://github.com/user-attachments/assets/f069f0dc-74e3-41fc-b087-caebeab60ec9)
 
+**Two Sample T-test**
+- ![image](https://github.com/user-attachments/assets/faa3f8f8-46a7-48e4-a9bf-98a314bcaa25)
+- ![image](https://github.com/user-attachments/assets/fb9fca65-b0df-426d-8eab-b079599d0ec0)
+- ![image](https://github.com/user-attachments/assets/d75364ba-47fe-4d0c-aa33-ea2805ef97be)
+- ![image](https://github.com/user-attachments/assets/c0a52b80-fc3e-4167-9049-a2dcb8aa9b8a)
+- ![image](https://github.com/user-attachments/assets/0a51ca4c-d951-4bcb-ac06-56b71d3ad320)
+- ![image](https://github.com/user-attachments/assets/83e01553-d5f0-4371-ba2e-2c1eae9ae9dd)
+- ![image](https://github.com/user-attachments/assets/f2f0ae1e-e07f-4a52-93a6-85e30900b9a8)
+- ![image](https://github.com/user-attachments/assets/92bc0fa3-6d2b-4e99-a99c-63758d56396c)
+
+**Dangers of Multiple T-tests**
+- ![image](https://github.com/user-attachments/assets/0bb08646-8a5a-40b4-984a-9d170d6328b1)
+- ![image](https://github.com/user-attachments/assets/499befcf-1b7d-463d-b9b7-65b8c333ed10)
+- ![image](https://github.com/user-attachments/assets/d4176d87-f3e3-4982-9662-36ca4c6ec3ca)
+- ![image](https://github.com/user-attachments/assets/2158abdd-ce62-4028-955f-6e2f71cd8d93)
+- ![image](https://github.com/user-attachments/assets/10535541-6980-416b-9155-54c980fff786)
+
+**ANOVA**
+- ![image](https://github.com/user-attachments/assets/2036a2f8-c315-4732-a95d-456399d7a20d)
+- ![image](https://github.com/user-attachments/assets/210b1de4-2cb6-4f88-a9dc-57425f0ca045)
+- ![image](https://github.com/user-attachments/assets/29af4d4e-5600-4f63-8ba2-e49568ca9c9c)
+- ![image](https://github.com/user-attachments/assets/ee4e5f9f-63ff-4709-b068-5a4ef12347a0)
+- ![image](https://github.com/user-attachments/assets/edb0ed95-dfaf-48b0-9c18-6b2b5856def2)
+- ![image](https://github.com/user-attachments/assets/3907bd76-6cf7-4168-9719-bda9c194fdb9)
+- ![image](https://github.com/user-attachments/assets/5f84eed3-bb9c-4384-970d-89c3b75c4765)
+- **Total 450 stores...skip past getting all of that data**
+- ![image](https://github.com/user-attachments/assets/a242c291-e4d4-402b-972a-b36bfdc0fca3)
+
+**Assumptions of Numerical Hypothesis Tests**
+- ![image](https://github.com/user-attachments/assets/940733a6-77a3-4c1f-9408-83edeaf05bd5)
+- ![image](https://github.com/user-attachments/assets/b131e3a2-ff62-4331-9dfc-3592fd5bc02e)
+- ![image](https://github.com/user-attachments/assets/9862a82b-a017-4a45-851c-df844ad2ffdb)
+- ![image](https://github.com/user-attachments/assets/15022484-4e78-4b71-8bf6-7d639ba2ffbe)
+- ![image](https://github.com/user-attachments/assets/137c5f2a-c38f-491c-bbac-08ce047526c5)
+- ![image](https://github.com/user-attachments/assets/f6c84f05-d91d-4338-ae84-b56f78702f85)
+- ![image](https://github.com/user-attachments/assets/e6de9df2-b5dc-429f-a68d-6a01bbb7bd29)
+- ![image](https://github.com/user-attachments/assets/96e521e7-f22b-4519-a8a3-7549d27bcc2d)
+- ![image](https://github.com/user-attachments/assets/51779c80-d577-40b6-b402-5f419ead82f7)
+
+**Review**
+- ![image](https://github.com/user-attachments/assets/512c6722-23ee-4a93-a0ee-a23fd3ac7774)
+- ![image](https://github.com/user-attachments/assets/c1454d10-f3be-4137-bb10-ac3299331152)
+- ![image](https://github.com/user-attachments/assets/493d2248-bf72-4dc8-b24f-e4bf9d43b052)
+- ![image](https://github.com/user-attachments/assets/b1bf4862-fa3d-4252-96a2-fa68a71aefff)
+- ![image](https://github.com/user-attachments/assets/640f51df-117b-4d2e-9eb7-e0d5a0faf193)
+- ![image](https://github.com/user-attachments/assets/57957fa8-8265-4314-83b8-68bc53f2a189)
+- ![image](https://github.com/user-attachments/assets/5c072912-ace3-41b2-bdaa-a9c3772b66fd)
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
