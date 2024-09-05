@@ -28,3 +28,26 @@
 - ![image](https://github.com/user-attachments/assets/b069b74a-9daa-40cf-8f23-d300b3c17c98)
 - ![image](https://github.com/user-attachments/assets/f846caf1-2e62-42d3-8647-9af21ef1066f)
 
+**Designing an Experiment**
+- ![image](https://github.com/user-attachments/assets/8b1721a7-f670-440f-b6e9-eaad3c7248af)
+- ![image](https://github.com/user-attachments/assets/18ef5773-a115-4dcf-9a44-bf5228c605e4)
+- ![image](https://github.com/user-attachments/assets/bb1a8efa-fbe7-4b01-aa54-9689f175058c)
+- ![image](https://github.com/user-attachments/assets/208b33c6-b36b-4531-8570-7b8856f73e68)
+- ![image](https://github.com/user-attachments/assets/09eb3387-869a-47f9-8b74-e90eb937dc8d)
+- ![image](https://github.com/user-attachments/assets/b9abfbfe-bb24-49c1-b708-ec143cc7c3e2)
+- ![image](https://github.com/user-attachments/assets/6332d5f0-fbf5-493e-9494-41a70c2bf51a)
+
+**Type 1 and Type 2 Errors**
+- ![image](https://github.com/user-attachments/assets/28799b86-b4af-41a7-9212-1f6b5b20f1b1)
+- ![image](https://github.com/user-attachments/assets/d823d500-09d7-4234-95c0-02701edf2c11)
+- ![image](https://github.com/user-attachments/assets/3508585f-89cb-4014-8e08-65fbdcf347e4)
+- ![image](https://github.com/user-attachments/assets/fa7cd10b-73dd-4324-845c-c1f179a043ee)
+
+
+
+
+
+
+
+
+
