@@ -38,5 +38,13 @@
 - ![image](https://github.com/user-attachments/assets/f4d82c02-dfa6-4310-93d8-a1b307f44def)
 - ![image](https://github.com/user-attachments/assets/169e0dff-19a4-4943-ac03-4ce475bcf21d)
 
+**Java Review: Putting it All Together**
+- ![image](https://github.com/user-attachments/assets/a940bfb3-8ef3-441b-91b7-ae0ebd607c1d)
+- ![image](https://github.com/user-attachments/assets/f9454efb-9931-4f15-9d5f-9336148e3ef4)
+- ![image](https://github.com/user-attachments/assets/50a1e43e-f20b-4d45-984a-9e9725e5c14e)
+- ![image](https://github.com/user-attachments/assets/ed683d1d-b324-4303-a650-e8b66ce38710)
+
+
+
 
 
