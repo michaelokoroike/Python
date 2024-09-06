@@ -31,3 +31,12 @@
 - ![image](https://github.com/user-attachments/assets/d3c125d9-c025-42e4-8ad5-a87204ea3078)
 - ![image](https://github.com/user-attachments/assets/1036fa24-2c0a-44e7-af4d-dd57cdf33361)
 - ![image](https://github.com/user-attachments/assets/ac99bef4-0ef3-4784-9b15-5614829588de)
+
+**Compilation: Creating Executables**
+- ![image](https://github.com/user-attachments/assets/06f7fc13-6c8e-4f4d-8ae2-c3d111bab951)
+- ![image](https://github.com/user-attachments/assets/74a3397e-2829-4183-8f37-842fa9321650)
+- ![image](https://github.com/user-attachments/assets/f4d82c02-dfa6-4310-93d8-a1b307f44def)
+- ![image](https://github.com/user-attachments/assets/169e0dff-19a4-4943-ac03-4ce475bcf21d)
+
+
+
