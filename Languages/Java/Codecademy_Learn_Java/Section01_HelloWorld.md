@@ -43,7 +43,10 @@
 - ![image](https://github.com/user-attachments/assets/f9454efb-9931-4f15-9d5f-9336148e3ef4)
 - ![image](https://github.com/user-attachments/assets/50a1e43e-f20b-4d45-984a-9e9725e5c14e)
 - ![image](https://github.com/user-attachments/assets/ed683d1d-b324-4303-a650-e8b66ce38710)
-
+- public class = where you contain main methods
+- main method = public static void main(String[] args) {}
+- // is for single line comment.. /* */ for multiple lines
+- System.out.print (or System.out.println) is whow to print something out
 
 
 
