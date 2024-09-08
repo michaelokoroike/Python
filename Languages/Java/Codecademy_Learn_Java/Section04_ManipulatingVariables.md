@@ -8,3 +8,9 @@
 - ![image](https://github.com/user-attachments/assets/12ea6101-98fc-41c4-a1a8-c44b1b41efc5)
 - ![image](https://github.com/user-attachments/assets/1d7e1ad6-11b8-452a-85c8-3dfea82a4f24)
 - ![image](https://github.com/user-attachments/assets/916864ca-c86a-465e-b24c-4ac4b5578ce9)
+
+**Multiplication and Division**
+- ![image](https://github.com/user-attachments/assets/33aa7fdc-471b-4c57-aec6-02d69400cf5b)
+- ![image](https://github.com/user-attachments/assets/87743f1e-620c-4c2a-a0e9-619bbdda5808)
+- ![image](https://github.com/user-attachments/assets/dcd95a27-bd51-4e56-a48f-15cec8676716)
+- ![image](https://github.com/user-attachments/assets/0bbda8be-099d-4c1c-9d20-fb8da7f801e5)
