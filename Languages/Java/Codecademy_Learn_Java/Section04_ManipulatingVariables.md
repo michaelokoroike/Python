@@ -14,3 +14,14 @@
 - ![image](https://github.com/user-attachments/assets/87743f1e-620c-4c2a-a0e9-619bbdda5808)
 - ![image](https://github.com/user-attachments/assets/dcd95a27-bd51-4e56-a48f-15cec8676716)
 - ![image](https://github.com/user-attachments/assets/0bbda8be-099d-4c1c-9d20-fb8da7f801e5)
+
+**Modulo**
+- ![image](https://github.com/user-attachments/assets/35542739-1a4f-4452-afee-7ae450487ed1)
+- ![image](https://github.com/user-attachments/assets/6d53b473-c38d-47de-8845-4bed5a807748)
+- ![image](https://github.com/user-attachments/assets/aea4cf5a-a34a-4bde-a5e5-d71166b4e4b7)
+
+**Compound Assignment Operators**
+- ![image](https://github.com/user-attachments/assets/4aeecf5e-2860-4350-8cb5-a62f9e2c9296)
+- ![image](https://github.com/user-attachments/assets/285ea741-2f45-4450-b0b4-f05117e2d891)
+- ![image](https://github.com/user-attachments/assets/1a19e38e-bafa-4460-aea5-34bfc625365b)
+- ![image](https://github.com/user-attachments/assets/ae023501-2ac3-425d-99a4-ed042c688bdc)
