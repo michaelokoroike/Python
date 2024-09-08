@@ -25,3 +25,36 @@
 - ![image](https://github.com/user-attachments/assets/285ea741-2f45-4450-b0b4-f05117e2d891)
 - ![image](https://github.com/user-attachments/assets/1a19e38e-bafa-4460-aea5-34bfc625365b)
 - ![image](https://github.com/user-attachments/assets/ae023501-2ac3-425d-99a4-ed042c688bdc)
+
+**Order of Operations**
+- ![image](https://github.com/user-attachments/assets/be479b62-e6ab-4ec6-a712-80f1c60b08b1)
+- ![image](https://github.com/user-attachments/assets/f93d3ba7-c6b5-4d65-b675-cf522e8e4c07)
+- ![image](https://github.com/user-attachments/assets/126fe014-b75e-4b49-85b5-834bf695591b)
+- ![image](https://github.com/user-attachments/assets/5f2f86e4-8ce6-4554-84b2-2e8893a74401)
+
+**Greater Than and Less Than**
+- ![image](https://github.com/user-attachments/assets/1f160a10-38d0-4d3c-a0d5-e18b24b5b458)
+- ![image](https://github.com/user-attachments/assets/cbac6178-f0d1-4c5e-aa5f-1b708e250f83)
+- ![image](https://github.com/user-attachments/assets/0b985a6a-978a-41a9-84d9-a1c7f60bc4bb)
+
+**Equals and Not Equals**
+- ![image](https://github.com/user-attachments/assets/f96f2cea-6b0c-437c-891a-8f52a19db0b1)
+- ![image](https://github.com/user-attachments/assets/b3e8c97d-0fc4-41a3-92eb-303111259ead)
+- ![image](https://github.com/user-attachments/assets/3176aca0-d93c-4305-8462-24fa36b26f72)
+
+**Greater/Less Than or Equal To**
+- ![image](https://github.com/user-attachments/assets/78f10dfc-e609-40a9-bc4c-3cbc05cb797e)
+- ![image](https://github.com/user-attachments/assets/cc9a1674-d17a-42c9-8c6a-d770be29564e)
+- ![image](https://github.com/user-attachments/assets/5195a9ad-0865-4d0d-9bab-f7f8bd7940ce)
+
+
+
+
+
+
+
+
+
+
+
+
