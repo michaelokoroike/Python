@@ -10,3 +10,12 @@
 - ![image](https://github.com/user-attachments/assets/3dcd1f95-00ac-4199-b0e5-8f9050604b37)
 - ![image](https://github.com/user-attachments/assets/cb8baf9b-6075-446d-a65e-9fde0376b2ba)
 - ![image](https://github.com/user-attachments/assets/13eb401b-8656-43ce-bce9-7485774a9e38)
+
+**Calling Methods**
+- ![image](https://github.com/user-attachments/assets/2259bfa8-98a1-4162-bc5d-aaea1bc482a5)
+- ![image](https://github.com/user-attachments/assets/429c6020-24b7-4a24-b9f5-a8403f06ecc6)
+- ![image](https://github.com/user-attachments/assets/c33617cc-c7fd-4004-84cd-78e3982f2500)
+- ![image](https://github.com/user-attachments/assets/3a143bd6-b359-4f63-af6a-58ca07c2f593)
+- ![image](https://github.com/user-attachments/assets/c82ac5f4-0449-483f-b9aa-2c023262f92f)
+- ![image](https://github.com/user-attachments/assets/4e60e5ea-2449-44fd-9ce3-fd9d21d287ac)
+
