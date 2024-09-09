@@ -23,3 +23,9 @@
 - ![image](https://github.com/user-attachments/assets/d4e0e131-7e71-4a64-8681-2f8875594d36)
 - ![image](https://github.com/user-attachments/assets/5f37e023-1809-4189-a330-bf0f71e06eaa)
 - ![image](https://github.com/user-attachments/assets/0e56a5ee-7d98-47ed-ac12-0b64275073d3)
+
+**Classes: Instance Fields**
+- ![image](https://github.com/user-attachments/assets/b8ac4f0f-58d6-4bcd-a573-6647e1136798)
+- ![image](https://github.com/user-attachments/assets/662aa437-f7c1-4123-af92-d957695f464e)
+- ![image](https://github.com/user-attachments/assets/496b2640-70b4-409f-be87-6a251340cd5f)
+- ![image](https://github.com/user-attachments/assets/85e92938-5fd1-463f-9e1e-3976e5815694)
