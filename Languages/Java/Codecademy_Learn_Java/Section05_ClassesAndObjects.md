@@ -29,3 +29,14 @@
 - ![image](https://github.com/user-attachments/assets/662aa437-f7c1-4123-af92-d957695f464e)
 - ![image](https://github.com/user-attachments/assets/496b2640-70b4-409f-be87-6a251340cd5f)
 - ![image](https://github.com/user-attachments/assets/85e92938-5fd1-463f-9e1e-3976e5815694)
+
+**Classes: Constructor Parameters**
+- ![image](https://github.com/user-attachments/assets/50794fae-fe7a-4351-8fa6-e29c80d16a77)
+- ![image](https://github.com/user-attachments/assets/e973e9f7-128b-457b-abef-b800b6e25948)
+- ![image](https://github.com/user-attachments/assets/45ec880d-14e9-4d61-9af6-6fdd6402108e)
+- ![image](https://github.com/user-attachments/assets/0c829e84-3699-4f03-908b-18f4cd16d047)
+- ![image](https://github.com/user-attachments/assets/8e3c3538-04c2-4e46-ba77-1e4d9989807a)
+- ![image](https://github.com/user-attachments/assets/cfa653e3-0e4c-4f94-bfa0-0e25c409b2a6)
+
+
+
