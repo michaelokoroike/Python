@@ -38,5 +38,26 @@
 - ![image](https://github.com/user-attachments/assets/8e3c3538-04c2-4e46-ba77-1e4d9989807a)
 - ![image](https://github.com/user-attachments/assets/cfa653e3-0e4c-4f94-bfa0-0e25c409b2a6)
 
+**Classes: Assigning Values to Instance Fields**
+- ![image](https://github.com/user-attachments/assets/54f062c0-2e88-41d4-a448-65bb5233b9d3)
+- ![image](https://github.com/user-attachments/assets/4c9c118b-019e-4ab8-836f-ca68e4b7db95)
+- ![image](https://github.com/user-attachments/assets/63cd431c-1282-488a-bcf8-3efa93822173)
+- ![image](https://github.com/user-attachments/assets/24a8ea50-c78c-45d4-a02e-917d6221ac63)
+
+**Classes: Multiple Fields**
+- ![image](https://github.com/user-attachments/assets/de6f8bce-4594-44b8-8467-8d15e473cc3c)
+- ![image](https://github.com/user-attachments/assets/c79a0a81-c6db-413a-b76e-7fdfffc9102d)
+- ![image](https://github.com/user-attachments/assets/765d8f7c-052e-4238-b876-c14f3cba3d69)
+- ![image](https://github.com/user-attachments/assets/37a01d37-f91a-41c0-9495-6491e2fe647d)
+- ![image](https://github.com/user-attachments/assets/320292e8-772d-4ea4-8a2c-ea03aa907ea7)
+- ![image](https://github.com/user-attachments/assets/a67f4ebc-e3cb-40bb-8087-89f49efc8ef5)
+
+
+
+
+
+
+
+
 
 
