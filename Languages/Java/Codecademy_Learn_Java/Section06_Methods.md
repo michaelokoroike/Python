@@ -35,7 +35,12 @@
 - ![image](https://github.com/user-attachments/assets/e66d47b1-7f95-43cb-a9b5-bd17be563cce)
 - ![image](https://github.com/user-attachments/assets/736e5cd5-4203-447c-90d5-db1dcdcb027e)
 
-- 
+**Reassigning Instance Fields**
+- ![image](https://github.com/user-attachments/assets/175d29cb-7619-428e-b94a-9923e01614a2)
+- ![image](https://github.com/user-attachments/assets/4f5a3607-35fb-4053-949b-47cd3ef22e00)
+- ![image](https://github.com/user-attachments/assets/fcd52a94-5ac1-4107-b43e-5118d0fed11f)
+
+
 
 
 
