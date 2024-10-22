@@ -61,6 +61,7 @@ Factorizations
 Course Wrap-Up
 - https://julialang.org/learning/
 - https://github.com/JuliaAcademy/Introduction-to-Julia
+- https://juliaacademy.com/p/getting-started-with-juliaacademy
 
 
 
