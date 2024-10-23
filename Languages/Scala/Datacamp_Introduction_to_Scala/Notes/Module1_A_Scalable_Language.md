@@ -48,6 +48,24 @@ Video 3 - Immutable variables (val) and value types
   - ![image](https://github.com/user-attachments/assets/d0121eac-72c8-4198-9407-09ceea7e54f4)
   - ![image](https://github.com/user-attachments/assets/61ca157d-75ad-43e4-a922-7876269eff72)
 
+Video 4 - Mutable variables (var) and type inference
+- Var variables can be reassigned
+- ![image](https://github.com/user-attachments/assets/ca9559bf-dae6-4016-ad84-bfc5ea115d7a)
+- ![image](https://github.com/user-attachments/assets/6a3d9267-1bf6-412c-ba74-638d554e55d0)
+- ![image](https://github.com/user-attachments/assets/754c301c-4141-4954-9ec1-d8d6e43d6d29)
+- Immutability is generally better due to fewer possible states, fewer defects, and code bases that are easier to maintain
+- Type inference
+  - ![image](https://github.com/user-attachments/assets/5e66aede-6599-47f6-a157-462ec511089c)
+- Skip semicolons
+- Exercises for Understanding
+  - ![image](https://github.com/user-attachments/assets/66ea55ac-2d24-45b5-ad3e-e6239002d3a1)
+  - ![image](https://github.com/user-attachments/assets/4eafaf36-5e3d-4ea7-bf64-1ee7deb2cb71)
+  - ![image](https://github.com/user-attachments/assets/da2ec28b-d9a1-43b0-9209-3154f5b092a2)
+
+
+
+
+
 
 
 
