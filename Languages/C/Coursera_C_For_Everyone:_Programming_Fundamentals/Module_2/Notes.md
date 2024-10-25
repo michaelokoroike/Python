@@ -19,3 +19,10 @@ Video 2 - Comments
 - // is an end of line comment
 - ![image](https://github.com/user-attachments/assets/0911d1be-63c8-4a6f-a35e-54cb79526aa4)
 
+Video 3 - Keywords
+- From standard ANSI C
+- ![image](https://github.com/user-attachments/assets/811ac10a-4816-44ae-a209-435283c276fb)
+- Only about 30 for C which is relatively small...for C++, there's many more keywords
+- ![image](https://github.com/user-attachments/assets/53a978c5-50e4-44d6-9f73-eef8afe26dad)
+
+Video 4 - Identifiers
