@@ -51,5 +51,16 @@ Video 6 - Expressions and precedence (File included ➕)
   - int c;
   - c = a + b; // c is assigned value of a+b...assignment statement, + is a binary operator
 - ![image](https://github.com/user-attachments/assets/633bb6d2-b4c1-4827-a317-e1313c1bc9a9)
+- Think PEMDAS
 
- 
+ Video 7 - Expression and Evaluation
+ - Tokens have different meanings and different contexts
+ - ![image](https://github.com/user-attachments/assets/5c2a7f03-5e15-4510-a996-1139306d8b7a)
+ - ![image](https://github.com/user-attachments/assets/4109eec9-fa65-4181-96bb-51a6b53a471d)
+ - ![image](https://github.com/user-attachments/assets/2b788b7c-5bdf-460f-a550-ca21b52859a1)
+ - Experiement
+   - ![image](https://github.com/user-attachments/assets/ec4e8310-0a9a-4eb1-be1f-baaa2d0b15c0)
+
+
+
+
