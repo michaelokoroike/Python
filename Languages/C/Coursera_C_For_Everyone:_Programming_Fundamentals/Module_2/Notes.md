@@ -43,6 +43,6 @@ Video 5 - Operators
 - ![image](https://github.com/user-attachments/assets/e3c490bd-cafc-4883-afbc-684517ada25a)
 - ![image](https://github.com/user-attachments/assets/54b67def-c833-4523-bdb4-b8abbd7482b8)
 
-
+Video 6 - Expressions and precedence (File included ➕)
 
  
