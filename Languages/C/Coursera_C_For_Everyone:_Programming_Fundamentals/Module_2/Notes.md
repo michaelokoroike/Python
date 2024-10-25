@@ -44,5 +44,12 @@ Video 5 - Operators
 - ![image](https://github.com/user-attachments/assets/54b67def-c833-4523-bdb4-b8abbd7482b8)
 
 Video 6 - Expressions and precedence (File included ➕)
+- Know the operator function, know its precedence, and know its associativity (see Operator Preference file in the Module_2 main file)
+- Example:
+  - int a = 1;
+  - int b = 2;
+  - int c;
+  - c = a + b; // c is assigned value of a+b...assignment statement, + is a binary operator
+- ![image](https://github.com/user-attachments/assets/633bb6d2-b4c1-4827-a317-e1313c1bc9a9)
 
  
