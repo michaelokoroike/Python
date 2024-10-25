@@ -26,3 +26,16 @@ Video 3 - Keywords
 - ![image](https://github.com/user-attachments/assets/53a978c5-50e4-44d6-9f73-eef8afe26dad)
 
 Video 4 - Identifiers
+- Example: int main()
+  - int = keyword
+  - main = identifier
+- Yes
+  - ![image](https://github.com/user-attachments/assets/cea65299-e034-48b5-bd2a-4049357539a7)
+  - Identifiers can be long (03=0
+- Not
+  - ![image](https://github.com/user-attachments/assets/3cb6b33f-0101-4647-b13d-0776cc6351f9)
+- ![image](https://github.com/user-attachments/assets/086b9d85-acbc-4bf4-8c4b-36ea0e28378c)
+- ![image](https://github.com/user-attachments/assets/cbac588d-4edf-428e-b963-424912ffc29e)
+
+
+ 
