@@ -14,3 +14,8 @@ Video 1 - Character sets and tokens
 - Program must be semantically correct
 - ![image](https://github.com/user-attachments/assets/5d59c705-ae69-45e6-b66e-bbca6d151222)
 
+Video 2 - Comments
+- /* ... */ is a general comment
+- // is an end of line comment
+- ![image](https://github.com/user-attachments/assets/0911d1be-63c8-4a6f-a35e-54cb79526aa4)
+
