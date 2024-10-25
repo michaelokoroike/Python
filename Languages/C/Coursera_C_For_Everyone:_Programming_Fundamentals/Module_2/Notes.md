@@ -37,5 +37,12 @@ Video 4 - Identifiers
 - ![image](https://github.com/user-attachments/assets/086b9d85-acbc-4bf4-8c4b-36ea0e28378c)
 - ![image](https://github.com/user-attachments/assets/cbac588d-4edf-428e-b963-424912ffc29e)
 
+Video 5 - Operators
+- ![image](https://github.com/user-attachments/assets/426ce13e-6e96-4aec-8706-13dc702272d3)
+- ![image](https://github.com/user-attachments/assets/d71c9652-b969-4bf6-96d0-77e3552d15d2)
+- ![image](https://github.com/user-attachments/assets/e3c490bd-cafc-4883-afbc-684517ada25a)
+- ![image](https://github.com/user-attachments/assets/54b67def-c833-4523-bdb4-b8abbd7482b8)
+
+
 
  
