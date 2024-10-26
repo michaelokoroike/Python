@@ -58,8 +58,46 @@ Video 6 - Expressions and precedence (File included ➕)
  - ![image](https://github.com/user-attachments/assets/5c2a7f03-5e15-4510-a996-1139306d8b7a)
  - ![image](https://github.com/user-attachments/assets/4109eec9-fa65-4181-96bb-51a6b53a471d)
  - ![image](https://github.com/user-attachments/assets/2b788b7c-5bdf-460f-a550-ca21b52859a1)
- - Experiement
+ - Experiment
    - ![image](https://github.com/user-attachments/assets/ec4e8310-0a9a-4eb1-be1f-baaa2d0b15c0)
+
+Video 8 - Declarations
+- Simple declarations look like a type, followed by an identifier...typically occur at the head of a body of code or at the head of a program...bottom example on below pic is list
+- ![image](https://github.com/user-attachments/assets/fb3de335-11ed-44fd-8440-b752e20317a3)
+- ![image](https://github.com/user-attachments/assets/c9885257-a837-40f2-9025-f192fd7ba88b)
+- Output of above code below:
+- ![image](https://github.com/user-attachments/assets/4e930a70-bdc0-4571-bc97-e782a9260b27)
+
+Video 9 - Fundamental Types and Sizeof
+- Fundamental types:
+  - char ('a', 'N', '5', '\n')
+  - int (0, -3, 77)
+  - double (1.245, 3.2e5)
+  - modifiers
+    - unsigned
+    - long (more than -2b and +2b)
+      - can have unsigned int, long int...float, double, long double
+- Byte = unit of memory that is 8 bits (10^8...example is 00010001); for everything (see below pic for calculation)
+- ![image](https://github.com/user-attachments/assets/1bfeb478-7423-41f0-bdc1-aad4095e1eaf)
+- 4 bytes can store 32 bits (binary digits)
+- Use sizeof to see what each type of variable can store
+- ![image](https://github.com/user-attachments/assets/c81ab59e-3528-45ba-9364-36f48e184884)
+
+Video 10 - The char type (File included ➕)
+- char is the constituent in a string...strings are just arrays of chars
+- Examples: ('x', '7', '\n', etc)
+- ASCII values are 0-127...among those 128 characters are upper case ('A' is int value 65 for example...'Z' is 90), lowercase ('a' is 97...'z' is 122), digits ('0' is 48...'9' is 57), other characters (see below)
+- ![image](https://github.com/user-attachments/assets/12e51c54-48d2-476f-9ebb-571c2e5b0aee)
+  - Above...look at left column for first value and and then top row for second value...example is 'A'...it is in the 6 based on the left column and 5 based on the top row
+- Example program:
+- ![image](https://github.com/user-attachments/assets/ad3c11f0-e156-4f12-b048-cd6c093e287e)
+- ![image](https://github.com/user-attachments/assets/74ec094b-979f-43d0-baae-dbad827acb38)
+
+Video 11 - The int type
+- 90:10 rule
+- Ints are typically stored in 32 bits (32 0s and 1s)
+- Learn to write in base 2 (binary), base 10 (decimal), base 8 (octal), base 16 (hexadecimal)
+- When working in 32 bits, what you can represent is limited to -2bil and +2bil
 
 
 
