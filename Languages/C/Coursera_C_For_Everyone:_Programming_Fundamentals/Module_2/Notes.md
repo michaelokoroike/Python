@@ -98,6 +98,25 @@ Video 11 - The int type
 - Ints are typically stored in 32 bits (32 0s and 1s)
 - Learn to write in base 2 (binary), base 10 (decimal), base 8 (octal), base 16 (hexadecimal)
 - When working in 32 bits, what you can represent is limited to -2bil and +2bil
+- Other ints : short (less data...less than 4 bytes), long (more data...8 bytes), unsigned (4 bytes but only positive...instead of from -2bil to 2bil, 0 to +4bil)
+  - 35, 35L (long), 35u (unsigned), 35UL (unsigned long)
+- Mixing types leads to different results
+  - 2/3 = 0
+  - 2.0/3 = 0.666
+- ![image](https://github.com/user-attachments/assets/763182b0-65df-4115-a5bc-a386e3dbf032)
+- ![image](https://github.com/user-attachments/assets/dc85cdc3-1f10-4e56-b7e5-4b0e7b8f4fd5)
+
+Video 12 - The integer and floating point types (Files included ➕)
+- Float types:
+  - float (10^-38 to 10^38...scientists think universe is 10^88 atoms), double (10^-308 to 10^308, with 15 significant figures), long double (10^-308 to 10^308, but with 31 significant figures)
+- Writing literals/constants
+  - 1.0, .1, 0.1e1...all are the same
+- Significance is critical in computations...precision can be lost
+  - Ex: 0.1 + 123e12...the result is simply 123e12; 0.1 was imprecise and dwarfedcompared to the 15 sig fig 123e12
+- Conversion characters
+  - ![image](https://github.com/user-attachments/assets/d4aa2043-f12e-4db5-befd-419399b10d52)
+
+
 
 
 
