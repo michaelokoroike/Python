@@ -63,6 +63,55 @@ Video 7 - Function definitions and scope rules
 
 ## Use of Storage Codes (section #2)
 
+Video 8 - Storage class code example
+- ![image](https://github.com/user-attachments/assets/3b2b9fbc-7dc8-4c99-81b0-94691fa46150)
+- ![image](https://github.com/user-attachments/assets/42cf74eb-fb97-4ff5-a796-10f5e4a7e4b5)
+- Output of above program:
+- ![image](https://github.com/user-attachments/assets/531c7d80-9064-4582-82a9-0d172de86ec0)
+- ![image](https://github.com/user-attachments/assets/115d12ab-78b4-42bd-a4da-c637b60b171c)
+
+Video 9 - Simple Recursion
+- Recursion is doing things repeatedly
+- There's recursion and iteration
+- Example (iteration):
+- ![image](https://github.com/user-attachments/assets/6afbfe34-1839-4382-8acd-24e209100d0e)
+- Example (recursion):
+- ![image](https://github.com/user-attachments/assets/5b8296ce-c4b0-4f2f-ac21-a6cd625cd4d4)
+- ![image](https://github.com/user-attachments/assets/d992220f-5a1b-43ea-8fd5-29501ade0766)
+- Key idea:
+- ![image](https://github.com/user-attachments/assets/5562d64d-5ace-436f-b919-78da42bb9c38)
+- Similar to mathematical induction (is recursion)
+- ![image](https://github.com/user-attachments/assets/1451a792-5de7-4703-905a-95faa3cc577c)
+
+Video 10 - Recursion - factorial mode
+- ![image](https://github.com/user-attachments/assets/4c262af8-6963-4f27-8eba-681c0188d05c)
+- ![image](https://github.com/user-attachments/assets/57b1521a-d91a-4b7d-bea8-0cee5e8c91cf)
+- ![image](https://github.com/user-attachments/assets/eca7aa86-7a11-439d-813d-1f8273191592)
+- Output of above program; example:
+- ![image](https://github.com/user-attachments/assets/21499370-6ccb-4426-8e36-e3b3a87f6200)
+- ![image](https://github.com/user-attachments/assets/4630cf2c-6569-4a4f-b3d7-81b7e3d336c7)
+
+Video 11 - Recursion Fibonacci code (File included ➕)
+- ![image](https://github.com/user-attachments/assets/6eb80d8a-41c0-487d-ad4a-bf2d7f9e4112)
+- ![image](https://github.com/user-attachments/assets/cb07f39a-ff31-4401-b128-dca97207143d)
+- Out of above program; example:
+- ![image](https://github.com/user-attachments/assets/ce434e45-a9ff-4a06-9af8-b40ae7a39967)
+- ![image](https://github.com/user-attachments/assets/387d19f0-1a65-4cbb-b0cc-8d14ebba4cb4)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
