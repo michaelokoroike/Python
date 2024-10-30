@@ -11,3 +11,15 @@ Video 2 - Initialize arrays
 - ![image](https://github.com/user-attachments/assets/f90554e8-0493-477b-96aa-d9c73b67f94e)
 - ![image](https://github.com/user-attachments/assets/acee0141-4af0-4438-b62b-0e4edfd1a28e)
 - ![image](https://github.com/user-attachments/assets/98d2aaed-efe7-4525-9176-7239eae69fb1)
+
+Video 3 - array-grade-code example
+- Program that takes 5 grades and then see with the student's average is...
+- ![image](https://github.com/user-attachments/assets/0b326833-8c2e-4d63-9e99-9582fc792936)
+- Output:
+- ![image](https://github.com/user-attachments/assets/e2fab64b-2049-4bb3-947b-aca1ab91978c)
+
+Video 4 - What is a pointer (come back to this)
+- ![image](https://github.com/user-attachments/assets/03338a8e-564a-45a7-93fb-c3803e5e4810)
+- ![image](https://github.com/user-attachments/assets/3ad38d25-e4cf-4831-954c-a488b9d7b81d)
+- ![image](https://github.com/user-attachments/assets/80bfa33b-60ca-4d1c-a9b9-ee811bc84810)
+
