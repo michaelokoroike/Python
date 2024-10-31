@@ -23,3 +23,11 @@ Video 4 - What is a pointer (come back to this)
 - ![image](https://github.com/user-attachments/assets/3ad38d25-e4cf-4831-954c-a488b9d7b81d)
 - ![image](https://github.com/user-attachments/assets/80bfa33b-60ca-4d1c-a9b9-ee811bc84810)
 
+Video 5 - Pointer code example
+- ![image](https://github.com/user-attachments/assets/0a864322-cbd7-412d-a879-d24087fb472a)
+- ![image](https://github.com/user-attachments/assets/da9816dc-8ca5-4567-ad1b-e496ffb72664)
+- Output:
+- ![image](https://github.com/user-attachments/assets/0d6ee286-6d1c-465a-bf01-afd00944ab88)
+- ![image](https://github.com/user-attachments/assets/aaa52cb7-3380-4c11-9121-3dfc79e555c5)
+
+
