@@ -30,4 +30,24 @@ Video 5 - Pointer code example
 - ![image](https://github.com/user-attachments/assets/0d6ee286-6d1c-465a-bf01-afd00944ab88)
 - ![image](https://github.com/user-attachments/assets/aaa52cb7-3380-4c11-9121-3dfc79e555c5)
 
+Video 6 - Call-by-reference simulated
+- ![image](https://github.com/user-attachments/assets/a2075ad0-15e8-4de2-b98d-ec3014252c23)
+- C as a language supports call by value
+- Many languauges allow call-by-reference; C can simulate this
+- address with * can show you its contents
+- to know an address, use & operator
+- ![image](https://github.com/user-attachments/assets/cda674af-852d-400f-a45a-6f72886cce46)
+- ![image](https://github.com/user-attachments/assets/58e2909c-064a-4dd1-9389-f75e78509bc3)
+- ![image](https://github.com/user-attachments/assets/dd85d617-3a69-4455-8bbf-caa72b64639f)
+- ![image](https://github.com/user-attachments/assets/5b05c4b9-331b-4a25-af4a-f62bd619674d)
+- ![image](https://github.com/user-attachments/assets/08c72601-48e9-446f-b502-85514696f50c)
+- ![image](https://github.com/user-attachments/assets/4fe0dfff-3102-4dc0-a41f-7477cb0e4387)
+- ![image](https://github.com/user-attachments/assets/ea63e886-056c-4d12-9a52-af35ef608250)
+
+
+
+
+
+
+
 
