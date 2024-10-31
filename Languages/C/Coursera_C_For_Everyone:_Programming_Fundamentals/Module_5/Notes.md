@@ -44,6 +44,38 @@ Video 6 - Call-by-reference simulated
 - ![image](https://github.com/user-attachments/assets/4fe0dfff-3102-4dc0-a41f-7477cb0e4387)
 - ![image](https://github.com/user-attachments/assets/ea63e886-056c-4d12-9a52-af35ef608250)
 
+Video 7 - array as a parameter
+- ![image](https://github.com/user-attachments/assets/6cf053f8-f851-4c9c-b1ec-6fd92cf887c3)
+- ![image](https://github.com/user-attachments/assets/69c7f0aa-8269-4b67-a91c-4a34ccebca5e)
+- ![image](https://github.com/user-attachments/assets/9cb11ddd-ca66-4062-8c66-dc77769aeac2)
+
+Video 8 - array-bubble-sort code
+- ![image](https://github.com/user-attachments/assets/ae31dfa8-b80f-46c3-b262-4c27a68a6cb5)
+- ![image](https://github.com/user-attachments/assets/4a721c21-5568-428e-8c78-ed7327c636d3)
+- ![image](https://github.com/user-attachments/assets/bfaf06af-8df5-4fe6-b8e2-6198b59f42e4)
+- Output:
+- ![image](https://github.com/user-attachments/assets/e60998d4-e3e5-4e25-a394-6995689777cc)
+- ![image](https://github.com/user-attachments/assets/7bd885eb-1213-4ebb-81dd-a61f3aaa157a)
+
+Video 9 - merge sort overview
+- bubble sort is for small code...merge sort is better because it's more efficient; have two existing sorted piles and turn them into a combined sorted pile for example
+- ![image](https://github.com/user-attachments/assets/b726b20e-dcf0-4d3c-8fe1-1a483520642c)
+- A general merge code (based off above example):
+- ![image](https://github.com/user-attachments/assets/b6e73a71-c586-4537-8651-6133ce2ffe0b)
+- ![image](https://github.com/user-attachments/assets/9cb3a191-6639-4524-b396-4056cfc7901e)
+- ![image](https://github.com/user-attachments/assets/a445941b-b48d-4b1c-9239-d3e214707cc5)
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
