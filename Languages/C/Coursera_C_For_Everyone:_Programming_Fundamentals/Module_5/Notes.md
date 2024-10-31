@@ -57,6 +57,9 @@ Video 6 - Call-by-reference simulated
 - ![image](https://github.com/user-attachments/assets/08c72601-48e9-446f-b502-85514696f50c)
 - ![image](https://github.com/user-attachments/assets/4fe0dfff-3102-4dc0-a41f-7477cb0e4387)
 - ![image](https://github.com/user-attachments/assets/ea63e886-056c-4d12-9a52-af35ef608250)
+- To do call by reference, you have to dereference address (address variable when prefaced by * access contents at address, like *ptr would be 3 while ptr would be 7006)...to know address you use & operator
+- Normally parameters are call by value, but you can pass an address (or a pointer)...you call by ref to change values in the calling environment
+- Example in the screenshots...a swap function wouldn't work outside of on an internal basis, but when you make the parameters call by reference (prefaced by *) the same function now works
 
 Video 7 - array as a parameter
 - ![image](https://github.com/user-attachments/assets/6cf053f8-f851-4c9c-b1ec-6fd92cf887c3)
