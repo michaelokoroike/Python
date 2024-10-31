@@ -22,6 +22,20 @@ Video 4 - What is a pointer (come back to this)
 - ![image](https://github.com/user-attachments/assets/03338a8e-564a-45a7-93fb-c3803e5e4810)
 - ![image](https://github.com/user-attachments/assets/3ad38d25-e4cf-4831-954c-a488b9d7b81d)
 - ![image](https://github.com/user-attachments/assets/80bfa33b-60ca-4d1c-a9b9-ee811bc84810)
+- Array starts at a base address (we have a bunch of elements, so we want a place to start), then runs through as much memory as is needed which is allocated by the compiler which does it for us
+- Array also has relationship with another data type called a pointer
+- Array address and pointer relationship
+  - When we say "int a;" this means create variable a in memory, which needs to be as many bytes as to store appropriately the values allowed for an integer
+    - integer is typically 4 bytes, or 32 bits (each integer takes up 4 mailboxes...billion mailboxes)
+    - if we say a = 3...in the 4 bytes we put appropriate representation of binary three, and it will be in some location in memory (which involves gigabytes, or billions of indiviually adressable cells...)
+    - each cell in our computer memory has a location which is a number (example: at location 7006, 3 would be stored as a four byte set of memory cells)...when we have variables, the computer has a location/memory and inside of it is a stored value. WAY TO THINK OF IT IS AS BILLIONS OF MAILBOXES, AND IN THE MAILBOXES YOU CAN FIND THINGS LIKE INTEGERS, LONG INTEGERS, DOUBLES, CHARS, STORED AS A BINARY SET OF DIGITS AND INTERPRETED AS A PARTICULAR DATA TYPE
+  - When we think of arrays, now we have multiple variables represented
+  - Address caluclation = base address + (2 * length of int)
+  - _Pointer variables_ are as follows:
+    - int *ptr = &a
+      - based on above example, ptr would be 7006, because with the *ptr and &a notation above, ptr stores the address of a
+      - if we did print(*ptr), we would be _dereferencing_ it and we'd probably get 3...just printing ptr would end up with 7006
+- Below example actually is great for understanding this
 
 Video 5 - Pointer code example
 - ![image](https://github.com/user-attachments/assets/0a864322-cbd7-412d-a879-d24087fb472a)
@@ -64,6 +78,25 @@ Video 9 - merge sort overview
 - ![image](https://github.com/user-attachments/assets/b6e73a71-c586-4537-8651-6133ce2ffe0b)
 - ![image](https://github.com/user-attachments/assets/9cb3a191-6639-4524-b396-4056cfc7901e)
 - ![image](https://github.com/user-attachments/assets/a445941b-b48d-4b1c-9239-d3e214707cc5)
+
+Video 10 - merge code - example 1
+- ![image](https://github.com/user-attachments/assets/3d4575ee-858a-4196-a675-452f78a21689)
+- ![image](https://github.com/user-attachments/assets/4feec343-a1d0-4272-8e46-fbb610099799)
+- ![image](https://github.com/user-attachments/assets/761d66b9-e75c-4b99-a29a-4ef09377c1e8)
+- Output:
+- ![image](https://github.com/user-attachments/assets/c786f1f4-90c3-4f16-aed1-44437004ee9d)
+- ![image](https://github.com/user-attachments/assets/75e2bea3-dd8b-4ad8-b853-b82abd3d0419)
+
+Video 11 - merge code example 2 (File included ➕)
+- ![image](https://github.com/user-attachments/assets/7155ec16-151e-4614-9000-60f51b7ee9a3)
+- ![image](https://github.com/user-attachments/assets/1483f27c-82cc-4159-892c-b1c7d8b7fd97)
+- ![image](https://github.com/user-attachments/assets/fc012e22-005e-46fa-89f3-c4dad29d0ca9)
+- Output:
+- ![image](https://github.com/user-attachments/assets/900a0437-ea3e-4099-a27d-f0ee7f5ce19e)
+- How it was working was each pair was put in order; then marging the pairs (look at 1 element, then two elements, then 4 elements)
+- ![image](https://github.com/user-attachments/assets/9dacb061-2495-484c-96b9-6fc075eff7e1)
+
+
 
 
 
